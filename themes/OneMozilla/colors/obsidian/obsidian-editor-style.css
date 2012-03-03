@@ -1,0 +1,87 @@
+/* @Fonts *********/
+/* Light */
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../css/fonts/OpenSans-Light-webfont.eot");
+  src: url("../css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../css/fonts/OpenSans-Light-webfont.woff") format("woff"),
+       url("../css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
+       url("../css/fonts/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @Reset defaults *********/
+header, hgroup, nav, section, article, aside, footer { display: block; }
+html, body, form, fieldset, legend, h1, h2, h3, h4, h5, h6, dd { margin: 0; padding: 0; }
+p, pre, blockquote, ul, ol, dl, table { margin: 0 0 1.5em; padding: 0; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset { border: 0; }
+form ul, form ol { list-style: none; margin: 0 0 1.5em; }
+input, select, textarea { font-family: inherit; font-size: 100%; }
+.dtstart, .dtend, .published, .updated { border: 0; }
+img, video, object { max-width: 100%; height: auto; }
+
+html .mceContentBody {
+	max-width: 528px;
+}
+
+body {
+  font: 16px/1.5 Georgia, Times, "Times New Roman", serif;
+	color: #c5ccd2;
+  background: #3c5466;
+  padding: 20px 30px;
+  position: relative;
+}
+
+/* @Links */
+a:link { color: #fede3f; text-decoration: none; border-bottom: 1px dotted #fede3f; }
+a:visited { color: #eac555; border-bottom-color: #eac555; }
+a:hover, a:focus, a:active { color: #ffe878; border-bottom: 1px solid #ffe878; }
+
+/* @Headings */
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .25em; line-height: 1; font-weight: normal; font-family: "OpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; text-shadow: 0 1px 0 rgba(0,0,0,0.75); }
+h1 { font-size: 3em; letter-spacing: -2px; }
+h2 { font-size: 2em; letter-spacing: -1px; }
+h3 { font-size: 1.75em; letter-spacing: -0.5px; }
+h4 { font-size: 1.5em; letter-spacing: -0.25px; }
+h5 { font-size: 1.125em; }
+h6 { font-size: 1em; }
+
+/* @Content *********/
+ul { list-style-type: square; }
+li ul, li ol { margin: 0 0 0 20px; }
+blockquote { padding: 0 20px; font-style: italic; }
+blockquote em, blockquote i, blockquote cite { font-style: normal; }
+dt { font-style: italic; }
+dd { padding-left: 20px; }
+table { border-collapse: collapse; border-width: 1px 1px 0; border-style: solid; border-color: #2e404e; }
+th, td { border-bottom: 1px #2e404e; padding: 0 4px; color: #c5ccd2; font-family: inherit; font-size: 100%; }
+thead th { font-size: .857em; text-align: left; font-weight: normal; }
+tbody th { text-align: left; }
+pre { overflow: auto; }
+code { font-size: .857em; }
+img { padding: 1px; background-color: #2e475a; border: 11px solid #2e475a; box-shadow: 0 1px 1px rgba(0,0,0,.1);  }
+a:hover img, a:focus img, a:active img { background-color: #872727; }
+
+ins { text-decoration: none; background: #e9f5e6; }
+del { text-decoration: line-through; color: #a88; }
+.wp-smiley { margin: 0; }
+
+img.image-left { float: left; margin: 0 20px 12px 0; }
+img.image-right { float: right; margin: 0 0 12px 20px; }
+img.image-center { display: block; margin: 0 auto 1.5em; }
+
+.alignleft { float: left; margin: 0 20px .5em 0; }
+a .alignleft { margin: 0 20px .5em 0; }
+.alignright { float: right; margin: 0 0 15px 1em; }
+a .alignright { margin: 0 0 .5em 20px; }
+.aligncenter { display: block; margin: 0 auto 1.5em; }
+
+.wp-caption { margin-bottom: .75em; background: #2e475a; box-shadow: 0 1px 1px rgba(0,0,0,.1); padding: 12px; }
+.wp-caption.aligncenter { clear: both; margin: 0 auto 1.5em; }
+.wp-caption img { display: block; margin: 0; max-width: 100%; border: 0; box-shadow: none; }
+.wp-caption.aligncenter img { margin: 0 auto; }
+.wp-caption .wp-caption-text { margin: .75em 5px 0; font-size: .923em; line-height: 1.2; font-style: italic; text-align: center; }

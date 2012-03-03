@@ -1,0 +1,10 @@
+/*
+"Slate" - a light gray color scheme for the One Mozilla theme
+*/
+
+#page { background-color: #f3f3f3; background-image: url("bg-body-slate.png"); }
+#site-description { color: #777; }
+
+::-moz-selection { background: #666; color: #fff; }
+::selection { background: #666; color: #fff; }
+body { -webkit-tap-highlight-color: #666; }

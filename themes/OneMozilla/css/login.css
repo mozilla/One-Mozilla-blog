@@ -1,0 +1,42 @@
+html { padding: 0; margin: 0; background: #f5f1e8; }
+body.login { padding: 0 0 0; border: 0; margin: 0; min-width: 320px; font: 14px/1.5 Georgia, "Times New Roman", Times, serif; color: #6d7581; background: transparent; }
+
+#login { margin-top: 0; }
+
+h1 { background: transparent url("../img/logo-mozilla.png") 56% top no-repeat; width: 310px; height: 80px; margin: 0 0 .5em; overflow: hidden; }
+h1 a { position: absolute; left: -999em; }
+
+.login #backtoblog { position: absolute; top: 0; left: 0; width: 100%; height: 3em; border: 0; margin: 0; padding: 0; background: rgba(235,219,182,.3); }
+.login #backtoblog a { position: relative; top: .75em; left: 20px; text-decoration: none; text-shadow: none; }
+.login #backtoblog a:hover, .login #backtoblog a:focus, .login #backtoblog a:active { color: #fff !important; text-decoration: underline; }
+
+#loginform { border-color: #eee; border-radius: 15px; box-shadow: 0 2px 3px rgba(0,0,0,.1); }
+
+/* @Links */
+.login #backtoblog a, .login #nav a { color: #af3232 !important; text-decoration: none; text-shadow: none; }
+.login #backtoblog a:hover, .login #backtoblog a:focus, .login #backtoblog a:active, 
+.login #nav a:hover, .login #nav a:focus, .login #nav a:active { color: #872727 !important; text-decoration: underline; }
+
+
+/*** @Buttons *********/
+#wp-submit { height: auto; padding: .35em 10px .5em; color: #fff; font: bold .923em/1.2 "Trebuchet MS", sans-serif; text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0,0,0,.2);
+  border: 0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+	-moz-box-shadow: 0 2px rgba(0,0,0,0.1), inset 0 -3px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 2px rgba(0,0,0,0.1), inset 0 -3px rgba(0,0,0,0.1);
+	box-shadow: 0 2px rgba(0,0,0,0.1), inset 0 -3px rgba(0,0,0,0.1);
+	background: #3b69b1;
+	background: -webkit-linear-gradient(top, #af3232 0%, #912929 100% );
+	background: -moz-linear-gradient(top, #af3232 0%, #912929 100% );
+	background: linear-gradient(top, #af3232 0%, #912929 100% );
+}
+#wp-submit:hover,
+#wp-submit:focus { text-decoration: none; cursor: pointer;
+  background: #457bd0;
+	background: -webkit-linear-gradient(top, #c33838 0%, #af3232 100% );
+	background: -moz-linear-gradient(top, #c33838 0%, #af3232 100% );
+	background: linear-gradient(top, #c33838 0%, #af3232 100% );
+}

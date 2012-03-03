@@ -1,0 +1,122 @@
+/*
+"Obsidian" - a dark color scheme for the One Mozilla theme
+
+@@Colors -
+Dark blue     #3c5466
+Darker blue   #2e475a
+Pale gray     #c5ccd2
+Gold          #fede3f
+Light blue    #4090c4
+
+Link          #fede3f
+Visited       #f2c423
+Hover         #ffe400
+*/
+
+body { color: #c5ccd2; }
+#page { background-color: #3c5466; background-image: url("bg-body-obsidian.png"); }
+
+/* @Content *********/
+h1, h2, h3, h4, h5, h6 { color: #d1d9df; text-shadow: 0 1px 0 rgba(0,0,0,0.75); }
+#tabzilla-panel * { text-shadow: none; }
+
+.entry-content table { border-color: #2e404e; }
+.entry-content th, .entry-content td { border-bottom-color: #2e404e; }
+
+.entry-content img, .entry-summary img { background-color: #2e475a; border-color: #2e475a; }
+.entry-content a:hover img, .entry-content a:focus img, .entry-content a:active img, 
+.entry-summary a:hover img, .entry-summary a:focus img, .entry-summary a:active img { background-color: #ffe400; }
+
+.entry-meta { border-bottom: 1px solid rgba(197,204,201,.1); }
+
+::-moz-selection { background: #d1d9df; color: #2a4956; }
+::selection { background: #d1d9df; color: #2a4956; }
+body { -webkit-tap-highlight-color: #d1d9df; }
+
+#site-title, #site-title a:link, #site-title a:visited { color: #c5ccd2; }
+#site-title a:hover, #site-title a:focus, #site-title a:active { color: #ffe400; }
+
+#site-description { color: #93a0aa; }
+
+legend { color: #c5ccd2; } /* For IE */
+
+/* @Links *********/
+a:link { color: #fed325; }
+a:visited { color: #f2c423; }
+a:hover, a:focus, a:active { color: #ffe400; }
+
+/* @Accessible @Skip links *********/
+#nav-access a:focus, #nav-access a:active { background: rgba(0,0,0,.2); border-color: #fed325; }
+#foot-logo .top:focus, #foot-logo .top:active { background: rgba(0,0,0,.2); border-color: #4090c4; }
+ 
+/* @Forms *********/
+input[type=email], input[type=url], input[type=password], input[type=text], textarea {
+  border-color: #2e404e;
+  color: #c5ccd2;
+  background-color: rgba(0,0,0,.1);
+}
+input[type=email]:hover, input[type=url]:hover, input[type=password]:hover, input[type=text]:hover, textarea:hover {
+  border-color: #516e83;
+}
+input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, input[type=text]:focus, textarea:focus {
+  background-color: #516e83; 
+  color: #c5ccd2;
+  border-color: #62869f;
+	-moz-box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+	-webkit-box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+	-o-box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+	box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+}
+label .note { color: #afb6bb; }
+
+/*** Date posted */
+.entry-posted a:link, .entry-posted a:visited, .entry-posted a:hover, .entry-posted a:focus, .entry-posted a:active { color: #c5ccd2; }
+
+/*** Link buttons */
+.edit a, #cancel-comment-reply a { border-color: #2e404e; 
+  background: #4d6c83; 
+  background: -moz-linear-gradient(top, #4d6c83 0, #3f596c 100%);
+  background: -webkit-linear-gradient(top, #4d6c83 0, #3f596c 100%);
+  background: linear-gradient(top, #4d6c83 0, #3f596c 100%);
+}
+.edit a:hover, .edit a:focus, .edit a:active,
+#cancel-comment-reply a:hover, #cancel-comment-reply a:focus, #cancel-comment-reply a:active { border-color: #333; }
+
+/* @Comments ***/
+#comment-list .comment, #comment-list .pingback, #comment-list .trackback {
+  border-color: #2e475a;
+}
+#comment-list .byuser {
+  border-color: #507189;
+  -moz-box-shadow: inset #476379 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
+  -webkit-box-shadow: inset #476379 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
+  -o-box-shadow: inset #476379 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
+  box-shadow: inset #476379 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
+}
+#comment-list .avatar { border-color: #5d83a0; }
+
+/* @Paging @Navigation ***/
+#nav-primary, .nav-paging { background-color: #2e475a; 
+	-webkit-box-shadow: inset rgba(0,0,0, 0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+	-o-box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+  box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+
+}
+#nav-primary .current-menu-item { border-color: #fed325; }
+
+/* @Footer ***/
+#site-info { background-color: #2e475a; color: #727f8a; }
+#site-info a:link, #site-info a:visited { color: #4090c4; }
+#site-info a:hover, #site-info a:focus, #site-info a:active { color: #67a7d0; }
+
+@media only screen and (max-width: 767px) {
+
+  #nav-access a:link, #nav-access a:visited, #nav-access a:hover, #nav-access a:focus, #nav-access a:active { color: #2e475a; }
+
+}
+
+
+
+
+
+
