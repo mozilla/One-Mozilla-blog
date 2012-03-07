@@ -11,10 +11,10 @@
         </time>
       </p>
 		<?php endif; ?>
-		<?php edit_post_link( __( 'Edit Post', 'onemozilla' ), '<p class="edit">', '</p>' ); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+    <?php edit_post_link( __( 'Edit Post', 'onemozilla' ), '<p class="edit">', '</p>' ); ?>
 		<?php if (has_post_thumbnail()) { the_post_thumbnail('thumbnail', array('alt' => "", 'title' => "")); } ?>
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'onemozilla' ) . '</span>', 'after' => '</div>' ) ); ?>
@@ -23,10 +23,9 @@
 	<footer class="entry-meta">
   <?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 		<?php if (has_tag()) : ?>
-		  <p class="meta"><b>Tags:</b> <?php $tags_list = the_tags('',', ',''); ?></p>
+		  <p class="meta"><b><?php _e('Tags','onemozilla'); ?>:</b> <?php $tags_list = the_tags('',', ',''); ?></p>
 		<?php endif; ?>
-      <p class="meta"><b>Categories:</b> <?php the_category(', ') ?></p>
+      <p class="meta"><b><?php _e('Categories','onemozilla'); ?>:</b> <?php the_category(', ') ?></p>
   <?php endif; ?>
-
 	</footer><!-- .entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

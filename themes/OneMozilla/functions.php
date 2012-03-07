@@ -77,18 +77,27 @@ endif; // onemozilla_setup
 add_action( 'after_setup_theme', 'onemozilla_setup' );
 
 /*********
- * Adds classes to the array of body classes.
+ * Adds classes to the array of post classes. We'll use these as style hooks for post headers.
  */
-function onemozilla_body_classes( $classes ) {
-	if ( !is_active_sidebar( 'sidebar-2' ) )
-		$classes[] = 'sidebar-single';
-  elseif ( is_active_sidebar( 'sidebar-2' ) )
-    $classes[] = 'sidebar-double';
-//  if (  )
-//    $classes[] = 'author';
+function onemozilla_post_classes( $classes ) {
+  $options = onemozilla_get_theme_options();
+  $comment_count = get_comments_number($post->ID);
+	
+	if ( $options['hide_author'] != 1 ) {
+		$classes[] = 'show-author';
+  }
+  elseif ( $options['hide_author'] == 1 ) {
+    $classes[] = 'no-author';
+  }
+  if ( comments_open($post->ID) || pings_open($post->ID) || ($comment_count > 0) ) {
+    $classes[] = 'show-comments';
+  }
+  elseif ( !comments_open($post->ID) && !pings_open($post->ID) && ($comment_count == 0) ) {
+    $classes[] = 'no-comments';
+  }
 	return $classes;
 }
-add_filter( 'body_class', 'onemozilla_body_classes' );
+add_filter( 'post_class', 'onemozilla_post_classes' );
 
 /*********
 * Use auto-excerpts for meta description if hand-crafted exerpt is missing

@@ -41,8 +41,7 @@ body { -webkit-tap-highlight-color: #d1d9df; }
 legend { color: #c5ccd2; } /* For IE */
 
 /* @Links *********/
-a:link { color: #fed325; }
-a:visited { color: #f2c423; }
+a:link, a:visited { color: #fed325; }
 a:hover, a:focus, a:active { color: #ffe400; }
 
 /* @Accessible @Skip links *********/
@@ -70,7 +69,23 @@ input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, inpu
 label .note { color: #afb6bb; }
 
 /*** Date posted */
-.entry-posted a:link, .entry-posted a:visited, .entry-posted a:hover, .entry-posted a:focus, .entry-posted a:active { color: #c5ccd2; }
+.entry-posted { opacity: .9; }
+.entry-posted, .entry-posted a:link, .entry-posted a:visited, .entry-posted a:hover, .entry-posted a:focus, .entry-posted a:active { color: #333; }
+
+/*** Post Author */
+.entry-header .vcard { 
+  border-color: #4c667a; 
+  background: #4c667a;
+  background: -moz-linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
+  background: linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
+}
+.entry-header .vcard img { border-color: #57758c; }
+
+/*** Comment Count */
+.entry-comments { background-color: #57758c; }
+.entry-comments a { background-image: url("icn-comment.png"); border-color: #57758c; }
 
 /*** Link buttons */
 .edit a, #cancel-comment-reply a { border-color: #2e404e; 
@@ -111,9 +126,12 @@ label .note { color: #afb6bb; }
 
 @media only screen and (max-width: 767px) {
 
+  .entry-posted, .entry-posted a:link, .entry-posted a:visited, .entry-posted a:hover, .entry-posted a:focus, .entry-posted a:active { color: #c5ccd2; }
   #nav-access a:link, #nav-access a:visited, #nav-access a:hover, #nav-access a:focus, #nav-access a:active { color: #2e475a; }
 
 }
+
+
 
 
 

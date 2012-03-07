@@ -60,7 +60,7 @@
     <ul role="navigation">
       <li><a href="#content-main" tabindex="1"><?php _e( 'Skip to main content', 'onemozilla' ); ?></a></li>
       <li><a href="#content-sub" tabindex="2"><?php _e( 'Skip to sidebar', 'onemozilla' ); ?></a></li>
-    <?php if ( is_active_widget( false, false, 'search', true ) || ( !is_active_sidebar('sidebar-1') ) ) : ?>
+    <?php if ( is_active_widget( false, false, 'search', true ) || ( !is_active_sidebar('sidebar') ) ) : ?>
       <li><a href="#search" tabindex="3"><?php _e( 'Skip to blog search', 'onemozilla' ); ?></a></li>
     <?php endif; ?>
     </ul>
