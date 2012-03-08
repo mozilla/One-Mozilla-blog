@@ -97,9 +97,16 @@ label .note { color: #afb6bb; }
 .edit a:hover, .edit a:focus, .edit a:active,
 #cancel-comment-reply a:hover, #cancel-comment-reply a:focus, #cancel-comment-reply a:active { border-color: #333; }
 
-/* @Comments ***/
+/* @Comments *********/
 #comment-list .comment, #comment-list .pingback, #comment-list .trackback {
+  background: transparent;
   border-color: #2e475a;
+  -o-box-shadow: inset rgba(0,0,0,0.048) 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
+  -ms-box-shadow: inset rgba(0,0,0,0.048) 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
+  box-shadow: inset rgba(0,0,0,0.048) 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
+}
+#comment-list .alt {
+  background: transparent;
 }
 #comment-list .byuser {
   border-color: #507189;
@@ -108,6 +115,7 @@ label .note { color: #afb6bb; }
   -o-box-shadow: inset #476379 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
   box-shadow: inset #476379 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
 }
+
 #comment-list .avatar { border-color: #5d83a0; }
 
 /* @Paging @Navigation ***/

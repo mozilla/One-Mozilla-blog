@@ -523,14 +523,14 @@ function onemozilla_comment($comment, $args, $depth) {
      <h3 class="entry-title vcard">
        <a href="<?php comment_author_url(); ?>" class="url" rel="nofollow external" title="<?php esc_html(comment_author_url()); ?>">
          <cite class="author fn"><?php esc_html(comment_author()); ?></cite>
-         <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 40 ).'</span>'); endif; ?>
+         <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 48 ).'</span>'); endif; ?>
        </a>
        <span class="comment-meta"><?php _e('wrote on', 'onemozilla'); ?> <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>"><time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>"><?php comment_date('F jS, Y'); ?> at <?php comment_time(); ?></time></a>:</span>
      </h3>
     <?php else : // author has no link ?>
       <h3 class="entry-title vcard">
         <cite class="author fn"><?php esc_html(comment_author()); ?></cite>
-        <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 40 ).'</span>'); endif; ?>
+        <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 48 ).'</span>'); endif; ?>
         <span class="comment-meta"><?php _e('wrote on', 'onemozilla'); ?> <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>"><time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>"><?php comment_date('F jS, Y'); ?> at <?php comment_time(); ?></time></a>:</span>
       </h3>
     <?php endif; ?>

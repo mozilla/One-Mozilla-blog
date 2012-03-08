@@ -3,7 +3,7 @@ Theme Name: One Mozilla
 Author: Craig Cook
 Description: The standard WordPress theme for Mozilla network blogs.
 Version: 1.0
-Tags: two-columns, three-columns, right-sidebar, fixed-width, responsive, adaptive-layout, custom-header, custom-menu, editor-style, featured-images, full-width-template, microformats, sticky-post, theme-options, translation-ready
+Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, custom-header, custom-menu, editor-style, featured-images, full-width-template, microformats, sticky-post, theme-options, translation-ready
 
 @@Colors -
 Tan           #f5f1e8
@@ -31,7 +31,7 @@ Hover         #872727
 /* @Fonts *********/
 /* Regular */
 @font-face {
-  font-family: "OpenSansRegular";
+  font-family: "Open Sans Regular";
   src: url("css/fonts/OpenSans-Regular-webfont.eot");
   src: url("css/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
        url("css/fonts/OpenSans-Regular-webfont.ttf") format("truetype"),
@@ -169,18 +169,22 @@ px      68    160    252    344    436    528    620    712    804    896    */
 .archive .page-title, .search-results .page-title { margin-top: 0; font-size: 1.75em; letter-spacing: -0.5px; }
 
 .entry-title { font-size: 2em; letter-spacing: -1px; margin: 0 0 .5em; min-height: 55px; }
-.single-post .entry-title, .page .entry-title { font-size: 3em; letter-spacing: -2px; margin: -.3em 0 24px; }
+.single-post .entry-title, .page .entry-title { font-size: 3em; letter-spacing: -2px; }
 .post.no-author .entry-title { float: left; width: 430px; }
+.single-post .post.no-author .entry-title { float: none; width: auto; }
 
 /*** Entry @Meta */
-.entry-meta { clear: both; border-bottom: 1px solid rgba(255,255,255,.5); margin: 1em 0 0; padding: 12px 24px 8px; background: rgba(0,0,0,.02); box-shadow: inset 0 0 3px rgba(0,0,0,.1); font: .785em/1.1 "OpenSansRegular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+.entry-meta { clear: both; border-bottom: 1px solid rgba(255,255,255,.5); margin: 1em 0 0; padding: 12px 24px 8px; background: rgba(0,0,0,.02); box-shadow: inset 0 0 3px rgba(0,0,0,.1); font: .785em/1.1 "Open Sans Regular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
 .entry-meta p { margin: 0 0 .5em; }
 .entry-meta b { margin-right: 10px; font-weight: normal; text-transform: uppercase; }
 
 /*** Entry @Header */
 .entry-header { position: relative; padding: .5em 0 1em; margin: 0 0 24px; }
-.post .entry-header { padding-left: 92px; }
 .entry-header:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+.post .entry-header { padding-left: 92px; }
+.page .entry-title { min-height: 0; margin: 0; }
+.page .entry-header { padding-bottom: 0; }
+
 
 /*** Post Author */
 .entry-header .vcard { position: relative; float: left; margin: 0 0 0 -92px; width: 430px; border: 1px solid #fff; padding: 15px 22px 15px 67px; font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;  
@@ -202,11 +206,6 @@ px      68    160    252    344    436    528    620    712    804    896    */
 .entry-comments { float: right; background: #fff; margin: 0; width: 92px; font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; -o-box-shadow: 0 1px 1px rgba(0,0,0,.1); -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1); box-shadow: 0 1px 1px rgba(0,0,0,.1); }
 .entry-comments a { display: block; background: transparent url("img/icn-comment.png") 24px 17px no-repeat; padding: 15px 5px 15px 47px; border: 1px solid #fff; }
 .entry-comments a:hover, .entry-comments a:focus, .entry-comments a:active { background-position: 24px -83px; }
-
-.show-author {  }
-.no-author {  }
-.show-comments {  }
-.no-comments {  }
 
 /*** @Edit buttons */
 .edit { font-size: .857em; }
@@ -254,17 +253,13 @@ px      68    160    252    344    436    528    620    712    804    896    */
 }
 .entry-content a:hover img, .entry-content a:focus img, .entry-content a:active img { background-color: #872727; -moz-transition: all .1s ease-in; }
 
-ins { text-decoration: none; background: #e9f5e6; }
-del { text-decoration: line-through; color: #a88; }
-
 ::-moz-selection { background: #6bd7f3; }
 ::selection { background: #6bd7f3; }
 img::-moz-selection	{ background: transparent; }
 img::selection { background: transparent; }
 body { -webkit-tap-highlight-color: #6bd7f3; -moz-tap-highlight-color: #6bd7f3; }
 
-.wp-smiley { margin: 0; }
-
+.wp-smiley { margin: 0; border: 0; background: transparent; }
 .alignleft { float: left; margin: 0 24px .5em 0; }
 a .alignleft { margin: 0 24px .5em 0; }
 .alignright { float: right; margin: 0 0 .5em 24px; }
@@ -372,7 +367,7 @@ input:-moz-placeholder { text-transform: uppercase; }
 .main .fm-search { margin: 0 0 2em; }
 .fm-search p { position: relative; margin: 0; }
 .fm-search #s { padding: 6px 5px; width: 94%; border: 1px solid #ccc; border-radius: 6px;
-  font-family: "OpenSansRegular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: "Open Sans Regular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
   background: #fafafa;
   background: rgba(255,255,255,.8);
   -webkit-appearance: textfield;
@@ -395,27 +390,34 @@ input:-moz-placeholder { text-transform: uppercase; }
   font-size: .875em;
   padding: 19px;
   margin: 0 0 24px;
+  background: #fff;
   border: 1px solid #ccc;
   border-color: rgba(0,0,0,0.05);
-  -o-box-shadow: inset rgba(0,0,0,0.048) 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
-  -ms-box-shadow: inset rgba(0,0,0,0.048) 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
-  box-shadow: inset rgba(0,0,0,0.048) 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
+  -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+#comment-list .alt { 
+  background: #f7f7f7; 
+  -o-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
+  -ms-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
 }
 #comment-list .byuser {
-  border-color: #fff;
-  -o-box-shadow: inset rgba(255,255,255,1) 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
-  -ms-box-shadow: inset rgba(255,255,255,1) 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
-  box-shadow: inset rgba(255,255,255,1) 0 0 48px, rgba(0,0,0,0.1) 0 1px 0;
+  border-color: #dccccc;
+  -o-box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
+  -ms-box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
 }
 
-#comment-list.av .comment { position: relative; padding-left: 82px; min-height: 70px; }
+#comment-list.av .comment { position: relative; padding-left: 92px; min-height: 70px; }
 
-#comment-list .entry-title { font-size: 1.25em; letter-spacing: normal; margin: 0 0 1.5em; }
+#comment-list .entry-title { font-size: 1.25em; min-height: 0; letter-spacing: normal; margin: 0 0 1.5em; }
 #comment-list .author { font-style: normal; }
 #comment-list .entry-title cite { font-style: normal; }
 #comment-list .comment-meta { font-size: .857em; }
 
-#comment-list .avatar { position: absolute; left: 19px; top: 19px; border: 1px solid #fff; -moz-transition: all .1s linear; -webkit-transition: all .1s linear; -o-transition: all .1s linear; -ms-transition: all .1s linear; transition: all .1s linear; }
+#comment-list .avatar { position: absolute; left: 19px; top: 19px; border: 1px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1); -moz-transition: all .1s linear; -webkit-transition: all .1s linear; -o-transition: all .1s linear; -ms-transition: all .1s linear; transition: all .1s linear; }
 #comment-list a:hover .avatar, #comment-list a:focus .avatar, #comment-list a:active .avatar { border-color: inherit; }
 
 #comment-list .entry-content p, 
@@ -424,10 +426,11 @@ input:-moz-placeholder { text-transform: uppercase; }
 #comment-list .mod { margin-top: 1em; border: 1px solid #f0dfc0; color: #3c3c3c; font-size: 1.07em; text-align: center; padding: .5em 15px; background: #fff2db; }
 
 #comment-list .comment-util { margin: 1em 0 0; font-size: .846em; }
+#comment-list .comment-reply-link:after { content: "\00A0\00BB"; font-size: 1.2em; } /* nbsp raquo */
 #comment-list .comment-util .edit { margin-left: 20px; }
 
 #comment-list ol.children { list-style: none; margin: 24px 0 0; }
-#comment-list ol.children .comment { font-size: 1em; margin: 0 0 0 -62px; }
+#comment-list ol.children .comment { font-size: 1em; margin: 0 0 0 -72px; }
 
 /* @Comment @Form *********/
 #comment-form { position: relative; padding: 3em 0 0; }
@@ -469,7 +472,7 @@ input:-moz-placeholder { text-transform: uppercase; }
 #foot-logo .logo:hover, #foot-logo .logo:focus, #foot-logo .logo:active { opacity: 1; }
 
 #nav-meta ul { list-style: none; }
-#nav-meta a { font-family: "OpenSansRegular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+#nav-meta a { font-family: "Open Sans Regular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
 
 
 /*  @Tablet @Layout: 768px.
