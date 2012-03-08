@@ -103,7 +103,7 @@ function onemozilla_theme_options_help() {
 
 	$help = '<p>' . __( 'Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, One Mozilla, provides the following Theme Options:', 'onemozilla' ) . '</p>' .
 			'<ol>' .
-				'<li>' . __( '<strong>Color Scheme</strong>: You can choose from a few different color schemes: "Sandstone" (reddish-orange background) is the default, suitable for most Mozilla blogs. "Granite" (light blue background) suitable for Firefox-related blogs. "Slate" is a light, neutral gray. "Obsidian" is a light-on-dark scheme', 'onemozilla' ) . '</li>' .
+				'<li>' . __( '<strong>Color Scheme</strong>: You can choose from a few different color schemes: "Sand" (orange-tan background) is the default, suitable for most Mozilla blogs. "Sky" (light blue/gray background) suitable for Firefox-related blogs. "Stone" is a light, neutral gray. "Obsidian" is a light-on-dark scheme', 'onemozilla' ) . '</li>' .
 		    '<li>' . __( '<strong>Hide post authors</strong>: Post authors are shown by default, with an author bio in the sidebar on single post pages. You can choose to hide post authors and the blog will be anonymous to the public, though authors will still be visible in the administration panel.', 'onemozilla' ) . '</li>' .
 			'</ol>' .
 			'<p>' . __( 'Remember to click "Save Changes" to save any changes you have made to the theme options.', 'onemozilla' ) . '</p>';
@@ -135,7 +135,7 @@ function onemozilla_theme_options_help() {
  */
 function onemozilla_get_default_theme_options() {
 	$default_theme_options = array(
-		'color_scheme' => 'sandstone',
+		'color_scheme' => 'stone',
 		'hide_author' => ''
 	);
 
@@ -147,20 +147,20 @@ function onemozilla_get_default_theme_options() {
  */
 function onemozilla_color_schemes() {
 	$color_scheme_options = array(
-		'sandstone' => array(
-			'value' => 'sandstone',
-			'label' => __( 'Sandstone', 'onemozilla' ),
-			'thumbnail' => get_template_directory_uri() . '/colors/sandstone/sandstone.jpg',
+		'stone' => array(
+			'value' => 'stone',
+			'label' => __( 'Stone', 'onemozilla' ),
+			'thumbnail' => get_template_directory_uri() . '/colors/stone/stone.jpg',
 		),
-		'granite' => array(
-			'value' => 'granite',
-			'label' => __( 'Granite', 'onemozilla' ),
-			'thumbnail' => get_template_directory_uri() . '/colors/granite/granite.jpg',
+		'sand' => array(
+			'value' => 'sand',
+			'label' => __( 'Sand', 'onemozilla' ),
+			'thumbnail' => get_template_directory_uri() . '/colors/sand/sand.jpg',
 		),
-		'slate' => array(
-			'value' => 'slate',
-			'label' => __( 'Slate', 'onemozilla' ),
-			'thumbnail' => get_template_directory_uri() . '/colors/slate/slate.jpg',
+		'sky' => array(
+			'value' => 'sky',
+			'label' => __( 'Sky', 'onemozilla' ),
+			'thumbnail' => get_template_directory_uri() . '/colors/sky/sky.jpg',
 		),
 		'obsidian' => array(
 			'value' => 'obsidian',
@@ -264,14 +264,14 @@ function onemozilla_enqueue_color_scheme() {
 	$options = onemozilla_get_theme_options();
 	$color_scheme = $options['color_scheme'];
 
-	if ( 'sandstone' == $color_scheme )
-		wp_enqueue_style( 'sandstone', get_template_directory_uri() . '/colors/sandstone/sandstone.css', array(), null );
+	if ( 'sand' == $color_scheme )
+		wp_enqueue_style( 'sand', get_template_directory_uri() . '/colors/sand/sand.css', array(), null );
 
-	if ( 'granite' == $color_scheme )
-		wp_enqueue_style( 'granite', get_template_directory_uri() . '/colors/granite/granite.css', array(), null );
+	if ( 'sky' == $color_scheme )
+		wp_enqueue_style( 'sky', get_template_directory_uri() . '/colors/sky/sky.css', array(), null );
 
-	if ( 'slate' == $color_scheme )
-		wp_enqueue_style( 'slate', get_template_directory_uri() . '/colors/slate/slate.css', array(), null );
+	if ( 'stone' == $color_scheme )
+		wp_enqueue_style( 'stone', get_template_directory_uri() . '/colors/stone/stone.css', array(), null );
 		
 	if ( 'obsidian' == $color_scheme )
 		wp_enqueue_style( 'obsidian', get_template_directory_uri() . '/colors/obsidian/obsidian.css', array(), null );
