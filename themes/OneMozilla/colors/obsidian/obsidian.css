@@ -14,10 +14,10 @@ Hover         #ffe400
 */
 
 body { color: #c5ccd2; }
-#page { background-color: #3c5466; background-image: url("bg-body-obsidian.png"); }
+#page { background-color: #3c5466; background-image: url("bg-obsidian.png"); }
 
 /* @Content *********/
-h1, h2, h3, h4, h5, h6 { color: #d1d9df; text-shadow: 0 1px 0 rgba(0,0,0,0.75); }
+h1, h2, h3, h4, h5, h6 { color: #d1d9df; text-shadow: 0 1px 0 rgba(0,0,0,0.3); }
 #tabzilla-panel * { text-shadow: none; }
 
 .entry-content table { border-color: #2e404e; }

@@ -253,48 +253,60 @@ if ( ! function_exists( 'onemozilla_admin_header_style' ) ) :
  * Referenced via add_custom_image_header() in onemozilla_setup().
  */
 function onemozilla_admin_header_style() {
+if (function_exists('onemozilla_get_theme_options')) { // fail gracefully if we can't get theme options
+  $options = onemozilla_get_theme_options(); // get the theme options
+}
 $header_image = get_header_image();
 ?>
 	<style type="text/css">
 	@font-face {
-    font-family: 'OpenSansLight';
+    font-family: 'Open Sans Light';
     src: url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.eot');
     src: url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.woff') format('woff'),
          url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+         url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
 	.appearance_page_custom-header #header-preview {
     position: relative;
     width: 952px;
+    height: 240px;
+    overflow: hidden;
     padding: 0 24px;
     margin-left: -80px;
 		border: 0;
 		box-shadow: inset 0 0 5px rgba(0,0,0,.2);
-    background: #f5f1e8 url("<?php echo get_template_directory_uri() ?>/img/bg-body-sandstone.png") center top repeat-x;
-    color: #3c3c3c;
+    background: transparent url("<?php echo get_stylesheet_directory_uri() . '/colors/'.$options['color_scheme'].'/bg-'.$options['color_scheme'].'.png'; ?>") center top repeat-x;
+<?php if ($options['color_scheme'] == 'obsidian') : ?>
+    color: #c5ccd2;
+<?php else : ?>
+    color: #333;
+<?php endif; ?>
 	}
 	#header-preview .header {
     position: relative;
     font-size: 16px;
-    padding: 72px 340px 48px 0;
+    padding: 72px 340px 24px 0;
     background: url("<?php echo esc_url( $header_image ); ?>") right top no-repeat;
 	}
 	#header-preview h1,
 	#header-preview h2 {
     line-height: 1;
     padding: 0;
-    font-family: "OpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; 
+    font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; 
     font-weight: normal; 
-    text-shadow: 0px 1px 0px rgba(255,255,255,0.75);
+<?php if ($options['color_scheme'] == 'obsidian') : ?>
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+<?php else : ?>
+    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+<?php endif; ?>
 	}
 	#header-preview h1 {
-		font-size: 4.5em; letter-spacing: -3px; margin: 0 0 .15em -5px; color: #af3232;
+		font-size: 4.5em; letter-spacing: -3px; margin: 0 0 .15em -5px; color: inherit;
 	}
 	#header-preview h2 {
-    font-size: 2em; letter-spacing: -1px; margin: 0 0 .25em;
+    font-size: 2em; letter-spacing: -1px; margin: 0 0 .25em; opacity: .8; color: inherit;
 	}
 	#faux-tabzilla {
     background: url("<?php echo get_template_directory_uri() ?>/img/tab.png") repeat scroll 0 0 transparent;
@@ -493,7 +505,7 @@ function fc_editor_style($url) {
     $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'colors/'.$options['color_scheme'].'/'.$options['color_scheme'].'-editor-style.css';  
   }
   else { // fall back to the default
-    $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'colors/sandstone/sanstone-editor-style.css';
+    $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'colors/stone/stone-editor-style.css';
   }
   return $url;
 }

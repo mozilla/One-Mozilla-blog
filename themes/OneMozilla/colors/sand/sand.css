@@ -1,0 +1,10 @@
+/*
+"Sandstone" - the default color scheme for the One Mozilla theme
+*/
+
+#page { background-color: #f5f1e8; background-image: url("bg-sand.png"); }
+#site-description { color: #a68e87; }
+
+/* @Links */
+a:link, a:visited { color: #af3232; text-decoration: none; }
+a:hover, a:focus, a:active { color: #962c2c; text-decoration: underline; }
