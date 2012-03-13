@@ -86,8 +86,9 @@ h5 { font-size: 1.125em; }
 h6 { font-size: 1em; }
 
 /* @Links */
-a:link, a:visited { color: #af3232; text-decoration: none; }
-a:hover, a:focus, a:active { color: #962c2c; text-decoration: underline; }
+a:link, a:visited { color: #2983c8; text-decoration: none; }
+a:hover, a:focus, a:active { color: #20679e; text-decoration: underline; }
+
 
 /* @Accessible @Skip links *********/
 #nav-access { position: absolute; top: -50em; }
@@ -404,7 +405,9 @@ input:-moz-placeholder { text-transform: uppercase; }
   box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
 }
 #comment-list .byuser {
-  border-color: #dccccc;
+  border-color: #bfbfbf;
+  border-color: rgba(0,0,0,.2);
+  padding: 18px;
   -o-box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
   -ms-box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
   box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);

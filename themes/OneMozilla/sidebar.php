@@ -8,11 +8,11 @@
       <h3 class="widget-title">
       <?php if (get_the_author_meta('description')) : ?><?php _e('About','onemozilla'); ?><?php endif; ?>
       <?php if (get_the_author_meta('user_url')) : ?>
-        <a class="url fn author" rel="external me" href="<?php the_author_meta('user_url'); ?>"><?php the_author(); ?>
+        <a class="url fn author" rel="external me" href="<?php the_author_meta('user_url'); ?>"><?php esc_html(the_author()); ?>
         <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( get_the_author_meta('user_email'), 68 ).'</span>'); endif; ?>
         </a>
       <?php else : ?>
-        <a class="url fn author" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?>
+        <a class="url fn author" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php esc_html(the_author()); ?>
         <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( get_the_author_meta('user_email'), 68 ).'</span>'); endif; ?>
         </a>
       <?php endif; ?>
@@ -29,7 +29,7 @@
         if (get_the_author_meta('first_name')) : 
           $name = esc_html(get_the_author_meta('first_name')); // Use the first name if there is one
         else : 
-          $name = the_author(); // Fall back to the display name
+          $name = esc_html(the_author()); // Fall back to the display name
         endif;
       ?>    
       <p><a class="url go" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php _e('More from ' . $name, 'onemozilla'); ?></a></p>
@@ -54,11 +54,11 @@
       <h3 class="widget-title">
       <?php if (get_the_author_meta('description')) : ?><?php _e('About','onemozilla'); ?><?php endif; ?>
       <?php if (get_the_author_meta('user_url')) : ?>
-        <a class="url fn author" rel="external me" href="<?php the_author_meta('user_url'); ?>"><?php the_author(); ?>
+        <a class="url fn author" rel="external me" href="<?php the_author_meta('user_url'); ?>"><?php esc_html(the_author()); ?>
         <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( get_the_author_meta('user_email'), 68 ).'</span>'); endif; ?>
         </a>
       <?php else : ?>
-        <a class="url fn author" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?>
+        <a class="url fn author" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php esc_html(the_author()); ?>
         <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( get_the_author_meta('user_email'), 68 ).'</span>'); endif; ?>
         </a>
       <?php endif; ?>
@@ -75,7 +75,7 @@
         if (get_the_author_meta('first_name')) : 
           $name = esc_html(get_the_author_meta('first_name')); // Use the first name if there is one
         else : 
-          $name = the_author(); // Fall back to the display name
+          $name = esc_html(the_author()); // Fall back to the display name
         endif;
       ?>    
       <p><a class="url go" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php _e('More from ' . $name, 'onemozilla'); ?></a></p>

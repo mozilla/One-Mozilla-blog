@@ -1,10 +1,7 @@
 <?php 
 // Count search results
-$search_count = 0;
-$search = new WP_Query("s=$s & showposts=-1");
-if($search->have_posts()) : while($search->have_posts()) : $search->the_post();
-$search_count++;
-endwhile; endif;
+global $wp_query;
+$total_results = $wp_query->found_posts;
 
 get_header(); ?>
 
@@ -13,17 +10,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 
   <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-  <h1 class="page-title">
-  <?php if (is_category()) : ?><?php _e('Archive for ','onemozilla'); ?><?php single_cat_title(); ?>
-  <?php elseif (is_tag()) : ?><?php _e('Posts tagged with ','onemozilla'); ?> &#8220;<?php single_tag_title(); ?>&#8221;
-  <?php elseif (is_day()) : ?><?php _e('Posts from ','onemozilla'); ?> <?php the_time('F jS, Y'); ?>
-  <?php elseif (is_month()) : ?><?php _e('Posts from ','onemozilla'); ?> <?php the_time('F, Y'); ?>
-  <?php elseif (is_year()) : ?><?php _e('Posts from ','onemozilla'); ?> <?php the_time('Y'); ?>
-  <?php elseif (is_author()) : ?><?php _e('Posts by ','onemozilla'); ?> <span><?php echo get_userdata(intval($author))->display_name; ?></span>
-  <?php elseif (is_search()) : ?><?php _e('We found ','onemozilla'); ?> <?php echo $wp_query->found_posts; ?> <?php _e('results for ','onemozilla'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;
-  <?php else : ?><?php _e('Archives','onemozilla'); ?>
-  <?php endif; ?>
-  </h1>
+  <h1 class="page-title"><?php printf( __('We found %1s results for &ldquo;%2s&ldquo;','onemozilla'), $total_results, esc_html(get_search_query()) ); ?></h1>
   
     <?php if (fc_show_posts_nav()) : ?>
     <nav class="nav-paging top">
@@ -52,16 +39,12 @@ get_header(); ?>
 
 	<?php else : ?>
 
-		<article id="post-0" class="post no-results not-found">
-			<header class="entry-header">
-				<h1 class="entry-title"><?php _e( 'Nothing Found', 'onemozilla' ); ?></h1>
-			</header><!-- .entry-header -->
+		<h1 class="page-title"><?php _e( 'Nothing Found', 'onemozilla' ); ?></h1>
 
-			<div class="entry-content">
-				<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'onemozilla' ); ?></p>
-				<?php get_search_form(); ?>
-			</div><!-- .entry-content -->
-		</article><!-- #post-0 -->
+		<div class="entry-content">
+			<p><?php printf( __( 'Sorry, we didn\'t find anything for &ldquo;%s.&rdquo; Try another search.', 'onemozilla' ), esc_html(get_search_query()) ); ?></p>
+			<?php get_search_form(); ?>
+		</div><!-- .entry-content -->
 
 	<?php endif; ?>
 

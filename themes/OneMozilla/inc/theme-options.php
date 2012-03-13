@@ -192,7 +192,7 @@ function onemozilla_settings_field_color_scheme() {
 		<input type="radio" name="onemozilla_theme_options[color_scheme]" value="<?php echo esc_attr( $scheme['value'] ); ?>" <?php checked( $options['color_scheme'], $scheme['value'] ); ?> />
 		<span>
 			<img src="<?php echo esc_url( $scheme['thumbnail'] ); ?>" width="140" height="140" alt="">
-			<?php echo $scheme['label']; ?>
+			<?php echo esc_attr( $scheme['label'] ); ?>
 		</span>
 	</label>
 	</div>
@@ -208,7 +208,7 @@ function onemozilla_settings_field_hide_author() {
 	?>
 	<div class="layout hide-author">
 	<label class="description">
-		<input type="checkbox" name="onemozilla_theme_options[hide_author]" value="1" <?php checked('1', $options['hide_author']); ?> />
+		<input type="checkbox" name="onemozilla_theme_options[hide_author]" value="1" <?php checked( '1', esc_attr($options['hide_author']) ); ?> />
 		<span>
 			<?php _e('Hide post authors (makes posts anonymous to the public)', 'onemozilla'); ?>
 		</span>

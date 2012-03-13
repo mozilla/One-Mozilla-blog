@@ -1,10 +1,7 @@
 <?php 
 // Count search results
-$search_count = 0;
-$search = new WP_Query("s=$s & showposts=-1");
-if($search->have_posts()) : while($search->have_posts()) : $search->the_post();
-$search_count++;
-endwhile; endif;
+global $wp_query;
+$total_results = $wp_query->found_posts;
 
 get_header(); ?>
 
@@ -19,8 +16,8 @@ get_header(); ?>
   <?php elseif (is_day()) : ?><?php _e('Posts from ','onemozilla'); ?> <?php the_time('F jS, Y'); ?>
   <?php elseif (is_month()) : ?><?php _e('Posts from ','onemozilla'); ?> <?php the_time('F, Y'); ?>
   <?php elseif (is_year()) : ?><?php _e('Posts from ','onemozilla'); ?> <?php the_time('Y'); ?>
-  <?php elseif (is_author()) : ?><?php _e('Posts by ','onemozilla'); ?> <span><?php echo get_userdata(intval($author))->display_name; ?></span>
-  <?php elseif (is_search()) : ?><?php _e('We found ','onemozilla'); ?> <?php echo $wp_query->found_posts; ?> <?php _e('results for ','onemozilla'); ?> <?php the_search_query(); ?>
+  <?php elseif (is_author()) : ?><?php _e('Posts by ','onemozilla'); ?> <span><?php echo esc_html(get_userdata(intval($author))->display_name); ?></span>
+  <?php elseif (is_search()) : ?><?php printf( __('We found %1s results for &ldquo;%2s&ldquo;','onemozilla'), $total_results, esc_html(get_search_query()) ); ?>
   <?php else : ?><?php _e('Archives','onemozilla'); ?>
   <?php endif; ?>
   </h1>
