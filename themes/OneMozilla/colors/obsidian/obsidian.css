@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 { color: #d1d9df; text-shadow: 0 1px 0 rgba(0,0,0,0.3); }
 .entry-content table { border-color: #2e404e; }
 .entry-content th, .entry-content td { border-bottom-color: #2e404e; }
 
+.wp-caption { background-color: #2e475a; }
 .entry-content img, .entry-summary img { background-color: #2e475a; border-color: #2e475a; }
 .entry-content a:hover img, .entry-content a:focus img, .entry-content a:active img, 
 .entry-summary a:hover img, .entry-summary a:focus img, .entry-summary a:active img { background-color: #ffe400; }

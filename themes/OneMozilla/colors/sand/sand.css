@@ -8,3 +8,5 @@
 /* @Links */
 a:link, a:visited { color: #af3232; text-decoration: none; }
 a:hover, a:focus, a:active { color: #962c2c; text-decoration: underline; }
+
+.entry-comments a { background-image: url("icn-comment.png"); }

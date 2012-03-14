@@ -45,8 +45,8 @@ h5 { font-size: 1.125em; }
 h6 { font-size: 1em; }
 
 /* @Links */
-a:link, a:visited { color: #af3232; text-decoration: none; }
-a:hover, a:focus, a:active { color: #962c2c; text-decoration: underline; }
+a:link, a:visited { color: #2983c8; text-decoration: none; }
+a:hover, a:focus, a:active { color: #20679e; text-decoration: underline; }
 
 /* @Content *********/
 ul { list-style-type: square; }
