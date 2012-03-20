@@ -7,7 +7,7 @@
   <!-- For Facebook -->
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
   <meta property="og:title" content="<?php if (is_singular()) : single_post_title(); else : bloginfo('name'); endif; ?>">
-  <meta property="og:url" content="<?php if (is_singular()) : the_permalink(); else : home_url('/'); endif; ?>">
+  <meta property="og:url" content="<?php if (is_singular()) : the_permalink(); else : bloginfo('url'); endif; ?>">
   <meta property="og:description" content="<?php fc_meta_desc(); ?>">
 <?php if (is_singular() && has_post_thumbnail()) : ?>
   <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>

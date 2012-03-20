@@ -253,7 +253,15 @@ px      68    160    252    344    436    528    620    712    804    896    */
   -ms-transition: all .1s ease-out;
   transition: all .1s ease-out; 
 }
-.entry-content a:hover img, .entry-content a:focus img, .entry-content a:active img { background-color: #872727; -moz-transition: all .1s ease-in; }
+.entry-content a:hover img, .entry-content a:focus img, .entry-content a:active img { 
+  background-color: #872727; 
+  -moz-transition: all .1s ease-out;
+  -webkit-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  -ms-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+.entry-content .wp-smiley, .entry-summary .wp-smiley { margin: 0; border: 0; padding: 0; background: transparent; box-shadow: none; }
 
 ::-moz-selection { background: #6bd7f3; }
 ::selection { background: #6bd7f3; }
@@ -261,7 +269,6 @@ img::-moz-selection	{ background: transparent; }
 img::selection { background: transparent; }
 body { -webkit-tap-highlight-color: #6bd7f3; -moz-tap-highlight-color: #6bd7f3; }
 
-.wp-smiley { margin: 0; border: 0; background: transparent; }
 .alignleft { float: left; margin: 0 24px .5em 0; }
 a .alignleft { margin: 0 24px .5em 0; }
 .alignright { float: right; margin: 0 0 .5em 24px; }
