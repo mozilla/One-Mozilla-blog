@@ -2,10 +2,10 @@
 /* Light */
 @font-face {
   font-family: "Open Sans Light";
-  src: url("css/fonts/OpenSans-Light-webfont.eot");
-  src: url("css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
-       url("css/fonts/OpenSans-Light-webfont.woff") format("woff");
+  src: url("../../css/fonts/OpenSans-Light-webfont.eot");
+  src: url("../../css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../../css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
+       url("../../css/fonts/OpenSans-Light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -76,11 +76,11 @@ img, .entry-summary img { padding: 1px; background-color: #fff; border: 11px sol
 }
 a:hover img, a:focus img, a:active img { background-color: #872727; -moz-transition: all .1s ease-in; }
 
-::-moz-selection { background: #6bd7f3; }
-::selection { background: #6bd7f3; }
-img::-moz-selection	{ background: transparent; }
-img::selection { background: transparent; }
-body { -webkit-tap-highlight-color: #6bd7f3; -moz-tap-highlight-color: #6bd7f3; }
+::-moz-selection { background-color: #96d7e8; }
+::selection { background-color: #96d7e8; }
+img::-moz-selection	{ background-color: transparent; }
+img::selection { background-color: transparent; }
+body { -webkit-tap-highlight-color: #96d7e8; -moz-tap-highlight-color: #96d7e8; }
 
 .wp-smiley { margin: 0; border: 0; background: transparent; }
 .alignleft { float: left; margin: 0 24px .5em 0; }

@@ -7,13 +7,11 @@ if ( ! function_exists( 'onemozilla_setup' ) ):
  * functions.php file.
  *
  * @uses load_theme_textdomain() For translation/localization support.
- * @uses add_editor_style() To style the visual editor.
+ * @uses fc_editor_style() To style the visual editor.
  * @uses add_theme_support() To add support for post thumbnails.
  * @uses register_nav_menus() To add support for navigation menus.
- * @uses add_custom_background() To add support for a custom background.
  * @uses add_custom_image_header() To add support for a custom header.
  * @uses register_default_headers() To register the default custom header images provided with the theme.
- * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
  */
 function onemozilla_setup() {
@@ -502,10 +500,10 @@ function fc_editor_style($url) {
   }
 
   if ($options['color_scheme']) { // if we have a color scheme, use its editor stylesheet
-    $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'colors/'.$options['color_scheme'].'/'.$options['color_scheme'].'-editor-style.css';  
+    $url .= trailingslashit( get_template_directory_uri() ) . 'colors/'.$options['color_scheme'].'/'.$options['color_scheme'].'-editor-style.css';  
   }
   else { // fall back to the default
-    $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'colors/stone/stone-editor-style.css';
+    $url .= trailingslashit( get_template_directory_uri() ) . 'colors/stone/stone-editor-style.css';
   }
   return $url;
 }

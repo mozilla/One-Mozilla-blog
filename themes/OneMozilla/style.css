@@ -263,11 +263,11 @@ px      68    160    252    344    436    528    620    712    804    896    */
 }
 .entry-content .wp-smiley, .entry-summary .wp-smiley { margin: 0; border: 0; padding: 0; background: transparent; box-shadow: none; }
 
-::-moz-selection { background: #6bd7f3; }
-::selection { background: #6bd7f3; }
-img::-moz-selection	{ background: transparent; }
-img::selection { background: transparent; }
-body { -webkit-tap-highlight-color: #6bd7f3; -moz-tap-highlight-color: #6bd7f3; }
+::-moz-selection { background-color: #666; color: #fff; }
+::selection { background-color: #666; color: #fff; }
+img::-moz-selection	{ background-color: transparent; }
+img::selection { background-color: transparent; }
+body { -webkit-tap-highlight-color: #666; -moz-tap-highlight-color: #666; }
 
 .alignleft { float: left; margin: 0 24px .5em 0; }
 a .alignleft { margin: 0 24px .5em 0; }

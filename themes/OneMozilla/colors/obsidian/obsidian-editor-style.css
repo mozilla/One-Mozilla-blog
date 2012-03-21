@@ -1,12 +1,11 @@
 /* @Fonts *********/
 /* Light */
 @font-face {
-  font-family: "OpenSansLight";
-  src: url("../css/fonts/OpenSans-Light-webfont.eot");
-  src: url("../css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("../css/fonts/OpenSans-Light-webfont.woff") format("woff"),
-       url("../css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
-       url("../css/fonts/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
+  font-family: "Open Sans Light";
+  src: url("../../css/fonts/OpenSans-Light-webfont.eot");
+  src: url("../../css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../../css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
+       url("../../css/fonts/OpenSans-Light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -41,7 +40,7 @@ a:link, a:visited { color: #fed325; text-decoration: none; }
 a:hover, a:focus, a:active { color: #ffe400; text-decoration: underline; }
 
 /* @Headings */
-h1, h2, h3, h4, h5, h6 { margin: 0 0 .25em; line-height: 1; font-weight: normal; font-family: "OpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; text-shadow: 0 1px 0 rgba(0,0,0,0.75); }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .25em; line-height: 1; font-weight: normal; font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; text-shadow: 0 1px 0 rgba(0,0,0,0.75); }
 h1 { font-size: 3em; letter-spacing: -2px; }
 h2 { font-size: 2em; letter-spacing: -1px; }
 h3 { font-size: 1.75em; letter-spacing: -0.5px; }

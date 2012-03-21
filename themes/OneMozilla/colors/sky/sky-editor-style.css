@@ -2,10 +2,10 @@
 /* Light */
 @font-face {
   font-family: "Open Sans Light";
-  src: url("css/fonts/OpenSans-Light-webfont.eot");
-  src: url("css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
-       url("css/fonts/OpenSans-Light-webfont.woff") format("woff");
+  src: url("../../css/fonts/OpenSans-Light-webfont.eot");
+  src: url("../../css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../../css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
+       url("../../css/fonts/OpenSans-Light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
