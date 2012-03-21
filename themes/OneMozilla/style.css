@@ -229,7 +229,8 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 /* @Content *********/
 .entry-content ul { list-style-type: square; }
-.entry-content li ul, .entry-content li ol { margin: 0 0 0 20px; }
+.entry-content li { margin-left: 24px; }
+.entry-content li ul, .entry-content li ol { margin: 0 0 0 24px; }
 .entry-content blockquote { padding: 0 20px; font-style: italic; }
 .entry-content blockquote em, .entry-content blockquote i, .entry-content blockquote cite { font-style: normal; }
 .entry-content dt { font-style: italic; }
