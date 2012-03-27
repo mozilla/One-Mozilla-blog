@@ -27,7 +27,7 @@
 <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script>
 
 <?php if ( is_singular() && get_option('require_name_email') ) : ?>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/fc-checkcomment.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/fc-checkcomment.js"></script>
 <script type="text/javascript">jQuery("#comment-form").submit(function() { return fc_checkform(<?php if ($req) : echo "'req'"; endif; ?>); });</script>
 <?php endif; ?>
 
