@@ -1,0 +1,109 @@
+/*
+Theme Name:     Mozilla Press Center
+Description:    Site theme for the Mozilla Press Center. This theme is a child of the One Mozilla WordPress theme. 
+Author:         Craig Cook
+Template:       OneMozilla
+Version:        1.0
+*/
+
+@import url("../OneMozilla/style.css");
+
+#masthead hgroup { padding: 0; }
+
+/* @At a @Glance */
+.expander-item { margin: 0 0 6px; background: rgba(255,255,255,.5); -moz-transition: background .2s linear; }
+.expander-item.odd { background: transparent; }
+.expander-item:hover { background: rgba(255,255,255,.75); -moz-transition: background .2s linear; }
+.expander-item.odd:hover { background: rgba(255,255,255,.25); }
+.expander-header { font-size: 20px; line-height: 1.1; }
+.expander-header a { display: block; padding: 15px 15px 15px 45px; }
+.expander-header a.closed:before { content: "+"; float: left; margin: -.195em 0 0 -30px; font-size: 1.5em; }
+.expander-header a.open:before { content: "–"; float: left; margin: -.2em 0 0 -30px; font-size: 1.5em; }
+.expander-content { padding: 0 15px 15px 45px; }
+.ataglance-items ul { list-style-type: square; }
+
+/* @Tabbed @Navigation *********/
+.nav-tabs { background-color: #fff; text-align: center; margin: 24px 0 48px; padding: 0 20px; font-family: 'Open Sans Light', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.nav-tabs ul { list-style: none; margin: 0; }
+.nav-tabs li { display: inline-block; padding: 12px 0; }
+.nav-tabs .current-menu-item a { color: #444; }
+.nav-tabs a { display: inline-block; padding: 6px 15px; border-left: 1px dotted #ccc; }
+.nav-tabs li:first-child a { border-left: 0; }
+
+/* @Tabbed boxes *********/
+.tabbed-on { margin: 12px 0 24px; padding: 3em 0 0; position: relative; }
+.tabbed-on ul.index { position: absolute; top: 0; left: 0; }
+ul.index { width: 100%; height: 3em; list-style: none; margin: 0; }
+.tabbed-on ul.index { font-family: 'Open Sans Light', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; text-align: center; }
+.tabbed-on ul.index li { display: inline-block; border-left: 1px dotted #ccc; color: #af3232; padding: 4px 12px; cursor: pointer; float: left; margin: 0; }
+.tabbed-on ul.index li:first-child { border-left: 0; padding-left: 0; }
+#content-main ul.index li:hover { text-decoration: underline; }
+#content-main ul.index li.active { outline: 0; color: #444; }
+#content-main .tabbed-on ul.index li {  }
+.tabbed-on .hidden, .folder { display: none; visibility: hidden; -moz-transition: all .5s linear; }
+.folder:after { content: "."; clear: both; display: block; height: 0; visibility: hidden; }
+.folder.visible { display: block; visibility: visible; height: auto; overflow: visible; }
+ul.index a { color: #2f2f2f; text-decoration: none; }
+ul.index a:hover, ul.index a:focus, ul.index a:active { color: #2f2f2f; text-decoration: none; }
+
+/* @Gallery *********/
+.entry-content .gallery { list-style: none; margin: 1em 0; padding: 0; }
+.gallery li { float: left; margin: 0 0 1.5em 24px; width: 22%; font-size: .857em; }
+.gallery li:nth-child(4n+1) { clear: left; margin-left: 0; } /* the first and every fifth item clears the row above it (four per row) */
+.gallery a img, .gallery .wp-post-image { border-width: 5px; margin-left: -5px; }
+.gallery strong, .gallery b { display: block; font: normal 1.12em "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+
+.gallery li.vcard { margin: 0 0 1.5em 3%; width: 30%; }
+.gallery.headshots li:nth-child(4n+1) { clear: none; margin-left: 3%; } /* reset previous for headshot galleries */
+.gallery.headshots li:nth-child(3n+1) { clear: left; margin-left: 0; } /* the first and every fourth item clears the row above it (three per row) */
+
+.gallery figure { margin: 0; }
+.gallery figcaption { margin: .5em 0 .25em; line-height: 1.2; }
+.gallery .vcard figcaption { margin: 0 0 .25em; }
+.gallery figcaption span { display: block; }
+.gallery figcaption .more:after { content: "\00A0\00BB"; font-size: 1.2em; } /* nbsp raquo */
+
+.headshot .fn, .headshot .title { font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+.headshot .fn { font-size: 1.12em; }
+.headshot .title { font-size: .857em; }
+
+
+/* @Speaker @Bios *********/
+.single-bios #content-main, .post-type-archive-bios #content-main { width: 436px; }
+
+.bio .entry-title { border: 0; }
+.bio .bio-position { font-size: 1em; margin: -.75em 0 1em; }
+
+.bio-image { float: right; margin: 0 0 .5em 12px; }
+.bio-image img { padding: 1px; background-color: #fff; border: 11px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1); 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box; 
+  box-sizing: border-box; 
+  -moz-transition: all .1s ease-out;
+  -webkit-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  -ms-transition: all .1s ease-out;
+  transition: all .1s ease-out; 
+}
+.bio-image a:hover img, .bio-image a:focus img, .bio-image a:active img { background-color: #872727; 
+  -moz-transition: all .1s ease-in; 
+  -webkit-transition: all .1s ease-in; 
+  -o-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.bio-extra { margin: 0 0 .25em; }
+
+#nav-bios { width: 160px; float: left; margin-right: 24px; font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+#nav-bios li { list-style: none; margin: 0 0 .5em; padding: 0 0 .5em; font-size: 1.077em; line-height: 1.3; border-bottom: 1px dotted rgba(0,0,0,0.2); }
+#nav-bios span { display: block; font-size: .758em; }
+#nav-bios .current a:link, #nav-bios .current a:visited { color: #444; }
+
+
