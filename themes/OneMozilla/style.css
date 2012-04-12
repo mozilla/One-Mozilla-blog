@@ -171,11 +171,11 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 .entry-title { font-size: 2em; letter-spacing: -1px; margin: 0 0 .5em; min-height: 55px; }
 .single-post .entry-title, .page .entry-title { font-size: 3em; letter-spacing: -2px; }
-.post.no-author .entry-title { float: left; width: 430px; }
-.single-post .post.no-author .entry-title { float: none; width: auto; }
+.show-comments.no-author .entry-title { float: left; width: 430px; }
+.single-post .show-comments.no-author .entry-title { float: none; width: auto; }
 
 /*** Entry @Meta */
-.entry-meta { clear: both; border-bottom: 1px solid rgba(255,255,255,.5); margin: 1em 0 0; padding: 12px 24px 8px; background: rgba(0,0,0,.02); box-shadow: inset 0 0 3px rgba(0,0,0,.1); font: .785em/1.1 "Open Sans Regular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+.entry-meta { clear: both; border-bottom: 1px solid rgba(255,255,255,.5); margin: 24px 0 0; padding: 12px 24px 8px; background: rgba(0,0,0,.02); box-shadow: inset 0 0 3px rgba(0,0,0,.1); font: .785em/1.1 "Open Sans Regular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
 .entry-meta p { margin: 0 0 .5em; }
 .entry-meta b { margin-right: 10px; font-weight: normal; text-transform: uppercase; }
 
@@ -184,7 +184,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 .entry-header:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
 .post .entry-header { padding-left: 92px; }
 .page .entry-title { min-height: 0; margin: 0; }
-.page .entry-header, .single-post .entry-header { padding-bottom: 0; }
+.page .entry-header, .single-post .entry-header, .no-author .entry-header { padding-bottom: 0; }
 .single-post .entry-title { margin-bottom: 0; }
 
 
@@ -208,6 +208,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 .entry-comments { float: right; background: #fff; margin: 0; width: 92px; font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; -o-box-shadow: 0 1px 1px rgba(0,0,0,.1); -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1); box-shadow: 0 1px 1px rgba(0,0,0,.1); }
 .entry-comments a { display: block; background: transparent url("img/icn-comment.png") 24px 17px no-repeat; padding: 15px 5px 15px 47px; border: 1px solid #fff; }
 .entry-comments a:hover, .entry-comments a:focus, .entry-comments a:active { background-position: 24px -83px; }
+.show-comments.no-author .entry-comments { position: absolute; right: 0; top: 0; }
 
 /*** @Edit buttons */
 .edit { font-size: .857em; }
@@ -229,13 +230,12 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 /* @Content *********/
 .entry-content ul { list-style-type: square; }
-.entry-content li { margin-left: 24px; }
-.entry-content li ul, .entry-content li ol { margin: 0 0 0 24px; }
+.entry-content li ul, .entry-content li ol { margin: 0 0 0 20px; }
 .entry-content blockquote { padding: 0 20px; font-style: italic; }
 .entry-content blockquote em, .entry-content blockquote i, .entry-content blockquote cite { font-style: normal; }
 .entry-content dt { font-style: italic; }
 .entry-content dd { padding-left: 20px; }
-.entry-content table { border-collapse: collapse; border-width: 1px 1px 0; border-style: solid; border-color: #ddd; }
+.entry-content table { border-collapse: collapse; border-width: 1px 0 0; border-style: solid; border-color: #ddd; }
 .entry-content tr:nth-child(even) { background-color: rgba(200,200,200,.1); }
 .entry-content th, .entry-content td { border-bottom: 1px solid #ddd; padding: 0 6px; }
 .entry-content thead th { font-size: .857em; text-align: left; font-weight: normal; background-color: rgba(200,200,200,.2); }
@@ -243,11 +243,6 @@ px      68    160    252    344    436    528    620    712    804    896    */
 .entry-content pre { overflow: auto; }
 .entry-content code { font-size: .857em; }
 .entry-content img, .entry-summary img { padding: 1px; background-color: #fff; border: 11px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1); 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box; 
-  box-sizing: border-box; 
   -moz-transition: all .1s ease-out;
   -webkit-transition: all .1s ease-out;
   -o-transition: all .1s ease-out;
@@ -264,11 +259,11 @@ px      68    160    252    344    436    528    620    712    804    896    */
 }
 .entry-content .wp-smiley, .entry-summary .wp-smiley { margin: 0; border: 0; padding: 0; background: transparent; box-shadow: none; }
 
-::-moz-selection { background-color: #666; color: #fff; }
-::selection { background-color: #666; color: #fff; }
-img::-moz-selection	{ background-color: transparent; }
-img::selection { background-color: transparent; }
-body { -webkit-tap-highlight-color: #666; -moz-tap-highlight-color: #666; }
+::-moz-selection { background: #6bd7f3; }
+::selection { background: #6bd7f3; }
+img::-moz-selection	{ background: transparent; }
+img::selection { background: transparent; }
+body { -webkit-tap-highlight-color: #6bd7f3; -moz-tap-highlight-color: #6bd7f3; }
 
 .alignleft { float: left; margin: 0 24px .5em 0; }
 a .alignleft { margin: 0 24px .5em 0; }
@@ -282,7 +277,7 @@ a .alignright { margin: 0 0 .5em 24px; }
 .wp-caption.aligncenter img { margin: 0 auto; }
 .wp-caption .wp-caption-text { margin: .75em 5px 0; font-size: .923em; line-height: 1.2; font-style: italic; text-align: center; }
 
-.entry-content .wp-post-image, .entry-summary .wp-post-image { float: left; margin: 0 24px .5em 0; }
+.entry-content .wp-post-image, .entry-summary .wp-post-image { float: left; margin: 0 24px 1em 0; }
 
 a.go:after { content: "\00A0\00BB"; font-size: 1.2em; } /* nbsp raquo */
 
@@ -537,6 +532,7 @@ px      68    160    252    */
   .post .entry-title { min-height: 0; }
   .archive .page-title, .search-results .page-title { font-size: 1.75em; letter-spacing: -0.5px; }
   .single .entry-title, .page .entry-title { font-size: 2em; letter-spacing: -1px; margin-bottom: .5em; }
+  .post.no-author .entry-title { float: none; width: auto; }
 
   .post .entry-header { padding-left: 0; }
   
@@ -548,7 +544,7 @@ px      68    160    252    */
   .post .entry-header .vcard { float: none; width: auto; margin: .5em 0; padding: 6px 12px; }
   .entry-header .avatar { display: none; }
   
-  .entry-comments { float: none; width: auto; margin: .5em 0; }
+  .entry-comments { float: none; clear: both; width: auto; margin: .5em 0; }
   .entry-comments a { padding: 0; padding: 6px 0 6px 36px; background-position: 12px 8px; }
   .entry-comments a:hover, .entry-comments a:focus, .entry-comments a:active { background-position: 12px -92px; }
   
