@@ -1,4 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<script src="http://videos.mozilla.org/serv/air_mozilla/jwplayer.js"></script>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->

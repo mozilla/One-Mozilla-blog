@@ -42,7 +42,7 @@ add_filter( 'get_the_excerpt', 'airmozilla_custom_excerpt_more', 20 );
 
 /**
  * Make a shortcode to simplify vidly multi-format video embeds
- * [vidly code="foo"] where 'foo' is the six character vidly string
+ * [vidly code="foo"] where 'foo' is the six character vidly string (there is no default so you must provide the vidly code).
  */
 function airVidly($atts) {
   extract(shortcode_atts(array('code' => '#'), $atts));
@@ -57,10 +57,9 @@ function airVidly($atts) {
 }
 add_shortcode('vidly', 'airVidly');
 
-
 /**
  * Make a shortcode to simplify mibbit IRC embeds
- * [mibbit channel="foo"] where 'foo' (without the #) is the IRC channel to join
+ * [mibbit channel="foo"] where 'foo' (without the #) is the IRC channel to join (defaults to airmozilla).
  */
 function airMibbit($atts) {
   extract(shortcode_atts(array('channel' => 'airmozilla'), $atts));
@@ -70,7 +69,7 @@ add_shortcode('mibbit', 'airMibbit');
 
 /**
  * Make a shortcode to simplify Edgecast JWPlayer embeds
- * [edgecast file="foo"] where 'foo' is the name of the edgecast stream
+ * [edgecast file="foo"] where 'foo' is the name of the Edgecast stream (there is no default, so you must provide a stream name).
  */
 function airEdgecast($atts) {
   extract(shortcode_atts(array('file' => ''), $atts));
@@ -98,7 +97,16 @@ function airEdgecast($atts) {
 }
 add_shortcode('edgecast', 'airEdgecast');
 
-
-
+/**
+ * Make a shortcode to simplify Bitgravity embeds
+ * [bitgravity stream="foo"] where 'foo' is the customer ID (defaults to 1935, the general purpose Mozilla stream)
+ */
+function airBitgravity($atts) {
+  extract(shortcode_atts(array('stream' => '1935'), $atts));
+  return '
+  <iframe src="http://mozilla.live-s.cdn.bitgravity.com:'.$stream.'/content:cdn-live/mozilla/live/multibitrate.smil?width=620&height=390&AutoPlay=true" width="620" height="390" scrolling="no" frameborder="0" style="border:0;"></iframe>
+  ';
+}
+add_shortcode('bitgravity', 'airBitgravity');
 
 ?>
