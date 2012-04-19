@@ -2,7 +2,7 @@
 Theme Name: One Mozilla
 Author: Craig Cook
 Description: The standard WordPress theme for Mozilla network blogs.
-Version: 1.0
+Version: 1.0.1
 Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, custom-header, custom-menu, editor-style, featured-images, full-width-template, microformats, sticky-post, theme-options, translation-ready
 
 @@Colors -
@@ -64,7 +64,7 @@ form ul, form ol { list-style: none; }
 a img { border: 0; }
 input, select, textarea { font-family: inherit; font-size: 100%; }
 .dtstart, .dtend, .published, .updated { border: 0; }
-img, video, object { max-width: 100%; height: auto; }
+img, video { max-width: 100%; height: auto; }
 iframe { max-width: 100%; }
 
 /* @General styles */
@@ -138,6 +138,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 .widget_categories { font-size: 1em; }
 .widget_nav_menu li, .widget_categories li { margin: 0; border-bottom: 1px dotted rgba(0,0,0,0.2); }
 .widget_nav_menu a, .widget_categories a { display: block; padding: 8px 0; }
+.widget_nav_menu .current-menu-item a:link, .widget_nav_menu .current-menu-item a:visited { color: #444; }
 
 /*** @Tag @Cloud *********/
 .widget .tagcloud { text-align: center; line-height: 1.1; margin: 0 0 1em; }
@@ -229,12 +230,12 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 
 /* @Content *********/
-.entry-content ul { list-style-type: square; }
-.entry-content li ul, .entry-content li ol { margin: 0 0 0 20px; }
-.entry-content blockquote { padding: 0 20px; font-style: italic; }
+.entry-content ul, .entry-content ol { margin: 0 0 1.5em 24px; }
+.entry-content li ul, .entry-content li ol { margin: 0 0 0 24px; }
+.entry-content blockquote { padding: 0 24px; font-style: italic; }
 .entry-content blockquote em, .entry-content blockquote i, .entry-content blockquote cite { font-style: normal; }
 .entry-content dt { font-style: italic; }
-.entry-content dd { padding-left: 20px; }
+.entry-content dd { padding-left: 24px; }
 .entry-content table { border-collapse: collapse; border-width: 1px 0 0; border-style: solid; border-color: #ddd; }
 .entry-content tr:nth-child(even) { background-color: rgba(200,200,200,.1); }
 .entry-content th, .entry-content td { border-bottom: 1px solid #ddd; padding: 0 6px; }

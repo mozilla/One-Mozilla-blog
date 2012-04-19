@@ -154,23 +154,6 @@ function bios_custom_columns($column){
 add_action("manage_posts_custom_column",  "bios_custom_columns");
 add_filter("manage_edit-bio_columns", "bios_edit_columns");
 
-/*********
- * Create a special role for Translators
- */
-$trancando = array(
-  'read' =>  true, 
-  'edit_posts' => true,
-  'edit_pages' => true,
-  'edit_published_posts' => true,
-  'edit_published_pages' => true,
-  'edit_others_posts' => true,
-  'edit_others_pages' => true,
-  'upload_files' => true
-);
-
-remove_role('translator'); // remove it first to prevent duplicates, then add
-add_role( 'translator', 'Translator', $trancando );
-
 
 /*********
 * Register menu locations

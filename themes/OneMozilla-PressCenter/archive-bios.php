@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <nav id="nav-bios">
-<?php $nav = new WP_Query('post_type=bios&status=published&paged=0&orderby=menu_order&order=ASC');
+<?php $nav = new WP_Query('post_type=bios&status=published&paged=0&posts_per_page=-1&orderby=menu_order&order=ASC');
   if ($nav->have_posts()) : ?>
   <ul>
 <?php while ($nav->have_posts()) : $nav->the_post(); ?>
