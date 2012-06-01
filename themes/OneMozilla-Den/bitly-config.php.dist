@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * For bit.ly link shortening
+ * Custom short domains (like mzl.la) are configured at the bitly account
+ */
+define('BITLY_USERNAME', 'bitlyusername');
+define('BITLY_APIKEY', 'bitlyapikey');
+
+?>

@@ -25,7 +25,6 @@
 		</header>
 
 		<div class="entry-content">
-
 		  <?php if (has_post_thumbnail()) { the_post_thumbnail('thumbnail', array('alt' => "", 'title' => "")); } ?>
 
 			<?php the_content( __( 'Continue reading &hellip;', 'onemozilla' ) ); ?>
@@ -36,6 +35,11 @@
 
   <?php if ( has_tag() || ( 'post' == get_post_type() ) ) : // No need for a footer if there's nothing to show ?>
 		<footer class="entry-meta">
+      <ul class="share">
+        <li><a class="facebook" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink());?>&amp;t=<?php echo urlencode(get_the_title_rss()); ?>" title="Share this on Facebook"><span>Share this on Facebook</span></a></li>
+        <li><a class="twitter" href="https://twitter.com/intent/tweet?url=<?php echo wp_get_shortlink(); ?>&amp;text=<?php echo urlencode(get_the_title_rss().' - '); ?>&amp;via=firefox" title="Share this on Twitter"><span>Share this on Twitter</span></a></li>
+      </ul>
+
 		<?php if (has_tag()) : ?>
 		  <p class="meta"><b><?php _e('Tags','onemozilla'); ?>:</b> <?php $tags_list = the_tags('',', ',''); ?></p>
 		<?php endif; ?>

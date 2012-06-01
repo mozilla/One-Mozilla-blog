@@ -2,10 +2,10 @@
 /* Light */
 @font-face {
   font-family: "Open Sans Light";
-  src: url("../../css/fonts/OpenSans-Light-webfont.eot");
-  src: url("../../css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("../../css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
-       url("../../css/fonts/OpenSans-Light-webfont.woff") format("woff");
+  src: url("css/fonts/OpenSans-Light-webfont.eot");
+  src: url("css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+       url("css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
+       url("css/fonts/OpenSans-Light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +21,7 @@ fieldset { border: 0; }
 form ul, form ol { list-style: none; margin: 0 0 1.5em; }
 input, select, textarea { font-family: inherit; font-size: 100%; }
 .dtstart, .dtend, .published, .updated { border: 0; }
-img, video { max-width: 100%; height: auto; }
+img, video, object { max-width: 100%; height: auto; }
 
 html .mceContentBody {
 	max-width: 620px;
@@ -49,12 +49,12 @@ a:link, a:visited { color: #2983c8; text-decoration: none; }
 a:hover, a:focus, a:active { color: #20679e; text-decoration: underline; }
 
 /* @Content *********/
-ul, ol { margin: 0 0 1.5em 24px; }
-li ul, li ol { margin: 0 0 0 24px; }
-blockquote { padding: 0 24px; font-style: italic; }
+ul { list-style-type: square; }
+li ul, li ol { margin: 0 0 0 20px; }
+blockquote { padding: 0 20px; font-style: italic; }
 blockquote em, blockquote i, blockquote cite { font-style: normal; }
 dt { font-style: italic; }
-dd { padding-left: 24px; }
+dd { padding-left: 20px; }
 table { border-collapse: collapse; border-width: 1px 1px 0; border-style: solid; border-color: #ddd; }
 tr:nth-child(even) { background-color: rgba(200,200,200,.1); }
 th, td { border-bottom: 1px solid #ddd; padding: 0 6px; }
@@ -76,8 +76,8 @@ img, .entry-summary img { padding: 1px; background-color: #fff; border: 11px sol
 }
 a:hover img, a:focus img, a:active img { background-color: #872727; -moz-transition: all .1s ease-in; }
 
-::-moz-selection { background-color: #666; color: #fff; }
-::selection { background-color: #666; color: #fff; }
+::-moz-selection { background: #6bd7f3; }
+::selection { background: #6bd7f3; }
 img::-moz-selection	{ background: transparent; }
 img::selection { background: transparent; }
 body { -webkit-tap-highlight-color: #6bd7f3; -moz-tap-highlight-color: #6bd7f3; }

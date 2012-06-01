@@ -2,8 +2,8 @@
 Theme Name: One Mozilla
 Author: Craig Cook
 Description: The standard WordPress theme for Mozilla network blogs.
-Version: 1.0.1
-Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, custom-header, custom-menu, editor-style, featured-images, full-width-template, microformats, sticky-post, theme-options, translation-ready
+Version: 1.1
+Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, custom-header, custom-menu, editor-style, featured-images, featured-posts, full-width-template, microformats, sticky-post, theme-options, translation-ready
 
 @@Colors -
 Tan           #f5f1e8
@@ -162,6 +162,25 @@ px      68    160    252    344    436    528    620    712    804    896    */
 #nav-primary .current-menu-item { color: #444; }
 #nav-primary a { display: inline-block; padding: 6px 15px; border-left: 1px dotted #ccc; }
 #nav-primary li:first-child a { border-left: 0; }
+
+/* @Featured posts *********/
+.featured-posts { background: #fff; padding: 24px; margin: 0 0 48px; overflow: auto; 
+  -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.featured-posts ul { list-style: none; margin: 0; }
+.featured-posts .feature { width: 174px; float: left; clear: none; margin: 0 24px 0 0; }
+.featured-posts .feature:last-child { margin-right: 0; }
+.featured-posts .wp-post-image { float: none; border: 0; padding: 0; box-shadow: none; }
+.featured-posts .entry-title, .sub .featured-posts .entry-title { font-size: 1.125em; margin: 0; letter-spacing: 0; }
+
+.featured-posts .feature-img { display: block; height: 80px; border: 12px solid #fff; overflow: hidden; margin: 0 0 12px; -ms-box-shadow: 0 1px 3px rgba(0,0,0,0.1); -o-box-shadow: 0 1px 3px rgba(0,0,0,0.1); box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.featured-posts .feature-img img { margin-top: -22%; }
+
+.sub .featured-posts { background: transparent; padding: 0; overflow: visible; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+.sub .featured-posts .feature { margin: 0 0 1.5em; }
+.sub .featured-posts .feature-img { margin-left: -10px; }
 
 /* @Posts *********/
 .main .post, .main .page { position: relative; clear: both; margin-bottom: 72px; }
@@ -505,6 +524,10 @@ px      68    160    252    344    436    528    620    712    */
   .wp-caption { max-width: 95%; }
 
   #foot-logo, #colophon, #nav-meta { width: 160px; margin: 0 0 1em 24px; }
+  
+  .featured-posts .feature { width: 144px; }
+  .sub .featured-posts .feature { width: 160px; }
+  .sub .featured-posts .feature-img { margin-left: 0; }
 
 }
 
@@ -529,6 +552,7 @@ px      68    160    252    */
   #masthead hgroup { padding-right: 0; }
   #site-title { font-size: 2em; letter-spacing: -.5px; margin-left: 0; }
   #site-description { font-size: 1.2em; letter-spacing: normal; }
+  #nav-access a:focus, #nav-access a:active { top: 60em; }
   
   .post .entry-title { min-height: 0; }
   .archive .page-title, .search-results .page-title { font-size: 1.75em; letter-spacing: -0.5px; }
@@ -568,12 +592,20 @@ px      68    160    252    */
   #foot-logo, #colophon, #nav-meta { float: none; clear: both; width: 100%; margin: 0 0 1em; -moz-transition: width .5s linear; -webkit-transition: width .5s linear; -o-transition: width .5s linear; -ms-transition: width .5s linear; transition: width .5s linear; }
   #foot-logo a { clear: both; margin: 0 0 1em; }
   #foot-logo .top:link, #foot-logo .top:visited, #foot-logo .top:hover, #foot-logo .top:focus, #foot-logo .top:active { position: static; display: block; width: auto; text-align: inherit; padding: 0; background: transparent; border: 0; }
+
+  .featured-posts .feature { width: 100%; }
+  .featured-posts .feature-img { width: 48px; height: 48px; float: left; margin: -.5em 24px 12px 0; }
+  .featured-posts .feature-img img { margin: 0; }
+  .featured-posts .entry-title { padding-top: .5em; }
   
-/*
-  #nav-access { position: static; width: 100%; font-size: .857em; }
-  #nav-access ul { background-color: #fff; width: auto; padding: .5em 0; list-style: none; margin: 0 -24px; border-radius: 0 0 24px 24px; }
-  #nav-access a:link, #nav-access a:visited, #nav-access a:hover, #nav-access a:focus, #nav-access a:active { display: block; padding: .25em 34px; position: static; width: auto; text-align: inherit; background: transparent; border: 0; }
-*/
+  .sub .featured-posts { background: #fff; padding: 24px; overflow: auto; 
+    -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  }
+  .sub .featured-posts .feature { margin-bottom: 0; }
+  .sub .featured-posts .feature-img { margin: 0 24px 12px 0; }
+
 
 }
 

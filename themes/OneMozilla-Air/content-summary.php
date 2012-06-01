@@ -1,6 +1,7 @@
 <?php 
-  $options = onemozilla_get_theme_options();
-  $eventdate = get_post_meta($post->ID, 'eventdate', true);
+$date_format = get_option( 'date_format' );
+$time_format = get_option( 'time_format' );
+$eventdate = get_post_meta($post->ID, 'eventdate', true); 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -12,7 +13,7 @@
   <?php if ($eventdate) : ?>
     <p class="event-date"><?php echo esc_attr($eventdate); ?></p>
   <?php else : ?>
-    <p class="event-date"><time class="published" datetime="<?php the_time('Y-m-d\TH:i:sP'); ?>"><?php the_time('j F, Y g:ia T'); ?></time></p>
+    <p class="event-date"><time class="published" datetime="<?php the_time('Y-m-d\TH:i:sP'); ?>"><?php the_time($date_format.' '.$time_format); ?></time></p>
   <?php endif; ?>
     <a href="<?php the_permalink(); ?>">
   <?php if (has_post_thumbnail()) : ?>

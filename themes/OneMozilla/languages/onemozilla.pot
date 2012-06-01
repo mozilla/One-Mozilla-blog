@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: One Mozilla 1.0\n"
+"Project-Id-Version: One Mozilla 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-07 16:19-0800\n"
-"PO-Revision-Date: 2012-03-07 16:19-0800\n"
+"POT-Creation-Date: 2012-05-31 17:50-0800\n"
+"PO-Revision-Date: 2012-05-31 17:56-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _e;gettext;gettext_noop;__\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
@@ -29,69 +29,57 @@ msgstr ""
 msgid "If you followed a link from somewhere, please let us know at <em>webmaster at mozilla dot com</em>. Be sure to tell us where you came from and what you were looking for, and we&#8217;ll do our best to fix it."
 msgstr ""
 
-#: ../archive.php:17
-#: ../search.php:17
+#: ../archive.php:14
 msgid "Archive for "
 msgstr ""
 
-#: ../archive.php:18
-#: ../search.php:18
+#: ../archive.php:15
 msgid "Posts tagged with "
 msgstr ""
 
-#: ../archive.php:19
-#: ../archive.php:20
-#: ../archive.php:21
-#: ../search.php:19
-#: ../search.php:20
-#: ../search.php:21
+#: ../archive.php:16
+#: ../archive.php:17
+#: ../archive.php:18
 msgid "Posts from "
 msgstr ""
 
-#: ../archive.php:22
-#: ../search.php:22
+#: ../archive.php:19
 msgid "Posts by "
 msgstr ""
 
-#: ../archive.php:23
-#: ../search.php:23
-msgid "We found "
+#: ../archive.php:20
+#: ../search.php:13
+#, php-format
+msgid "We found %1s results for &ldquo;%2s&ldquo;"
 msgstr ""
 
-#: ../archive.php:23
-#: ../search.php:23
-msgid "results for "
-msgstr ""
-
-#: ../archive.php:24
-#: ../search.php:24
+#: ../archive.php:21
 msgid "Archives"
 msgstr ""
 
-#: ../archive.php:31
-#: ../archive.php:47
-#: ../index.php:17
-#: ../search.php:31
-#: ../search.php:47
+#: ../archive.php:28
+#: ../archive.php:44
+#: ../index.php:45
+#: ../search.php:18
+#: ../search.php:34
 msgid "Older posts"
 msgstr ""
 
-#: ../archive.php:32
-#: ../archive.php:48
-#: ../index.php:18
-#: ../search.php:32
-#: ../search.php:48
+#: ../archive.php:29
+#: ../archive.php:45
+#: ../index.php:46
+#: ../search.php:19
+#: ../search.php:35
 msgid "Newer posts"
 msgstr ""
 
-#: ../archive.php:57
-#: ../index.php:27
-#: ../search.php:57
+#: ../archive.php:54
+#: ../index.php:55
+#: ../search.php:42
 msgid "Nothing Found"
 msgstr ""
 
-#: ../archive.php:61
-#: ../search.php:61
+#: ../archive.php:58
 msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
 msgstr ""
 
@@ -160,26 +148,25 @@ msgstr ""
 
 #: ../content-page.php:9
 #: ../content-single.php:20
-#: ../content.php:31
+#: ../content.php:32
 #: ../image.php:39
 msgid "Pages:"
 msgstr ""
 
 #: ../content-single.php:17
-#: ../content.php:34
+#: ../content.php:35
 msgid "Edit Post"
 msgstr ""
 
 #: ../content-single.php:26
 #: ../content-summary.php:34
-#: ../content.php:39
+#: ../content.php:40
 msgid "Tags"
 msgstr ""
 
 #: ../content-single.php:28
 #: ../content-summary.php:36
-#: ../content.php:41
-#: ../sidebar.php:41
+#: ../content.php:42
 msgid "Categories"
 msgstr ""
 
@@ -196,7 +183,7 @@ msgstr ""
 msgid "Posted by"
 msgstr ""
 
-#: ../content.php:30
+#: ../content.php:31
 msgid "Continue reading &hellip;"
 msgstr ""
 
@@ -246,44 +233,52 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: ../functions.php:348
+#: ../functions.php:355
+msgid "Feature this post?"
+msgstr ""
+
+#: ../functions.php:360
+msgid "Featured Post"
+msgstr ""
+
+#: ../functions.php:388
 msgid "Continue reading"
 msgstr ""
 
-#: ../functions.php:391
+#: ../functions.php:435
 msgid "Sidebar"
 msgstr ""
 
-#: ../functions.php:514
+#: ../functions.php:534
 msgid "Trackback from "
 msgstr ""
 
-#: ../functions.php:515
-#: ../functions.php:519
+#: ../functions.php:535
+#: ../functions.php:539
 msgid "on"
 msgstr ""
 
-#: ../functions.php:515
-#: ../functions.php:519
-#: ../functions.php:528
-#: ../functions.php:534
+#: ../functions.php:535
+#: ../functions.php:539
+#: ../functions.php:548
+#: ../functions.php:554
 msgid "Permanent link to this comment by "
 msgstr ""
 
-#: ../functions.php:518
+#: ../functions.php:538
 msgid "Pingback from "
 msgstr ""
 
-#: ../functions.php:528
-#: ../functions.php:534
+#: ../functions.php:548
+#: ../functions.php:554
 msgid "wrote on"
 msgstr ""
 
-#: ../functions.php:540
+#: ../functions.php:560
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:548
+#: ../functions.php:568
 msgid "Edit Comment"
 msgstr ""
 
@@ -302,20 +297,16 @@ msgstr ""
 msgid "Not Found"
 msgstr ""
 
-#: ../header.php:61
+#: ../header.php:64
 msgid "Skip to main content"
 msgstr ""
 
-#: ../header.php:62
+#: ../header.php:65
 msgid "Skip to sidebar"
 msgstr ""
 
-#: ../header.php:64
+#: ../header.php:67
 msgid "Skip to blog search"
-msgstr ""
-
-#: ../header.php:74
-msgid "Go to the front page"
 msgstr ""
 
 #: ../image.php:12
@@ -327,17 +318,30 @@ msgstr ""
 msgid "Edit Attachment"
 msgstr ""
 
-#: ../index.php:31
+#: ../index.php:10
+msgid "Featured"
+msgstr ""
+
+#: ../index.php:59
 msgid "Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?"
 msgstr ""
 
+#: ../masthead.php:6
+msgid "Go to the front page"
+msgstr ""
+
+#: ../search.php:45
+#, php-format
+msgid "Sorry, we didn't find anything for &ldquo;%s.&rdquo; Try another search."
+msgstr ""
+
 #: ../sidebar.php:9
-#: ../sidebar.php:55
+#: ../sidebar.php:84
 msgid "About"
 msgstr ""
 
 #: ../sidebar.php:35
-#: ../sidebar.php:81
+#: ../sidebar.php:110
 msgid "More from "
 msgstr ""
 
@@ -359,7 +363,7 @@ msgid "Some themes provide customization options that are grouped together on a 
 msgstr ""
 
 #: ../inc/theme-options.php:106
-msgid "<strong>Color Scheme</strong>: You can choose from a few different color schemes: \"Sandstone\" (reddish-orange background) is the default, suitable for most Mozilla blogs. \"Granite\" (light blue background) suitable for Firefox-related blogs. \"Slate\" is a light, neutral gray. \"Obsidian\" is a light-on-dark scheme"
+msgid "<strong>Color Scheme</strong>: You can choose from a few different color schemes: \"Sand\" (orange-tan background) is the default, suitable for most Mozilla blogs. \"Sky\" (light blue/gray background) suitable for Firefox-related blogs. \"Stone\" is a light, neutral gray. \"Obsidian\" is a light-on-dark scheme"
 msgstr ""
 
 #: ../inc/theme-options.php:107
@@ -387,15 +391,15 @@ msgid "Overview"
 msgstr ""
 
 #: ../inc/theme-options.php:152
-msgid "Sandstone"
+msgid "Stone"
 msgstr ""
 
 #: ../inc/theme-options.php:157
-msgid "Granite"
+msgid "Sand"
 msgstr ""
 
 #: ../inc/theme-options.php:162
-msgid "Slate"
+msgid "Sky"
 msgstr ""
 
 #: ../inc/theme-options.php:167

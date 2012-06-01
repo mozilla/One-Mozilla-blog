@@ -28,7 +28,7 @@ endif; ?>
     
   <?php if (is_page(get_page_by_path('media-library/bios')->ID)) : ?>
         
-    <?php $bios = new WP_Query('post_type=bios&status=published&paged=0&posts_per_page=-1&orderby=menu_order&order=ASC');
+    <?php $bios = new WP_Query('post_type=bios&status=published&paged=0&orderby=menu_order&order=ASC');
       if ($bios->have_posts()) : ?>
       <ul class="gallery headshots">
     <?php while ($bios->have_posts()) : $bios->the_post(); ?>

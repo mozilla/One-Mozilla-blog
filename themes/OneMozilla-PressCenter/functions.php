@@ -71,7 +71,6 @@ function create_type_bios() {
 		'supports' => array('title','thumbnail','revisions','editor','custom-fields','page-attributes')
 		)
 	);
-//  flush_rewrite_rules();
 }
 add_action( 'init', 'create_type_bios' );
 
@@ -85,7 +84,7 @@ function bio_position(){
   $bio_position = $custom["bio_position"][0];
   ?>
   <p class="moz-field">
-    <label>Title/Position</label>
+    <label><?php _e('Title/Position', 'mozpress'); ?></label>
     <input type="text" id="bio_position" name="bio_position" value="<?php echo $bio_position; ?>" />
   </p>
   <?php
@@ -100,15 +99,15 @@ function bio_elsewhere(){
   ?>
   <ul>
     <li class="moz-field">
-      <label>Blog Name</label>
+      <label><?php _e('Blog Name', 'mozpress'); ?></label>
       <input type="text" id="bio_blog_name" name="bio_blog_name" value="<?php echo esc_attr($bio_blog_name); ?>" />
     </li>
     <li class="moz-field">
-      <label>Blog URL <i>(full URL, including 'http://')</i></label>
+      <label><?php _e('Blog URL', 'mozpress'); ?> <i>(<?php _e('full URL, including "http://"', 'mozpress'); ?>)</i></label>
       <input type="url" id="bio_blog_url" name="bio_blog_url" value="<?php echo esc_attr($bio_blog_url); ?>" />
     </li>
     <li class="moz-field">
-      <label>Twitter Name</label>
+      <label><?php _e('Twitter Name', 'mozpress'); ?></label>
       @<input type="text" id="bio_twitter" name="bio_twitter" value="<?php echo esc_attr($bio_twitter); ?>" />
     </li>
   </ul>
@@ -153,6 +152,23 @@ function bios_custom_columns($column){
 }
 add_action("manage_posts_custom_column",  "bios_custom_columns");
 add_filter("manage_edit-bio_columns", "bios_edit_columns");
+
+/*********
+ * Create a special role for Translators
+ */
+$trancando = array(
+  'read' =>  true, 
+  'edit_posts' => true,
+  'edit_pages' => true,
+  'edit_published_posts' => true,
+  'edit_published_pages' => true,
+  'edit_others_posts' => true,
+  'edit_others_pages' => true,
+  'upload_files' => true
+);
+
+remove_role('translator'); // remove it first to prevent duplicates, then add
+add_role( 'translator', 'Translator', $trancando );
 
 
 /*********

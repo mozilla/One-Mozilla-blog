@@ -7,11 +7,13 @@ if ( ! function_exists( 'onemozilla_setup' ) ):
  * functions.php file.
  *
  * @uses load_theme_textdomain() For translation/localization support.
- * @uses fc_editor_style() To style the visual editor.
+ * @uses add_editor_style() To style the visual editor.
  * @uses add_theme_support() To add support for post thumbnails.
  * @uses register_nav_menus() To add support for navigation menus.
+ * @uses add_custom_background() To add support for a custom background.
  * @uses add_custom_image_header() To add support for a custom header.
  * @uses register_default_headers() To register the default custom header images provided with the theme.
+ * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
  */
 function onemozilla_setup() {
@@ -236,12 +238,13 @@ if ( ! function_exists( 'onemozilla_header_style' ) ) :
  * Styles the header image on the blog
  */
 function onemozilla_header_style() {
-  // Gets embedded in the site header
+  if (get_header_image()) :
 ?>
   <style type="text/css">
     #masthead { background-image: url(<?php header_image(); ?>); }
   </style>
 <?php
+  endif;
 }
 endif; // onemozilla_header_style
 
@@ -324,6 +327,7 @@ $header_image = get_header_image();
 }
 endif; // onemozilla_admin_header_style
 
+
 if ( ! function_exists( 'onemozilla_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
@@ -341,6 +345,31 @@ function onemozilla_admin_header_image() { ?>
 endif; // onemozilla_admin_header_image
 
 /**
+ * Enable featured posts
+ */
+function fc_featured_meta_box($post){
+  $featured = get_post_meta($post->ID, '_fc_featuredpost', true);
+  ?>
+  <label class="selectit" for="fc_featuredpost">
+  <input type="checkbox" name="_fc_featuredpost" id="fc_featuredpost" value="1" <?php if ($featured) { ?>checked<?php } ?> />
+  <?php _e('Feature this post?', 'onemozilla'); ?></label>
+<?php
+}
+
+function register_fc_featuredpost(){
+  add_meta_box('meta-featured-post', __('Featured Post'), 'fc_featured_meta_box', 'post', 'side', 'low');
+}
+add_action('admin_init', 'register_fc_featuredpost', 1);
+
+function save_fc_featuredpost() {
+  global $post;
+  update_post_meta($post->ID, "_fc_featuredpost", $_POST["_fc_featuredpost"]);
+}
+add_action('save_post', 'save_fc_featuredpost');
+
+
+
+/**
  * Sets the post excerpt length to 40 words.
  *
  * To override this length in a child theme, remove the filter and add your own
@@ -351,12 +380,14 @@ function onemozilla_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'onemozilla_excerpt_length' );
 
+
 /**
  * Returns a "Continue Reading" link for excerpts
  */
 function onemozilla_continue_reading_link() {
 	return ' <a class="go" href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading', 'onemozilla' ) . '</a>';
 }
+
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and onemozilla_continue_reading_link().
@@ -368,6 +399,7 @@ function onemozilla_auto_excerpt_more( $more ) {
 	return ' &hellip;' . onemozilla_continue_reading_link();
 }
 add_filter( 'excerpt_more', 'onemozilla_auto_excerpt_more' );
+
 
 /**
  * Adds a pretty "Continue Reading" link to custom post excerpts.
@@ -383,6 +415,7 @@ function onemozilla_custom_excerpt_more( $output ) {
 }
 add_filter( 'get_the_excerpt', 'onemozilla_custom_excerpt_more' );
 
+
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  */
@@ -392,8 +425,9 @@ function onemozilla_page_menu_args( $args ) {
 }
 add_filter( 'wp_page_menu_args', 'onemozilla_page_menu_args' );
 
+
 /**
- * Register our sidebars and widgetized areas. Also register the default Epherma widget.
+ * Register the widgetized sidebar.
  */
 function onemozilla_widgets_init() {
 
@@ -408,30 +442,6 @@ function onemozilla_widgets_init() {
 
 }
 add_action( 'widgets_init', 'onemozilla_widgets_init' );
-
-/**
- * Count the number of sidebars to enable dynamic classes
- */
-function onemozilla_sidebar_class() {
-	$count = 0;
-	if ( is_active_sidebar( 'sidebar-1' ) )
-		$count++;
-	if ( is_active_sidebar( 'sidebar-2' ) )
-		$count++;
-	$class = '';
-
-	switch ( $count ) {
-		case '1':
-			$class = 'one';
-			break;
-		case '2':
-			$class = 'two';
-			break;
-	}
-
-	if ( $class )
-		echo 'class="sub ' . $class . '"';
-}
 
 
 /**********
@@ -500,10 +510,10 @@ function fc_editor_style($url) {
   }
 
   if ($options['color_scheme']) { // if we have a color scheme, use its editor stylesheet
-    $url .= trailingslashit( get_template_directory_uri() ) . 'colors/'.$options['color_scheme'].'/'.$options['color_scheme'].'-editor-style.css';  
+    $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'colors/'.$options['color_scheme'].'/'.$options['color_scheme'].'-editor-style.css';  
   }
   else { // fall back to the default
-    $url .= trailingslashit( get_template_directory_uri() ) . 'colors/stone/stone-editor-style.css';
+    $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'colors/stone/stone-editor-style.css';
   }
   return $url;
 }

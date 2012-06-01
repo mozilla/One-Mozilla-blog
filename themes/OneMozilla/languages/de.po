@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Mozilla 1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-31 17:50-0800\n"
+"PO-Revision-Date: 2012-05-31 18:43-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:7
+msgid "Well, this is embarrassing&hellip;"
+msgstr ""
+
+#: ../404.php:10
+msgid "We hate to say it, but we couldn&#8217;t find the page or file you&#8217;re looking for."
+msgstr ""
+
+#: ../404.php:11
+msgid "If you typed in the address, try double-checking the spelling."
+msgstr ""
+
+#: ../404.php:12
+msgid "If you followed a link from somewhere, please let us know at <em>webmaster at mozilla dot com</em>. Be sure to tell us where you came from and what you were looking for, and we&#8217;ll do our best to fix it."
+msgstr ""
+
+#: ../archive.php:14
+msgid "Archive for "
+msgstr ""
+
+#: ../archive.php:15
+msgid "Posts tagged with "
+msgstr ""
+
+#: ../archive.php:16
+#: ../archive.php:17
+#: ../archive.php:18
+msgid "Posts from "
+msgstr ""
+
+#: ../archive.php:19
+msgid "Posts by "
+msgstr ""
+
+#: ../archive.php:20
+#: ../search.php:13
+#, php-format
+msgid "We found %1s results for &ldquo;%2s&ldquo;"
+msgstr ""
+
+#: ../archive.php:21
+msgid "Archives"
+msgstr ""
+
+#: ../archive.php:28
+#: ../archive.php:44
+#: ../index.php:45
+#: ../search.php:18
+#: ../search.php:34
+msgid "Older posts"
+msgstr ""
+
+#: ../archive.php:29
+#: ../archive.php:45
+#: ../index.php:46
+#: ../search.php:19
+#: ../search.php:35
+msgid "Newer posts"
+msgstr ""
+
+#: ../archive.php:54
+#: ../index.php:55
+#: ../search.php:42
+msgid "Nothing Found"
+msgstr ""
+
+#: ../archive.php:58
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: ../comments.php:14
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Dieser Artikel ist passwortgeschützt. Um die Kommentare zu sehen, musst du das Passwort eingeben."
+
+#: ../comments.php:27
+msgid "Post a comment"
+msgstr ""
+
+#: ../comments.php:36
+msgid "More comments:"
+msgstr ""
+
+#: ../comments.php:46
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Du musst <a href=\"%s\">angemeldet</a> sein, um einen Kommentar abzugeben."
+
+#: ../comments.php:51
+msgid "Post Your Comment"
+msgstr ""
+
+#: ../comments.php:51
+#, php-format
+msgid "Reply to %s"
+msgstr ""
+
+#: ../comments.php:55
+#, php-format
+msgid "You are logged in as <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href=\"%3$s\">Log out?</a>"
+msgstr ""
+
+#: ../comments.php:58
+msgid "Name"
+msgstr "Name"
+
+#: ../comments.php:58
+msgid "<span class=\"note\">(required)</span>"
+msgstr "<span class=\"note\">(erforderlich)</span>"
+
+#: ../comments.php:62
+msgid "E-mail"
+msgstr "E-Mail"
+
+#: ../comments.php:62
+msgid "<span class=\"note\">(required, will not be published)</span>"
+msgstr ""
+
+#: ../comments.php:66
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:70
+msgid "Your comment"
+msgstr "Dein Kommentar"
+
+#: ../comments.php:71
+msgid "Submit Comment"
+msgstr ""
+
+#: ../content-page.php:7
+msgid "Edit Page"
+msgstr ""
+
+#: ../content-page.php:9
+#: ../content-single.php:20
+#: ../content.php:32
+#: ../image.php:39
+msgid "Pages:"
+msgstr ""
+
+#: ../content-single.php:17
+#: ../content.php:35
+msgid "Edit Post"
+msgstr ""
+
+#: ../content-single.php:26
+#: ../content-summary.php:34
+#: ../content.php:40
+msgid "Tags"
+msgstr ""
+
+#: ../content-single.php:28
+#: ../content-summary.php:36
+#: ../content.php:42
+msgid "Categories"
+msgstr ""
+
+#: ../content-summary.php:9
+#: ../content-summary.php:11
+#: ../content.php:10
+#: ../content.php:12
+#, php-format
+msgid "See all posts from %s"
+msgstr ""
+
+#: ../content-summary.php:17
+#: ../content.php:18
+msgid "Posted by"
+msgstr ""
+
+#: ../content.php:31
+msgid "Continue reading &hellip;"
+msgstr ""
+
+#: ../footer.php:8
+msgid "Return to top"
+msgstr ""
+
+#: ../footer.php:13
+#, php-format
+msgid "Except where otherwise <a href=\"%1s\" rel=\"external\">noted</a>, content on this site is licensed under the <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License v3.0</a> or any later version."
+msgstr "Soweit nicht andersweitig <a href=\"%1s\" rel=\"external\">vermerkt</a>, ist der Inhalt dieser Seite im Rahmen der <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License V3.0</a> oder jedweder späteren Version lizensiert. "
+
+#: ../footer.php:18
+msgid "Contact Us"
+msgstr "Kontaktieren Sie uns"
+
+#: ../footer.php:19
+msgid "Privacy Policy"
+msgstr "Datenschutzrichtlinien"
+
+#: ../footer.php:20
+msgid "Legal Notices"
+msgstr "Rechtliche Hinweise"
+
+#: ../footer.php:21
+msgid "Report Trademark Abuse"
+msgstr "Markenrechtsverletzung melden"
+
+#: ../functions.php:35
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:67
+msgid "Firefox Logo"
+msgstr ""
+
+#: ../functions.php:193
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../functions.php:229
+msgid "This post is password protected. To view it, please enter the password."
+msgstr ""
+
+#: ../functions.php:230
+msgid "Password"
+msgstr ""
+
+#: ../functions.php:355
+msgid "Feature this post?"
+msgstr ""
+
+#: ../functions.php:360
+msgid "Featured Post"
+msgstr ""
+
+#: ../functions.php:388
+msgid "Continue reading"
+msgstr ""
+
+#: ../functions.php:435
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:534
+msgid "Trackback from "
+msgstr ""
+
+#: ../functions.php:535
+#: ../functions.php:539
+msgid "on"
+msgstr ""
+
+#: ../functions.php:535
+#: ../functions.php:539
+#: ../functions.php:548
+#: ../functions.php:554
+msgid "Permanent link to this comment by "
+msgstr ""
+
+#: ../functions.php:538
+msgid "Pingback from "
+msgstr ""
+
+#: ../functions.php:548
+#: ../functions.php:554
+msgid "wrote on"
+msgstr ""
+
+#: ../functions.php:560
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:568
+msgid "Edit Comment"
+msgstr ""
+
+#: ../header.php:45
+#, php-format
+msgid "Search results for \"%s\""
+msgstr ""
+
+#: ../header.php:46
+#: ../header.php:47
+#: ../header.php:48
+msgid "Posts for "
+msgstr ""
+
+#: ../header.php:49
+msgid "Not Found"
+msgstr ""
+
+#: ../header.php:64
+msgid "Skip to main content"
+msgstr ""
+
+#: ../header.php:65
+msgid "Skip to sidebar"
+msgstr ""
+
+#: ../header.php:67
+msgid "Skip to blog search"
+msgstr ""
+
+#: ../image.php:12
+#, php-format
+msgid "<p class=\"attach-meta\">Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a>"
+msgstr ""
+
+#: ../image.php:20
+msgid "Edit Attachment"
+msgstr ""
+
+#: ../index.php:10
+msgid "Featured"
+msgstr ""
+
+#: ../index.php:59
+msgid "Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?"
+msgstr ""
+
+#: ../masthead.php:6
+msgid "Go to the front page"
+msgstr ""
+
+#: ../search.php:45
+#, php-format
+msgid "Sorry, we didn't find anything for &ldquo;%s.&rdquo; Try another search."
+msgstr ""
+
+#: ../sidebar.php:9
+#: ../sidebar.php:84
+msgid "About"
+msgstr ""
+
+#: ../sidebar.php:35
+#: ../sidebar.php:110
+msgid "More from "
+msgstr ""
+
+#: ../inc/theme-options.php:46
+msgid "Color Scheme"
+msgstr ""
+
+#: ../inc/theme-options.php:54
+msgid "Hide post authors"
+msgstr ""
+
+#: ../inc/theme-options.php:88
+#: ../inc/theme-options.php:89
+msgid "Theme Options"
+msgstr ""
+
+#: ../inc/theme-options.php:104
+msgid "Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, One Mozilla, provides the following Theme Options:"
+msgstr ""
+
+#: ../inc/theme-options.php:106
+msgid "<strong>Color Scheme</strong>: You can choose from a few different color schemes: \"Sand\" (orange-tan background) is the default, suitable for most Mozilla blogs. \"Sky\" (light blue/gray background) suitable for Firefox-related blogs. \"Stone\" is a light, neutral gray. \"Obsidian\" is a light-on-dark scheme"
+msgstr ""
+
+#: ../inc/theme-options.php:107
+msgid "<strong>Hide post authors</strong>: Post authors are shown by default, with an author bio in the sidebar on single post pages. You can choose to hide post authors and the blog will be anonymous to the public, though authors will still be visible in the administration panel."
+msgstr ""
+
+#: ../inc/theme-options.php:109
+msgid "Remember to click \"Save Changes\" to save any changes you have made to the theme options."
+msgstr ""
+
+#: ../inc/theme-options.php:111
+msgid "For more information:"
+msgstr ""
+
+#: ../inc/theme-options.php:112
+msgid "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
+msgstr ""
+
+#: ../inc/theme-options.php:113
+msgid "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
+msgstr ""
+
+#: ../inc/theme-options.php:120
+msgid "Overview"
+msgstr ""
+
+#: ../inc/theme-options.php:152
+msgid "Stone"
+msgstr ""
+
+#: ../inc/theme-options.php:157
+msgid "Sand"
+msgstr ""
+
+#: ../inc/theme-options.php:162
+msgid "Sky"
+msgstr ""
+
+#: ../inc/theme-options.php:167
+msgid "Obsidian"
+msgstr ""
+
+#: ../inc/theme-options.php:213
+msgid "Hide post authors (makes posts anonymous to the public)"
+msgstr ""
+
+#: ../inc/theme-options.php:227
+#, php-format
+msgid "%s Theme Options"
+msgstr ""
+

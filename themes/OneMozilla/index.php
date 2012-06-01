@@ -1,6 +1,34 @@
 <?php get_header(); ?>
 
 	<div id="content-main" class="main" role="main">
+	
+  <?php if ( is_front_page() && ($paged < 1) ) :
+    /* Set up a custom loop for the three most recent featured posts */
+    $featured = new WP_Query( array('posts_per_page' => 3, 'meta_key' => '_fc_featuredpost', 'meta_value' => 1) );
+    if( $featured->have_posts() ) : ?>
+    <section class="featured-posts">
+      <h2><?php _e('Featured', 'onemozilla'); ?></h2>
+      <ul class="hfeed">
+    <?php while($featured->have_posts()): $featured->the_post(); ?>
+        <li id="feature-<?php the_ID(); ?>" class="hentry feature">
+          <h3 class="entry-title entry-summary">
+            <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permanent link to &ldquo;%s&rdquo;', 'onemozilla' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+              <span class="feature-img">
+              <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('thumbnail', array('alt' => "", 'title' => "")); ?>
+              <?php else : ?>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/featured.png" alt="" width="160" height="160" class="wp-post-image">
+              <?php endif; ?>
+              </span>
+              <?php the_title(); ?>
+            </a>
+          </h3>
+        </li>
+    <?php endwhile; ?>
+      </ul>
+    </section>
+    <?php else: endif; ?>
+  <?php endif; ?>
 
 	<?php if ( have_posts() ) : ?>
 

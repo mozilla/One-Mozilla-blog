@@ -10,9 +10,3 @@ a:link, a:visited { color: #af3232; text-decoration: none; }
 a:hover, a:focus, a:active { color: #962c2c; text-decoration: underline; }
 
 .entry-comments a { background-image: url("icn-comment.png"); }
-
-::-moz-selection { background-color: #96d7e8; color: #444; }
-::selection { background-color: #96d7e8; color: #444; }
-img::-moz-selection	{ background-color: transparent; }
-img::selection { background-color: transparent; }
-body { -webkit-tap-highlight-color: #96d7e8; -moz-tap-highlight-color: #96d7e8; }

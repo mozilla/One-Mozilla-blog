@@ -3,8 +3,38 @@
 function airmozilla_remove_parent_filters() {
   remove_filter( 'get_the_excerpt', 'onemozilla_custom_excerpt_more' );
   remove_filter( 'excerpt_more', 'onemozilla_auto_excerpt_more' );
+  remove_action( 'widgets_init', 'onemozilla_widgets_init' );
 }
 add_action('after_setup_theme', 'airmozilla_remove_parent_filters'); 
+
+
+/**
+ * Register our sidebars and widgetized areas.
+ */
+function airmozilla_widgets_init() {
+
+	register_sidebar( array(
+		'name' => __( 'Sidebar Top', 'airmoz' ),
+		'description' => __( 'Appears at the top of the sidebar, before the generated content', 'airmoz' ),
+		'id' => 'sidebar-top',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	
+	register_sidebar( array(
+		'name' => __( 'Sidebar Bottom', 'airmoz' ),
+		'description' => __( 'Appears at the bottom of the sidebar, after the generated content', 'airmoz' ),
+		'id' => 'sidebar-bottom',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+}
+add_action( 'widgets_init', 'airmozilla_widgets_init' );
 
 
 /**
@@ -51,7 +81,7 @@ function airVidly($atts) {
     <source src="http://cf.cdn.vid.ly/'.$code.'/mp4.mp4" type="video/mp4">
     <source src="http://cf.cdn.vid.ly/'.$code.'/webm.webm" type="video/webm"> 
     <source src="http://cf.cdn.vid.ly/'.$code.'/ogv.ogv" type="video/ogg">
-    <a target="_blank" href="http://vid.ly/'.$code.'"><img src="http://cf.cdn.vid.ly /'.$code.'/poster.jpg" width="500" alt="'._e('Watch this video','airmoz').'"></a>
+    <a target="_blank" href="http://vid.ly/'.$code.'"><img src="http://cf.cdn.vid.ly /'.$code.'/poster.jpg" width="500" alt=""></a>
   </video>';
    
 }
@@ -99,12 +129,12 @@ add_shortcode('edgecast', 'airEdgecast');
 
 /**
  * Make a shortcode to simplify Bitgravity embeds
- * [bitgravity stream="foo"] where 'foo' is the customer ID (defaults to 1935, the general purpose Mozilla stream)
+ * [bitgravity feed="foo"] where 'foo' is the feed name (an smil file). It defaults to 'multibitrate'.
  */
 function airBitgravity($atts) {
-  extract(shortcode_atts(array('stream' => '1935'), $atts));
+  extract(shortcode_atts(array('feed' => 'multibitrate'), $atts));
   return '
-  <iframe src="http://mozilla.live-s.cdn.bitgravity.com:'.$stream.'/content:cdn-live/mozilla/live/multibitrate.smil?width=620&height=390&AutoPlay=true" width="620" height="390" scrolling="no" frameborder="0" style="border:0;"></iframe>
+  <iframe src="http://mozilla.live-s.cdn.bitgravity.com:1935/content:cdn-live/mozilla/live/'.$feed.'.smil?width=620&height=390&AutoPlay=true" width="620" height="390" scrolling="no" frameborder="0" style="border:0;"></iframe>
   ';
 }
 add_shortcode('bitgravity', 'airBitgravity');

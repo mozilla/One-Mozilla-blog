@@ -1,4 +1,9 @@
-<?php $eventdate = get_post_meta($post->ID, 'eventdate', true); ?>
+<?php 
+$date_format = get_option( 'date_format' );
+$time_format = get_option( 'time_format' );
+$eventdate = get_post_meta($post->ID, 'eventdate', true); 
+?>
+
 <article id="feature-<?php the_ID(); ?>" <?php post_class('main-feature'); ?>>
   <header>
     <hgroup>
@@ -12,7 +17,7 @@
   <?php if ($eventdate) : ?>
     <p class="event-date"><?php echo esc_attr($eventdate); ?></p>
   <?php else : ?>
-    <p class="event-date"><time class="published" datetime="<?php the_time('Y-m-d\TH:i:sP'); ?>"><?php the_time('j F, Y g:ia T'); ?></time></p>
+    <p class="event-date"><time class="published" datetime="<?php the_time('Y-m-d\TH:i:sP'); ?>"><?php the_time($date_format.' '.$time_format); ?></time></p>
   <?php endif; ?>
   </header>
 	<div class="entry-summary">
