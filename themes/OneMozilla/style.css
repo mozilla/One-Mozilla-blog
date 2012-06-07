@@ -137,6 +137,8 @@ px      68    160    252    344    436    528    620    712    804    896    */
 .widget_nav_menu, .widget_categories { font: 1.285em/1.1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
 .widget_categories { font-size: 1em; }
 .widget_nav_menu li, .widget_categories li { margin: 0; border-bottom: 1px dotted rgba(0,0,0,0.2); }
+.widget_categories .children { margin: 0; font-size: .925em; }
+.widget_categories .children li { border-bottom: 0; border-top: 1px dotted rgba(0,0,0,0.2); padding-left: 12px; }
 .widget_nav_menu a, .widget_categories a { display: block; padding: 8px 0; }
 .widget_nav_menu .current-menu-item a:link, .widget_nav_menu .current-menu-item a:visited { color: #444; }
 
