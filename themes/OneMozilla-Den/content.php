@@ -6,7 +6,6 @@
 		<?php if ( 'post' == get_post_type() ) : // No posted date for Pages ?>
       <p class="entry-posted">
         <time class="published" title="<?php the_time('Y-m-d\TH:i:sP'); ?>" datetime="<?php the_time('Y-m-d\TH:i:sP'); ?>">
-
           <a class="posted-month" href="<?php echo get_month_link(get_the_time('Y'), get_the_time('m')); ?>" title="<?php printf( __( 'See all posts from %s', 'onemozilla' ), get_the_time('F, Y') ); ?>"><?php the_time('M'); ?></a>
           <span class="posted-date"><?php the_time('j'); ?></span>
           <a class="posted-year" href="<?php echo get_year_link(get_the_time('Y'), get_the_time('y')); ?>" title="<?php printf( __( 'See all posts from %s', 'onemozilla' ), get_the_time('Y') ); ?>"><?php the_time('Y'); ?></a>
@@ -36,8 +35,8 @@
   <?php if ( has_tag() || ( 'post' == get_post_type() ) ) : // No need for a footer if there's nothing to show ?>
 		<footer class="entry-meta">
       <ul class="share">
-        <li><a class="facebook" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink());?>&amp;t=<?php echo urlencode(get_the_title_rss()); ?>" title="Share this on Facebook"><span>Share this on Facebook</span></a></li>
-        <li><a class="twitter" href="https://twitter.com/intent/tweet?url=<?php echo wp_get_shortlink(); ?>&amp;text=<?php echo urlencode(get_the_title_rss().' - '); ?>&amp;via=firefox" title="Share this on Twitter"><span>Share this on Twitter</span></a></li>
+        <li><a class="facebook" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink());?>&amp;t=<?php echo urlencode(get_the_title_rss()); ?>" title="<?php _e('Share this on Facebook', 'onemozilla'); ?>"><span><?php _e('Share this on Facebook', 'onemozilla'); ?></span></a></li>
+        <li><a class="twitter" href="https://twitter.com/intent/tweet?url=<?php echo wp_get_shortlink(); ?>&amp;text=<?php echo urlencode(get_the_title_rss().' - '); ?>&amp;via=firefox" title="<?php _e('Share this on Twitter', 'onemozilla'); ?>"><span><?php _e('Share this on Twitter', 'onemozilla'); ?></span></a></li>
       </ul>
 
 		<?php if (has_tag()) : ?>

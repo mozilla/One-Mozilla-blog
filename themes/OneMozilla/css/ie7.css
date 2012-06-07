@@ -11,7 +11,8 @@
 .entry-posted, 
 #nav-primary,
 .nav-paging, 
-#comment-list.av .comment {
+#comment-list.av .comment,
+.featured-posts {
   zoom: 1;
 }
 

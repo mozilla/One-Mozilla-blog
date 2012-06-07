@@ -1,5 +1,5 @@
 /*
-Theme Name:     The Den
+Theme Name:     One Mozilla - The Den
 Description:    Site theme for The Den. This theme is a child of the One Mozilla WordPress theme. 
 Author:         Craig Cook
 Template:       OneMozilla
@@ -7,8 +7,6 @@ Version:        1.0
 */
 
 @import url("../OneMozilla/style.css");
-
-#masthead { background-image: url(img/head-theden.png); }
 
 /* @Share @Buttons *********/
 .share { list-style: none; }
@@ -55,11 +53,11 @@ Version:        1.0
 
 /* @Firefox @Affiliates *********/
 .get-firefox .latest { padding: 0; margin: 0 0 24px; border-bottom: 1px dotted rgba(0,0,0,.2); }
-.get-firefox .widgettitle { font-size: 24px; margin: 0 0 .5em; }
+.get-firefox .widgettitle { font-size: 1.5em; margin: 0 0 .5em; }
 .get-firefox a.go:after { content: "\00A0\00BB"; font-size: 1.2em; font-weight: bold; line-height: .8; } /* nbsp raquo */
 
 /* @Newsletter @Subscribe *********/
-.newsletter-sub a { padding: 12px 12px 80px; background: url(img/mail-small.png) 90% 90% no-repeat; background-color: rgba(255,255,255,.3); border: 1px solid #dbdbdb; border-radius: 6px; box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0; }
+.newsletter-sub a { padding: 12px 12px 85px; background: url(img/mail-small.png) 90% 90% no-repeat; background-color: rgba(255,255,255,.3); border: 1px solid #dbdbdb; border-radius: 6px; box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0; }
 .newsletter-sub a { display: block; font: 1em "Open Sans Light", sans-serif; }
 
 

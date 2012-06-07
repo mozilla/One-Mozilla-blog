@@ -22,8 +22,8 @@
 
 	<footer class="entry-meta">
     <ul class="share">
-      <li><a class="facebook" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink());?>&amp;t=<?php echo urlencode(get_the_title_rss()); ?>" title="Share this on Facebook"><span>Share this on Facebook</span></a></li>
-      <li><a class="twitter" href="https://twitter.com/intent/tweet?url=<?php echo wp_get_shortlink(); ?>&amp;text=<?php echo urlencode(get_the_title_rss().' - '); ?>&amp;via=firefox" title="Share this on Twitter"><span>Share this on Twitter</span></a></li>
+      <li><a class="facebook" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink());?>&amp;t=<?php echo urlencode(get_the_title_rss()); ?>" title="<?php _e('Share this on Facebook', 'onemozilla'); ?>"><span><?php _e('Share this on Facebook', 'onemozilla'); ?></span></a></li>
+      <li><a class="twitter" href="https://twitter.com/intent/tweet?url=<?php echo wp_get_shortlink(); ?>&amp;text=<?php echo urlencode(get_the_title_rss().' - '); ?>&amp;via=firefox" title="<?php _e('Share this on Twitter', 'onemozilla'); ?>"><span><?php _e('Share this on Twitter', 'onemozilla'); ?></span></a></li>
     </ul>
 
   <?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>

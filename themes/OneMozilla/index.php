@@ -13,13 +13,11 @@
         <li id="feature-<?php the_ID(); ?>" class="hentry feature">
           <h3 class="entry-title entry-summary">
             <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permanent link to &ldquo;%s&rdquo;', 'onemozilla' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
-              <span class="feature-img">
-              <?php if (has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('thumbnail', array('alt' => "", 'title' => "")); ?>
-              <?php else : ?>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/featured.png" alt="" width="160" height="160" class="wp-post-image">
-              <?php endif; ?>
-              </span>
+            <?php if (has_post_thumbnail()) : ?>
+              <?php the_post_thumbnail(array(150,150), array('alt' => "", 'title' => "")); ?>
+            <?php else : ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/featured.png" alt="" width="150" height="150" class="wp-post-image">
+            <?php endif; ?>
               <?php the_title(); ?>
             </a>
           </h3>

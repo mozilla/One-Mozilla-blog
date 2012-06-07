@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: One Mozilla 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-31 17:50-0800\n"
-"PO-Revision-Date: 2012-05-31 18:43-0800\n"
+"POT-Creation-Date: 2012-06-07 12:24-0800\n"
+"PO-Revision-Date: 2012-06-07 12:24-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../archive.php:28
 #: ../archive.php:44
-#: ../index.php:45
+#: ../index.php:43
 #: ../search.php:18
 #: ../search.php:34
 msgid "Older posts"
@@ -67,14 +67,14 @@ msgstr ""
 
 #: ../archive.php:29
 #: ../archive.php:45
-#: ../index.php:46
+#: ../index.php:44
 #: ../search.php:19
 #: ../search.php:35
 msgid "Newer posts"
 msgstr ""
 
 #: ../archive.php:54
-#: ../index.php:55
+#: ../index.php:53
 #: ../search.php:42
 msgid "Nothing Found"
 msgstr ""
@@ -148,42 +148,44 @@ msgstr ""
 
 #: ../content-page.php:9
 #: ../content-single.php:20
-#: ../content.php:32
+#: ../content.php:30
 #: ../image.php:39
 msgid "Pages:"
 msgstr ""
 
-#: ../content-single.php:17
-#: ../content.php:35
-msgid "Edit Post"
-msgstr ""
-
-#: ../content-single.php:26
-#: ../content-summary.php:34
-#: ../content.php:40
-msgid "Tags"
-msgstr ""
-
-#: ../content-single.php:28
-#: ../content-summary.php:36
-#: ../content.php:42
-msgid "Categories"
-msgstr ""
-
-#: ../content-summary.php:9
-#: ../content-summary.php:11
-#: ../content.php:10
-#: ../content.php:12
+#: ../content-single.php:8
+#: ../content-single.php:10
+#: ../content-summary.php:8
+#: ../content-summary.php:10
+#: ../content.php:9
+#: ../content.php:11
 #, php-format
 msgid "See all posts from %s"
 msgstr ""
 
-#: ../content-summary.php:17
-#: ../content.php:18
+#: ../content-single.php:17
+#: ../content.php:33
+msgid "Edit Post"
+msgstr ""
+
+#: ../content-single.php:26
+#: ../content-summary.php:33
+#: ../content.php:38
+msgid "Tags"
+msgstr ""
+
+#: ../content-single.php:28
+#: ../content-summary.php:35
+#: ../content.php:40
+msgid "Categories"
+msgstr ""
+
+#: ../content-summary.php:16
+#: ../content.php:17
 msgid "Posted by"
 msgstr ""
 
-#: ../content.php:31
+#: ../content.php:29
 msgid "Continue reading &hellip;"
 msgstr ""
 
@@ -225,61 +227,69 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: ../functions.php:229
+#: ../functions.php:230
 msgid "This post is password protected. To view it, please enter the password."
 msgstr ""
 
-#: ../functions.php:230
+#: ../functions.php:231
 msgid "Password"
 msgstr ""
 
-#: ../functions.php:355
+#: ../functions.php:357
 msgid "Feature this post?"
 msgstr ""
 
-#: ../functions.php:360
+#: ../functions.php:362
 msgid "Featured Post"
 msgstr ""
 
-#: ../functions.php:388
+#: ../functions.php:390
 msgid "Continue reading"
 msgstr ""
 
-#: ../functions.php:435
+#: ../functions.php:437
 msgid "Sidebar"
 msgstr ""
 
-#: ../functions.php:534
+#: ../functions.php:536
 msgid "Trackback from "
 msgstr ""
 
-#: ../functions.php:535
-#: ../functions.php:539
+#: ../functions.php:537
+#: ../functions.php:541
 msgid "on"
 msgstr ""
 
-#: ../functions.php:535
-#: ../functions.php:539
-#: ../functions.php:548
-#: ../functions.php:554
+#: ../functions.php:537
+#: ../functions.php:541
+#: ../functions.php:550
+#: ../functions.php:556
 msgid "Permanent link to this comment by "
 msgstr ""
 
-#: ../functions.php:538
+#: ../functions.php:540
 msgid "Pingback from "
 msgstr ""
 
-#: ../functions.php:548
-#: ../functions.php:554
+#: ../functions.php:550
+#: ../functions.php:556
 msgid "wrote on"
 msgstr ""
 
-#: ../functions.php:560
+#: ../functions.php:562
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:568
+#: ../functions.php:570
 msgid "Edit Comment"
+msgstr ""
+
+#: ../functions.php:584
+msgid "This widget shows the three most recent featured posts."
+msgstr ""
+
+#: ../functions.php:596
+msgid "Title:"
 msgstr ""
 
 #: ../header.php:45
@@ -322,7 +332,7 @@ msgstr ""
 msgid "Featured"
 msgstr ""
 
-#: ../index.php:59
+#: ../index.php:57
 msgid "Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?"
 msgstr ""
 
@@ -335,13 +345,17 @@ msgstr ""
 msgid "Sorry, we didn't find anything for &ldquo;%s.&rdquo; Try another search."
 msgstr ""
 
+#: ../searchform.php:3
+msgid "Search"
+msgstr ""
+
 #: ../sidebar.php:9
-#: ../sidebar.php:84
+#: ../sidebar.php:55
 msgid "About"
 msgstr ""
 
 #: ../sidebar.php:35
-#: ../sidebar.php:110
+#: ../sidebar.php:81
 msgid "More from "
 msgstr ""
 

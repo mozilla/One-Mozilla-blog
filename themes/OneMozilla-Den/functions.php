@@ -2,7 +2,6 @@
 
 function remove_onemozilla_options() {
 	remove_custom_background();
-	remove_custom_image_header();
 }
 add_action( 'after_setup_theme','remove_onemozilla_options', 100 );
 

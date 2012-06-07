@@ -42,7 +42,7 @@ function onemozilla_setup() {
   update_option('thumbnail_size_h', 160);
   update_option('medium_size_w', 252);
   update_option('medium_size_h', 0);
-  update_option('large_size_w', 620);
+  update_option('large_size_w', 600);
   update_option('large_size_h', 0);
 
 	// The height and width of your custom header.
@@ -198,6 +198,7 @@ endif;
 * Allow uploading some additional MIME types
 */
 function fc_add_mimes( $mimes=array() ) {
+  $mimes['webm'] = 'video/webm';  
   $mimes['ogv'] = 'video/ogg';
   $mimes['mp4'] = 'video/mp4';
   $mimes['m4v'] = 'video/mp4';
@@ -271,14 +272,15 @@ $header_image = get_header_image();
   }
 	.appearance_page_custom-header #header-preview {
     position: relative;
-    width: 952px;
+    max-width: 952px;
+    min-width: 712px
     height: 240px;
     overflow: hidden;
     padding: 0 24px;
     margin-left: -80px;
 		border: 0;
 		box-shadow: inset 0 0 5px rgba(0,0,0,.2);
-    background: transparent url("<?php echo get_stylesheet_directory_uri() . '/colors/'.$options['color_scheme'].'/bg-'.$options['color_scheme'].'.png'; ?>") center top repeat-x;
+    background: transparent url("<?php echo get_template_directory_uri() . '/colors/'.$options['color_scheme'].'/bg-'.$options['color_scheme'].'.png'; ?>") center top repeat-x;
 <?php if ($options['color_scheme'] == 'obsidian') : ?>
     color: #c5ccd2;
 <?php else : ?>
@@ -304,10 +306,10 @@ $header_image = get_header_image();
 <?php endif; ?>
 	}
 	#header-preview h1 {
-		font-size: 4.5em; letter-spacing: -3px; margin: 0 0 .15em -5px; color: inherit;
+		font-size: 4.5em; letter-spacing: -3px; margin: 0 0 .15em -5px; color: inherit; min-width: 475px;
 	}
 	#header-preview h2 {
-    font-size: 2em; letter-spacing: -1px; margin: 0 0 .25em; opacity: .8; color: inherit;
+    font-size: 2em; letter-spacing: -1px; margin: 0 0 .25em; opacity: .8; color: inherit; min-width: 475px;
 	}
 	#faux-tabzilla {
     background: url("<?php echo get_template_directory_uri() ?>/img/tab.png") repeat scroll 0 0 transparent;
@@ -510,10 +512,10 @@ function fc_editor_style($url) {
   }
 
   if ($options['color_scheme']) { // if we have a color scheme, use its editor stylesheet
-    $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'colors/'.$options['color_scheme'].'/'.$options['color_scheme'].'-editor-style.css';  
+    $url .= trailingslashit( get_template_directory_uri() ) . 'colors/'.$options['color_scheme'].'/'.$options['color_scheme'].'-editor-style.css';  
   }
   else { // fall back to the default
-    $url .= trailingslashit( get_stylesheet_directory_uri() ) . 'colors/stone/stone-editor-style.css';
+    $url .= trailingslashit( get_template_directory_uri() ) . 'colors/stone/stone-editor-style.css';
   }
   return $url;
 }
@@ -570,6 +572,73 @@ function onemozilla_comment($comment, $args, $depth) {
 <?php
 } /* end onemozilla_comment */
 endif;
+
+class moz_widget_featuredPosts extends WP_Widget {
+  function widget($args,$instance) {
+    $args['title'] = $instance['title'];
+    moz_featuredPosts($args);
+  }
+  
+  function moz_widget_featuredPosts() {
+    $widget_options = array(
+      'description'=>__('This widget shows the three most recent featured posts.')
+    );
+    $this->WP_Widget('moz_widget_featuredPosts','Featured Posts',$widget_options);
+  }
+  
+  function update($new_instance, $old_instance) {
+    return $new_instance;
+  }
+  
+  function form($instance) {
+    $title = esc_attr($instance['title']);
+  ?>
+  <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'wordpress'); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></label></p>
+  <?php
+  }
+}
+
+function moz_featuredPosts($args) {
+  $title = $args['title'];
+  if ( !is_front_page() ) :
+    /* Set up a custom loop for the three most recent featured posts */
+    $featured = new WP_Query( array('posts_per_page' => 3, 'meta_key' => '_fc_featuredpost', 'meta_value' => 1) );
+    if( $featured->have_posts() ) : ?>
+    <aside class="widget featured-posts">
+    <?php if ($title) : ?>
+      <h3 class="widget-title"><?php echo $title; ?></h3>
+    <?php endif; ?>
+      <ul class="hfeed">
+    <?php while($featured->have_posts()): $featured->the_post(); ?>
+        <li id="feature-<?php the_ID(); ?>" class="hentry feature">
+          <h4 class="entry-title entry-summary">
+            <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permanent link to &ldquo;%s&rdquo;', 'onemozilla' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+              <span class="feature-img">
+              <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail(array(115,115), array('alt' => "", 'title' => "")); ?>
+              <?php else : ?>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/featured.png" alt="" width="115" height="115" class="wp-post-image">
+              <?php endif; ?>
+              </span>
+              <?php the_title(); ?>
+            </a>
+          </h4>
+        </li>
+    <?php endwhile; ?>
+      </ul>
+    </aside>
+<?php else: endif;
+  endif;
+}
+
+  
+add_action("widgets_init","myplugin_widget_init");
+
+function myplugin_widget_init() {
+    register_widget("moz_widget_featuredPosts");
+}
+  
+
 
 
 

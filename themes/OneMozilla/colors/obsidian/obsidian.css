@@ -39,6 +39,8 @@ body { -webkit-tap-highlight-color: #d1d9df; }
 
 #site-description { color: #93a0aa; }
 
+.featured-posts { background-color: #2e475a; }
+
 legend { color: #c5ccd2; } /* For IE */
 
 /* @Links *********/
