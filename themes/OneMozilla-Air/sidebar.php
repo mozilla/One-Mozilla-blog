@@ -3,27 +3,34 @@ $date_format = get_option( 'date_format' );
 $time_format = get_option( 'time_format' );
 ?>
 <div id="content-sub" class="sub sidebar widgets" role="complementary">
-
-<p id="time">
-
-<script>
-
-//var now = new Date(); 
-//var now_utc = new Date().toUTCString().substr(0, 25);
-
-var now_utc = new Date().toUTCString('dddd, MMMM, yyyy');
-
-document.write(now_utc);
-
-</script>
-</p>
-
   <aside id="current-time" class="widget">
     <h3 class="widget-title"><?php _e('Current Time', 'airmoz'); ?></h3>
     <p class="datetime"><time datetime="<?php echo date('Y-m-d\TH:i:sP'); ?>">
       <span class="time"><?php echo date($time_format); ?></span>
       <span class="date"><?php echo date($date_format); ?></span>
     </time></p>
+
+    <script>
+    if (jQuery) {
+      jQuery(document).ready(function(){
+        currentTime();
+        setInterval('currentTime()', 60000 );
+      });
+    
+      function currentTime() {
+        var currentTime = new Date();
+        var currentHours = currentTime.getUTCHours();
+        var currentMinutes = currentTime.getUTCMinutes();
+        
+        // Add leading zeroes when needed
+        currentHours = ( currentHours < 10 ? "0" : "" ) + currentHours;
+        currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+        
+        var currentTimeString = currentHours + ":" + currentMinutes + " UTC";
+        jQuery("#current-time .time").text(currentTimeString);
+      }
+    }
+    </script>
   </aside>
 
 <?php if ( is_active_sidebar('sidebar-top') ) : ?>

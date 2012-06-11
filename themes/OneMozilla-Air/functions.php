@@ -7,6 +7,12 @@ function airmozilla_remove_parent_filters() {
 }
 add_action('after_setup_theme', 'airmozilla_remove_parent_filters'); 
 
+function remove_onemozilla_options() {
+	remove_custom_background();
+	remove_custom_image_header();
+}
+add_action( 'after_setup_theme','remove_onemozilla_options', 100 );
+
 
 /**
  * Register our sidebars and widgetized areas.
@@ -129,12 +135,12 @@ add_shortcode('edgecast', 'airEdgecast');
 
 /**
  * Make a shortcode to simplify Bitgravity embeds
- * [bitgravity feed="foo"] where 'foo' is the feed name (an smil file). It defaults to 'multibitrate'.
+ * [bitgravity stream="foo"] where 'foo' is the customer ID (defaults to 1935, the general purpose Mozilla stream)
  */
 function airBitgravity($atts) {
-  extract(shortcode_atts(array('feed' => 'multibitrate'), $atts));
+  extract(shortcode_atts(array('stream' => '1935'), $atts));
   return '
-  <iframe src="http://mozilla.live-s.cdn.bitgravity.com:1935/content:cdn-live/mozilla/live/'.$feed.'.smil?width=620&height=390&AutoPlay=true" width="620" height="390" scrolling="no" frameborder="0" style="border:0;"></iframe>
+  <iframe src="http://mozilla.live-s.cdn.bitgravity.com:'.$stream.'/content:cdn-live/mozilla/live/multibitrate.smil?width=620&height=390&AutoPlay=true" width="620" height="390" scrolling="no" frameborder="0" style="border:0;"></iframe>
   ';
 }
 add_shortcode('bitgravity', 'airBitgravity');
