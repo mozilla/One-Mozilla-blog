@@ -135,12 +135,12 @@ add_shortcode('edgecast', 'airEdgecast');
 
 /**
  * Make a shortcode to simplify Bitgravity embeds
- * [bitgravity stream="foo"] where 'foo' is the customer ID (defaults to 1935, the general purpose Mozilla stream)
+ * [bitgravity feed="foo"] where 'foo' is the particular stream to embed (defaults to 'multibitrate')
  */
 function airBitgravity($atts) {
-  extract(shortcode_atts(array('stream' => '1935'), $atts));
+  extract(shortcode_atts(array('feed' => 'multibitrate'), $atts));
   return '
-  <iframe src="http://mozilla.live-s.cdn.bitgravity.com:'.$stream.'/content:cdn-live/mozilla/live/multibitrate.smil?width=620&height=390&AutoPlay=true" width="620" height="390" scrolling="no" frameborder="0" style="border:0;"></iframe>
+  <iframe src="http://mozilla.live-s.cdn.bitgravity.com:1935/content:cdn-live/mozilla/live/'.$feed.'.smil?width=620&height=390&AutoPlay=true" width="620" height="390" scrolling="no" frameborder="0" style="border:0;"></iframe>
   ';
 }
 add_shortcode('bitgravity', 'airBitgravity');
