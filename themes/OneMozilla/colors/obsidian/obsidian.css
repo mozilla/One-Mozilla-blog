@@ -79,10 +79,11 @@ label .note { color: #afb6bb; }
 .entry-header .vcard { 
   border-color: #4c667a; 
   background: #4c667a;
+  background: -webkit-linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
   background: -moz-linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
-  background: -webkit-linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
-  background: -o-linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
-  background: linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
+  background: -ms-linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
+  background: -o-linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
+  background: linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
 }
 .entry-header .vcard img { border-color: #57758c; }
 
