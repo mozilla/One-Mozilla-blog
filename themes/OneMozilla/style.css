@@ -209,7 +209,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 
 /*** Post Author */
-.entry-header .vcard { position: relative; float: left; margin: 0 0 0 -92px; width: 430px; border: 1px solid #fff; padding: 15px 22px 15px 67px; font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;  
+.entry-header .vcard { position: relative; float: left; margin: 0 0 0 -92px; width: 320px; border: 1px solid #fff; padding: 15px 22px 15px 67px; font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
   -o-box-shadow: 0 1px 1px rgba(0,0,0,.1); 
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1); 
   box-shadow: 0 1px 1px rgba(0,0,0,.1); 
@@ -225,7 +225,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 .entry-header .vcard a:hover img, .entry-header .vcard a:focus img, .entry-header .vcard a:active img { border-color: inherit; }
 
 /*** Comment Count */
-.entry-comments { float: right; background: #fff; margin: 0; width: 92px; font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; -o-box-shadow: 0 1px 1px rgba(0,0,0,.1); -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1); box-shadow: 0 1px 1px rgba(0,0,0,.1); }
+.entry-comments { float: right; background: #fff; margin: 0; width: 180px; font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; -o-box-shadow: 0 1px 1px rgba(0,0,0,.1); -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1); box-shadow: 0 1px 1px rgba(0,0,0,.1); }
 .entry-comments a { display: block; background: transparent url("img/icn-comment.png") 24px 17px no-repeat; padding: 15px 5px 15px 47px; border: 1px solid #fff; }
 .entry-comments a:hover, .entry-comments a:focus, .entry-comments a:active { background-position: 24px -83px; }
 .show-comments.no-author .entry-comments { position: absolute; right: 0; top: 0; }
@@ -518,7 +518,7 @@ px      68    160    252    344    436    528    620    712    */
   #site-title { font-size: 3em; letter-spacing: -2px; margin-left: 0; }
   #site-description { font-size: 1.5em; letter-spacing: -.5px; }
   
-  .entry-header .vcard { width: 338px; }
+  .entry-header .vcard { width: 240px; }
   .no-comments .entry-header .vcard { width: 430px; }
 
   .wp-caption { max-width: 95%; }
