@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: One Mozilla 1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-06-07 12:24-0800\n"
-"PO-Revision-Date: 2012-06-07 12:24-0800\n"
+"PO-Revision-Date: 2012-08-01 20:48-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -172,13 +172,13 @@ msgstr ""
 #: ../content-summary.php:33
 #: ../content.php:38
 msgid "Tags"
-msgstr ""
+msgstr "Schlagwörtern"
 
 #: ../content-single.php:28
 #: ../content-summary.php:35
 #: ../content.php:40
 msgid "Categories"
-msgstr ""
+msgstr "Kategorien"
 
 #: ../content-summary.php:16
 #: ../content.php:17
