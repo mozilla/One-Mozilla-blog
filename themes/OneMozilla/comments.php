@@ -23,7 +23,7 @@
 ?>
 
   <header class="comments-head">
-    <h2><?php comments_number('No responses', 'One response', '% responses' );?></h2>
+    <h2><?php if($comment_count > 0) { printf(_n( 'One response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet'); } ?></h2>
     <?php if (comments_open()) : ?><p class="cmt-post"><a href="#respond"><?php _e('Post a comment','onemozilla'); ?></a></p><?php endif; ?>
   </header>
 
@@ -55,11 +55,11 @@
           <li class="self"><?php printf( __( 'You are logged in as <a href="%1$s">%2$s</a>. <a class="logout" href="%3$s">Log out?</a>', 'onemozilla' ), admin_url( 'profile.php' ), esc_html($user_identity), wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ); ?></li>
         <?php else : ?>
           <li id="cmt-name">
-            <label for="author"><?php _e('Name', 'onemozilla'); ?> <?php if ($req) : _e('<span class="note">(required)</span>', 'onemozilla'); endif; ?></label> 
+            <label for="author"><?php _e('Name', 'onemozilla'); ?> <?php if ($req) : ?><span class="note"><?php _e('(required)', 'onemozilla'); ?></span><?php endif; ?></label> 
             <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="25" <?php if ($req) echo "required aria-required='true'"; ?>>
           </li>
           <li id="cmt-email">
-            <label for="email"><?php _e('E-mail', 'onemozilla'); ?> <?php if ($req) : _e('<span class="note">(required, will not be published)</span>', 'onemozilla'); endif; ?></label> 
+            <label for="email"><?php _e('E-mail', 'onemozilla'); ?> <?php if ($req) : ?><span class="note"><?php _e('(required, will not be published)', 'onemozilla'); ?></span><?php endif; ?></label> 
             <input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="25" <?php if ($req) echo "required aria-required='true'"; ?>>
           </li>
           <li id="cmt-web">
@@ -76,6 +76,19 @@
     </form>
   <?php endif; // end if reg required and not logged in ?>
   </div><?php // end #respond ?>
+
+  <?php if (get_option('require_name_email')) :
+    wp_enqueue_script('fc-checkcomment', get_template_directory_uri() . '/js/fc-checkcomment.js');
+    wp_localize_script('fc-checkcomment', 'objectL10n', array(
+      'nonameemail' => __('You must provide a name and e-mail (your e-mail address won’t be published).'),
+      'noname' => __('You must provide a name.'),
+      'noemail' => __('You must provide an e-mail address (it won’t be published).'),
+      'bademail' => __('The e-mail address you entered doesn’t look like a complete e-mail address. It should look like “yourname@example.com”.'),
+      'nocomment' => __('You must enter a comment.')
+    ) );
+  ?>
+  <script type="text/javascript">jQuery("#comment-form").submit(function() { return fc_checkform(<?php if ($req) : echo "'req'"; endif; ?>); });</script>
+  <?php endif; ?>
 
 <?php endif; // end if comments open ?>
 

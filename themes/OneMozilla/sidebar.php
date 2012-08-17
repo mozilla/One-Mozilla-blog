@@ -32,7 +32,7 @@
           $name = esc_html(the_author()); // Fall back to the display name
         endif;
       ?>    
-      <p><a class="url go" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php _e('More from ' . $name, 'onemozilla'); ?></a></p>
+      <p><a class="url go" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php printf(__('More from %s', 'onemozilla'), $name); ?></a></p>
       <?php endif; ?>
     </aside>
   <?php endif; ?>
@@ -78,7 +78,7 @@
           $name = esc_html(the_author()); // Fall back to the display name
         endif;
       ?>    
-      <p><a class="url go" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php _e('More from ' . $name, 'onemozilla'); ?></a></p>
+      <p><a class="url go" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php printf(__('More from %s', 'onemozilla'), $name); ?></a></p>
       <?php endif; ?>
     </aside>
   <?php endif; ?>
