@@ -64,7 +64,8 @@ function onemozilla_setup() {
 		'firefox' => array(
 			'url' => '%s/img/headers/firefox.png',
 			'thumbnail_url' => '%s/img/headers/firefox-thumbnail.png',
-			'description' => __( 'Firefox Logo', 'onemozilla' ) /* translators: header image description */
+			/* L10N: header image description */
+			'description' => __( 'Firefox Logo', 'onemozilla' ) 
 		)
    ) 
 	);
@@ -529,16 +530,28 @@ if ( ! function_exists( 'onemozilla_comment' ) ) :
 function onemozilla_comment($comment, $args, $depth) {
   $GLOBALS['comment'] = $comment;
   $comment_type = get_comment_type();
+  $date_format = get_option("date_format");
+	$time_format = get_option("time_format");
 ?>
 
  <li id="comment-<?php comment_ID(); ?>" <?php comment_class('hentry'); ?>>
   <?php if ( $comment_type == 'trackback' ) : ?>
     <h3 class="entry-title"><?php _e( 'Trackback from ', 'onemozilla' ); ?> <cite><?php esc_html(comment_author_link()); ?></cite>
-      <span class="comment-meta"><?php _e('on', 'onemozilla'); ?> <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title=" <?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>"><time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>"><?php comment_date('F jS, Y'); ?> at <?php comment_time(); ?></time></a>:</span>
+      <?php /* L10N: Trackback headings read "Trackback from <Site> on <Date> at <Time>:" */ ?>
+      <span class="comment-meta"><?php _e('on', 'onemozilla'); ?> 
+      <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title=" <?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>">
+      <time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>">
+      <?php /* L10N: Trackback headings read "Trackback from <Site> on <Date> at <Time>:" */ ?>
+      <?php printf( __('%1$s at %2$s','onemozilla'), get_comment_date($date_format), get_comment_time($time_format) ); ?></time></a>:</span></time></a>:</span>
     </h3>
   <?php elseif ( $comment_type == 'pingback' ) : ?>
     <h3 class="entry-title"><?php _e( 'Pingback from ', 'onemozilla' ); ?> <cite><?php esc_html(comment_author_link()); ?></cite>
-      <span class="comment-meta"><?php _e('on', 'onemozilla'); ?> <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>"><time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>"><?php comment_date('F jS, Y'); ?> at <?php comment_time(); ?></time></a>:</span>
+      <?php /* L10N: Pingback headings read "Pingback from <Site> on <Date> at <Time>:" */ ?>
+      <span class="comment-meta"><?php _e('on', 'onemozilla'); ?> 
+      <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>">
+      <time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>">
+      <?php /* L10N: Pingback headings read "Pingback from <Site> on <Date> at <Time>:" */ ?>
+      <?php printf( __('%1$s at %2$s','onemozilla'), get_comment_date($date_format), get_comment_time($time_format) ); ?></time></a>:</span></time></a>:</span>
     </h3>
   <?php else : ?>
     <?php if ( ( $comment->comment_author_url != "http://" ) && ( $comment->comment_author_url != "" ) ) : // if author has a link ?>
@@ -547,13 +560,23 @@ function onemozilla_comment($comment, $args, $depth) {
          <cite class="author fn"><?php esc_html(comment_author()); ?></cite>
          <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 48 ).'</span>'); endif; ?>
        </a>
-       <span class="comment-meta"><?php _e('wrote on', 'onemozilla'); ?> <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>"><time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>"><?php comment_date('F jS, Y'); ?> at <?php comment_time(); ?></time></a>:</span>
+       <span class="comment-meta">
+       <?php /* L10N: Comment headings read "<Name> wrote on <Date> at <Time>:" */ ?>
+       <?php _e('wrote on', 'onemozilla'); ?> 
+        <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>">
+        <time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>">
+        <?php /* L10N: Comment headings read "<Name> wrote on <Date> at <Time>:" */ ?>
+        <?php printf( __('%1$s at %2$s','onemozilla'), get_comment_date($date_format), get_comment_time($time_format) ); ?></time></a>:</span></time></a>:</span>
      </h3>
     <?php else : // author has no link ?>
       <h3 class="entry-title vcard">
         <cite class="author fn"><?php esc_html(comment_author()); ?></cite>
         <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 48 ).'</span>'); endif; ?>
-        <span class="comment-meta"><?php _e('wrote on', 'onemozilla'); ?> <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>"><time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>"><?php comment_date('F jS, Y'); ?> at <?php comment_time(); ?></time></a>:</span>
+        <span class="comment-meta"><?php _e('wrote on', 'onemozilla'); ?> 
+        <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>">
+        <time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>">
+        <?php /* L10N: Comment headings read "<Name> wrote on <Date> at <Time>:" */ ?>
+        <?php printf( __('%1$s at %2$s','onemozilla'), get_comment_date($date_format), get_comment_time($time_format) ); ?></time></a>:</span>        
       </h3>
     <?php endif; ?>
   <?php endif; ?>
@@ -612,7 +635,7 @@ function moz_featuredPosts($args) {
     <?php while($featured->have_posts()): $featured->the_post(); ?>
         <li id="feature-<?php the_ID(); ?>" class="hentry feature">
           <h4 class="entry-title entry-summary">
-            <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permanent link to &ldquo;%s&rdquo;', 'onemozilla' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+            <a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permanent link to “%s”', 'onemozilla' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
               <span class="feature-img">
               <?php if (has_post_thumbnail()) : ?>
                 <?php the_post_thumbnail(array(115,115), array('alt' => "", 'title' => "")); ?>

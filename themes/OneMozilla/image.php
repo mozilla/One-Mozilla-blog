@@ -7,9 +7,10 @@
 						<header class="entry-header">
 							<h1 class="entry-title"><?php the_title(); ?></h1>
 							<div class="entry-meta">
+							 <p class="attach-meta">
 								<?php
 									$metadata = wp_get_attachment_metadata();
-									printf( __( '<p class="attach-meta">Published <time class="published" title="%1$s" datetime="%1$s">%2$s</time> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a>', 'onemozilla' ),
+									printf( __( 'Published <time class="published" title="%1$s" datetime="%1$s">%2$s</time> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a>', 'onemozilla' ),
 										esc_attr( get_the_time('Y-m-d\TH:i:sP') ),
 										get_the_date(get_option('date_format')),
 										esc_url( wp_get_attachment_url() ),
@@ -17,6 +18,7 @@
 										$metadata['height']
 								  );
 								?>
+							  </p>
 								<?php edit_post_link( __( 'Edit Attachment', 'onemozilla' ), '<p class="edit">', '</p>' ); ?>
 							</div>
 						</header>
@@ -40,7 +42,7 @@
 
 						</div><!-- .entry-content -->
 
-					</article><!-- #post-<?php the_ID(); ?> -->
+					</article><!-- #post -->
 
 				<?php endwhile; // end of the loop. ?>
 

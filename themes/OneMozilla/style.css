@@ -436,9 +436,8 @@ a:active {
 }
 
 .sub .featured-posts {
-  margin-bottom: 1.5em;
   padding: 5px 20px;
-  margin: 0 auto;
+  margin: 0 auto 1.5em;
 }
 .sub .featured-posts .feature {
   float: none;
@@ -1176,8 +1175,8 @@ input:-moz-placeholder {
   border-color: #999;
 }
 #comment-form #errors {
-  background: #fff2db;
-  border: 1px solid #f0dfc0;
+  background: #ffeef0;
+  border: 1px solid #fac4c7;
   margin-bottom: 1em;
   padding: .5em 15px .25em;
 }
@@ -1185,7 +1184,7 @@ input:-moz-placeholder {
   margin-bottom: .5em;
 }
 #comment-form .err {
-  background: #fff2db;
+  background: #ffeef0;
 }
 #comment-form input, 
 #comment-form textarea {

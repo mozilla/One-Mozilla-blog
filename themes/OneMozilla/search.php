@@ -10,7 +10,7 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 
   <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-  <h1 class="page-title"><?php printf( __('We found %1s results for &ldquo;%2s&ldquo;','onemozilla'), $total_results, esc_html(get_search_query()) ); ?></h1>
+  <h1 class="page-title"><?php printf( _n('We found one result for “%2$s”', 'We found %1$s results for “%2$s”', $total_results, 'onemozilla'), $total_results, esc_html(get_search_query()) ); ?></h1>
   
     <?php if (fc_show_posts_nav()) : ?>
     <nav class="nav-paging top">
@@ -42,7 +42,7 @@ get_header(); ?>
 		<h1 class="page-title"><?php _e( 'Nothing Found', 'onemozilla' ); ?></h1>
 
 		<div class="entry-content">
-			<p><?php printf( __( 'Sorry, we didn\'t find anything for &ldquo;%s.&rdquo; Try another search.', 'onemozilla' ), esc_html(get_search_query()) ); ?></p>
+			<p><?php printf( __( 'Sorry, we didn\'t find anything for “%s.” Try another search.', 'onemozilla' ), esc_html(get_search_query()) ); ?></p>
 			<?php get_search_form(); ?>
 		</div><!-- .entry-content -->
 

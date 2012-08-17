@@ -4,14 +4,25 @@ header, hgroup, nav, section, article, aside, footer { display: block; }
 /* @Fonts *********/
 /* Light */
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: "omOpenSansLight";
   src: url("fonts/OpenSans-Light-webfont.eot");
   src: url("fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("fonts/OpenSans-Light-webfont.ttf") format("truetype"),
-       url("fonts/OpenSans-Light-webfont.woff") format("woff");
+       url("fonts/OpenSans-Light-webfont.woff") format("woff"),
+       url("fonts/OpenSans-Light-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "omOpenSansLight";
+  src: url("fonts/OpenSans-Regular-webfont.eot");
+  src: url("fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("fonts/OpenSans-Regular-webfont.woff") format("woff"),
+       url("fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 /* Hidden elements */
 #header, 
@@ -32,7 +43,7 @@ header, hgroup, nav, section, article, aside, footer { display: block; }
 
 body { font: 14pt/1.5 Georgia, "Times New Roman", Times, serif; color: #000; }
 
-h1, h2, h3, h4, h5, h6 { margin: 0 0 .25em; color: #484848; line-height: 1; font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .25em; color: #484848; line-height: 1; font-family: "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; font-weight: normal; }
 h1 { font-size: 3em; letter-spacing: -2px; }
 h2 { font-size: 2em; letter-spacing: -1px; }
 h3 { font-size: 1.75em; letter-spacing: -0.5px; }
@@ -50,13 +61,13 @@ h6 { font-size: 1em; }
 .post .entry-title { font-size: 140%; padding-right: 120px; }
 .entry-header a { text-decoration: none; color: #000; }
 
-.entry-header { font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+.entry-header { font-family: "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
 .entry-header:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
 .entry-header .entry-posted, .entry-header .vcard, .entry-header .entry-comments { float: left; margin: 0 24px 1em 0; }
 .entry-header address, .entry-header cite { font-style: normal; }
 .entry-header .vcard img { margin: 0 0 -.25em 6px; }
 
-.entry-meta { font: .857em "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+.entry-meta { font: .857em "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
 .entry-meta p { margin: 0 0 .5em; }
 .entry-meta b { margin-right: 10px; font-weight: normal; text-transform: uppercase; }
 

@@ -14,12 +14,12 @@
 		<?php endif; ?>
 
 		<?php if ( $options['hide_author'] != 1 ) : ?>
-		  <address class="vcard"><?php _e('Posted by','onemozilla'); ?> <cite class="author fn"><a class="url" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>" title="<?php printf( esc_attr__( 'See all %1s posts by %2s', 'onemozilla'), get_the_author_posts(), get_the_author() ); ?>"><?php esc_html(the_author()); ?> <?php echo get_avatar(get_the_author_meta('user_email'), 24) ?></a></cite></address>
+		  <address class="vcard"><cite class="author fn"><a class="url" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>" title="<?php printf( esc_attr__( 'See all %1$s posts by %2$s', 'onemozilla'), get_the_author_posts(), get_the_author() ); ?>"><?php esc_html(the_author()); ?> <?php echo get_avatar(get_the_author_meta('user_email'), 24) ?></a></cite></address>
     <?php endif; ?>
 
     <?php $comment_count = get_comments_number($post->ID);
     if ( comments_open() || pings_open() || ($comment_count > 0) ) : ?>
-      <p class="entry-comments"><a href="<?php comments_link() ?>" title="<?php comments_number('No responses yet','1 response','% responses'); ?>"><?php if ($comment_count > 999) : comments_number('0','1','1k+'); else : comments_number('0','1','%'); endif; ?></a></p>
+      <p class="entry-comments"><a href="<?php comments_link() ?>" title="<?php if($comment_count > 0) { printf(_n( '1 response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet'); } ?>"><?php if ($comment_count > 999) : comments_number('0','1','1000+'); else : comments_number('0','1','%'); endif; ?></a></p>
     <?php endif; ?>
 		</header>
 
@@ -41,4 +41,4 @@
 		</footer>
   <?php endif; ?>
 
-	</article><!-- #post-<?php the_ID(); ?> -->
+	</article><!-- #post -->

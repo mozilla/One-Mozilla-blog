@@ -42,10 +42,10 @@
     if ( is_single() ) { single_post_title(); echo ' | '; bloginfo('name'); } 
     elseif ( is_home() || is_front_page() ) { bloginfo('name'); if (get_bloginfo('description','display')) { echo ' | '. get_bloginfo('description','display'); } fc_page_number(); } 
     elseif ( is_page() ) { single_post_title(''); echo ' | '; bloginfo('name'); } 
-    elseif ( is_search() ) { printf( __('Search results for "%s"', 'onemozilla'), esc_html( $s ) ); fc_page_number(); echo ' | '; bloginfo('name'); }
-    elseif ( is_day() ) { $post = $posts[0]; _e('Posts for ', 'onemozilla'); echo the_time('F jS, Y'); echo ' | '; bloginfo('name'); fc_page_number(); }
-    elseif ( is_month() ) { $post = $posts[0]; _e('Posts for ', 'onemozilla'); echo the_time('F, Y'); echo ' | '; bloginfo('name'); fc_page_number(); }
-    elseif ( is_year() ) { $post = $posts[0]; _e('Posts for ', 'onemozilla'); echo the_time('Y'); echo ' | '; bloginfo('name'); fc_page_number(); }
+    elseif ( is_search() ) { printf( __('Search results for “%s”', 'onemozilla'), esc_html( $s ) ); fc_page_number(); echo ' | '; bloginfo('name'); }
+    elseif ( is_day() ) { $post = $posts[0]; printf(__('Posts from %s', 'onemozilla'), get_the_date()); echo ' | '; bloginfo('name'); fc_page_number(); }
+    elseif ( is_month() ) { $post = $posts[0]; printf(__('Posts from %s', 'onemozilla'), get_the_date('F, Y')); echo ' | '; bloginfo('name'); fc_page_number(); }
+    elseif ( is_year() ) { $post = $posts[0]; printf(__('Posts from %s', 'onemozilla'), get_the_date('Y')); echo ' | '; bloginfo('name'); fc_page_number(); }
     elseif ( is_404() ) { _e('Not Found', 'onemozilla'); echo ' | '; bloginfo('name'); } 
     else { wp_title(''); echo ' | '; bloginfo('name'); fc_page_number(); } 
   ?></title>

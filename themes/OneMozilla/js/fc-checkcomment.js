@@ -16,7 +16,7 @@ if (req == 'req') {
     author.focus();
     jQuery("#author, #email").addClass("err");
     jQuery("#comment-form ol").before("<div id='errors'></div>");
-    jQuery("#errors").html("<p>You must provide a name and e-mail (your e-mail address won't be published).</p>");
+    jQuery("#errors").html("<p>" + objectL10n.nonameemail + "</p>");
     return false;
   }
   if ((author.value == "") && (email.value != "")) {
@@ -24,7 +24,7 @@ if (req == 'req') {
     jQuery("#author").addClass("err");
     jQuery("#email").removeClass("err");
     jQuery("#comment-form ol").before("<div id='errors'></div>");
-    jQuery("#errors").html("<p>You must provide a name.</p>");
+    jQuery("#errors").html("<p>" + objectL10n.noname + "</p>");
     return false;
   }
   if ((author.value != "") && (email.value == "")) {
@@ -32,7 +32,7 @@ if (req == 'req') {
     jQuery("#email").addClass("err");
     jQuery("#author").removeClass("err");
     jQuery("#comment-form ol").before("<div id='errors'></div>");
-    jQuery("#errors").html("<p>You must provide an e-mail address (it won't be published).</p>");
+    jQuery("#errors").html("<p>" + objectL10n.noemail + "</p>");
     return false;
   }
 }
@@ -45,7 +45,7 @@ if ((email.value != "") && (filter.test(email.value))) {
 else {
   jQuery("#email").addClass("err").focus();
   jQuery("#comment-form ol").before("<div id='errors'></div>");
-  jQuery("#errors").html("<p>The e-mail address you entered doesn't look like a complete e-mail address. It should look like <em>yourname@example.com</em>.</p>");
+  jQuery("#errors").html("<p>" + objectL10n.bademail + "</p>");
   return false;
 }
   
@@ -53,7 +53,7 @@ if ( comment.value == "" ) {
   comment.focus();
   jQuery("#comment").addClass("err");
   jQuery("#comment-form ol").before("<div id='errors'></div>");
-  jQuery("#errors").html("<p>You must enter a comment.</p>");
+  jQuery("#errors").html("<p>" + objectL10n.nocomment + "</p>");
   return false;
 }
 else {

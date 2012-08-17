@@ -103,10 +103,10 @@ function onemozilla_theme_options_help() {
 
 	$help = '<p>' . __( 'Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, One Mozilla, provides the following Theme Options:', 'onemozilla' ) . '</p>' .
 			'<ol>' .
-				'<li>' . __( '<strong>Color Scheme</strong>: You can choose from a few different color schemes: "Sand" (orange-tan background) is the default, suitable for most Mozilla blogs. "Sky" (light blue/gray background) suitable for Firefox-related blogs. "Stone" is a light, neutral gray. "Obsidian" is a light-on-dark scheme', 'onemozilla' ) . '</li>' .
+				'<li>' . __( '<strong>Color Scheme</strong>: You can choose from a few different color schemes: “Sand” (orange-tan background) is suitable for most Mozilla blogs. “Sky” (light blue/gray background) suitable for Firefox-related blogs. “Obsidian” is a light-on-dark scheme. “Stone” is the default scheme, a light, neutral gray.' , 'onemozilla' ) . '</li>' .
 		    '<li>' . __( '<strong>Hide post authors</strong>: Post authors are shown by default, with an author bio in the sidebar on single post pages. You can choose to hide post authors and the blog will be anonymous to the public, though authors will still be visible in the administration panel.', 'onemozilla' ) . '</li>' .
 			'</ol>' .
-			'<p>' . __( 'Remember to click "Save Changes" to save any changes you have made to the theme options.', 'onemozilla' ) . '</p>';
+			'<p>' . __( 'Remember to click “Save Changes” to save any changes you have made to the theme options.', 'onemozilla' ) . '</p>';
 
 	$sidebar = '<p><strong>' . __( 'For more information:', 'onemozilla' ) . '</strong></p>' .
 		'<p>' . __( '<a href="http://codex.wordpress.org/Appearance_Theme_Options_Screen" target="_blank">Documentation on Theme Options</a>', 'onemozilla' ) . '</p>' .
