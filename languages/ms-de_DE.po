@@ -1,0 +1,2324 @@
+# Translation of Multsite in German
+# This file is distributed under the same license as the Multsite package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2011-12-13 00:11+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Multsite\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#: wp-admin/network.php:110
+msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Admin Bar."
+msgstr "Nachdem du die Codes eingefügt hast und du deinen Browser deine Website neuladen lässt, sollte das Blog-Netzwerk aktiv sein. Auf dieser Seite kannst du auch später immer nachschauen, welche Codes du wo einfügen musst. Du kannst zwischen der blogübergreifenden Administration und der normalen Administration eines einzelnes Blogs umschalten, in dem du das Aufklappmenü verwendest, welches beim Überfahren deines Nutzernamens angezeigt wird (rechts oben auf dem Bildschirm) oder durch die Nutzung des Menüs \"Meine Blogs\" in der Werkzeugleiste."
+
+#: wp-admin/my-sites.php:43
+msgid "Up until WordPress version 3.0, what is now called a Multisite Network had to be installed separately as WordPress MU (multi-user)."
+msgstr "Die Funktion eines Blog-Netzwerks gibt es erst seit WordPress 3.0. Früher musste dafür das spezielle WordPressMU (Multi User) installiert werden, welches es aber seit geraumer Zeit nicht mehr gibt."
+
+#: wp-admin/network.php:111
+msgid "The choice of subdirectory sites is disabled if this setup is more than a month old because of permalink problems with &#8220;/blog/&#8221; from the main site. This disabling will be addressed in a future version."
+msgstr "Die Benutzung von Unterverzeichnissen ist nicht möglich, falls dieser Blog schon länger als einen Monat existiert, da es zurzeit ungelöste Probleme mit Permalinks iin diesem Zusammenhang gibt. Wir arbeiten jedoch daran, dieses Problem in einer zukünftigen Version zu beheben."
+
+#: wp-admin/network.php:118
+msgid "Network"
+msgstr "Netzwerk"
+
+#: wp-includes/ms-load.php:241
+msgid "What do I do now?"
+msgstr "Was mache ich jetzt?"
+
+#: wp-admin/network/site-new.php:88
+msgid ""
+"New site created by %1s\n"
+"\n"
+"Address: %2s\n"
+"Name: %3s"
+msgstr ""
+"Neuer Blog erstellt von %1s\n"
+"\n"
+"Addresse: %2s\n"
+"Name: %3s"
+
+#: wp-admin/network/site-new.php:123
+msgid "Site Address"
+msgstr "Blog-Adresse"
+
+#: wp-admin/network/site-new.php:130
+msgid "Only the characters a-z and 0-9 recommended."
+msgstr "Es sind nur Kleinbuchstaben ohne Umlaute (a bis z) und Zahlen (0 bis 9) empfohlen."
+
+#: wp-admin/network/site-new.php:139
+msgid "Admin Email"
+msgstr "Administrator E-Mail-Adresse"
+
+#: wp-admin/network/site-new.php:143
+msgid "A new user will be created if the above email address is not in the database."
+msgstr "Es wird ein neuer Benutzer angelegt, sofern nicht schon ein Benutzer mit dieser E-Mail-Adresse vorhanden ist."
+
+#: wp-admin/network/site-new.php:143
+msgid "The username and password will be mailed to this email address."
+msgstr "Der Benutzername und das Passwort werden an die angegebene E-Mail-Adresse gesendet."
+
+#: wp-admin/network/site-new.php:146
+msgid "Add Site"
+msgstr "Blog erstellen"
+
+#: wp-admin/network/users.php:27
+msgid "Transfer or delete posts and links before deleting users."
+msgstr "Wähle, ob alle Artikel, Seiten und Links des Benutzers gelöscht oder an einen anderen Benutzer übertragen werden soll."
+
+#: wp-admin/network/users.php:40
+msgid "Warning! User %s cannot be deleted."
+msgstr "Warnung! Der Benutzer %s kann nicht gelöscht werden."
+
+#: wp-admin/network/users.php:43
+msgid "Warning! User cannot be deleted. The user %s is a network admnistrator."
+msgstr "Warnung! Der Benutzer %s ist ein Website-Administrator und kann nicht gelöscht werden."
+
+#: wp-admin/network/users.php:50
+msgid "What should be done with posts and links owned by <em>%s</em>?"
+msgstr "Was soll mit den Artikeln und Links von <em>%s</em> geschehen?"
+
+#: wp-admin/network/users.php:68
+msgid "Site: %s"
+msgstr "Blog: %s"
+
+#: wp-admin/network/users.php:146
+msgid "Warning! User cannot be modified. The user %s is a network administrator."
+msgstr "Warnung! Der Benutzer kann nicht verändert werden. Der Benutzer %s ist ein Netzwerk-Admnistrator."
+
+#: wp-admin/network/users.php:236
+msgid "This table shows all users across the network and the sites to which they are assigned."
+msgstr "Diese Übersicht zeigt alle Benutzer dieses Blog-Netzwerks und welchen Blogs sie angehören."
+
+#: wp-admin/network/users.php:237
+msgid "Hover over any user on the list to make the edit links appear. The Edit link on the left will take you to his or her Edit User profile page; the Edit link on the right by any site name goes to an Edit Site screen for that site."
+msgstr "Wenn du mit der Maus über einen Namen oder Blog in der Liste fährst, werden zusätzliche Optionen angezeigt (Bearbeiten, Löschen)."
+
+#: wp-admin/network/users.php:238
+msgid "You can also go to the user&#8217;s profile page by clicking on the individual username."
+msgstr "Du kannst auch einen Benutzer beziehungsweise sein Profil ändern, indem du direkt auf einen Benutzernamen klickst."
+
+#: wp-admin/network/users.php:239
+msgid "You can sort the table by clicking on any of the bold headings and switch between list and excerpt views by using the icons in the upper right."
+msgstr "Mit den jeweiligen Überschriften im Tabellenkopf kannst du die Tabelle nach gewünschten Eigenschaften sortieren, indem du einfach die Spaltenüberschrift anklickst. Die Symbole rechts oben über der Tabelle erlauben das Umschalten zwischen einer kompakten Listendarstellung oder der zusätzlichen Anzeige einer Kurzvorschau."
+
+#: wp-admin/network/users.php:240
+msgid "The bulk action will permanently delete selected users, or mark/unmark those selected as spam. Spam users will have posts removed and will be unable to sign up again with the same email addresses."
+msgstr "Über die Auswahlbox \"Aktion wählen\" kannst du mehrere zuvor markierte Benutzer löschen oder als SPAM kennzeichnen. Als SPAM gekennzeichnete Benutzer verlieren alle ihre Artikel und können sich nicht erneut mit ihrer E-Mail-Adresse registrieren."
+
+#: wp-admin/network/users.php:241
+msgid "You can make an existing user an additional super admin by going to the Edit User profile page and checking the box to grant that privilege."
+msgstr "Willst du weitere blogübergreifende Administratoren festlegen, so musst du das über die Option \"Blog-Netzwerk\" > \"Benutzer\" > (Benutzer) \"Bearbeiten\" tun. Der Link \"Bearbeiten\" erscheint beim Überfahren eines Benutzernamens. Du kannst auch direkt auf einen Benutzernamen klicken. Im Profil des angewählten Benutzers kannst du dann die Option \"Mache diesen Nutzer zum blogübergreifenden Administrator für das gesamte Blog-Netzwerk.\" aktivieren."
+
+#: wp-admin/network/users.php:258
+msgid "User deleted."
+msgstr "Benutzer wurde gelöscht."
+
+#: wp-admin/network/users.php:261
+msgid "Users marked as spam."
+msgstr "Benutzer als SPAM markiert."
+
+#: wp-admin/network/users.php:264
+msgid "Users removed from spam."
+msgstr "Benutzer wurde aus Spam entfernt."
+
+#: wp-admin/network/users.php:267
+msgid "Users deleted."
+msgstr "Benutzer wurden gelöscht."
+
+#: wp-admin/network/upgrade.php:18
+#: wp-admin/network/upgrade.php:43
+#: wp-admin/network/upgrade.php:85
+#: wp-admin/network/menu.php:60
+msgid "Update Network"
+msgstr "Alle Blogs im Netzwerk aktualisieren"
+
+#: wp-admin/network/upgrade.php:25
+msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Admin Bar). Clicking the Update Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
+msgstr "Nutze diese Seite nur, nachdem du deine WordPress-Installation via \"Aktualisierungen\" auf eine neue Version gebracht hast. Beim Klick auf \"Alle Blogs im Netzwerk aktualisieren\" wird die Datenbank jedes Blogs aktualisiert (jeweils fünf gleichzeitig)."
+
+#: wp-admin/network/upgrade.php:26
+msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
+msgstr "Falls jedoch keine Aktualisierungen zu tätigen sind, macht ein Klick auf die Schaltfläche auch nichts kaputt."
+
+#: wp-admin/network/upgrade.php:27
+msgid "If this process fails for any reason, users logging in to their sites will force the same update."
+msgstr "Falls der Vorgang aus irgendeinem Grund abbricht, so wird er automatisch ausgeführt, sobald ein Benutzer sich in seinem Blog anmeldet."
+
+#: wp-admin/network/upgrade.php:32
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Update Network</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Update Network  (engl.)</a>"
+
+#: wp-admin/network/upgrade.php:58
+msgid "All done!"
+msgstr "Alles fertig!"
+
+#: wp-admin/network/upgrade.php:67
+msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: <em>%2$s</em>"
+msgstr "Warnung! Problem beim aktualisieren von %1$s. Vermutlich gab es einen Zeitablauf. Die Fehlermeldung lautet: <em>%2$s</em>"
+
+#: wp-admin/network/upgrade.php:72
+msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
+msgstr "Falls dein Browser nicht automatisch zur nächsten Seite weiterleitet, klicke auf folgenden Link:"
+
+#: wp-admin/network/upgrade.php:72
+msgid "Next Sites"
+msgstr "Nächste Blogs"
+
+#: wp-admin/network/upgrade.php:84
+msgid "You can update all the sites on your network through this page. It works by calling the update script of each site automatically. Hit the link below to update."
+msgstr "Hier kannst du alle Blogs deines Blog-Netzwerks aktualisieren. Es ruft dabei die Updateprozedur für jeden Blog automatisch auf. Klicke den folgenden Link, um alle Blogs zu aktualisieren."
+
+#: wp-admin/network/sites.php:25
+msgctxt "sites per page (screen options)"
+msgid "Sites"
+msgstr "Seiten"
+
+#: wp-admin/network/sites.php:31
+msgid "Add New takes you to the Add New Site screen. You can search for a site by Name, ID number, or IP address. Screen Options allows you to choose how many sites to display on one page."
+msgstr ""
+"Ein Klick auf die Schaltfläche \"Blog erstellen\" bringt dich zum unteren Teil dieser Seite, wo die entsprechenden Eingabefelder zum Anlegen eines neuen Blogs sind. \n"
+"\n"
+"Nutze die Suchfunktion, um bestimmte Blogs anhand von Name, ID oder IP-Adresse des Blog-Erstellers zu suchen. \n"
+"Über \"Optionen einblenden\" (nur sichtbar, wenn die Hilfe geschlossen), kannst du festlegen, wie viele Blogs auf einmal in dieser Übersicht angezeigt werden sollen."
+
+#: wp-admin/network/sites.php:32
+msgid "This is the main table of all sites on this network. Switch between list and excerpt views by using the icons above the right side of the table."
+msgstr "Hier siehst du alle Blogs deines Netzwerks!"
+
+#: wp-admin/network/sites.php:33
+msgid "Hovering over each site reveals seven options (three for the primary site):"
+msgstr "Wenn du mit der Maus über einen Eintrag in der Liste fährst, werden zusätzliche Optionen angezeigt:"
+
+#: wp-admin/network/sites.php:34
+msgid "An Edit link to a separate Edit Site screen."
+msgstr "Ein Link zum Bearbeiten der Einstellungen des Blogs."
+
+#: wp-admin/network/sites.php:35
+msgid "Dashboard leads to the Dashboard for that site."
+msgstr "Den Link zum Administrationsbereich (Dashboard) des Blogs"
+
+#: wp-admin/network/sites.php:36
+msgid "Deactivate, Archive, and Spam which lead to confirmation screens. These actions can be reversed later."
+msgstr ""
+"Die Möglichkeit, einen Blog zu deaktivieren, zu archivieren, oder als SPAM zu markieren. \n"
+"Deaktivieren entspricht dabei der Löschung deines Blogs durch seinen Besitzer. Archivieren bietet die Möglichkeit, einen Blog vorrübergehend nicht erreichbar zu machen und anschließend wieder zu aktivieren."
+
+#: wp-admin/network/sites.php:37
+msgid "Delete which is a permanent action after the confirmation screens."
+msgstr "Löschen, was einen Blog dauerhaft und endgültig löscht."
+
+#: wp-admin/network/sites.php:38
+msgid "Visit to go to the frontend site live."
+msgstr "Blog anzeigen, um die Website direkt anzusehen."
+
+#: wp-admin/network/sites.php:39
+msgid "The site ID is used internally, and is not shown on the front end of the site or to users/viewers."
+msgstr "Die Blog-ID wird nur intern genutzt und wird nicht öffentlich angezeigt."
+
+#: wp-admin/network/sites.php:40
+msgid "Clicking on bold headings can re-sort this table."
+msgstr "Mit den jeweiligen Überschriften im Tabellenkopf kannst du die Tabelle nach gewünschten Eigenschaften sortieren, indem du einfach die Spaltenüberschrift anklickst."
+
+#: wp-admin/network/sites.php:91
+msgid "You are not allowed to delete the site."
+msgstr "Du darst dieses Blog nicht löschen."
+
+#: wp-admin/network/sites.php:109
+#: wp-admin/network/sites.php:210
+msgid "You are not allowed to change the current site."
+msgstr "Du hast nicht das Recht, Änderungen an diesem Blog vorzunehmen."
+
+#: wp-admin/network/sites.php:215
+msgid "WordPress &rsaquo; Confirm your action"
+msgstr "WordPress &rsaquo; Bestätige die Aktion"
+
+#: wp-admin/network/sites.php:231
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: wp-admin/network/sites.php:245
+msgid "Sites removed from spam."
+msgstr "Die Blogs sind nicht mehr als SPAM eingestuft."
+
+#: wp-admin/network/sites.php:248
+msgid "Sites marked as spam."
+msgstr "Die Blogs wurden als SPAM eingestuft."
+
+#: wp-admin/network/sites.php:251
+msgid "Sites deleted."
+msgstr "Blogs wurden gelöscht."
+
+#: wp-admin/network/sites.php:254
+msgid "Site deleted."
+msgstr "Der Blog wurde gelöscht."
+
+#: wp-admin/network/sites.php:257
+msgid "You do not have permission to delete that site."
+msgstr "Du hast nicht die erforderlichen Rechte, um diesen Blog zu löschen."
+
+#: wp-admin/network/sites.php:260
+msgid "Site archived."
+msgstr "Blog archiviert."
+
+#: wp-admin/network/sites.php:263
+msgid "Site unarchived."
+msgstr "Blog wurde wiederhergestellt."
+
+#: wp-admin/network/sites.php:266
+msgid "Site activated."
+msgstr "Blog wurde aktiviert."
+
+#: wp-admin/network/sites.php:269
+msgid "Site deactivated."
+msgstr "Blog wurde deaktiviert."
+
+#: wp-admin/network/sites.php:272
+msgid "Site removed from spam."
+msgstr "Blog wird nicht mehr als SPAM eingestuft."
+
+#: wp-admin/network/sites.php:275
+msgid "Site marked as spam."
+msgstr "Dieser Blog wurde als SPAM eingestuft."
+
+#: wp-admin/network/sites.php:295
+#: wp-admin/network/menu.php:18
+msgctxt "site"
+msgid "Add New"
+msgstr "Blog erstellen"
+
+#: wp-admin/network/settings.php:19
+#: wp-admin/network/menu.php:47
+msgid "Network Settings"
+msgstr "Netzwerk-Einstellungen"
+
+#: wp-admin/network/settings.php:26
+msgid "This screen sets and changes options for the network as a whole. The first site is the main site in the network and network options are pulled from that original site&#8217;s options."
+msgstr "In diesem Bildschirm werden die Einstellungen für das gesamte Blog-Netzwerk verwaltet. Der zuerst (bei der Installation von WordPress) erstellte Blog, ist der Hauptblog. Von diesem wurden auch die ersten Einstellungen übernommen."
+
+#: wp-admin/network/settings.php:27
+msgid "Operational settings has fields for the network&#8217;s name and admin email."
+msgstr "Die Netwerk-Optionen beinhalten unter anderem die Einstellungen für den Namen des Blog-Netzwerks, die Administrator E-Mail-Adresse und ob Schlagwörter blogübergreifend verwendet werden sollen (standardmäßig ist diese Funktion deaktiviert)."
+
+#: wp-admin/network/settings.php:28
+msgid "Dashboard Site is an option to give a site to users who do not have a site on the system. Their default role is Subscriber, but that default can be changed. The Admin Notice Feed can provide a notice on all dashboards of the latest post via RSS or Atom, or provide no such notice if left blank."
+msgstr ""
+"Dem Dashboard-Blog werden automatisch neue Benutzer ohne eigenen Blog hinzugefügt. Standardmäßig haben sie dabei die Benutzerrolle Abonnent, diese kann jedoch geändert werden.\n"
+"Wenn du bei \"Netzwerkbetreiber-Newsfeed\" die Adresse eines RSS- oder Atom-Newsfeeds einträgst, so bekommen alle Bloginhaber dieses Netzwerks diesen Feed in ihrem Dashboard angezeigt."
+
+#: wp-admin/network/settings.php:29
+msgid "Registration settings can disable/enable public signups. If you let others sign up for a site, install spam plugins. Spaces, not commas, should separate names banned as sites for this network."
+msgstr ""
+"In den Registrierungseinstellungen kannst du festlegen, ob sich neue Benutzer selber registrieren und einen Blog anlegen dürfen. Falls dies erlaubt ist, solltest du ein Plugin installieren, welches SPAM-Anmeldungen verhindert. \n"
+"Bei den verbotenen Blogadressen musst du die einzelnen Begriffe jeweils mit einem Leerzeichen trennen."
+
+#: wp-admin/network/settings.php:30
+msgid "New site settings are defaults applied when a new site is created in the network. These include welcome email for when a new site or user account is registered, and what&#8127;s put in the first post, page, comment, comment author, and comment URL."
+msgstr "Die Werte bei \"Einstellungen für neue Blogs\" werden immer dann angewandt, wenn ein neuer Blog registriert wird. Dies umfasst die Willkommens-E-Mails, als auch den ersten automatisch angelegten Artikel oder Kommentar."
+
+#: wp-admin/network/settings.php:31
+msgid "Upload settings control the size of the uploaded files and the amount of available upload space for each site. You can change the default value for specific sites when you edit a particular site. Allowed file types are also listed (space separated only)."
+msgstr ""
+"In den \"Dateiupload-Einstellungen\" kannst du festlegen, welche Dateitypen hochgeladen werden dürfen (Dateiendungen jeweils durch Leerzeichen getrennt) und wie groß einzelne Dateien sein dürfen, sowie wieviel Speicherplatz insgesamt pro Blog zur Verfügung steht. Du kannst diese Werte auch für später für jeden Blog einzeln einstellen.<br />\n"
+"Standardmäßig sind übrigens folgende Dateitypen erlaubt:\n"
+"<code>jpg jpeg png gif mp3 mov avi wmv midi mid pdf</code>"
+
+#: wp-admin/network/settings.php:32
+msgid "Checkboxes for media upload buttons set which are shown in the visual editor. If unchecked, a generic upload button is still visible; other media types can still be uploaded if on the allowed file types list."
+msgstr ""
+"Du kannst auch einstellen, ob verschiedene Schaltflächen für das Hochladen bestimmter Dateitypen angezeigt werden sollen, oder ob ein nur eine allgemeine Schaltfläche angezeigt werden soll.\n"
+"Beachte aber, dass letztendlich relevant ist, welche Dateitypen du für das Hochladen erlaubt hast."
+
+#: wp-admin/network/settings.php:33
+msgid "Menu setting enables/disables the plugin menus from appearing for non super admins, so that only super admins, not site admins, have access to activate plugins."
+msgstr "Bei \"Menüeinstellungen\" kannst du festlegen, ob auch normale Blog-Administratoren die Möglichkeit haben sollen, Plugins zu verwalten und damit zu aktivieren oder zu deaktivieren. Im Normallfall wirst du aber ganz gut damit fahren, dass du die Administrations-Menüs für Plugins nicht aktivierst."
+
+#: wp-admin/network/settings.php:34
+msgid "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Network Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
+msgstr "Blogübergreifende Administratoren können nicht mehr über die Optionen-Seite hinzugefügt werden. Du musst ab jetzt über das Menu \"Benutzer\" &gt; \"Alle Benutzer\" auf den Benutzernamen des zuvor angelegten Benutzers klicken, um die Eigenschaften des Benutzers zu bearbeiten. Dort kannst du dann auch über eine Checkbox dem Nutzer blogübergreifende Administratorrechte vergeben."
+
+#: wp-admin/network/settings.php:39
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings (engl.)</a>"
+
+#: wp-admin/network/settings.php:121
+msgid "Operational Settings"
+msgstr "Grundeinstellungen"
+
+#: wp-admin/network/settings.php:124
+msgid "Network Name"
+msgstr "Netzwerk-Name"
+
+#: wp-admin/network/settings.php:128
+msgid "What you would like to call this website."
+msgstr "Wie soll der Name des Blog-Netzwerks lauten?"
+
+#: wp-admin/network/settings.php:133
+msgid "Network Admin Email"
+msgstr "Website-Administrator-E-Mailadresse"
+
+#: wp-admin/network/settings.php:137
+msgid "Registration and support emails will come from this address. An address such as <code>support@%s</code> is recommended."
+msgstr "Registrierungs- und Hinweis-E-Mails werden von dieser E-Mail-Adresse versandt werden. Eine E-Mail-Adresse wie <code>support@%s</code> wäre empfehlenswert."
+
+#: wp-admin/network/settings.php:141
+msgid "Registration Settings"
+msgstr "Registrierungseinstellungen"
+
+#: wp-admin/network/settings.php:144
+msgid "Allow new registrations"
+msgstr "Erlaube neue Registrierungen"
+
+#: wp-admin/network/settings.php:151
+msgid "Registration is disabled."
+msgstr "Registrierung ist deaktiviert."
+
+#: wp-admin/network/settings.php:152
+msgid "User accounts may be registered."
+msgstr "Benutzer dürfen sich registrieren."
+
+#: wp-admin/network/settings.php:153
+msgid "Logged in users may register new sites."
+msgstr "Angemeldete Benutzer können neue Blogs anlegen."
+
+#: wp-admin/network/settings.php:154
+msgid "Both sites and user accounts can be registered."
+msgstr "Es können neue Blogs und Benutzer registriert werden."
+
+#: wp-admin/network/settings.php:156
+msgid "If registration is disabled, please set <code>NOBLOGREDIRECT</code> in <code>wp-config.php</code> to a URL you will redirect visitors to if they visit a non-existent site."
+msgstr "Wenn Neuregistrierungen deaktiviert sind, füge bitte in die Datei <code>wp-config.php</code> die Zeile <code>define( 'NOBLOGREDIRECT', 'http://example.com' );</code> ein und passe die URL an, zu der die Besucher weitergeleitet werden sollen, wenn sie einen nichtexistierenden Blog aufrufen."
+
+#: wp-admin/network/settings.php:162
+msgid "Registration notification"
+msgstr "Registrierungs-Benachrichtigung"
+
+#: wp-admin/network/settings.php:168
+msgid "Send the network admin an email notification every time someone registers a site or user account."
+msgstr "Sende dem Administrator des Blog-Netzwerks jedes mal eine E-Mail, wenn sich jemand einen Blog oder Benutzernamen registriert."
+
+#: wp-admin/network/settings.php:173
+msgid "Add New Users"
+msgstr "Neue Benutzer hinzufügen"
+
+#: wp-admin/network/settings.php:175
+msgid "Allow site administrators to add new users to their site via the \"Users &rarr; Add New\" page."
+msgstr "Erlaube Blog-Administratoren neue Benutzer direkt anzulegen."
+
+#: wp-admin/network/settings.php:180
+msgid "Banned Names"
+msgstr "Verbotene Blogadressen"
+
+#: wp-admin/network/settings.php:184
+msgid "Users are not allowed to register these sites. Separate names by spaces."
+msgstr "Benutzer dürfen diese Namen nicht als Blogadresse verwenden. Trenne die einzelnen Namen mit einem Leerzeichen."
+
+#: wp-admin/network/settings.php:189
+msgid "Limited Email Registrations"
+msgstr "Registrierung für E-Mail-Domains limitieren"
+
+#: wp-admin/network/settings.php:196
+msgid "If you want to limit site registrations to certain domains. One domain per line."
+msgstr "Falls du die Registrierung für bestimmte E-Mail-Domains (z.B. <em>example.com</em>) limitieren willst. Nutze pro Domain eine Zeile."
+
+#: wp-admin/network/settings.php:201
+msgid "Banned Email Domains"
+msgstr "Geblockte E-Mail-Domains"
+
+#: wp-admin/network/settings.php:206
+msgid "If you want to ban domains from site registrations. One domain per line."
+msgstr "Falls du für bestimmte E-Mail-Domains (z.B. <em>example.com</em>) die Registrierung verbieten möchtest. Nutze pro Domain eine Zeile."
+
+#: wp-admin/network/settings.php:211
+msgid "New Site Settings"
+msgstr "Einstellungen für neue Blogs"
+
+#: wp-admin/network/settings.php:215
+msgid "Welcome Email"
+msgstr "Willkommens-E-Mail"
+
+#: wp-admin/network/settings.php:220
+msgid "The welcome email sent to new site owners."
+msgstr "Diese E-Mail wird an Benutzer versandt, die einen neuen Blog registriert haben."
+
+#: wp-admin/network/settings.php:224
+msgid "Welcome User Email"
+msgstr "Benutzer-Willkommen-Email"
+
+#: wp-admin/network/settings.php:229
+msgid "The welcome email sent to new users."
+msgstr "Diese E-Mail wird an jeden neu registrierten Benutzer versandt."
+
+#: wp-admin/network/settings.php:238
+msgid "The first post on a new site."
+msgstr "Der erste Beitrag eines neuen Blogs."
+
+#: wp-admin/network/settings.php:242
+msgid "First Page"
+msgstr "Erste Seite"
+
+#: wp-admin/network/settings.php:247
+msgid "The first page on a new site."
+msgstr "Die erste Seite einer neuen Site."
+
+#: wp-admin/network/settings.php:251
+msgid "First Comment"
+msgstr "Erster Kommentar"
+
+#: wp-admin/network/settings.php:256
+msgid "The first comment on a new site."
+msgstr "Der erste Kommentar auf einem neuen Bog."
+
+#: wp-admin/network/settings.php:260
+msgid "First Comment Author"
+msgstr "Autor des ersten Kommentars"
+
+#: wp-admin/network/settings.php:264
+msgid "The author of the first comment on a new site."
+msgstr "Der Autor des ersten Kommentars eines neuen Blogs."
+
+#: wp-admin/network/settings.php:268
+msgid "First Comment URL"
+msgstr "Die URL des ersten Kommentars."
+
+#: wp-admin/network/settings.php:272
+msgid "The URL for the first comment on a new site."
+msgstr "Die URL für den ersten Kommentar eines neuen Blogs."
+
+#: wp-admin/network/settings.php:276
+msgid "Upload Settings"
+msgstr "Dateiupload-Einstellungen"
+
+#: wp-admin/network/settings.php:279
+msgid "Site upload space"
+msgstr "Blog-Speicherplatz"
+
+#: wp-admin/network/settings.php:281
+msgid "Limit total size of files uploaded to %s MB"
+msgstr "Jeder Blog hat einen maximalen Speicherplatz von %s MB"
+
+#: wp-admin/network/settings.php:286
+msgid "Upload file types"
+msgstr "Erlaubte Dateitypen"
+
+#: wp-admin/network/settings.php:291
+msgid "Max upload file size"
+msgstr "Maximale Dateigröße eines Uploads"
+
+#: wp-admin/network/settings.php:292
+msgctxt "File size in kilobytes"
+msgid "%s KB"
+msgstr "%s KB"
+
+#: wp-admin/network/settings.php:301
+msgid "Language Settings"
+msgstr "Spracheinstellungen"
+
+#: wp-admin/network/settings.php:304
+msgid "Default Language"
+msgstr "Standardsprache"
+
+#: wp-admin/network/settings.php:316
+msgid "Menu Settings"
+msgstr "Menüeinstellungen"
+
+#: wp-admin/network/settings.php:319
+msgid "Enable administration menus"
+msgstr "Administrations-Menüs aktivieren für:"
+
+#: wp-admin/network/site-info.php:84
+msgid "Site info updated."
+msgstr "Blog-Informationen aktualisiert."
+
+#: wp-admin/network/site-info.php:140
+msgid "Update <code>siteurl</code> and <code>home</code> as well."
+msgstr "<code>siteurl</code> und <code>home</code> ebenfalls aktualisieren."
+
+#: wp-admin/network/menu.php:17
+msgid "All Sites"
+msgstr "Alle Blogs"
+
+#: wp-admin/network/menu.php:27
+msgid "Themes %s"
+msgstr "Themes %s"
+
+#: wp-admin/network/menu.php:31
+msgid "Installed Themes"
+msgstr "Installierte Themes"
+
+#: wp-admin/network/menu.php:41
+msgctxt "plugin editor"
+msgid "Add New"
+msgstr "Installieren"
+
+#: wp-admin/network/menu.php:54
+msgid "Updates"
+msgstr "Aktualisierungen"
+
+#: wp-admin/network/menu.php:59
+msgid "Available Updates"
+msgstr "Verfügbare Aktualisierungen"
+
+#: wp-admin/network/site-themes.php:22
+msgid "You do not have sufficient permissions to manage themes for this site."
+msgstr "Du hast nicht die erforderlichen Rechte, um die Themes dieses Blogs zu verwalten."
+
+#: wp-admin/network/site-themes.php:170
+msgid "Network enabled themes are not shown on this screen."
+msgstr "Für das gesamte Netzwerk zur Benutzung freigeschaltete Themes werden in dieser Übersicht nicht angezeigt."
+
+#: wp-signup.php:65
+msgid "Site Name:"
+msgstr "Name des Blogs:"
+
+#: wp-signup.php:67
+msgid "Site Domain:"
+msgstr "Blog-Domain:"
+
+#: wp-signup.php:80
+msgid "sitename"
+msgstr "Blogname"
+
+#: wp-signup.php:82
+msgid "domain"
+msgstr "Domain"
+
+#: wp-signup.php:83
+msgid "Your address will be %s."
+msgstr "Deine Blog-Adresse wird %s lauten."
+
+#: wp-signup.php:83
+msgid "Must be at least 4 characters, letters and numbers only. It cannot be changed, so choose carefully!"
+msgstr "Sie muss aus mindestens vier Zeichen bestehen, wobei du bitte nur Zahlen und Buchstaben verwenden solltest. Prüfe deine Eingabe sorgfältig, da diese Angabe später nicht mehr geändert werden kann."
+
+#: wp-signup.php:88
+msgid "Site Title:"
+msgstr "Blog-Titel:"
+
+#: wp-signup.php:97
+msgid "Privacy:"
+msgstr "Datenschutz:"
+
+#: wp-signup.php:98
+msgid "Allow my site to appear in search engines like Google, Technorati, and in public listings around this network."
+msgstr "Ich möchte, dass mein Blog in Suchmaschinen wie Google oder Technorati und öffentlichen Listen dieses Blog-Netzwerks erscheint."
+
+#: wp-signup.php:130
+msgid "(Must be at least 4 characters, letters and numbers only.)"
+msgstr "(Es müssen mindestens 4 Zeichen sein, bitte nur Buchstaben und Zahlen.)"
+
+#: wp-signup.php:133
+msgid "Email&nbsp;Address:"
+msgstr "E-Mail-Addresse:"
+
+#: wp-signup.php:137
+msgid "We send your registration email to this address. (Double-check your email address before continuing.)"
+msgstr "Wir verschicken deine Registrierungs-E-Mail an diese Adresse. (Überprüfe also nochmal deine E-Mail-Adresse bevor du fortfährst.)"
+
+#: wp-signup.php:163
+msgid "Get <em>another</em> %s site in seconds"
+msgstr "Erstelle einen <em>weiteren</em> %s Blog in Sekunden"
+
+#: wp-signup.php:166
+msgid "There was a problem, please correct the form below and try again."
+msgstr "Es trat ein Fehler auf. Bitte korrigiere die Eingaben und versuche es noch einmal."
+
+#: wp-signup.php:169
+msgid "Welcome back, %s. By filling out the form below, you can <strong>add another site to your account</strong>. There is no limit to the number of sites you can have, so create to your heart&#8217;s content, but write responsibly!"
+msgstr "Willkommen zurück, %s. In dem du dieses Formular ausfüllst, kannst du einen <strong>weiteren Blog</strong> für dein Benutzerkonto anlegen. Es gibt hierfür keine Begrenzung, also zögere nicht."
+
+#: wp-signup.php:175
+msgid "Sites you are already a member of:"
+msgstr "Du bist bereits Mitglied der folgenden Blogs:"
+
+#: wp-signup.php:184
+msgid "If you&#8217;re not going to use a great site domain, leave it for a new user. Now have at it!"
+msgstr "Suche dir nun einen weiteren Blog-Namen und Blog-Titel aus."
+
+#: wp-signup.php:189
+msgid "Create Site"
+msgstr "Blog erstellen"
+
+#: wp-signup.php:219
+msgid "The site %s is yours."
+msgstr "Der Blog %s ist deiner."
+
+#: wp-signup.php:221
+msgid "<a href=\"http://%1$s\">http://%2$s</a> is your new site.  <a href=\"%3$s\">Log in</a> as &#8220;%4$s&#8221; using your existing password."
+msgstr "<a href=\"http://%1$s\">http://%2$s</a> ist dein neues Blog. <a href=\"%3$s\">Melde dich an</a> als &#8220;%4$s&#8221; und verwende dein angegebenes Passwort."
+
+#: wp-signup.php:248
+msgid "Get your own %s account in seconds"
+msgstr "Registriere dich in nur wenigen Sekunden bei %s."
+
+#: wp-signup.php:261
+msgid "Gimme a site!"
+msgstr "Gib mir einen Blog!"
+
+#: wp-signup.php:264
+msgid "Just a username, please."
+msgstr "Ich möche nur einen Benutzernamen, keinen Blog."
+
+#: wp-signup.php:268
+msgid "Next"
+msgstr "Nächster Schritt"
+
+#: wp-signup.php:295
+msgid "%s is your new username"
+msgstr "%s ist dein neuer Benutzername"
+
+#: wp-signup.php:296
+msgid "But, before you can start using your new username, <strong>you must activate it</strong>."
+msgstr "Bevor du jedoch loslegen und ihn nutzen kannst, musst du ihn erst <strong>aktivieren</strong>."
+
+#: wp-signup.php:297
+msgid "Check your inbox at <strong>%1$s</strong> and click the link given."
+msgstr "Prüfe deine E-Mails der Adresse <strong>%1$s</strong> und klicke in der Registrierungsmail auf den aufgeführten Link."
+
+#: wp-signup.php:298
+msgid "If you do not activate your username within two days, you will have to sign up again."
+msgstr "Wenn du deinen Benutzernamen nicht innerhalb von zwei Tagen aktivierst, musst du dich erneut registrieren."
+
+#: wp-signup.php:324
+msgid "Signup"
+msgstr "Registrieren"
+
+#: wp-signup.php:358
+msgid "Congratulations! Your new site, %s, is almost ready."
+msgstr "Herzlichen Glückwunsch! Deine neuer Blog – %s – ist beinahe fertig."
+
+#: wp-signup.php:360
+msgid "But, before you can start using your site, <strong>you must activate it</strong>."
+msgstr "Doch bevor du deinen Blog nutzen kannst, musst du ihn erst <strong>aktivieren</strong>."
+
+#: wp-signup.php:361
+msgid "Check your inbox at <strong>%s</strong> and click the link given."
+msgstr "Prüfe deine E-Mails der Adresse <strong>%s</strong> und klicke in der E-Mail auf den enthaltenen Link."
+
+#: wp-signup.php:362
+msgid "If you do not activate your site within two days, you will have to sign up again."
+msgstr "Falls du deinen Blog nicht innerhalb von zwei Tagen aktivierst, musst du ihn von neuem Registrieren."
+
+#: wp-signup.php:363
+msgid "Still waiting for your email?"
+msgstr "Wartest du noch auf deine Email?"
+
+#: wp-signup.php:365
+msgid "If you haven&#8217;t received your email yet, there are a number of things you can do:"
+msgstr "Falls du deine E-Mail noch nicht erhalten hast, kannst du folgende Dinge tun:"
+
+#: wp-signup.php:367
+msgid "Wait a little longer. Sometimes delivery of email can be delayed by processes outside of our control."
+msgstr "Bitte warte noch ein bisschen. Manchmal verzögert sich die Zustellung von E-Mails, ohne dass wir etwas dagegen tun können."
+
+#: wp-signup.php:368
+msgid "Check the junk or spam folder of your email client. Sometime emails wind up there by mistake."
+msgstr "Überprüfe deinen Junk/SPAM-Ordner deines E-Mail-Postfachs, da E-Mails manchmal fälschlicherweise als SPAM erkannt werden."
+
+#: wp-signup.php:369
+msgid "Have you entered your email correctly?  You have entered %s, if it&#8217;s incorrect, you will not receive your email."
+msgstr "Hast du deine E-Mail-Adresse korrekt eingegeben? Falls die angegebene Adresse %s falsch ist, so wirst du keine E-Mail erhalten."
+
+#: wp-signup.php:384
+msgctxt "Multisite active signup type"
+msgid "all"
+msgstr "Benutzern und Blogs"
+
+#: wp-signup.php:385
+msgctxt "Multisite active signup type"
+msgid "none"
+msgstr "keinen neuen Blogs oder Benutzern"
+
+#: wp-signup.php:386
+msgctxt "Multisite active signup type"
+msgid "blog"
+msgstr "Blogs"
+
+#: wp-signup.php:387
+msgctxt "Multisite active signup type"
+msgid "user"
+msgstr "Benutzern"
+
+#: wp-signup.php:390
+msgid "Greetings Site Administrator! You are currently allowing &#8220;%s&#8221; registrations. To change or disable registration go to your <a href=\"%s\">Options page</a>."
+msgstr "Hallo, Administrator! Du hast zurzeit das Registrieren von %s erlaubt. Um diese Einstellungen zu ändern, öffne die <a href=\"%s\">Blog-Netzwerk Einstellungen</a>."
+
+#: wp-signup.php:396
+msgid "Registration has been disabled."
+msgstr "Die Registrierung wurde deaktiviert."
+
+#: wp-signup.php:403
+msgid "You must first <a href=\"%s\">log in</a>, and then you can create a new site."
+msgstr "Du musst dich zuerst <a href=\"%s\">einloggen</a>, um einen Blog anlegen zu können."
+
+#: wp-signup.php:411
+msgid "User registration has been disabled."
+msgstr "Die Benutzerregistrierung wurde deaktiviert."
+
+#: wp-signup.php:417
+msgid "Site registration has been disabled."
+msgstr "Das Registrieren von Blogs ist deaktiviert."
+
+#: wp-signup.php:431
+msgid "Sorry, new registrations are not allowed at this time."
+msgstr "Entschuldigung, aber Registrierungen sind zurzeit nicht möglich."
+
+#: wp-signup.php:433
+msgid "You are logged in already. No need to register again!"
+msgstr "Du bist bereits angemeldet und brauchst dich nicht erneut zu registrieren!"
+
+#: wp-signup.php:439
+msgid "<p><em>The site you were looking for, <strong>%s</strong> does not exist, but you can create it now!</em></p>"
+msgstr "<p><em>Der von dir gesuchte Blog <strong>%s</strong> existiert nicht, aber du kannst ihn selber anlegen.</em></p>"
+
+#: wp-signup.php:441
+msgid "<p><em>The site you were looking for, <strong>%s</strong>, does not exist.</em></p>"
+msgstr "<p><em>Der Blog nach dem du gesucht hast <strong>%s</strong>, existiert nicht.</em></p>"
+
+#: wp-includes/ms-load.php:215
+msgid "That site does not exist. Please try <a href=\"%s\">%s</a>."
+msgstr "Dieser Blog existiert nicht. Bitte versuche <a href=\"%s\">%s</a>."
+
+#: wp-includes/ms-load.php:217
+msgid "No site defined on this host. If you are the owner of this site, please check <a href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">Debugging a WordPress Network</a> for help."
+msgstr "Auf diesem Host sind keine Sites definiert. Wenn du der Besitzer dieser Site bist, findest du Hilfe auf der Seite <a href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">Debugging a WordPress Network (engl.)</a>."
+
+#: wp-includes/ms-load.php:231
+msgid "Error establishing database connection"
+msgstr "Fehler bei der Datenbankverbindung"
+
+#: wp-includes/ms-load.php:235
+msgid "If your site does not display, please contact the owner of this network."
+msgstr "Wenn dein Blog nicht angezeigt wird, nehme bitte Kontakt zum Betreiber des Blog-Netzwerks auf."
+
+#: wp-includes/ms-load.php:236
+msgid "If you are the owner of this network please check that MySQL is running properly and all tables are error free."
+msgstr "Wenn du der Besitzer dieses Netzwerks bist, überprüfe bitte, dass MySQL störungsfrei läuft und alle Tabellen fehlerfrei sind."
+
+#: wp-includes/ms-load.php:238
+msgid "<strong>Database tables are missing.</strong> This means that MySQL is not running, WordPress was not installed properly, or someone deleted <code>%s</code>. You really should look at your database now."
+msgstr "<strong>Es fehlen Datenbanktabellen.</strong> Das bedeutet, dass MySQL nicht läuft. WordPress wurde nicht richtig installiert, oder <code>%s</code> wurde gelöscht. Du solltest dir jetzt deine Datenbank anschauen."
+
+#: wp-includes/ms-load.php:240
+msgid "<strong>Could not find site <code>%1$s</code>.</strong> Searched for table <code>%2$s</code> in database <code>%3$s</code>. Is that right?"
+msgstr "<strong>Konnte Blog nicht finden. <code>%1$s</code>.</strong> Suche nach Tabelle <code>%2$s</code> in der Datenbank <code>%3$s</code>. Ist das richtig?"
+
+#: wp-includes/ms-load.php:242
+msgid "Read the <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
+msgstr ""
+"Lese die <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">Fehler-Report</a> Seite. \n"
+"Einige der Richtlinien können dir helfen herauszufinden, was falsch gelaufen ist."
+
+#: wp-includes/ms-load.php:243
+msgid "If you&#8217;re still stuck with this message, then check that your database contains the following tables:"
+msgstr "Wenn du noch immer in der Nachricht festhängst, dann prüfe ob die Datenbank die folgenden Tabellen enthält:"
+
+#: wp-includes/ms-settings.php:34
+msgid "Multisite only works without the port number in the URL."
+msgstr "Multisite funktioniert nur ohne die Port-Nummer in der URL."
+
+#: wp-includes/ms-settings.php:119
+msgid "Database tables are missing."
+msgstr "Es werden Datenbank-Tabellen vermisst."
+
+#: wp-includes/ms-settings.php:120
+msgid "No site by that name on this system."
+msgstr "In diesem System gibt es keinen Blog mit diesem Namen."
+
+#: wp-activate.php:43
+msgid "Activation Key Required"
+msgstr "Der Aktivierungsschlüssel wird benötigt"
+
+#: wp-activate.php:46
+msgid "Activation Key:"
+msgstr "Aktivierungsschlüssel"
+
+#: wp-activate.php:62
+#: wp-activate.php:82
+msgid "Your account is now active!"
+msgstr "Dein Benutzerkonto ist nun aktiviert!"
+
+#: wp-activate.php:66
+msgid "Your account has been activated. You may now <a href=\"%1$s\">log in</a> to the site using your chosen username of &#8220;%2$s&#8221;.  Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
+msgstr ""
+"Dein Benutzerkonto wurde aktiviert. Du kannst dich nun mit deinem Benutzernamen &#8220;%2$s&#8221; <a href=\"%1$s\">einloggen</a>.\n"
+"Bitte überprüfe dein E-Mail-Postfach mit der Adresse %3$s, um dein Passwort zu erhalten. \n"
+"Solltest du keine E-Mail bekommen haben, so überprüfe deinen Junk-/SPAM-Ordner, da die Mail fälschlicherweise als SPAM identifiziert worden sein könnte. \n"
+"Falls du in einer Stunde immer noch keine Mail bekommen hast, so kannst du auch dein <a href=\"%4$s\">Passwort zurücksetzen</a>. "
+
+#: wp-activate.php:68
+msgid "Your site at <a href=\"%1$s\">%2$s</a> is active. You may now log in to your site using your chosen username of &#8220;%3$s&#8221;.  Please check your email inbox at %4$s for your password and login instructions.  If you do not receive an email, please check your junk or spam folder.  If you still do not receive an email within an hour, you can <a href=\"%5$s\">reset your password</a>."
+msgstr ""
+"Dein Blog bei <a href=\"%1$s\">%2$s</a> ist nun aktiv. \n"
+"Du kannst dich jetzt mit deinem gewählten Benutzernamen &#8220;%3$s&#8221; einloggen. Bitte überprüfe deine E-Mails unter der Adresse %4$s für dein Passwort. Falls du noch keine Mail erhalten hast, überprüfe deinen Junk/SPAM-Ordner. Solltest du die E-Mail nicht innerhalb einer Stunde erhalten, so kannst du auch dein <a href=\"%5$s\">Passwort zurücksetzen</a>."
+
+#: wp-activate.php:73
+msgid "An error occurred during the activation"
+msgstr "Ein Fehler ist während der Anmeldung aufgetreten."
+
+#: wp-activate.php:85
+#: wp-signup.php:125
+msgid "Username:"
+msgstr "Benutzername:"
+
+#: wp-activate.php:90
+msgid "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a href=\"%2$s\">Log in</a>"
+msgstr "Dein Benutzerkonto ist jetzt aktiviert. <a href=\"%1$s\">Besuche deinen Blog</a> oder <a href=\"%2$s\">melde dich an</a>."
+
+#: wp-activate.php:92
+msgid "Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the <a href=\"%2$s\">homepage</a>."
+msgstr "Dein Benutzerkonto ist jetzt aktiviert. <a href=\"%1$s\">Melde dich an</a> oder gehe zurück <a href=\"%2$s\">zur Startseite.</a>."
+
+#: wp-includes/ms-functions.php:190
+#: wp-includes/ms-functions.php:252
+msgid "That user does not exist."
+msgstr "Dieser Benutzer existiert nicht."
+
+#: wp-includes/ms-functions.php:295
+msgid "<strong>ERROR</strong>: Site URL already taken."
+msgstr "<strong>Fehler</strong>: Blog-Adresse ist schon vergeben."
+
+#: wp-includes/ms-functions.php:302
+msgid "<strong>ERROR</strong>: problem creating site entry."
+msgstr "<strong>FEHLER</strong>: Problem beim erstellen eines Blogeintrages."
+
+#: wp-includes/ms-functions.php:443
+msgid "Only lowercase letters (a-z) and numbers are allowed."
+msgstr "Es sind nur Kleinbuchstaben und Ziffern erlaubt."
+
+#: wp-includes/ms-functions.php:450
+msgid "Please enter a username"
+msgstr "Bitte gib einen Benutzernamen an"
+
+#: wp-includes/ms-functions.php:458
+msgid "That username is not allowed"
+msgstr "Dieser Benutzername darf nicht verwendet werden"
+
+#: wp-includes/ms-functions.php:461
+msgid "You cannot use that email address to signup. We are having problems with them blocking some of our email. Please use another email provider."
+msgstr "Du kannst dich leider nicht mit dieser E-Mail-Adresse registrieren, da dein E-Mail-Anbieter einen Teil unserer E-Mails blockiert. Nutze bitte eine E-Mailadresse eines anderen E-Mail-Anbieters."
+
+#: wp-includes/ms-functions.php:464
+msgid "Username must be at least 4 characters"
+msgstr "Ein Benutzername muss mindestens vier Zeichen haben"
+
+#: wp-includes/ms-functions.php:467
+msgid "Sorry, usernames may not contain the character &#8220;_&#8221;!"
+msgstr "Benutzernamen dürfen keinen Unterstrich enthalten."
+
+#: wp-includes/ms-functions.php:473
+msgid "Sorry, usernames must have letters too!"
+msgstr "Entschuldige, aber Benutzernamen müssen auch Buchstaben enthalten!"
+
+#: wp-includes/ms-functions.php:476
+msgid "Please enter a correct email address"
+msgstr "Bitte gib eine korrekte E-Mail-Adresse  ein."
+
+#: wp-includes/ms-functions.php:482
+msgid "Sorry, that email address is not allowed!"
+msgstr "Diese E-Mail-Adresse ist nicht erlaubt!"
+
+#: wp-includes/ms-functions.php:487
+msgid "Sorry, that username already exists!"
+msgstr "Entschuldige, aber der Benutzername existiert bereits!"
+
+#: wp-includes/ms-functions.php:491
+msgid "Sorry, that email address is already used!"
+msgstr "Entschuldige, aber diese Email-Adresse wird bereits verwendet!"
+
+#: wp-includes/ms-functions.php:503
+msgid "That username is currently reserved but may be available in a couple of days."
+msgstr "Dieser Benutzername ist derzeit reserviert, ist aber möglicherweise in den nächsten Tagen verfügbar."
+
+#: wp-includes/ms-functions.php:506
+msgid "username and email used"
+msgstr "Benutzername und E-Mail-Adresse wurden schon verwendet"
+
+#: wp-includes/ms-functions.php:516
+msgid "That email address has already been used. Please check your inbox for an activation email. It will become available in a couple of days if you do nothing."
+msgstr "Diese E-Mail-Adresse wurde bereits verwendet. Bitte schau in deinem Postfach nach der Aktivierungsmail. Falls du keine bekommen oder die Mail bereits gelöscht hast, kannst du dich in ein paar Tagen erneut mit dieser E-Mail-Adresse registrieren."
+
+#: wp-includes/ms-functions.php:564
+msgid "Please enter a site name"
+msgstr "Bitte gib einen Namen für den Blog an"
+
+#: wp-includes/ms-functions.php:567
+msgid "Only lowercase letters and numbers allowed"
+msgstr "Es sind nur Zahlen und kleingeschriebene Buchstaben erlaubt"
+
+#: wp-includes/ms-functions.php:570
+msgid "That name is not allowed"
+msgstr "Dieser Name ist nicht erlaubt"
+
+#: wp-includes/ms-functions.php:573
+msgid "Site name must be at least 4 characters"
+msgstr "Der Name des Blogs muss mindestens vier Zeichen lang sein"
+
+#: wp-includes/ms-functions.php:576
+msgid "Sorry, site names may not contain the character &#8220;_&#8221;!"
+msgstr "Entschuldigung, Blogadressen dürfen keinen Unterstrich im Namen haben."
+
+#: wp-includes/ms-functions.php:580
+msgid "Sorry, you may not use that site name."
+msgstr "Dieser Blogname darf leider nicht verwendet werden."
+
+#: wp-includes/ms-functions.php:586
+msgid "Sorry, site names must have letters too!"
+msgstr "Entschuldige, Sitenamen müssen auch Buchstaben enthalten!"
+
+#: wp-includes/ms-functions.php:593
+msgid "Please enter a site title"
+msgstr "Bitte gib einen Site-Titel an"
+
+#: wp-includes/ms-functions.php:604
+msgid "Sorry, that site already exists!"
+msgstr "Dieser Blog existiert bereits."
+
+#: wp-includes/ms-functions.php:608
+msgid "Sorry, that site is reserved!"
+msgstr "Entschuldige, aber dieser Blog wurde bereits reserviert!"
+
+#: wp-includes/ms-functions.php:619
+msgid "That site is currently reserved but may be available in a couple days."
+msgstr "Dieser Blog wurde bereits reserviert, ist aber eventuell in ein paar Tagen wieder verfügbar."
+
+#: wp-includes/ms-functions.php:742
+msgid ""
+"To activate your blog, please click the following link:\n"
+"\n"
+"%s\n"
+"\n"
+"After you activate, you will receive *another email* with your login.\n"
+"\n"
+"After you activate, you can visit your site here:\n"
+"\n"
+"%s"
+msgstr ""
+"Um deinen Blog zu aktivieren, klicke bitte auf folgenden Link:\n"
+"\n"
+"%s\n"
+"\n"
+"Nach der Aktivierung wirst du eine weitere E-Mail mit deinen Zugangsdaten erhalten.\n"
+"\n"
+"Nach der Aktivierung kannst du deinen Blog unter der folgenden URL aufrufen:\n"
+"%s"
+
+#: wp-includes/ms-functions.php:752
+#: wp-includes/ms-functions.php:803
+msgid "[%1$s] Activate %2$s"
+msgstr "[%1$s] Aktivieren %2$s"
+
+#: wp-includes/ms-functions.php:795
+msgid ""
+"To activate your user, please click the following link:\n"
+"\n"
+"%s\n"
+"\n"
+"After you activate, you will receive *another email* with your login.\n"
+"\n"
+msgstr ""
+"Um dein Benutzerkonto zu aktivieren, klicke bitte auf folgenden Link:\n"
+"\n"
+"%s\n"
+"\n"
+"Nach der erfolgreichen Aktivierung erhälst du eine weitere E-Mail mit deinen Zugangsdaten.\n"
+
+#: wp-includes/ms-functions.php:839
+msgid "Invalid activation key."
+msgstr "Ungültiger Aktivierungsschlüssel."
+
+#: wp-includes/ms-functions.php:843
+msgid "The user is already active."
+msgstr "Der Benutzer ist bereit aktiviert."
+
+#: wp-includes/ms-functions.php:845
+msgid "The site is already active."
+msgstr "Dieser Blog ist bereits aktiv."
+
+#: wp-includes/ms-functions.php:861
+msgid "Could not create user"
+msgstr "Der Benutzer konnte nicht erstellt werden"
+
+#: wp-includes/ms-functions.php:869
+msgid "That username is already activated."
+msgstr "Dieser Benutzername wurde bereits aktiviert."
+
+#: wp-includes/ms-functions.php:970
+msgid "Site already exists."
+msgstr "Dieser Blog existiert bereits."
+
+#: wp-includes/ms-functions.php:976
+msgid "Could not create site."
+msgstr "Blog konnte nicht angelegt werden."
+
+#: wp-includes/ms-functions.php:1029
+msgid ""
+"New Site: %1s\n"
+"URL: %2s\n"
+"Remote IP: %3s\n"
+"\n"
+"Disable these notifications: %4s"
+msgstr ""
+"Neuer Blog: %1s\n"
+"URL: %2s\n"
+"Remote-IP: %3s\n"
+"\n"
+"Diese Benachrichtigungen deaktivieren: %4s"
+
+#: wp-includes/ms-functions.php:1036
+msgid "New Site Registration: %s"
+msgstr "Neue Registrierung eines Blogs: %s"
+
+#: wp-includes/ms-functions.php:1063
+msgid ""
+"New User: %1s\n"
+"Remote IP: %2s\n"
+"\n"
+"Disable these notifications: %3s"
+msgstr ""
+"Neue Benutzer: %1s\n"
+"Remote-IP: %2s\n"
+"\n"
+"Deaktiviere diese Benachrichtigungen: %3s"
+
+#: wp-includes/ms-functions.php:1069
+msgid "New User Registration: %s"
+msgstr "Neue Benutzerregistrierung: %s"
+
+#: wp-includes/ms-functions.php:1142
+msgid "<h1>Already Installed</h1><p>You appear to have already installed WordPress. To reinstall please clear your old database tables first.</p>"
+msgstr "<h1>Bereits installiert</h1><p>Du scheinst WordPress bereits installiert zu haben. Falls du es erneut installieren willst, lösche bitte vorher die Tabellen in der Datenbank.</p>"
+
+#: wp-includes/ms-functions.php:1256
+msgid "New %1$s Site: %2$s"
+msgstr "Neuer %1$s Blog: %2$s"
+
+#: wp-includes/ms-functions.php:1304
+msgid "New %1$s User: %2$s"
+msgstr "Neuer %1$s Benutzer: %2$s"
+
+#: wp-includes/ms-functions.php:1483
+msgid "Sorry, you have used your space allocation. Please delete some files to upload more files."
+msgstr "Dein Speicherplatzlimit wurde erreicht. Du musst ein paar Dateien löschen, um wieder neue hochladen zu können."
+
+#: wp-includes/ms-functions.php:1661
+msgid "This file is too big. Files must be less than %d KB in size."
+msgstr "Die Datei ist zu groß. Dateien dürfen nicht größer als %d KB sein."
+
+#: wp-includes/ms-functions.php:1692
+msgid "Please try again!"
+msgstr "Bitte versuche es erneut!"
+
+#: wp-includes/ms-functions.php:1737
+msgid "An error occurred adding you to this site. Back to the <a href=\"%s\">homepage</a>."
+msgstr "Es trat ein Fehler beim Versuch auf, dich zu diesem Blog hinzufügen. Hier geht's <a href=\"%s\">zurück</a>."
+
+#: wp-includes/ms-functions.php:1739
+msgid "You have been added to this site. Please visit the <a href=\"%s\">homepage</a> or <a href=\"%s\">log in</a> using your username and password."
+msgstr "Du wurdest zu diesem Blog hinzugefügt. Bitte besuche die <a href=\"%s\">Homepage</a> oder <a href=\"%s\">melde</a> Dich mit deinem Benutzernamen und Passwort an."
+
+#: wp-includes/ms-functions.php:1739
+msgid "Success"
+msgstr "Erfolgreich"
+
+#: wp-includes/ms-functions.php:1899
+msgid ""
+"Dear User,\n"
+"\n"
+"Your new account is set up.\n"
+"\n"
+"You can log in with the following information:\n"
+"Username: USERNAME\n"
+"Password: PASSWORD\n"
+"LOGINLINK\n"
+"\n"
+"Thanks!\n"
+"\n"
+"--The Team @ SITE_NAME"
+msgstr ""
+"Hallo,\n"
+"\n"
+"dein Benutzerkonto wurde angelegt.\n"
+"\n"
+"Du kannst dich mit folgenden Daten einloggen: \n"
+"Benutzername: USERNAME\n"
+"Passwort: PASSWORD\n"
+"Login unter: LOGINLINK\n"
+"\n"
+"Viel Spaß!\n"
+"\n"
+"--Das Team von SITE_NAME"
+
+#: wp-includes/ms-load.php:87
+msgid "This user has elected to delete their account and the content is no longer available."
+msgstr "Der Nutzer hat sich entschieden seinen Account zu löschen – damit sind die Inhalte nicht länger verfügbar."
+
+#: wp-includes/ms-load.php:94
+msgid "This site has not been activated yet. If you are having problems activating your site, please contact <a href=\"mailto:%1$s\">%1$s</a>."
+msgstr "Diese Site wurde noch nicht aktiviert. Wenn du Probleme mit der Aktivierung hast, kontaktiere bitte <a href=\"mailto:%1$s\">%1$s</a>."
+
+#: wp-includes/ms-load.php:101
+msgid "This site has been archived or suspended."
+msgstr "Dieser Blog wurde deaktiviert oder archiviert."
+
+#: wp-includes/ms-default-constants.php:113
+msgid "The constant <code>VHOST</code> <strong>is deprecated</strong>. Use the boolean constant <code>SUBDOMAIN_INSTALL</code> in wp-config.php to enable a subdomain configuration. Use is_subdomain_install() to check whether a subdomain configuration is enabled."
+msgstr "Die Konstante <code>VHOST</code> <strong>ist veraltet</strong>. Nutze die Boolean-Konstante <code>SUBDOMAIN_INSTALL</code> in der Datei wp-config.php, um die Konfiguration von Subdomains zu aktivieren. Mit der Funktion <code>is_subdomain_install()</code> kannst du überprüfen, ob Subdomain-Konfiguration aktiviert ist."
+
+#: wp-includes/ms-default-constants.php:115
+msgid "<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL.</strong> The value of SUBDOMAIN_INSTALL will be assumed to be your subdomain configuration setting."
+msgstr "<strong>Widersprüchliche Angaben für die Konstanten VHOST und SUBDOMAIN_INSTALL.</strong> Es wird der Wert von SUBDOMAIN_INSTALL für die Konfigurationseinstellungen von Subdomains übernommen."
+
+#: wp-admin/my-sites.php:13
+#: wp-admin/ms-delete-site.php:13
+#: wp-admin/network/user-new.php:14
+#: wp-admin/network/index.php:17
+#: wp-admin/network/themes.php:14
+#: wp-admin/network/plugin-editor.php:14
+#: wp-admin/network/plugin-install.php:17
+#: wp-admin/network/site-users.php:14
+#: wp-admin/network/theme-editor.php:14
+#: wp-admin/network/setup.php:14
+#: wp-admin/network/site-settings.php:14
+#: wp-admin/network/site-new.php:14
+#: wp-admin/network/edit.php:14
+#: wp-admin/network/theme-install.php:17
+#: wp-admin/network/users.php:14
+#: wp-admin/network/upgrade.php:14
+#: wp-admin/network/update-core.php:14
+#: wp-admin/network/sites.php:14
+#: wp-admin/network/settings.php:14
+#: wp-admin/network/user-edit.php:14
+#: wp-admin/network/site-info.php:14
+#: wp-admin/network/plugins.php:14
+#: wp-admin/network/profile.php:14
+#: wp-admin/network/update.php:17
+#: wp-admin/network/site-themes.php:14
+#: wp-admin/network/admin.php:16
+msgid "Multisite support is not enabled."
+msgstr "Die Multblog-Unterstüzung ist nicht aktiviert."
+
+#: wp-admin/my-sites.php:16
+msgid "You do not have sufficient permissions to view this page."
+msgstr "Du hast nicht die erforderlichen Rechte, um diese Seite ansehen zu können."
+
+#: wp-admin/my-sites.php:64
+msgid "You must be a member of at least one site to use this page."
+msgstr "Du musst Benutzer mindestens eines Blogs sein, um diese Seite benutzen zu können."
+
+#: wp-admin/my-sites.php:31
+msgid "The primary site you chose does not exist."
+msgstr "Der gewählte Hauptblog existiert nicht."
+
+#: wp-admin/my-sites.php:42
+msgid "This screen shows an individual user all of their sites in this network, and also allows that user to set a primary site. He or she can use the links under each site to visit either the frontend or the dashboard for that site."
+msgstr "Auf dieser Seite siehst du alle Blogs, bei denen du als Benutzer oder Besitzer angemeldet bist. "
+
+#: wp-admin/my-sites.php:48
+msgid "<a href=\"http://codex.wordpress.org/Dashboard_My_Sites_Screen\" target=\"_blank\">Documentation on My Sites</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Dashboard_My_Sites_Screen\" target=\"_blank\">Documentation on My Sites (engl.)</a>"
+
+#: wp-admin/my-sites.php:78
+msgid "Global Settings"
+msgstr "Globale Einstellungen"
+
+#: wp-admin/my-sites.php:105
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:267
+msgid "Visit"
+msgstr "Blog anzeigen"
+
+#: wp-admin/network.php:27
+msgid "The Network creation panel is not for WordPress MU networks."
+msgstr "Die Seite zum Erstellen eines Blog-Netzwerks ist nicht für WordPress MU-Netzwerke aufrufbar."
+
+#: wp-admin/network.php:96
+msgid "You must define the <code>WP_ALLOW_MULTISITE</code> constant as true in your wp-config.php file to allow creation of a Network."
+msgstr "Du musst den Code <code>define('WP_ALLOW_MULTISITE', true);</code> in die Datei <code>wp-config.php</code> einbauen, um ein Blog-Netzwerk einrichten zu können."
+
+#: wp-admin/network.php:102
+msgid "Create a Network of WordPress Sites"
+msgstr "Erstelle ein Netzwerk mehrerer Blogs mit nur einer WordPress-Installation"
+
+#: wp-admin/network.php:106
+msgid "This screen allows you to configure a network as having subdomains (<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</code>). Subdomains require wildcard subdomains to be enabled in Apache and DNS records, if your host allows it."
+msgstr "Hier kannst du ein Blog-Netzwerk einrichten und festlegen, ob die Unterblogs entweder über Subdomains (<code>blog1.example.com</code>) oder Unterverzeichnisse (<code>example.com/blog1</code>) aufgerufen werden sollen. Für die Verwendung von Subdomains müssen Wildcard Subdomains beim Webserver und in den DNS-Einstellungen aktiviert sein."
+
+#: wp-admin/network.php:107
+msgid "Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your install. Fill out the network details, and click install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories)."
+msgstr "Die Wahl zwischen Subdomains oder Unterverzeichnissen kann später nicht ohne weiteres geändert werden. Fülle dann alle Felder aus und starte die Installation. Falls sie nicht klappt, sind vielleicht die Vorraussetzungen für die Nutzung von Subdomains nicht gegeben oder die Einstellungen für Permalinks sind nicht nutzbar."
+
+#: wp-admin/network.php:108
+msgid "The next screen for Network Setup will give you individually-generated lines of code to add to your wp-config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files."
+msgstr "Auf der nächsten Seite wird ein individuell generierter Code angezeigt, der in die Dateien wp-config.php und.htaccess eingefügt werden muss. Beachte, dass dein FTP-Programm eventuell versteckte Dateien – und damit die .htaccess – nicht anzeigt, was du dann in den Einstellungen deines FTP-Programms ändern musst. Ist die .htaccess noch nicht verhanden, so musst du sie anlegen, in dem du eine leere Textdatei erstellst, sie auf den Server lädst und erst dort umbenennst. Auf jeden Fall solltest du von beiden Dateien (wp-config.php und .htaccess) Sicherheitskopien anlegen."
+
+#: wp-admin/network.php:109
+msgid "Add a <code>blogs.dir</code> directory under <code>/wp-content</code> and add the designated lines of code to wp-config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules)."
+msgstr "Es wird nach dem Generieren des Codes genau beschrieben, welcher Code in welche Datei eingefügt werden muss."
+
+#: wp-admin/network.php:113
+#: wp-admin/network.php:124
+msgid "<a href=\"http://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network</a>"
+msgstr ""
+"<a href=\"http://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network (engl.)</a><br/>\n"
+"<a href=\"http://faq.wpde.org/blog-netzwerk-multi-blog-funktion-aktivieren/\" target=\"_blank\">Multi-Blog-Funktion aktivieren</a>"
+
+#: wp-admin/network.php:114
+#: wp-admin/network.php:125
+msgid "<a href=\"http://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentation on the Network Screen</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentation on the Network Screen (engl.)</a>"
+
+#: wp-admin/network.php:148
+msgid "Your <strong>WordPress address</strong> must match your <strong>Site address</strong> before creating a Network. See <a href=\"%s\">General Settings</a>."
+msgstr "Deine <strong>WordPress-Adresse</strong> muss identisch mit der <strong>Blog-Adresse</strong> sein, damit du ein Blog-Netzwerk erstellen kannst. Korrigiere dies in den <a href=\"%s\">Einstellungen</a>."
+
+#: wp-admin/network.php:155
+msgid "The constant DO_NOT_UPGRADE_GLOBAL_TABLES cannot be defined when creating a network."
+msgstr "Die Konstante DO_NOT_UPGRADE_GLOBAL_TABLES darf nicht während des Erstellens eines Blog-Netzwerks gesetzt sein."
+
+#: wp-admin/network.php:163
+#: wp-admin/network.php:341
+#: wp-admin/network.php:366
+msgid "Warning:"
+msgstr "Warnung:"
+
+#: wp-admin/network.php:163
+msgid "Please <a href=\"%s\">deactivate your plugins</a> before enabling the Network feature."
+msgstr "Bitte <a href=\"%s\">deaktiviere alle Plugins</a> bevor du das Blog-Netzwerk einrichtest."
+
+#: wp-admin/network.php:163
+msgid "Once the network is created, you may reactivate your plugins."
+msgstr "Nachdem das Blog-Netzwerk erfolgreich eingerichtet wurde, kannst du deine Plugins wieder aktivieren."
+
+#: wp-admin/network.php:172
+msgid "You cannot install a network of sites with your server address."
+msgstr "Du kannst kein Blog-Netzwerk mit deiner Serveradresse einrichten."
+
+#: wp-admin/network.php:173
+msgid "You cannot use port numbers such as <code>%s</code>."
+msgstr "Du kannst keine Port-Nummer wie <code>%s</code> verwenden."
+
+#: wp-admin/network.php:174
+msgid "Return to Dashboard"
+msgstr "Zurück zum Dashboard"
+
+#: wp-admin/network.php:186
+msgid "ERROR: The network could not be created."
+msgstr "FEHLER: Das Netzwerk konnte nicht erstellt werden."
+
+#: wp-admin/network.php:194
+#: wp-admin/network.php:214
+#: wp-admin/network.php:262
+#: wp-admin/network.php:272
+msgid "Warning!"
+msgstr "Warnung!"
+
+#: wp-admin/network.php:194
+#: wp-admin/network.php:366
+msgid "Networks may not be fully compatible with custom wp-content directories."
+msgstr "Blog-Netzwerke sind eventuell mit einem veränderten Ort oder Namen des Ordners wp-content nicht voll kompatibel."
+
+#: wp-admin/network.php:196
+msgctxt "Default network name"
+msgid "%s Sites"
+msgstr "%s Blogs"
+
+#: wp-admin/network.php:199
+msgid "Welcome to the Network installation process!"
+msgstr "Willkommen zur Installation deines Blog-Netzwerks!"
+
+#: wp-admin/network.php:200
+msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
+msgstr "Du musst nur noch ein paar Daten eingeben und schon bist auf dem besten Weg, ein WordPress Blog-Netzwerk einzurichten. Im nächsten Schritt werden die dafür benötigten Konfigurationsdateien erzeugt."
+
+#: wp-admin/network.php:212
+msgid "Note:"
+msgstr "Hinweis: "
+
+#: wp-admin/network.php:212
+msgid "Please make sure the Apache <code>mod_rewrite</code> module is installed as it will be used at the end of this installation."
+msgstr "Bitte vergewissere dich, dass das Apache-Modul <code>mod_rewrite</code> installiert ist, da es für die Blog-Netzwerk-Funktionalität unbedingt erforderlich ist."
+
+#: wp-admin/network.php:214
+msgid "It looks like the Apache <code>mod_rewrite</code> module is not installed."
+msgstr "Es sieht so aus, als wäre das Apache-Modul <code>mod_rewrite</code> nicht installiert."
+
+#: wp-admin/network.php:216
+msgid "If <code>mod_rewrite</code> is disabled, ask your administrator to enable that module, or look at the <a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html\">Apache documentation</a> or <a href=\"http://www.google.com/search?q=apache+mod_rewrite\">elsewhere</a> for help setting it up."
+msgstr "Wenn <code>mod_rewrite</code> deaktiviert ist, frage deinen Administrator ob er es aktivieren kann, oder besuche die <a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html\">Apache-Dokumentation</a> oder <a href=\"http://www.google.com/search?q=apache+mod_rewrite\">suche im Web</a> nach Hilfe zur Aktivierung des Moduls."
+
+#: wp-admin/network.php:220
+msgid "Addresses of Sites in your Network"
+msgstr "Die Adressen der Blogs in deinem Blog-Netzwerk"
+
+#: wp-admin/network.php:221
+msgid "Please choose whether you would like sites in your WordPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>"
+msgstr "Bitte wähle, ob die Blogs in deinem WordPress Blog-Netzwerk über Subdomains oder Unterverzeichnisse erreichbar sein sollen. <strong>Du kannst diese Einstellung später nicht ändern.</strong>"
+
+#: wp-admin/network.php:222
+msgid "You will need a wildcard DNS record if you are going to use the virtual host (sub-domain) functionality."
+msgstr "Du benötigst einen \"Wildcard-DNS-Eintrag\" wenn du die Virtual-Host-Funktion (Subdomains) nutzen möchtest."
+
+#: wp-admin/network.php:226
+msgid "Sub-domains"
+msgstr "Subdomains"
+
+#: wp-admin/network.php:227
+msgctxt "subdomain examples"
+msgid "like <code>site1.%1$s</code> and <code>site2.%1$s</code>"
+msgstr "Beispiel: <code>blog1.%1$s</code> und <code>blog2.%1$s</code>"
+
+#: wp-admin/network.php:230
+msgid "Sub-directories"
+msgstr "Unterverzeichnisse"
+
+#: wp-admin/network.php:231
+msgctxt "subdirectory examples"
+msgid "like <code>%1$s/site1</code> and <code>%1$s/site2</code>"
+msgstr "Beispiel: <code>%1$s/blog1</code> und <code>%1$s/blog2</code>"
+
+#: wp-admin/network.php:241
+#: wp-admin/network.php:245
+#: wp-admin/network.php:285
+msgid "Server Address"
+msgstr "Serveradresse"
+
+#: wp-admin/network.php:242
+msgid "We recommend you change your siteurl to <code>%1$s</code> before enabling the network feature. It will still be possible to visit your site using the <code>www</code> prefix with an address like <code>%2$s</code> but any links will not have the <code>www</code> prefix."
+msgstr "Wir empfehlen, die Blogadresse (siteurl) in <code>%1$s</code> zu ändern, bevor du die Blog-Netzwerk Funktionalität aktivierst. Es ist dann immer noch möglich, deinen Blog mit <code>www.</code> aufzurufen (zum Bespiel <code>%2$s</code>), aber alle Links auf der Seite sind dann ohne <code>www.</code>."
+
+#: wp-admin/network.php:247
+#: wp-admin/network.php:287
+msgid "The internet address of your network will be <code>%s</code>."
+msgstr "Die URL deines Blog-Netzwerks wird <code>%s</code> lauten."
+
+#: wp-admin/network.php:253
+msgid "Network Details"
+msgstr "Netzwerk-Details"
+
+#: wp-admin/network.php:257
+#: wp-admin/network.php:267
+msgid "Sub-directory Install"
+msgstr "Nutzung von Unterverzeichnissen"
+
+#: wp-admin/network.php:259
+msgid "Because you are using <code>localhost</code>, the sites in your WordPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains."
+msgstr "Da dein Blog auf <code>localhost</code> läuft, müssen die Blogs in deinem Blog-Netzwerk Unterverzeichnisse als Blogadresse nutzen. Sollen die Blogadresse Subdomains sein, so musst du stattdessen <code>localhost.localdomain</code> verwenden."
+
+#: wp-admin/network.php:262
+#: wp-admin/network.php:272
+#: wp-admin/network.php:279
+msgid "The main site in a sub-directory install will need to use a modified permalink structure, potentially breaking existing links."
+msgstr "Bei der Installation eines Blog-Netzwerks das Unterverzeichnisse benutzt, muss für das Hauptblog eine andere Permalinkstruktur genutzt werden. <strong>Dadurch werden die bisher genutzten Permalinks nicht mehr funktionieren!</strong>"
+
+#: wp-admin/network.php:269
+msgid "Because your install is in a directory, the sites in your WordPress network must use sub-directories."
+msgstr "Da deine WordPress-Installlation in einem Verzeichnis und nicht direkt im Stammverzeichnis liegt, können die Blogs in deinem Blog-Netzwerk nur als Unterverzeichnisse angelegt werden."
+
+#: wp-admin/network.php:277
+msgid "Sub-domain Install"
+msgstr "Subdomain Installation"
+
+#: wp-admin/network.php:278
+msgid "Because your install is not new, the sites in your WordPress network must use sub-domains."
+msgstr "Da dies keine von Grund auf neue WordPress-Installation ist, müssen die Blogs in deinem WordPress Blog-Netzwerk Subdomains benutzen."
+
+#: wp-admin/network.php:292
+msgid "Network Title"
+msgstr "Titel des Netzwerks"
+
+#: wp-admin/network.php:295
+msgid "What would you like to call your network?"
+msgstr "Wie möchtest du dein Netzwerk nennen?"
+
+#: wp-admin/network.php:299
+msgid "Admin E-mail Address"
+msgstr "Administrator-E-Mail-Adresse"
+
+#: wp-admin/network.php:302
+msgid "Your email address."
+msgstr "Deine E-Mail-Adresse"
+
+#: wp-admin/network.php:336
+msgid "The original configuration steps are shown here for reference."
+msgstr "Die ursprünglichen Konfigurationsanweisungen werden hier hier nur zur Erinnerung angezeigt."
+
+#: wp-admin/network.php:341
+msgid "An existing WordPress network was detected."
+msgstr "Ein existierendes WordPress-Netzwerk wurde festgestellt."
+
+#: wp-admin/network.php:342
+msgid "Please complete the configuration steps. To create a new network, you will need to empty or remove the network database tables."
+msgstr "Bitte vervollständige die Konfiguration. Um ein neues Netzwerk mehrerer Blogs zu erstellen, müssen die <strong>network</strong>-Tabellen in der Datenbank geleert oder gelöscht werden."
+
+#: wp-admin/network.php:349
+msgid "Enabling the Network"
+msgstr "Das Netzwerk aktivieren"
+
+#: wp-admin/network.php:350
+msgid "Complete the following steps to enable the features for creating a network of sites."
+msgstr "Führe folgende Schritte durch, um mehrere Blogs anlegen zu können."
+
+#: wp-admin/network.php:353
+#: wp-admin/network.php:355
+msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> and <code>%s</code> files."
+msgstr "<strong>Achtung:</strong> Wir empfehlen dringend, eine Sicherheitskopie der Datei <code>wp-config.php</code> und <code>%s</code> zu erstellen!"
+
+#: wp-admin/network.php:357
+msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> file."
+msgstr "<strong>Achtung:</strong> Wir empfehlen dringend, eine Sicherheitskopie der Datei <code>wp-config.php</code> zu erstellen!"
+
+#: wp-admin/network.php:364
+msgid "Create a <code>blogs.dir</code> directory at <code>%s/blogs.dir</code>. This directory is used to store uploaded media for your additional sites and must be writeable by the web server."
+msgstr "Erstelle ein neues Verzeichnis <code>blogs.dir</code> im Pfad <code>%s/blogs.dir</code>. In diesem Verzeichnis werden die hochgeladene Dateien von den Blogs deines Blog-Netzwerks gespeichert. Dieses Verzeichnis muss durch den Webserver beschreibbar sein."
+
+#: wp-admin/network.php:368
+msgid "Add the following to your <code>wp-config.php</code> file in <code>%s</code> <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
+msgstr "Füge folgenden Code in deine <code>wp-config.php</code>-Datei im Verzeichnis <code>%s</code> über der Zeile <code>/* That&#8217;s all, stop editing! Happy blogging. */</code> ein:"
+
+#: wp-admin/network.php:399
+msgid "This unique authentication key is also missing from your <code>wp-config.php</code> file."
+msgid_plural "These unique authentication keys are also missing from your <code>wp-config.php</code> file."
+msgstr[0] "Es fehlt noch folgender Sicherheitsschlüssel in deiner <code>wp-config.php</code>-Datei:"
+msgstr[1] "Es fehlen noch folgende Sicherheitsschlüssel in deiner <code>wp-config.php</code>-Datei:"
+
+#: wp-admin/network.php:399
+msgid "To make your installation more secure, you should also add:"
+msgstr "Um deine Installation noch sicherer zu machen, solltest du folgendendes hinzufügen:"
+
+#: wp-admin/network.php:484
+msgid "Add the following to your <code>web.config</code> file in <code>%s</code>, replacing other WordPress rules:"
+msgstr "Füge folgenden Code in deine <code>web.config</code>-Datei im Verzeichnis <code>%s</code> ein und überschreibe ggf. schon vorhandene WordPress Rewrite-Regeln."
+
+#: wp-admin/network.php:513
+msgid "Add the following to your <code>.htaccess</code> file in <code>%s</code>, replacing other WordPress rules:"
+msgstr "Füge folgenden Code in deine <code>.htaccess</code>-Datei im Verzeichnis <code>%s</code> ein und überschreibe ggf. schon vorhandene WordPress Rewrite-Regeln."
+
+#: wp-admin/network.php:521
+msgid "Once you complete these steps, your network is enabled and configured. You will have to log in again."
+msgstr "Sobald du diese Schritte beendet hast, ist dein Netzwerk eingerichtet und konfiguriert. Du musst dich danach erneut einloggen."
+
+#: wp-admin/ms-delete-site.php:17
+msgid "You do not have sufficient permissions to delete this site."
+msgstr "Du hast nicht die erforderlichen Rechte, um diesen Blog zu löschen."
+
+#: wp-admin/ms-delete-site.php:22
+msgid "Thank you for using %s, your site has been deleted. Happy trails to you until we meet again."
+msgstr "Vielen dank, dass du %s genutzt hast – dein Blog wurde gelöscht. Bis zum nächsten mal."
+
+#: wp-admin/ms-delete-site.php:24
+msgid "I'm sorry, the link you clicked is stale. Please select another option."
+msgstr "Tut mir leid, aber dieser Link ist nicht mehr gültig. Wähle eine andere Option."
+
+#: wp-admin/ms-delete-site.php:44
+msgid ""
+"Dear User,\n"
+"You recently clicked the 'Delete Site' link on your site and filled in a\n"
+"form on that page.\n"
+"If you really want to delete your site, click the link below. You will not\n"
+"be asked to confirm again so only click this link if you are absolutely certain:\n"
+"###URL_DELETE###\n"
+"\n"
+"If you delete your site, please consider opening a new site here\n"
+"some time in the future! (But remember your current site and username\n"
+"are gone forever.)\n"
+"\n"
+"Thanks for using the site,\n"
+"Webmaster\n"
+"###SITE_NAME###"
+msgstr ""
+"Hallo,\n"
+"\n"
+"du hast vor kurzem entschieden, dass du deinen Blog löschen möchtest. Wenn du das wirklich tun willst, klicke den untenstehenden Link. Dein Blog wird dann endgültig und für immer gelöscht:\n"
+"###URL_DELETE###\n"
+"\n"
+"Du kannst irgendwann in der Zukunft natürlich gerne wieder einen neuen Blog eröffnen, jedoch nicht mehr mit dem zurzeit verwendeten Blog- und Benutzernamen.\n"
+"\n"
+"Danke und vielleicht sieht man sich ja mal wieder.\n"
+"\n"
+"Der Webmaster von \n"
+"###SITE_NAME###"
+
+#: wp-admin/ms-delete-site.php:62
+msgid "Delete My Site"
+msgstr "Lösche meinen Blog"
+
+#: wp-admin/ms-delete-site.php:65
+msgid "Thank you. Please check your email for a link to confirm your action. Your site will not be deleted until this link is clicked. "
+msgstr "Danke. Bitte überprüfe deine E-Mails, um die Löschung deines Blogs zu bestätigen. Dein Blog wird erst gelöscht, wenn du den Link in der E-Mail angeklickt hast."
+
+#: wp-admin/ms-delete-site.php:69
+msgid "If you do not want to use your %s site any more, you can delete it using the form below. When you click <strong>Delete My Site Permanently</strong> you will be sent an email with a link in it. Click on this link to delete your site."
+msgstr "Wenn du deinen Blog %s nicht mehr haben möchtest, so kannst du ihn löschen, in dem du das folgende Formular benutzt. Wenn du <strong>Lösche meinen Blog</strong> anklickst, so wirst du eine E-Mail mit einem Link bekommen, den du anklicken musst, um die Löschung durchzuführen."
+
+#: wp-admin/ms-delete-site.php:70
+msgid "Remember, once deleted your site cannot be restored."
+msgstr "Vorsicht: Wenn du den Blog löschst, kann er nicht mehr wiederhergestellt werden."
+
+#: wp-admin/ms-delete-site.php:75
+msgid "I'm sure I want to permanently disable my site, and I am aware I can never get it back or use %s again."
+msgstr "Ja, ich möchte meinen Blog '%s' endgültig und unwiderruflich löschen."
+
+#: wp-admin/ms-delete-site.php:76
+msgid "Delete My Site Permanently"
+msgstr "Lösche meinen Blog"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:121
+msgid "No sites found."
+msgstr "Keine Blogs gefunden."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:128
+msgctxt "site"
+msgid "Mark as Spam"
+msgstr "Als Spam markieren"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:129
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:259
+msgctxt "site"
+msgid "Not Spam"
+msgstr "Kein Spam"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:144
+#: wp-admin/network/site-new.php:126
+#: wp-admin/network/site-new.php:128
+#: wp-admin/network/site-info.php:125
+msgid "Domain"
+msgstr "Domain"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:148
+#: wp-admin/network/site-info.php:148
+msgid "Last Updated"
+msgstr "Zuletzt aktualisiert"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:149
+#: wp-admin/network/site-info.php:144
+msgctxt "site"
+msgid "Registered"
+msgstr "Registriert"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:173
+#: wp-admin/network/site-info.php:154
+msgid "Archived"
+msgstr "Archiviert"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:174
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:261
+#: wp-admin/network/site-info.php:155
+msgctxt "site"
+msgid "Spam"
+msgstr "Spam"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:175
+#: wp-admin/network/site-info.php:156
+msgid "Deleted"
+msgstr "Gelöscht"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:176
+#: wp-admin/network/site-info.php:158
+msgid "Mature"
+msgstr "Erwachseneninhalt"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:233
+msgctxt "%1$s: site name. %2$s: site tagline."
+msgid "%1$s &#8211; <em>%2$s</em>"
+msgstr "%1$s &#8211; <em>%2$s</em>"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:249
+msgid "You are about to activate the site %s"
+msgstr "Du bist dabei den folgenden Blog zu aktivieren %s"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:251
+msgid "You are about to deactivate the site %s"
+msgstr "Du bist dabei den folgenden Blog zu deaktivieren %s"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:254
+msgid "You are about to unarchive the site %s."
+msgstr "Du bist dabei, den Blog %s wieder zu aktivieren."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:254
+msgid "Unarchive"
+msgstr "Wiederherstellen"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:256
+msgid "You are about to archive the site %s."
+msgstr "Du bist gerade dabei den Blog %s zu archivieren."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:256
+msgctxt "verb; site"
+msgid "Archive"
+msgstr "Archivieren"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:259
+msgid "You are about to unspam the site %s."
+msgstr "Du bist dabei den SPAM-Status des Blogs %s zu entfernen."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:261
+msgid "You are about to mark the site %s as spam."
+msgstr "Du bist dabei diesen Blog %s als SPAM zu markieren."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:264
+msgid "You are about to delete the site %s."
+msgstr "Du bist dabei den folgenden Blog zu löschen %s."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:282
+msgid "Never"
+msgstr "Noch nie"
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:303
+msgid "Only showing first 5 users."
+msgstr "Es werden nur die ersten fünf Benutzer angezeigt."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:303
+msgid "More"
+msgstr "Mehr"
+
+#: wp-admin/includes/ms-deprecated.php:30
+msgid "Sorry, you must delete files before you can upload any more."
+msgstr "Entschuldige, aber du muss erst Dateien löschen bevor du neue hochladen kannst."
+
+#: wp-admin/includes/ms.php:33
+msgid "Not enough space to upload. %1$s KB needed."
+msgstr "Es steht nicht ausreichend Speicherplatz zum hochladen vorhanden. %1$s KB erforderlich."
+
+#: wp-admin/includes/ms.php:35
+msgid "This file is too big. Files must be less than %1$s KB in size."
+msgstr "Die Datei ist zu groß. Dateien dürfen nicht größer als %1$s KB sein."
+
+#: wp-admin/includes/ms.php:37
+msgid "You have used your space quota. Please delete files before uploading."
+msgstr "Du verwendest bereits den maximalen Speicherplatz. Du musst Dateien löschen bevor du neue hochladen kannst."
+
+#: wp-admin/includes/ms.php:40
+msgid "Back"
+msgstr "Zurück"
+
+#: wp-admin/includes/ms.php:213
+msgid ""
+"Dear user,\n"
+"\n"
+"You recently requested to have the administration email address on\n"
+"your site changed.\n"
+"If this is correct, please click on the following link to change it:\n"
+"###ADMIN_URL###\n"
+"\n"
+"You can safely ignore and delete this email if you do not want to\n"
+"take this action.\n"
+"\n"
+"This email has been sent to ###EMAIL###\n"
+"\n"
+"Regards,\n"
+"All at ###SITENAME###\n"
+"###SITEURL### "
+msgstr ""
+"Lieber Benutzer,\n"
+"\n"
+"du möchtest die Administrator-E-Mail-Adresse deines Blogs ändern. Um dies zu tun, klicke auf folgenden Link:\n"
+"\n"
+"###ADMIN_URL###\n"
+"\n"
+"Falls du dies doch nicht tun willst, kannst du diese E-Mail auch einfach ignorieren und es wird nichts passieren.\n"
+"\n"
+"Diese E-Mail wurde an folgende Adresse versand: ###EMAIL###\n"
+"\n"
+"Grüße von\n"
+"###SITENAME###\n"
+"###SITEURL###"
+
+#: wp-admin/includes/ms.php:234
+msgid "[%s] New Admin Email Address"
+msgstr "[%s] Neue Administrator E-Mail-Adresse"
+
+#: wp-admin/includes/ms.php:250
+msgid "<strong>ERROR</strong>: The e-mail address isn't correct."
+msgstr "<strong>FEHLER:</strong> Diese E-Mail-Addresse ist nicht korrekt."
+
+#: wp-admin/includes/ms.php:255
+msgid "<strong>ERROR</strong>: The e-mail address is already used."
+msgstr "<strong>FEHLER:</strong> Diese E-Mail-Adresse wird schon benutzt."
+
+#: wp-admin/includes/ms.php:267
+msgid ""
+"Dear user,\n"
+"\n"
+"You recently requested to have the email address on your account changed.\n"
+"If this is correct, please click on the following link to change it:\n"
+"###ADMIN_URL###\n"
+"\n"
+"You can safely ignore and delete this email if you do not want to\n"
+"take this action.\n"
+"\n"
+"This email has been sent to ###EMAIL###\n"
+"\n"
+"Regards,\n"
+"All at ###SITENAME###\n"
+"###SITEURL###"
+msgstr ""
+"Lieber Benutzer,\n"
+"\n"
+"du möchtest die E-Mail-Adresse deines Benutzerkontos ändern. Um dies zu tun, klicke auf folgenden Link:\n"
+"\n"
+"###ADMIN_URL###\n"
+"\n"
+"Falls du dies doch nicht tun willst, kannst du diese E-Mail auch einfach ignorieren und es wird nichts passieren.\n"
+"\n"
+"Diese E-Mail wurde an folgende Adresse versand: ###EMAIL###\n"
+"\n"
+"Grüße von\n"
+"###SITENAME###\n"
+"###SITEURL###"
+
+#: wp-admin/includes/ms.php:287
+msgid "[%s] New Email Address"
+msgstr "[%s] neue E-Mail-Addresse"
+
+#: wp-admin/includes/ms.php:295
+msgid "Your email address has not been updated yet. Please check your inbox at %s for a confirmation email."
+msgstr "Deine neue E-Mail-Adresse ist noch nicht aktiv. Bitte überprüfe deine E-Mail im Postfach %s für die Bestätigungsmail."
+
+#: wp-admin/includes/ms.php:405
+msgid "GB"
+msgstr "GB"
+
+#: wp-admin/includes/ms.php:408
+msgid "MB"
+msgstr "MB"
+
+#: wp-admin/includes/ms.php:411
+msgid "Used: %1s%% of %2s"
+msgstr "Verwendet werden: %1s%% von %2s"
+
+#: wp-admin/includes/ms.php:423
+msgid "Site Upload Space Quota "
+msgstr "Maximaler Speicherplatz für Uploads"
+
+#: wp-admin/includes/ms.php:424
+msgid "MB (Leave blank for network default)"
+msgstr "MB (trage nichts ein um den Netzwerk-Standard zu verwenden)"
+
+#: wp-admin/includes/ms.php:503
+#: wp-admin/includes/ms.php:505
+msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
+msgstr "Du hast versucht, den Administrationsbereich des Blogs \"%1$s\" aufzurufen, obwohl du nicht genügend Rechte dazu hast. Solltest du der Meinung sein, dass du Zugriff auf den Administrationsbereich von \"%1$s\" haben solltest, dann kontaktiere den Website-Administrator."
+
+#: wp-admin/includes/ms.php:506
+msgid "If you reached this screen by accident and meant to visit one of your own sites, here are some shortcuts to help you find your way."
+msgstr "Falls du zufällig auf dieser Seite gelandet bist und eigentliche nur zu einem deiner Blogs wolltest, dann findest du hier ein paar nützliche Abkürzungen, die dir hoffentlich helfen."
+
+#: wp-admin/includes/ms.php:508
+msgid "Your Sites"
+msgstr "Deine Blogs"
+
+#: wp-admin/includes/ms.php:517
+msgid "Visit Dashboard"
+msgstr "Zum Administrationsbereich"
+
+#: wp-admin/includes/ms.php:517
+msgid "View Site"
+msgstr "Blog anzeigen"
+
+#: wp-admin/includes/ms.php:544
+msgid "American English"
+msgstr "Amerikanisches Englisch"
+
+#: wp-admin/includes/ms.php:548
+msgid "British English"
+msgstr "Britisches Englisch"
+
+#: wp-admin/includes/ms.php:558
+msgid "English"
+msgstr "Englisch"
+
+#: wp-admin/includes/ms.php:578
+msgid "Warning! WordPress encrypts user cookies, but you must add the following lines to <strong>wp-config.php</strong> for it to be more secure."
+msgstr "Achtung! WordPress kann Cookies verschlüsseln, aber du musst folgende Zeilen zur Datei <strong>wp-config.php</strong> hinzufügen, damit dies der Fall ist und dein WordPress sicherer wird."
+
+#: wp-admin/includes/ms.php:579
+msgid "Before the line <code>/* That's all, stop editing! Happy blogging. */</code> please add this code:"
+msgstr "Füge vor der Zeile <code>/* That's all, stop editing! Happy blogging. */</code> bitte folgenden Code ein:"
+
+#: wp-admin/includes/ms.php:592
+msgid "Thank you for Updating! Please visit the <a href=\"%s\">Update Network</a> page to update all your sites."
+msgstr "Danke, dass du WordPress aktualisiert hast. Bitte <a href=\"%s\">aktualisiere jetzt alle Blogs im Netzwerk</a>."
+
+#: wp-admin/includes/ms.php:625
+msgid "Primary Site"
+msgstr "Primärer Blog"
+
+#: wp-admin/includes/ms.php:672
+msgid "The <code>%1$s</code> file is deprecated. Please remove it and update your server rewrite rules to use <code>%2$s</code> instead."
+msgstr "Die Datei <code>%1$s</code> ist veraltet. Bitte lösche sie und aktualisiere die Rewrite Regeln des Servers, damit stattdessen <code>%2$s</code> genutzt werden kann."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:170
+msgid "No themes found."
+msgstr "Keine Themes gefunden."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:172
+msgid "You do not appear to have any themes available at this time."
+msgstr "Es scheint, als hättest du derzeit keine Themes installiert."
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:180
+msgid "Theme"
+msgstr "Theme"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:201
+msgctxt "themes"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Alle <span class=\"count\">(%s)</span>"
+msgstr[1] "Alle <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:204
+msgid "Enabled <span class=\"count\">(%s)</span>"
+msgid_plural "Enabled <span class=\"count\">(%s)</span>"
+msgstr[0] "Freigeschaltet <span class=\"count\">(%s)</span>"
+msgstr[1] "Freigeschaltet <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:207
+msgid "Disabled <span class=\"count\">(%s)</span>"
+msgid_plural "Disabled <span class=\"count\">(%s)</span>"
+msgstr[0] "Aktiviert <span class=\"count\">(%s)</span>"
+msgstr[1] "Aktiviert <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:236
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:283
+msgid "Enable"
+msgstr "Freischalten"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:238
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgid "Disable"
+msgstr "Entziehen"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:238
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgid "Network Disable"
+msgstr "Netzwerkweit entziehen"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:283
+msgid "Enable this theme"
+msgstr "Dieses Theme freischalten"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:285
+msgid "Disable this theme"
+msgstr "Dieses Theme der Benutzung entziehen"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:288
+msgid "Open this theme in the Theme Editor"
+msgstr "Die Dateien dieses Themes im Theme-Editor öffnen"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:291
+msgid "Delete this theme"
+msgstr "Dieses Theme löschen"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:337
+msgid "Visit theme homepage"
+msgstr "Zur Homepage des Themes"
+
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:337
+msgid "Visit Theme Site"
+msgstr "Zur Website des Themes"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:76
+msgctxt "user"
+msgid "Mark as Spam"
+msgstr "Als Spam markieren"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:77
+msgctxt "user"
+msgid "Not Spam"
+msgstr "Kein Spam"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:83
+msgid "No users found."
+msgstr "Es wurden keinen Benutzer gefunden."
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:98
+msgid "Super Admin <span class=\"count\">(%s)</span>"
+msgid_plural "Super Admins <span class=\"count\">(%s)</span>"
+msgstr[0] "Blogübergreifende Administratoren <span class=\"count\">(%s)</span>"
+msgstr[1] "Blogübergreifende Administratoren <span class=\"count\">(%s)</span>"
+
+#: wp-admin/includes/class-wp-ms-users-list-table.php:118
+msgctxt "user"
+msgid "Registered"
+msgstr "Registriert"
+
+#: wp-admin/network/user-new.php:17
+msgid "You do not have sufficient permissions to add users to this network."
+msgstr "Du hast nicht die benötigten Rechte um Benutzer zu diesem Blog-Netzwerk hinzuzufügen."
+
+#: wp-admin/network/user-new.php:24
+msgid "Add User will set up a new user account on the network and send that person an email with username and password."
+msgstr "Ein Klick auf \"Benutzer hinzufügen\" legt einen neuen Benutzer an und schickt ihm eine E-Mail, die seinen Benutzernamen, Passwort und weitere Details enthält. "
+
+#: wp-admin/network/user-new.php:25
+msgid "Users who are signed up to the network without a site are added as subscribers to the main or primary dashboard site, giving them profile pages to manage their accounts. These users will only see Dashboard and My Sites in the main navigation until a site is created for them."
+msgstr "Benutzer, die im Blog-Netzwerk registriert sind, aber keinen eigenen Blog haben, werden automatisch im Dashboard-Blog (siehe linker Menüpunkt \"Blog-Netzwerk\" &gt; \"Einstellungen\") hinzugefügt und haben so die Möglichkeit, ihr Profil zu bearbeiten und zu sehen, in welchen Blogs sie noch als Abonennten geführt sind."
+
+#: wp-admin/network/user-new.php:30
+#: wp-admin/network/users.php:246
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Users_Screen\" target=\"_blank\">Documentation on Network Users (engl.)</a>"
+
+#: wp-admin/network/user-new.php:31
+#: wp-admin/network/index.php:38
+#: wp-admin/network/site-users.php:36
+#: wp-admin/network/site-settings.php:33
+#: wp-admin/network/site-new.php:30
+#: wp-admin/network/users.php:247
+#: wp-admin/network/sites.php:46
+#: wp-admin/network/site-info.php:33
+#: wp-admin/network/site-themes.php:38
+msgid "<a href=\"http://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums</a>"
+msgstr ""
+"<a href=\"http://wordpress.org/support/forum/multisite/\" target=\"_blank\">Support Forums (engl.)</a><br/>\n"
+"<a href=\"http://forum.wpde.org/blog-netzwerk/\" target=\"_blank\">WordPress Deutschland Forum</a>"
+
+#: wp-admin/network/user-new.php:37
+#: wp-admin/network/index.php:20
+#: wp-admin/network/site-users.php:49
+#: wp-admin/network/site-settings.php:43
+#: wp-admin/network/site-new.php:37
+#: wp-admin/network/users.php:17
+#: wp-admin/network/users.php:95
+#: wp-admin/network/users.php:117
+#: wp-admin/network/users.php:132
+#: wp-admin/network/users.php:183
+#: wp-admin/network/upgrade.php:39
+#: wp-admin/network/sites.php:17
+#: wp-admin/network/sites.php:62
+#: wp-admin/network/sites.php:79
+#: wp-admin/network/sites.php:123
+#: wp-admin/network/sites.php:133
+#: wp-admin/network/sites.php:143
+#: wp-admin/network/sites.php:154
+#: wp-admin/network/sites.php:165
+#: wp-admin/network/sites.php:175
+#: wp-admin/network/sites.php:185
+#: wp-admin/network/sites.php:195
+#: wp-admin/network/settings.php:17
+#: wp-admin/network/site-info.php:43
+#: wp-admin/network/site-themes.php:61
+msgid "You do not have permission to access this page."
+msgstr "Du hast nicht das Recht, auf diese Seite zuzugreifen."
+
+#: wp-admin/network/user-new.php:40
+msgid "Cannot create an empty user."
+msgstr "Es kann kein leerer Benutzer angelegt werden."
+
+#: wp-admin/network/user-new.php:52
+msgid "Cannot add user."
+msgstr "Benutzer konnte nicht hinzugefügt werden."
+
+#: wp-admin/network/user-new.php:100
+#: wp-admin/network/site-users.php:309
+msgid "Username and password will be mailed to the above email address."
+msgstr "Benutzername und Passwort werden an die angegebene E-Mail-Adresse versandt."
+
+#: wp-admin/network/user-new.php:104
+#: wp-admin/network/site-users.php:277
+msgid "Add User"
+msgstr "Benutzer hinzufügen"
+
+#: wp-admin/network/index.php:29
+msgid "Until WordPress 3.0, running multiple sites required using WordPress MU instead of regular WordPress. In version 3.0, these applications have merged. If you are a former MU user, you should be aware of the following changes:"
+msgstr "Bis WordPress 3.0 mussten Multi-Blog-Betreiber WordPress MU, anstelle des normalem WordPress benutzen. In WordPress 3.0 sind diese beiden Anwendungen nun vereint. Falls du ein WordPress MU-Benutzer bist, beachte, dass:"
+
+#: wp-admin/network/index.php:30
+msgid "Site Admin is now Super Admin (we highly encourage you to get yourself a cape!)."
+msgstr "Der Menüpunkt \"Admin\" nun \"Blog-Netzwerk\" heißt"
+
+#: wp-admin/network/index.php:31
+msgid "Blogs are now called Sites; Site is now called Network."
+msgstr "Es hier und da weitere kleine Änderungen im Sprachgebrauch gibt, die dich aber nicht verwirren sollten"
+
+#: wp-admin/network/index.php:32
+msgid "The Right Now box provides the network administrator with links to the screens to either create a new site or user, or to search existing users and sites. Screens for Sites and Users are also accessible through the left-hand navigation in the Network Admin section."
+msgstr "Das &#8221;Auf einen Blick &#8221; Modul im Dashboard stellt dem Netzwerkadministrator Links zu den Seiten zur Verfügung auf denen man entweder neue Blogs oder Benutzer erstellen, beziehungsweise existierende Benutzer oder Blogs suchen kann. Die Seiten für Blogs und Benutzer können auch über die auf der linken Seite befindliche Navigation in dem Modul Netzwerkadministrator erreicht werden."
+
+#: wp-admin/network/index.php:37
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentation on the Network Admin</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin\" target=\"_blank\">Documentation on the Network Admin  (engl.)</a>"
+
+#: wp-admin/network/themes.php:22
+msgid "You do not have sufficient permissions to manage network themes."
+msgstr "Du hast nicht die benötigten Rechte um Themes im gesamten Netzwerk zu verwalten."
+
+#: wp-admin/network/themes.php:109
+msgid "You do not have sufficient permissions to delete themes for this site."
+msgstr "Du hast nicht die benötigten Rechte, um Themes dieses Blogs zu löschen."
+
+#: wp-admin/network/themes.php:153
+msgid "Delete Theme"
+msgid_plural "Delete Themes"
+msgstr[0] "Theme löschen"
+msgstr[1] "Themes löschen"
+
+#: wp-admin/network/themes.php:155
+msgid "This theme may be active on other sites in the network."
+msgid_plural "These themes may be active on other sites in the network."
+msgstr[0] "Dieses Theme ist möglicherweise in anderen Blogs des Netzwerks aktiv."
+msgstr[1] "Dieses Themes sind möglicherweise in anderen Blogs des Netzwerks aktiv."
+
+#: wp-admin/network/themes.php:156
+msgid "You are about to remove the following theme:"
+msgid_plural "You are about to remove the following themes:"
+msgstr[0] "Du bist dabei, folgendes Theme zu entfernen:"
+msgstr[1] "Du bist dabei, folgende Themes zu entfernen:"
+
+#: wp-admin/network/themes.php:161
+msgid "Are you sure you wish to delete these themes?"
+msgstr "Bist du sicher, dass du diese Themes löschen möchtest?"
+
+#: wp-admin/network/themes.php:170
+msgid "Yes, Delete this theme"
+msgid_plural "Yes, Delete these themes"
+msgstr[0] "Ja, bitte dieses Theme löschen"
+msgstr[1] "Ja, bitte diese Themes löschen"
+
+#: wp-admin/network/themes.php:173
+msgid "No, Return me to the theme list"
+msgstr "Nein, bitte zur Liste der Themes zurückkehren"
+
+#: wp-admin/network/themes.php:204
+#: wp-admin/network/site-themes.php:131
+msgctxt "themes per page (screen options)"
+msgid "Themes"
+msgstr "Themes pro Seite"
+
+#: wp-admin/network/themes.php:210
+msgid "This screen enables and disables the inclusion of themes available to choose in the Appearance menu for each site. It does not activate or deactivate which theme a site is currently using."
+msgstr "Auf dieser Seite kannst du festlegen, welche Themes zur Benutzung durch die Blogs im Blog-Netzwerk zur Verfügung stehen. Es aktiviert oder deaktiviert jedoch nicht das jeweils in einem Blog genutzte Theme."
+
+#: wp-admin/network/themes.php:211
+msgid "If the network admin disables a theme that is in use, it can still remain selected on that site. If another theme is chosen, the disabled theme will not appear in the site&#8217;s Appearance > Themes screen."
+msgstr "Wenn du ein Theme deaktivierst, obwohl es in Benutzung ist, kann es sein, dass es weiterhin in jenem Blog aktiv bleibt. Wird dann ein anderes Theme vom Benutzer aktiviert, so verschwindet erst dann das Theme aus der Liste der verfügbaren Themes im jeweiligen Blog."
+
+#: wp-admin/network/themes.php:212
+msgid "Themes can be enabled on a site by site basis by the network admin on the Edit Site screen (which has a Themes tab); get there via the Edit action link on the All Sites screen. Only network admins are able to install or edit themes."
+msgstr ""
+"Themes können für jeden Blog individuell zur Benutzung freigeschaltet werden. Dies geschieht über den Menüpunkt <em>Blog</em> &gt; <em>Bearbeiten</em> (eines Blogs) &gt; <em>Themes</em>.\n"
+"Nur Netzwerk-Administratoren dürfen neue Themes installieren oder Themes bearbeiten."
+
+#: wp-admin/network/themes.php:217
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentation on Network Themes</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Themes_Screen\" target=\"_blank\">Documentation on Network Themes (engl.)</a>"
+
+#: wp-admin/network/themes.php:230
+#: wp-admin/network/menu.php:32
+msgctxt "theme"
+msgid "Add New"
+msgstr "Installieren"
+
+#: wp-admin/network/themes.php:238
+#: wp-admin/network/site-themes.php:162
+msgid "Theme enabled."
+msgid_plural "%s themes enabled."
+msgstr[0] "Theme freigeschaltet."
+msgstr[1] "%s Themes freigeschaltet."
+
+#: wp-admin/network/themes.php:241
+#: wp-admin/network/site-themes.php:165
+msgid "Theme disabled."
+msgid_plural "%s themes disabled."
+msgstr[0] "Theme entzogen."
+msgstr[1] "%s Themes entzogen."
+
+#: wp-admin/network/themes.php:244
+msgctxt "network"
+msgid "Theme deleted."
+msgid_plural "%s themes deleted."
+msgstr[0] "Theme gelöscht."
+msgstr[1] "%s Themes gelöscht."
+
+#: wp-admin/network/themes.php:246
+#: wp-admin/network/site-themes.php:167
+msgid "No theme selected."
+msgstr "Kein Theme ausgewählt."
+
+#: wp-admin/network/themes.php:248
+msgid "You cannot delete a theme while it is active on the main site."
+msgstr "Du kannst ein Theme nicht löschen, so lange es im Hauptblog aktiv ist."
+
+#: wp-admin/network/site-users.php:17
+#: wp-admin/network/site-settings.php:17
+#: wp-admin/network/site-info.php:17
+msgid "You do not have sufficient permissions to edit this site."
+msgstr "Du hast nicht die benötigten Rechte, diesen Blog zu bearbeiten."
+
+#: wp-admin/network/site-users.php:26
+#: wp-admin/network/site-settings.php:23
+#: wp-admin/network/site-info.php:23
+#: wp-admin/network/site-themes.php:28
+msgid "The menu is for editing information specific to individual sites, particularly if the admin area of a site is unavailable."
+msgstr "Auf dieser Seite können die Einstellungen einzelner Blogs direkt eingesehen und bearbeitet werden. "
+
+#: wp-admin/network/site-users.php:27
+#: wp-admin/network/site-settings.php:24
+#: wp-admin/network/site-info.php:24
+#: wp-admin/network/site-themes.php:29
+msgid "<strong>Info</strong> - The domain and path are rarely edited as this can cause the site to not work properly. The Registered date and Last Updated date are displayed. Network admins can mark a site as archived, spam, deleted and mature, to remove from public listings or disable."
+msgstr ""
+"<strong>Info</strong> – Die Domain und der Pfad sollten für gewöhnlich nicht geändert werden, da falsche Einstellungen das Blog unerreichbar machen können. \n"
+"Es wird auch angezeigt, wann das Blog registriert und zuletzt aktualisiert wurde.\n"
+"Website-Administratoren können Blogs deaktivieren (archivieren), löschen oder als als SPAM markieren. \"Erwachseneninhalt\" entfernt das Blog aus Netzwerkweiten Auflistungen."
+
+#: wp-admin/network/site-users.php:28
+#: wp-admin/network/site-settings.php:25
+#: wp-admin/network/site-info.php:25
+#: wp-admin/network/site-themes.php:30
+msgid "<strong>Users</strong> - This displays the users associated with this site. You can also change their role, reset their password, or remove them from the site. Removing the user from the site does not remove the user from the network."
+msgstr "<strong>Benutzer</strong> – Zeigt in diesem Blog registrierte Benutzer an. Es können auch Benutzerrolle oder Passwort geändert, sowie der Benutzer aus dem Blog entfernt werden. Wird ein Benutzer aus einem Blog entfernt, bleibt das Benutzerkonto jedoch weiterhin im Netzwerk bestehen."
+
+#: wp-admin/network/site-users.php:29
+#: wp-admin/network/site-settings.php:26
+#: wp-admin/network/site-info.php:26
+#: wp-admin/network/site-themes.php:31
+msgid "<strong>Themes</strong> - This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
+msgstr "<strong>Themes</strong> – Zeigt Themes, die nicht bereits im gesamten Netzwerk zur Benutzung freigeschaltet sind. Damit ein Blog ein Theme aktivieren und damit benutzen kann, muss es zuerst für den jeweiligen Blog freigeschaltet werden. Themes können auch für alle Blogs des Netzwerks freigeschaltet werden. Dies ist über den Hauptmenüpunkt <a href=\"%s\">Themes</a> möglich."
+
+#: wp-admin/network/site-users.php:30
+#: wp-admin/network/site-settings.php:27
+#: wp-admin/network/site-info.php:27
+#: wp-admin/network/site-themes.php:32
+msgid "<strong>Settings</strong> - This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
+msgstr "<strong>Einstellungen</strong> – Enthält eine Übersicht aller zum Blog gespeicherten Daten, so wie sie in der Datenbank hinterlegt sind. Manche Felder sind ausgegraut und zeigen den Inhalt <em>SERIALIZED DATA</em> – Diese Werte können dann aus technischen Gründen nicht geändert werden."
+
+#: wp-admin/network/site-users.php:35
+#: wp-admin/network/site-settings.php:32
+#: wp-admin/network/site-new.php:29
+#: wp-admin/network/sites.php:45
+#: wp-admin/network/site-info.php:32
+#: wp-admin/network/site-themes.php:37
+msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screens\" target=\"_blank\">Documentation on Site Management</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Sites_Screens\" target=\"_blank\">Documentation on Site Management (engl.)</a>"
+
+#: wp-admin/network/site-users.php:45
+#: wp-admin/network/site-settings.php:39
+#: wp-admin/network/site-info.php:39
+#: wp-admin/network/site-themes.php:55
+msgid "Invalid site ID."
+msgstr "Falsche Blog-ID."
+
+#: wp-admin/network/site-users.php:168
+#: wp-admin/network/site-settings.php:78
+#: wp-admin/network/site-info.php:88
+#: wp-admin/network/site-themes.php:134
+msgid "Edit Site: <a href=\"%1$s\">%2$s</a>"
+msgstr "Blog bearbeiten: <a href=\"%1$s\">%2$s</a>"
+
+#: wp-admin/network/site-users.php:169
+#: wp-admin/network/site-settings.php:79
+#: wp-admin/network/site-info.php:89
+#: wp-admin/network/site-themes.php:135
+msgid "Edit Site: %s"
+msgstr "Blog bearbeiten: %s"
+
+#: wp-admin/network/site-users.php:182
+#: wp-admin/network/site-settings.php:94
+#: wp-admin/network/site-info.php:104
+#: wp-admin/network/site-themes.php:148
+msgid "Info"
+msgstr "Info"
+
+#: wp-admin/network/site-users.php:200
+msgid "User is already a member of this site."
+msgstr "Der Benutzer ist bereits Mitglied dieses Blogs."
+
+#: wp-admin/network/site-users.php:203
+msgid "Enter the username of an existing user."
+msgstr "Gib den Benutzernamen eines bereits bestehenden Benutzers ein."
+
+#: wp-admin/network/site-users.php:209
+msgid "Select a user to change role."
+msgstr "Wähle zuerst den Benutzer aus, dessen Rolle du ändern möchtest."
+
+#: wp-admin/network/site-users.php:215
+msgid "Select a user to remove."
+msgstr "Wähle zuerst den Benutzer aus, welcher gelöscht werden soll."
+
+#: wp-admin/network/site-users.php:218
+msgid "User created."
+msgstr "Benutzer erstellt."
+
+#: wp-admin/network/site-users.php:221
+msgid "Enter the username and email."
+msgstr "Gib den Benutzernamen und die E-Mail-Adresse ein."
+
+#: wp-admin/network/site-users.php:224
+msgid "Duplicated username or email address."
+msgstr "Schon vorhandener Benutzername oder E-Mail-Adresse."
+
+#: wp-admin/network/site-users.php:247
+msgid "Add User to This Site"
+msgstr "Benutzer zu diesem Blog hinzufügen"
+
+#: wp-admin/network/site-users.php:249
+msgid "You may add from existing network users, or set up a new user to add to this site."
+msgstr "Du kannst bereits im Netzwerk registrierte Benutzers zum Blog hinzufügen oder einen neuen Benutzer erstellen. "
+
+#: wp-admin/network/site-users.php:251
+msgid "You may add from existing network users to this site."
+msgstr "Du kannst bereits im Netzwerk registrierte Benutzers zum Blog hinzufügen."
+
+#: wp-admin/network/site-settings.php:74
+msgid "Site options updated."
+msgstr "Blog-Optionen aktualisiert."
+
+#: wp-admin/network/site-new.php:17
+msgid "You do not have sufficient permissions to add sites to this network."
+msgstr "Du hast nicht die benötigten Rechte, neue Blogs in diesem Netzwerk zu erstellen."
+
+#: wp-admin/network/site-new.php:23
+msgid "This screen is for Super Admins to add new sites to the network. This is not affected by the registration settings."
+msgstr "Auf dieser Seite können blogübergreifende Administratoren – unabhängig von den Registrierungseinstellungen – neue Blogs anlegen."
+
+#: wp-admin/network/site-new.php:24
+msgid "If the admin email for the new site does not exist in the database, a new user will also be created."
+msgstr "Es wird ein neuer Benutzer angelegt, sofern nicht schon ein Benutzer mit der angegebenen Administrator E-Mail-Adresse vorhanden ist."
+
+#: wp-admin/network/site-new.php:40
+msgid "Can&#8217;t create an empty site."
+msgstr "Ein leerer Blog kann nicht erstellt werden."
+
+#: wp-admin/network/site-new.php:50
+msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: <code>%s</code>"
+msgstr ""
+"Die folgenden Begriffe sind für WordPress reserviert und können deshalb nicht als Blogadresse genutzt werden:\n"
+"<code>%s</code>"
+
+#: wp-admin/network/site-new.php:57
+msgid "Missing or invalid site address."
+msgstr "Fehlende oder ungültige Blog-Adresse."
+
+#: wp-admin/network/site-new.php:59
+msgid "Missing email address."
+msgstr "Fehlende Email-Adresse"
+
+#: wp-admin/network/site-new.php:61
+msgid "Invalid email address."
+msgstr "Ungültige Email-Adresse"
+
+#: wp-admin/network/site-new.php:77
+msgid "There was an error creating the user."
+msgstr "Beim erstellen des Benutzers ist ein Fehler aufgetreten."
+
+#: wp-admin/network/site-new.php:89
+msgid "[%s] New Site Created"
+msgstr "[%s] Neuer Blog wurde erstellt"
+
+#: wp-admin/network/site-new.php:101
+msgid "Site added. <a href=\"%1$s\">Visit Dashboard</a> or <a href=\"%2$s\">Edit Site</a>"
+msgstr "Blog hinzugefügt. <a href=\"%1$s\">Dashboard Aufrufen</a> oder <a href=\"%2$s\">Blog editieren</a>"
+
+#: wp-admin/network/site-new.php:104
+#: wp-admin/network/site-new.php:113
+msgid "Add New Site"
+msgstr "Neuen Blog erstellen"
+
