@@ -22,32 +22,72 @@ Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, cust
 /* @Fonts *********/
 /* Regular */
 @font-face {
-  font-family: "omOpenSansRegular";
-  src: url("css/fonts/OpenSans-Regular-webfont.eot");
-  src: url("css/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-       url("css/fonts/OpenSans-Regular-webfont.woff") format("woff"),
-       url("css/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Italic-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Italic-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Semibold-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Semibold-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Semibold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-SemiboldItalic-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-SemiboldItalic-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-SemiboldItalic-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* Light */
 @font-face {
-  font-family: "omOpenSansLight";
-  src: url("css/fonts/OpenSans-Light-webfont.eot");
-  src: url("css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("css/fonts/OpenSans-Light-webfont.woff") format("woff"),
-       url("css/fonts/OpenSans-Light-webfont.ttf") format("truetype");
+  font-family: "Open Sans Light";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "omOpenSansLight";
-  src: url("css/fonts/OpenSans-Regular-webfont.eot");
-  src: url("css/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-       url("css/fonts/OpenSans-Regular-webfont.woff") format("woff"),
-       url("css/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+  font-family: "Open Sans Light";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -65,7 +105,7 @@ form ul, form ol { list-style: none; }
 a img { border: 0; }
 input, select, textarea { font-family: inherit; font-size: 100%; }
 .dtstart, .dtend, .published, .updated { border: 0; }
-img, video { max-width: 100%; height: auto; }
+img, video, object, embed { max-width: 100%; height: auto; }
 iframe { max-width: 100%; }
 
 /* @General styles ***/
@@ -74,7 +114,7 @@ html {
   background: #fff; 
 }
 body {
-  font: 16px/1.5 Georgia, Times, "Times New Roman", serif;
+  font: 14px/1.5 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   color: #333;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
@@ -87,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 .25em; 
   color: #484848; 
   line-height: 1; 
-  font-family: "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; 
+  font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif; 
   font-weight: normal; 
   text-shadow: 0 1px 0 rgba(255,255,255,0.75); 
 }
@@ -289,7 +329,7 @@ a:active {
 
 .widget_nav_menu, 
 .widget_categories {
-  font: 1.285em/1.1 "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: 1.285em/1.1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
 }
 .widget_categories {
   font-size: 1em;
@@ -366,7 +406,7 @@ a:active {
 /* @Primary @navigation *********/
 #nav-primary {
   background-color: #fff;
-  font-family: 'omOpenSansLight', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   margin: 0 0 48px;
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -494,7 +534,7 @@ a:active {
   border-bottom: 1px solid rgba(255,255,255,.5);
   box-shadow: inset 0 0 3px rgba(0,0,0,.1);
   clear: both;
-  font: .785em/1.1 "omOpenSansRegular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: .785em/1.1 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   margin: 24px 0 0;
   padding: 12px 24px 8px;
 }
@@ -539,7 +579,7 @@ a:active {
   background: linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
   border: 1px solid #fff;
   float: left;
-  font: 1em/1 "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   margin: 0 0 0 -92px;
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1);
   -o-box-shadow: 0 1px 1px rgba(0,0,0,.1);
@@ -571,7 +611,7 @@ a:active {
 .entry-comments {
   background: #fff;
   float: right;
-  font: 1em/1 "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   margin: 0;
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1);
   -o-box-shadow: 0 1px 1px rgba(0,0,0,.1);
@@ -620,7 +660,7 @@ a:active {
 /*** @Posted date */
 .entry-posted {
   background: url("img/bg-date-lt.png") center top no-repeat;
-  font: 10px/1 "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: 10px/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   left: 0;
   padding: 6px 10px 16px;
   position: absolute;
@@ -850,7 +890,7 @@ a.go:after {
 .nav-paging {
   background-color: #fff;
   box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
-  font: 1em/1 'omOpenSansLight', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   margin: 24px 0;
   padding: 12px 20px;
 }
@@ -935,7 +975,7 @@ input[type=submit], button {
   padding: 8px 24px;
   border: 0;
   text-shadow: 0 1px 0 rgba(0,0,0,0.25);
-  font: .857em/1.1 "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: .857em/1.1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   background-color: #276195;
   background-image: -moz-linear-gradient(#3c88cc,#276195);
   background-image: -ms-linear-gradient(#3c88cc,#276195);
@@ -959,7 +999,7 @@ form li {
 }
 label {
   display: block;
-  font: 1em/1.2 "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: 1em/1.2 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   padding: 0 0 .5em;
 }
 label .note {
@@ -994,7 +1034,7 @@ input:-moz-placeholder {
   border: 1px solid #ccc;
   border-radius: 6px;
   box-shadow: 0 0 0 3px rgba(0,0,0,.02) inset;
-  font-family: "omOpenSansRegular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   -moz-appearance: textfield;
   -o-appearance: textfield;
   appearance: textfield;
@@ -1130,7 +1170,7 @@ input:-moz-placeholder {
   position: relative;
 }
 #comment-form legend span {
-  font: 1.5em/1 "omOpenSansLight", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: 1.5em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   letter-spacing: -1px;
   margin: 0 0 .25em;
   position: absolute;
@@ -1242,7 +1282,7 @@ input:-moz-placeholder {
   list-style: none;
 }
 #nav-meta a {
-  font-family: "omOpenSansRegular", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
 }
 
 /*  @Tablet @Layout: 768px */
