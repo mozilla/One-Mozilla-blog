@@ -29,7 +29,7 @@
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">
-				<p><?php _e( 'Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?', 'onemozilla' ); ?></p>
+				<p><?php _e( "Sorry, we couldn't find any results for the requested archive. Perhaps try searching?", "onemozilla" ); ?></p>
 				<?php get_search_form(); ?>
 			</div><!-- .entry-content -->
 		</article><!-- #post-0 -->

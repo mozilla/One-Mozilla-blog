@@ -6,6 +6,16 @@ function presscenter_remove_parent_filters() {
 }
 add_action('after_setup_theme', 'presscenter_remove_parent_filters'); 
 
+/**
+ * Set up the child theme's textdomain.
+ *
+ * Translations can be filed in the /languages/ directory.
+ */
+function mozpress_theme_setup() {
+	load_child_theme_textdomain( 'mozpress', get_stylesheet_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'mozpress_theme_setup' );
+
 
 /*********
 * Set up At a Glance post type
