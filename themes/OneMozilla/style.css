@@ -232,9 +232,9 @@ a:active {
 #masthead {
   background-position: right top;
   background-repeat: no-repeat;
-  margin: 0;
+  margin: 0 30px 0 0;
   min-height: 120px;
-  padding: 72px 30px 48px;
+  padding: 72px 0 48px 30px;
   position: relative;
 }
 #masthead hgroup {
@@ -264,7 +264,7 @@ a:active {
 #masthead #tabzilla {
   border: 0;
   position: absolute;
-  right: 20px;
+  right: 0;
   top: 0;
 }
 
@@ -327,9 +327,12 @@ a:active {
   margin-top: .35em;
 }
 
-.widget_nav_menu, 
+.widget_nav_menu,
 .widget_categories {
-  font: 1.285em/1.1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 1.285em/1.1 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+.widget_nav_menu {
+  font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
 }
 .widget_categories {
   font-size: 1em;
@@ -1372,13 +1375,15 @@ input:-moz-placeholder {
 
   #masthead {
     background-image: none !important;
-    border-bottom: 1px solid;
-    margin-bottom: 24px;
+    margin: 0 0 24px 0;
     min-height: 0;
-    padding: 58px 20px 24px;
+    padding: 58px 20px 20px;
   }
   #masthead hgroup {
+    float: none;
     padding-right: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
   }
   #site-title {
     font-size: 2em;

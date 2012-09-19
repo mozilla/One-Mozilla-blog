@@ -20,6 +20,7 @@ Hover         #2592e6
 
 @import url("../OneMozilla/style.css");
 
+html { background: #20272a; }
 body { color: #b4b4b4; }
 body #page { background-color: #20272a; background-image: url("img/bg-midnight.png"); }
 
@@ -34,7 +35,7 @@ body #page { background-color: #20272a; background-image: url("img/bg-midnight.p
 
 
 /* @Main feature *********/
-.main-feature { background: #eee; color: #506168; padding: 60px 48px 48px 232px; margin: 0 -48px 48px; position: relative; min-height: 160px; }
+.main-feature { background: #eee; color: #506168; padding: 60px 30px 30px 232px; margin: 0 -30px 30px; position: relative; min-height: 160px; }
 .main-feature .feature-type { font-size: 16px; text-transform: uppercase; position: absolute; left: 48px; top: 24px; }
 .main-feature .entry-title { width: 100%; float: none; }
 .main-feature .entry-summary { position: static; padding: 0; min-height: 0; }
@@ -87,7 +88,7 @@ h1, h2, h3, h4, h5, h6 { color: #b4b4b4; text-shadow: 0 1px 0 rgba(0,0,0,0.3); }
 .entry-content a:hover img, .entry-content a:focus img, .entry-content a:active img, 
 .entry-summary a:hover img, .entry-summary a:focus img, .entry-summary a:active img { background-color: #2592e6; }
 
-.entry-summary { padding-left: 120px; position: relative; min-height: 92px; }
+.entry-summary { padding-left: 110px; position: relative; min-height: 92px; }
 .entry-summary .wp-post-image { position: absolute; left: 0; top: 0; }
 
 .entry-meta { border-bottom: 1px solid rgba(197,204,201,.1); }
@@ -101,7 +102,7 @@ body .entry-comments a { background-image: url(img/icn-comment.png); }
 legend { color: #b4b4b4; } /* For IE */
 
 /* @Sidebar *********/
-#content-sub { background: #2d373b; padding: 24px 24px 4em; margin-right: -24px; }
+#content-sub { background: #2d373b; width: 160px; padding: 30px 30px 4em; margin-right: -40px; }
 .widget_nav_menu li, .widget_categories li { border-bottom-color: #48585e; }
 
 .more-posts .hentry { position: relative; border-bottom: 1px dotted #48585e; margin-bottom: 10px; padding: 0 0 10px 0; clear: both; }
@@ -178,8 +179,8 @@ label .note { color: #afb6bb; }
 .entry-posted .posted-year { display: inline; font-size: 1em; }
 
 /*** Entry @Header */
-.post .entry-header { padding-left: 0; }
-.entry-title { min-height: 0; }
+.post .entry-header { padding: 0; }
+.entry-title { min-height: 0; margin: 0; }
 .show-comments.no-author .entry-title { float: none; width: auto; }
 .single-post .entry-title, .page .entry-title { font-size: 1.75em; letter-spacing: -0.5px; }
 
@@ -256,9 +257,9 @@ px      68    160    252    344    436    528    620    712    */
   .main-feature { background: #eee; color: #506168; padding: 60px 0 24px 208px; margin: 0 0 48px -24px; position: relative; min-height: 160px; }
   .main-feature .feature-type { left: 24px; }
   .main-feature .entry-summary { position: static; padding: 0 24px 0 0; }
-  .main-feature .entry-summary .wp-post-image { position: absolute; left: 24px; top: 60px; border: 0; margin: 0; }
+  .main-feature .entry-summary .wp-post-image { position: absolute; left: 20px; top: 60px; border: 0; margin: 0; }
 
-  #content-sub { background: #2d373b; padding: 12px 12px 4em; margin-right: -24px; }
+  #content-sub { background: #2d373b; padding: 15px 15px 4em; margin-right: -30px; }
 
 }
 
@@ -272,20 +273,20 @@ px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
   
-  .main-feature { padding: 240px 12px 12px; margin: 0 -12px 48px -12px; }
-  .main-feature .feature-type { left: 12px; }
+  .main-feature { padding: 60px 20px 20px; margin: 0 -20px 48px -20px; }
+  .main-feature .feature-type { left: 20px; }
   .main-feature .entry-title { font-size: 24px; }
-  .main-feature .entry-summary { position: static; padding: 0 24px 0 0; }
-  .main-feature .entry-summary .wp-post-image { left: 12px; top: 60px; border: 0; margin: 0; }
+  .main-feature .entry-summary { position: static; padding: 0 20px 0 0; }
+  .main-feature .entry-summary .wp-post-image { display: none; }
   
   .entry-summary { padding-left: 0; position: static; min-height: 92px; }
   .entry-summary .wp-post-image { position: static; float: left; margin: 0 12px .5em 0; }
 
-  #content-sub { margin-left: -24px; margin-right: -24px; }
+  #content-sub { width: auto; margin-left: -20px; margin-right: -20px; }
 
   .more-posts .hentry { padding: 0 0 10px 68px; min-height: 48px; }
   .more-posts .video-thumb { position: absolute; left: 0; top: 0; width: 48px; height: 48px; }
-  .more-posts .video-thumb img { margin-top:0; width: 48px; height: 48px; }
+  .more-posts .video-thumb img { margin-top:0; width: 48px; height: 48px; max-width: 48px; }
  
 }
 
@@ -299,10 +300,10 @@ px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-  .main-feature { background: #eee; color: #506168; padding: 60px 12px 12px 184px; margin: 0 -12px 48px -12px; position: relative; min-height: 92px; }
-  .main-feature .feature-type { left: 12px; }
+  .main-feature { background: #eee; color: #506168; padding: 60px 20px 20px 180px; margin: 0 -20px 48px -20px; position: relative; min-height: 92px; }
+  .main-feature .feature-type { left: 20px; }
   .main-feature .entry-title { font-size: 24px; }
   .main-feature .entry-summary { position: static; padding: 0 24px 0 0; }
-  .main-feature .entry-summary .wp-post-image { width: 148px; }
+  .main-feature .entry-summary .wp-post-image { left: 20px; display: inline; width: 148px; }
     
 }

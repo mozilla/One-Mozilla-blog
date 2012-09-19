@@ -78,6 +78,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .featured-posts {
   background-color: #2e475a;
+  -webkit-box-shadow: inset rgba(0,0,0, 0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+  -o-box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+  box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+}
+.featured-posts .wp-post-image {
+  background-color: #57758c;
+  border-color: #57758c;
 }
 
 legend { 

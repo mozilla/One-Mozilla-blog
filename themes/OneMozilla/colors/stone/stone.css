@@ -7,6 +7,10 @@ Link          #2983c8
 Hover         #20679e
 */
 
+html {
+  background: #f9f9f9;
+}
+
 #page { 
   background-color: #f9f9f9; 
   background-image: url("bg-stone.png"); 

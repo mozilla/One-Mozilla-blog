@@ -7,6 +7,9 @@ Link          #67a7d0
 Hover         #4090c4
 */
 
+html {
+  background: #eee;
+}
 #page { 
   background-color: #eee; 
   background-image: url("bg-sky.png"); 

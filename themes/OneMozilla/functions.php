@@ -262,69 +262,10 @@ if (function_exists('onemozilla_get_theme_options')) { // fail gracefully if we 
 $header_image = get_header_image();
 ?>
 	<style type="text/css">
-	@font-face {
-    font-family: 'Open Sans Light';
-    src: url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.eot');
-    src: url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('<?php echo get_template_directory_uri() ?>/css/fonts/OpenSans-Light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-	.appearance_page_custom-header #header-preview {
-    position: relative;
-    max-width: 952px;
-    min-width: 712px
-    height: 240px;
-    overflow: hidden;
-    padding: 0 24px;
-    margin-left: -80px;
-		border: 0;
-		box-shadow: inset 0 0 5px rgba(0,0,0,.2);
-    background: transparent url("<?php echo get_template_directory_uri() . '/colors/'.$options['color_scheme'].'/bg-'.$options['color_scheme'].'.png'; ?>") center top repeat-x;
-<?php if ($options['color_scheme'] == 'obsidian') : ?>
-    color: #c5ccd2;
-<?php else : ?>
-    color: #333;
-<?php endif; ?>
-	}
+	@import url(<?php echo get_template_directory_uri() . '/colors/'.$options['color_scheme'].'/'.$options['color_scheme'].'-header-preview.css'; ?>);
 	#header-preview .header {
-    position: relative;
-    font-size: 16px;
-    padding: 72px 340px 24px 0;
     background: url("<?php echo esc_url( $header_image ); ?>") right top no-repeat;
 	}
-	#header-preview h1,
-	#header-preview h2 {
-    line-height: 1;
-    padding: 0;
-    font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; 
-    font-weight: normal; 
-<?php if ($options['color_scheme'] == 'obsidian') : ?>
-    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
-<?php else : ?>
-    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
-<?php endif; ?>
-	}
-	#header-preview h1 {
-		font-size: 4.5em; letter-spacing: -3px; margin: 0 0 .15em -5px; color: inherit; min-width: 475px;
-	}
-	#header-preview h2 {
-    font-size: 2em; letter-spacing: -1px; margin: 0 0 .25em; opacity: .8; color: inherit; min-width: 475px;
-	}
-	#faux-tabzilla {
-    background: url("<?php echo get_template_directory_uri() ?>/img/tab.png") repeat scroll 0 0 transparent;
-    display: block;
-    float: right;
-    height: 45px;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-indent: -999em;
-    width: 150px;
-    z-index: 999;
-}
 	</style>
 <?php
 }
