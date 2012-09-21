@@ -572,6 +572,12 @@ a:active {
 .single-post .entry-title {
   margin-bottom: 0;
 }
+.post.no-results .entry-header {
+  padding-left: 0;
+}
+.post.no-results .entry-title {
+  min-height: auto;
+}
 
 /*** Post @Author */
 .entry-header .vcard {
@@ -745,6 +751,13 @@ a:active {
 }
 .entry-content code {
   font-size: .857em;
+}
+.entry-content hr {
+  clear: both;
+  margin: 30px auto;
+  color: transparent;
+  background: transparent;
+  border-top: 1px dotted rgba(0,0,0,.25);
 }
 
 .entry-content img, 

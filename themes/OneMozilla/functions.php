@@ -312,6 +312,19 @@ function save_fc_featuredpost() {
 add_action('save_post', 'save_fc_featuredpost');
 
 
+/**
+ * Enable a few more buttons in the visual editor
+ */
+function add_more_buttons($buttons) {
+ $buttons[] = 'hr';
+ $buttons[] = 'del';
+ $buttons[] = 'sub';
+ $buttons[] = 'sup';
+ $buttons[] = 'cleanup';
+ return $buttons;
+}
+add_filter("mce_buttons_3", "add_more_buttons");
+
 
 /**
  * Sets the post excerpt length to 40 words.

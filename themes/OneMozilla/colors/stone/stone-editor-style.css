@@ -1,14 +1,76 @@
 /* @Fonts *********/
-/* Light */
+/* Regular */
 @font-face {
-  font-family: "Open Sans Light";
-  src: url("css/fonts/OpenSans-Light-webfont.eot");
-  src: url("css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("css/fonts/OpenSans-Light-webfont.ttf") format("truetype"),
-       url("css/fonts/OpenSans-Light-webfont.woff") format("woff");
+  font-family: "Open Sans";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Italic-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Italic-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Semibold-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Semibold-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Semibold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-SemiboldItalic-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-SemiboldItalic-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-SemiboldItalic-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot");
+  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.woff") format("woff"),
+       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 /* @Reset defaults *********/
 header, hgroup, nav, section, article, aside, footer { display: block; }
@@ -28,7 +90,7 @@ html .mceContentBody {
 }
 
 body {
-  font: 16px/1.5 Georgia, Times, "Times New Roman", serif;
+  font: 14px/1.5 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
 	color: #3c3c3c;
   background: #f3f3f3;
   padding: 20px 30px;
@@ -62,6 +124,13 @@ thead th { font-size: .857em; text-align: left; font-weight: normal; background-
 tbody th { text-align: left; }
 pre { overflow: auto; }
 code { font-size: .857em; }
+hr {
+  clear: both;
+  margin: 30px auto;
+  color: transparent;
+  background: transparent;
+  border-top: 1px dotted rgba(0,0,0,.25);
+}
 img, .entry-summary img { padding: 1px; background-color: #fff; border: 11px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1); 
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
