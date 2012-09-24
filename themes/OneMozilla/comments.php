@@ -7,7 +7,7 @@
 ?>
 <?php /* You can start editing here. */ ?>
 
-<?php if ( have_comments() || comments_open() ) : // If there are comments OR comments are open ?>
+<?php if ( have_comments() || comments_open() || pings_open() ) : // If there are comments OR comments are open OR pings are open ?>
 
 <section id="comments">
 <?php if ( post_password_required() ) : ?>
@@ -36,6 +36,14 @@
     <p class="pages"><?php _e('More comments:', 'onemozilla'); paginate_comments_links(); ?></p>
   <?php endif; ?>
 
+<?php endif; ?>
+
+<?php if ( !comments_open() && pings_open() ) : // If comments are closed but pings are open ?>
+	<p class="comments-closed pings-open">
+		<?php 
+		/* L10N: 'trackbacks' are when another website refers to this blog post with a link notification */
+		printf( __( 'Comments are closed, but <a href="%1$s" title="Trackback URL for this post">trackbacks</a> are open.', 'onemozilla' ), get_trackback_url() ); ?>
+	</p>
 <?php endif; ?>
 
 <?php if (comments_open()) : ?>
@@ -89,7 +97,6 @@
   ?>
   <script type="text/javascript">jQuery("#comment-form").submit(function() { return fc_checkform(<?php if ($req) : echo "'req'"; endif; ?>); });</script>
   <?php endif; ?>
-
 <?php endif; // end if comments open ?>
 
 </section><?php // end #comments ?>
