@@ -56,6 +56,14 @@ function onemozilla_theme_options_init() {
     'theme_options', 
     'general' 
   );
+  
+  add_settings_field( 
+    'share_posts',
+    __( 'Social sharing', 'onemozilla' ), 
+    'onemozilla_settings_field_share_posts',
+    'theme_options', 
+    'general' 
+  );
 
 }
 add_action( 'admin_init', 'onemozilla_theme_options_init' );
@@ -136,7 +144,8 @@ function onemozilla_theme_options_help() {
 function onemozilla_get_default_theme_options() {
 	$default_theme_options = array(
 		'color_scheme' => 'stone',
-		'hide_author' => ''
+		'hide_author' => '0',
+		'share_posts' => '0'
 	);
 
 	return apply_filters( 'onemozilla_default_theme_options', $default_theme_options );
@@ -218,6 +227,23 @@ function onemozilla_settings_field_hide_author() {
 }
 
 /**
+ * Renders the Social Sharing setting field.
+ */
+function onemozilla_settings_field_share_posts() {
+	$options = onemozilla_get_theme_options();
+	?>
+	<div class="layout share-posts">
+	<label class="description">
+		<input type="checkbox" name="onemozilla_theme_options[share_posts]" value="1" <?php checked( '1', esc_attr($options['share_posts']) ); ?> />
+		<span>
+			<?php _e('Add social sharing buttons to posts and pages', 'onemozilla'); ?>
+		</span>
+	</label>
+	</div>
+	<?php
+}
+
+/**
  * Returns the options array for One Mozilla.
  */
 function onemozilla_theme_options_render_page() {
@@ -253,6 +279,12 @@ function onemozilla_theme_options_validate( $input ) {
 		$input['hide_author'] = $defaults['hide_author'];
   }
 	$output['hide_author'] = ( $input['hide_author'] == 1 ? 1 : 0 );
+	
+	// Our checkbox value is either 0 or 1
+	if ( ! isset( $input['share_posts'] ) ) {
+		$input['share_posts'] = $defaults['share_posts'];
+  }
+	$output['share_posts'] = ( $input['share_posts'] == 1 ? 1 : 0 );
 
 	return apply_filters( 'onemozilla_theme_options_validate', $output, $input, $defaults );
 }

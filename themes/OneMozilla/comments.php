@@ -11,15 +11,15 @@
 
 <section id="comments">
 <?php if ( post_password_required() ) : ?>
-	<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'onemozilla' ); ?></p>
+  <p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'onemozilla' ); ?></p>
 </section><!-- #comments -->
 <?php
-		/* Stop the rest of comments.php from being processed,
-		 * but don't kill the script entirely -- we still have
-		 * to fully load the template.
-		 */
-		return;
-	endif;
+    /* Stop the rest of comments.php from being processed,
+     * but don't kill the script entirely -- we still have
+     * to fully load the template.
+     */
+    return;
+  endif;
 ?>
 
   <header class="comments-head">
@@ -39,18 +39,18 @@
 <?php endif; ?>
 
 <?php if ( !comments_open() && pings_open() ) : // If comments are closed but pings are open ?>
-	<p class="comments-closed pings-open">
-		<?php 
-		/* L10N: 'trackbacks' are when another website refers to this blog post with a link notification */
-		printf( __( 'Comments are closed, but <a href="%1$s" title="Trackback URL for this post">trackbacks</a> are open.', 'onemozilla' ), get_trackback_url() ); ?>
-	</p>
+  <p class="comments-closed pings-open">
+    <?php
+    /* L10N: 'trackbacks' are when another website refers to this blog post with a link notification */
+    printf( __( 'Comments are closed, but <a href="%1$s" title="Trackback URL for this post">trackbacks</a> are open.', 'onemozilla' ), get_trackback_url() ); ?>
+  </p>
 <?php endif; ?>
 
 <?php if (comments_open()) : ?>
 
   <div id="respond">
   <?php if ( get_option('comment_registration') ) : // If registration is required and you're not logged in, show a message ?>
-    
+
     <p><?php printf( __('You must be <a href="%s">logged in</a> to post a comment.', 'onemozilla'), esc_attr(wp_login_url(get_permalink())) ); ?></p>
 
   <?php else : // else show the form ?>
@@ -63,15 +63,15 @@
           <li class="self"><?php printf( __( 'You are logged in as <a href="%1$s">%2$s</a>. <a class="logout" href="%3$s">Log out?</a>', 'onemozilla' ), admin_url( 'profile.php' ), esc_html($user_identity), wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ); ?></li>
         <?php else : ?>
           <li id="cmt-name">
-            <label for="author"><?php _e('Name', 'onemozilla'); ?> <?php if ($req) : ?><span class="note"><?php _e('(required)', 'onemozilla'); ?></span><?php endif; ?></label> 
+            <label for="author"><?php _e('Name', 'onemozilla'); ?> <?php if ($req) : ?><span class="note"><?php _e('(required)', 'onemozilla'); ?></span><?php endif; ?></label>
             <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="25" <?php if ($req) echo "required aria-required='true'"; ?>>
           </li>
           <li id="cmt-email">
-            <label for="email"><?php _e('E-mail', 'onemozilla'); ?> <?php if ($req) : ?><span class="note"><?php _e('(required, will not be published)', 'onemozilla'); ?></span><?php endif; ?></label> 
+            <label for="email"><?php _e('E-mail', 'onemozilla'); ?> <?php if ($req) : ?><span class="note"><?php _e('(required, will not be published)', 'onemozilla'); ?></span><?php endif; ?></label>
             <input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="25" <?php if ($req) echo "required aria-required='true'"; ?>>
           </li>
           <li id="cmt-web">
-            <label for="url"><?php _e('Website', 'onemozilla'); ?></label> 
+            <label for="url"><?php _e('Website', 'onemozilla'); ?></label>
             <input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="25">
           </li>
         <?php endif; ?>

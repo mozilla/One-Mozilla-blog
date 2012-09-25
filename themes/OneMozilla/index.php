@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-	<div id="content-main" class="main" role="main">
-	
+  <div id="content-main" class="main" role="main">
+
   <?php if ( is_front_page() && ($paged < 1) ) :
     /* Set up a custom loop for the three most recent featured posts */
     $featured = new WP_Query( array('posts_per_page' => 3, 'meta_key' => '_fc_featuredpost', 'meta_value' => 1) );
@@ -28,14 +28,14 @@
     <?php else: endif; ?>
   <?php endif; ?>
 
-	<?php if ( have_posts() ) : ?>
+  <?php if ( have_posts() ) : ?>
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
+    <?php /* Start the Loop */ ?>
+    <?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', get_post_format() ); ?>
+      <?php get_template_part( 'content', get_post_format() ); ?>
 
-		<?php endwhile; ?>
+    <?php endwhile; ?>
 
     <?php if (fc_show_posts_nav()) : ?>
     <nav class="nav-paging">
@@ -46,22 +46,22 @@
     </nav>
     <?php endif; ?>
 
-	<?php else : ?>
+  <?php else : ?>
 
-		<article id="post-0" class="post no-results not-found">
-			<header class="entry-header">
-				<h1 class="entry-title"><?php _e( 'Nothing Found', 'onemozilla' ); ?></h1>
-			</header><!-- .entry-header -->
+    <article id="post-0" class="post no-results not-found">
+      <header class="entry-header">
+        <h1 class="entry-title"><?php _e( 'Nothing Found', 'onemozilla' ); ?></h1>
+      </header><!-- .entry-header -->
 
-			<div class="entry-content">
-				<p><?php _e( 'Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?', 'onemozilla' ); ?></p>
-				<?php get_search_form(); ?>
-			</div><!-- .entry-content -->
-		</article><!-- #post-0 -->
+      <div class="entry-content">
+        <p><?php _e( 'Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?', 'onemozilla' ); ?></p>
+        <?php get_search_form(); ?>
+      </div><!-- .entry-content -->
+    </article><!-- #post-0 -->
 
-	<?php endif; ?>
+  <?php endif; ?>
 
-	</div><!-- #content-main -->
+  </div><!-- #content-main -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

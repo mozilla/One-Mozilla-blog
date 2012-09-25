@@ -24,13 +24,13 @@ h1 a { position: absolute; left: -999em; }
 
 /* @Links */
 .login #backtoblog a, .login #nav a { color: #2983c8 !important; text-decoration: none; text-shadow: none; }
-.login #backtoblog a:hover, .login #backtoblog a:focus, .login #backtoblog a:active, 
+.login #backtoblog a:hover, .login #backtoblog a:focus, .login #backtoblog a:active,
 .login #nav a:hover, .login #nav a:focus, .login #nav a:active { color: #20679e !important; text-decoration: underline; }
 
 
 /*** @Buttons *********/
-#wp-submit { 
-  border-radius: .25em; 
+#wp-submit {
+  border-radius: .25em;
   box-shadow: 0 2px 0 0 rgba(0,0,0,0.1),inset 0 -2px 0 0 rgba(0,0,0,0.2);
   color: #fff;
   cursor: pointer;
@@ -52,8 +52,8 @@ h1 a { position: absolute; left: -999em; }
   -o-transition: all .25s linear;
   transition: all .25s linear;
 }
-#wp-submit:hover, 
-#wp-submit:focus, 
-#wp-submit:active { 
-  box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.2), inset 0 12px 24px 2px #3089d8; 
+#wp-submit:hover,
+#wp-submit:focus,
+#wp-submit:active {
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.2), inset 0 12px 24px 2px #3089d8;
 }

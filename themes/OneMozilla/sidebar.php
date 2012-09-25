@@ -20,18 +20,18 @@
         <?php echo '<span><a href="http://twitter.com/'.get_the_author_meta('twitter_username').'" class="url" rel="external me">@'.get_the_author_meta('twitter_username').'</a></span>'; ?>
       <?php endif; ?>
       </h3>
-      
+
       <?php if (get_the_author_meta('description')) : ?>
       <p><?php esc_html(the_author_meta('description')); ?></p>
       <?php endif; ?>
-      
+
       <?php if (!is_author()) :
-        if (get_the_author_meta('first_name')) : 
+        if (get_the_author_meta('first_name')) :
           $name = esc_html(get_the_author_meta('first_name')); // Use the first name if there is one
-        else : 
+        else :
           $name = esc_html(the_author()); // Fall back to the display name
         endif;
-      ?>    
+      ?>
       <p><a class="url go" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php printf(__('More from %s', 'onemozilla'), $name); ?></a></p>
       <?php endif; ?>
     </aside>
@@ -44,9 +44,9 @@
     </ul>
   </aside>
   <?php include (TEMPLATEPATH . '/searchform.php'); ?>
-    
+
 <?php else : ?>
-  
+
   <?php $options = onemozilla_get_theme_options();
   /* If we're showing authors, show the bio in the sidebar */
   if ( ($options['hide_author'] != 1) && (is_single() || is_author()) ) : ?>
@@ -66,23 +66,23 @@
         <?php echo '<span><a href="http://twitter.com/'.get_the_author_meta('twitter_username').'" class="url" rel="external me">@'.get_the_author_meta('twitter_username').'</a></span>'; ?>
       <?php endif; ?>
       </h3>
-      
+
       <?php if (get_the_author_meta('description')) : ?>
       <p><?php esc_html(the_author_meta('description')); ?></p>
       <?php endif; ?>
-      
+
       <?php if (!is_author()) :
-        if (get_the_author_meta('first_name')) : 
+        if (get_the_author_meta('first_name')) :
           $name = esc_html(get_the_author_meta('first_name')); // Use the first name if there is one
-        else : 
+        else :
           $name = esc_html(the_author()); // Fall back to the display name
         endif;
-      ?>    
+      ?>
       <p><a class="url go" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php printf(__('More from %s', 'onemozilla'), $name); ?></a></p>
       <?php endif; ?>
     </aside>
   <?php endif; ?>
-    
+
   <?php dynamic_sidebar( 'sidebar' ); ?>
 
 <?php endif; ?>

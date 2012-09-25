@@ -1,5 +1,5 @@
-	<header id="masthead" role="banner">
-		<hgroup>
+  <header id="masthead" role="banner">
+    <hgroup>
     <?php if ( (is_front_page()) && ($paged < 1) ) : ?>
       <h1 id="site-title"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></h1>
     <?php else : ?>
@@ -8,7 +8,6 @@
     <?php if (get_bloginfo('description','display')) : ?>
       <h2 id="site-description"><?php echo esc_attr( get_bloginfo('description', 'display') ); ?></h2>
     <?php endif; ?>
-		</hgroup>
-	  <a href="http://www.mozilla.org/" id="tabzilla">Mozilla</a>
-	</header><!-- #masthead -->
-	
+    </hgroup>
+    <a href="http://www.mozilla.org/" id="tabzilla">Mozilla</a>
+  </header><!-- #masthead -->

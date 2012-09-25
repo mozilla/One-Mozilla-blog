@@ -1,9 +1,10 @@
+<?php $theme_options = onemozilla_get_theme_options(); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> id="mozilla-blog">
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- For Facebook -->
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
   <meta property="og:title" content="<?php if (is_singular()) : single_post_title(); else : bloginfo('name'); endif; ?>">
@@ -15,10 +16,10 @@
 <?php elseif (get_header_image()) : ?>
   <meta property="og:image" content="<?php echo get_header_image(); ?>">
 <?php endif; ?>
-  
+
   <meta name="title" content="<?php if (is_singular()) : single_post_title(); echo ' | '; endif; bloginfo('name'); ?>">
   <meta name="description" content="<?php fc_meta_desc(); ?>">
-  
+
   <meta name="Rating" content="General">
   <!--[if IE]>
   <meta name="MSSmartTagsPreventParsing" content="true">
@@ -30,6 +31,9 @@
   <link rel="copyright" href="#colophon">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="shortcut icon" type="image/ico" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
+  <?php if ( $theme_options['share_posts'] == 1 ) : ?>
+  <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/socialshare.css">
+  <?php endif; ?>
   <link rel="stylesheet" type="text/css" media="screen,projection" href="<?php bloginfo('stylesheet_url'); ?>">
   <link rel="stylesheet" type="text/css" media="all" href="https://www.mozilla.org/tabzilla/media/css/tabzilla.css">
   <link rel="stylesheet" type="text/css" media="print" href="<?php echo get_template_directory_uri(); ?>/css/print.css">
@@ -39,23 +43,20 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
   <title><?php
-    if ( is_single() ) { single_post_title(); echo ' | '; bloginfo('name'); } 
-    elseif ( is_home() || is_front_page() ) { bloginfo('name'); if (get_bloginfo('description','display')) { echo ' | '. get_bloginfo('description','display'); } fc_page_number(); } 
-    elseif ( is_page() ) { single_post_title(''); echo ' | '; bloginfo('name'); } 
+    if ( is_single() ) { single_post_title(); echo ' | '; bloginfo('name'); }
+    elseif ( is_home() || is_front_page() ) { bloginfo('name'); if (get_bloginfo('description','display')) { echo ' | '. get_bloginfo('description','display'); } fc_page_number(); }
+    elseif ( is_page() ) { single_post_title(''); echo ' | '; bloginfo('name'); }
     elseif ( is_search() ) { printf( __('Search results for “%s”', 'onemozilla'), esc_html( $s ) ); fc_page_number(); echo ' | '; bloginfo('name'); }
     elseif ( is_day() ) { $post = $posts[0]; printf(__('Posts from %s', 'onemozilla'), get_the_date()); echo ' | '; bloginfo('name'); fc_page_number(); }
     elseif ( is_month() ) { $post = $posts[0]; printf(__('Posts from %s', 'onemozilla'), get_the_date('F, Y')); echo ' | '; bloginfo('name'); fc_page_number(); }
     elseif ( is_year() ) { $post = $posts[0]; printf(__('Posts from %s', 'onemozilla'), get_the_date('Y')); echo ' | '; bloginfo('name'); fc_page_number(); }
-    elseif ( is_404() ) { _e('Not Found', 'onemozilla'); echo ' | '; bloginfo('name'); } 
-    else { wp_title(''); echo ' | '; bloginfo('name'); fc_page_number(); } 
+    elseif ( is_404() ) { _e('Not Found', 'onemozilla'); echo ' | '; bloginfo('name'); }
+    else { wp_title(''); echo ' | '; bloginfo('name'); fc_page_number(); }
   ?></title>
 
   <?php if ( is_singular() && get_option( 'thread_comments' ) ) { wp_enqueue_script( 'comment-reply' ); } ?>
-  <?php	wp_head(); ?>
+  <?php wp_head(); ?>
 </head>
-
-
-<?php $theme_options = onemozilla_get_theme_options(); ?>
 
 <body <?php body_class($theme_options[color_scheme]); ?> role="document">
 <div id="page"><div class="wrap">
@@ -71,6 +72,6 @@
 
   <?php get_template_part( 'masthead' ); ?>
 
-	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav', 'container_id' => 'nav-primary', 'fallback_cb' => 'false', ) ); ?>
+  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav', 'container_id' => 'nav-primary', 'fallback_cb' => 'false', ) ); ?>
 
-	<div id="content">
+  <div id="content">

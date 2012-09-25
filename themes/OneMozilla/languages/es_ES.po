@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: One Mozilla 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-24 11:56-0800\n"
-"PO-Revision-Date: 2012-09-24 11:57-0800\n"
+"POT-Creation-Date: 2012-08-17 03:01-0800\n"
+"PO-Revision-Date: 2012-08-17 03:04-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -102,75 +102,70 @@ msgstr ""
 msgid "More comments:"
 msgstr ""
 
-#: ../comments.php:45
-#, php-format
-msgid "Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post\">trackbacks</a> are open."
-msgstr ""
-
-#: ../comments.php:54
+#: ../comments.php:46
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: ../comments.php:59
+#: ../comments.php:51
 msgid "Post Your Comment"
 msgstr ""
 
-#: ../comments.php:59
+#: ../comments.php:51
 #, php-format
 msgid "Reply to %s"
 msgstr ""
 
-#: ../comments.php:63
+#: ../comments.php:55
 #, php-format
 msgid "You are logged in as <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href=\"%3$s\">Log out?</a>"
 msgstr ""
 
-#: ../comments.php:66
+#: ../comments.php:58
 msgid "Name"
 msgstr ""
 
-#: ../comments.php:66
+#: ../comments.php:58
 msgid "(required)"
 msgstr ""
 
-#: ../comments.php:70
+#: ../comments.php:62
 msgid "E-mail"
 msgstr ""
 
-#: ../comments.php:70
+#: ../comments.php:62
 msgid "(required, will not be published)"
 msgstr ""
 
-#: ../comments.php:74
+#: ../comments.php:66
 msgid "Website"
 msgstr ""
 
-#: ../comments.php:78
+#: ../comments.php:70
 msgid "Your comment"
 msgstr ""
 
-#: ../comments.php:79
+#: ../comments.php:71
 msgid "Submit Comment"
 msgstr ""
 
-#: ../comments.php:91
+#: ../comments.php:83
 msgid "You must provide a name and e-mail (your e-mail address won’t be published)."
 msgstr ""
 
-#: ../comments.php:92
+#: ../comments.php:84
 msgid "You must provide a name."
 msgstr ""
 
-#: ../comments.php:93
+#: ../comments.php:85
 msgid "You must provide an e-mail address (it won’t be published)."
 msgstr ""
 
-#: ../comments.php:94
+#: ../comments.php:86
 msgid "The e-mail address you entered doesn’t look like a complete e-mail address. It should look like “yourname@example.com”."
 msgstr ""
 
-#: ../comments.php:95
+#: ../comments.php:87
 msgid "You must enter a comment."
 msgstr ""
 
@@ -262,69 +257,69 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: ../functions.php:299
+#: ../functions.php:358
 msgid "Feature this post?"
 msgstr ""
 
-#: ../functions.php:304
+#: ../functions.php:363
 msgid "Featured Post"
 msgstr ""
 
-#: ../functions.php:345
+#: ../functions.php:391
 msgid "Continue reading"
 msgstr ""
 
-#: ../functions.php:392
+#: ../functions.php:438
 msgid "Sidebar"
 msgstr ""
 
-#: ../functions.php:493
+#: ../functions.php:539
 msgid "Trackback from "
 msgstr ""
 
-#: ../functions.php:495
-#: ../functions.php:504
+#: ../functions.php:541
+#: ../functions.php:550
 msgid "on"
 msgstr ""
 
-#: ../functions.php:496
-#: ../functions.php:505
-#: ../functions.php:520
-#: ../functions.php:530
+#: ../functions.php:542
+#: ../functions.php:551
+#: ../functions.php:566
+#: ../functions.php:576
 msgid "Permanent link to this comment by "
 msgstr ""
 
 # Comment headings read "<Name> wrote on <Date> at <Time>"
-#: ../functions.php:499
-#: ../functions.php:508
-#: ../functions.php:523
-#: ../functions.php:533
+#: ../functions.php:545
+#: ../functions.php:554
+#: ../functions.php:569
+#: ../functions.php:579
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../functions.php:502
+#: ../functions.php:548
 msgid "Pingback from "
 msgstr ""
 
-#: ../functions.php:519
-#: ../functions.php:529
+#: ../functions.php:565
+#: ../functions.php:575
 msgid "wrote on"
 msgstr ""
 
-#: ../functions.php:539
+#: ../functions.php:585
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:547
+#: ../functions.php:593
 msgid "Edit Comment"
 msgstr ""
 
-#: ../functions.php:561
+#: ../functions.php:607
 msgid "This widget shows the three most recent featured posts."
 msgstr ""
 
-#: ../functions.php:573
+#: ../functions.php:619
 msgid "Title:"
 msgstr ""
 

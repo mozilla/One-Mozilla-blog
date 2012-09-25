@@ -85,12 +85,12 @@ input, select, textarea { font-family: inherit; font-size: 100%; }
 img, video, object { max-width: 100%; height: auto; }
 
 html .mceContentBody {
-	max-width: 620px;
+  max-width: 620px;
 }
 
 body {
   font: 14px/1.5 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
-	color: #c5ccd2;
+  color: #c5ccd2;
   background: #3c5466;
   padding: 20px 30px;
   position: relative;
