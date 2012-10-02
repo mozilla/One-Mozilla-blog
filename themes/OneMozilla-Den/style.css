@@ -1,55 +1,12 @@
 /*
 Theme Name:     One Mozilla - The Den
-Description:    Site theme for The Den. This theme is a child of the One Mozilla WordPress theme. 
+Description:    Site theme for The Den. This theme is a child of the One Mozilla WordPress theme.
 Author:         Craig Cook
 Template:       OneMozilla
-Version:        1.0
+Version:        1.1
 */
 
 @import url("../OneMozilla/style.css");
-
-/* @Share @Buttons *********/
-.share { list-style: none; }
-.share li { display: inline; margin: 0 10px 0 0; }
-.share a { display: inline-block; background: #ebf4fb; border: 1px solid; margin: 0;
-  -moz-border-radius: 4px; 
-  -webkit-border-radius: 4px; 
-  border-radius: 4px;
-  -moz-box-shadow: 0 2px 0 rgba(150,150,150,.1);
-  -webkit-box-shadow: 0 2px 0 rgba(150,150,150,.1);
-  box-shadow: 0 2px 0 rgba(150,150,150,.1);
-}
-.share span { display: block; width: 16px; height: 16px; padding: 3px; text-indent: -999em; overflow: hidden;
-  -moz-border-radius: 4px; 
-  -webkit-border-radius: 4px; 
-  border-radius: 4px;
-  -moz-box-shadow: inset 0 -2px #c1daef;
-  -webkit-box-shadow: inset 0 -2px #c1daef;
-  box-shadow: inset 0 -2px #c1daef;
-}
-.share a.twitter {
-  border-color: #97b9d5;
-  background: -moz-linear-gradient(top, #fff 0%, #ddecf7 100% );
-  background: -webkit-linear-gradient(top, #fff 0%, #ddecf7 100% );
-  background: linear-gradient(top, #fff 0%, #ddecf7 100% );
-}
-.share a.twitter span {
-  background: url("img/share-buttons.png") 50% 4px no-repeat;
-}
-.share a.facebook {
-  border-color: #283c7f;
-  background: #5e77ac;
-  background: -moz-linear-gradient(top, #5e77ac 0%, #3b5998 100% );
-  background: -webkit-linear-gradient(top, #5e77ac 0%, #3b5998 100% );
-  background: linear-gradient(top, #5e77ac 0%, #3b5998 100% );
-
-}
-.share a.facebook span {
-  background: url("img/share-buttons.png") 50% -46px no-repeat;
-  -moz-box-shadow: inset 0 -2px #284787;
-  -webkit-box-shadow: inset 0 -2px #284787;
-  box-shadow: inset 0 -2px #284787;
-}
 
 /* @Firefox @Affiliates *********/
 .get-firefox .latest { padding: 0; margin: 0 0 24px; border-bottom: 1px dotted rgba(0,0,0,.2); }
@@ -59,6 +16,3 @@ Version:        1.0
 /* @Newsletter @Subscribe *********/
 .newsletter-sub a { padding: 15px 15px 85px; background: url(img/mail-small.png) 90% 90% no-repeat; background-color: rgba(255,255,255,.3); border: 1px solid #dbdbdb; border-radius: 6px; box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0; }
 .newsletter-sub a { display: block; font-size: 16px; }
-
-
-

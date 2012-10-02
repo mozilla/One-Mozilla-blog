@@ -13,6 +13,10 @@ function remove_onemozilla_options() {
 }
 add_action( 'after_setup_theme','remove_onemozilla_options', 100 );
 
+function remove_onemozilla_theme_options() {
+ remove_submenu_page('themes.php', 'theme_options');
+}
+add_action('admin_init', 'remove_onemozilla_theme_options', 11);
 
 /**
  * Register our sidebars and widgetized areas.
