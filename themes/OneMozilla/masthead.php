@@ -1,4 +1,4 @@
-  <header id="masthead" role="banner">
+  <header id="masthead" role="banner" <?php if (get_header_image()) : ?>class="image"<?php endif; ?>>
     <hgroup>
     <?php if ( (is_front_page()) && ($paged < 1) ) : ?>
       <h1 id="site-title"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></h1>

@@ -237,7 +237,7 @@ a:active {
   padding: 72px 0 48px 30px;
   position: relative;
 }
-#masthead hgroup {
+#masthead.image hgroup {
   padding-right: 340px;
 }
 
