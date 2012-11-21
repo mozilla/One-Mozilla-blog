@@ -86,15 +86,15 @@ input, select, textarea { font-family: inherit; font-size: 100%; }
 img, video, object { max-width: 100%; height: auto; }
 
 html .mceContentBody {
-	max-width: 620px;
+  max-width: 620px;
 }
 
 body {
   font: 14px/1.5 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
-	color: #3c3c3c;
+  color: #3c3c3c;
   background: #f3f3f3;
   padding: 20px 30px;
-	position: relative;
+  position: relative;
 }
 
 /* @Headings */
@@ -131,23 +131,23 @@ hr {
   background: transparent;
   border-top: 1px dotted rgba(0,0,0,.25);
 }
-img, .entry-summary img { padding: 1px; background-color: #fff; border: 11px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1); 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
+img, .entry-summary img { padding: 1px; background-color: #fff; border: 11px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
-  -ms-box-sizing: border-box; 
-  box-sizing: border-box; 
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
   -moz-transition: all .1s ease-out;
   -webkit-transition: all .1s ease-out;
   -o-transition: all .1s ease-out;
   -ms-transition: all .1s ease-out;
-  transition: all .1s ease-out; 
+  transition: all .1s ease-out;
 }
 a:hover img, a:focus img, a:active img { background-color: #872727; -moz-transition: all .1s ease-in; }
 
 ::-moz-selection { background: #6bd7f3; }
 ::selection { background: #6bd7f3; }
-img::-moz-selection	{ background: transparent; }
+img::-moz-selection { background: transparent; }
 img::selection { background: transparent; }
 body { -webkit-tap-highlight-color: #6bd7f3; -moz-tap-highlight-color: #6bd7f3; }
 

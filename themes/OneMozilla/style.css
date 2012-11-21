@@ -1489,6 +1489,9 @@ input:-moz-placeholder {
   .entry-comments a:active {
     background-position: 12px -92px;
   }
+  .show-comments.no-author .entry-comments {
+    position: static;
+  }
 
   .alignleft, 
   .alignright {

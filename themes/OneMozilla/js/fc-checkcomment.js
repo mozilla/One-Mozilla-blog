@@ -3,12 +3,13 @@
 * It also checks that the provided e-mail is well formed.
 * Requires jQuery. 
 */
+
 function fc_checkform(req) {
   author  = document.getElementById("author");
   email   = document.getElementById("email");
   comment = document.getElementById("comment");
   
-if (jQuery("#errors")) { jQuery("#errors").remove(); }
+if (jQuery("#errors").length > 0) { jQuery("#errors").remove(); }
 jQuery("#author, #email, #comment").removeClass("err");
 
 if (req == 'req') {

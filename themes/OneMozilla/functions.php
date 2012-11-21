@@ -212,17 +212,44 @@ function fc_add_mimes( $mimes=array() ) {
 add_filter('upload_mimes', 'fc_add_mimes');
 
 /*********
-* Add jQuery
+* Load various JavaScripts
 */
-function fc_add_jquery() {
+function onemozilla_load_scripts() {
+  // Load the default jQuery
   wp_enqueue_script('jquery');
+
+  // Register and load the socialsharing script
+  wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js' );
+  $options = onemozilla_get_theme_options();
+  if ( ($options['share_posts'] === 1) && is_singular() ) {
+    wp_enqueue_script( 'socialshare' );
+  }
+
+  // Load the threaded comment reply script
+  if ( get_option('thread_comments') && is_singular() ) {
+    wp_enqueue_script( 'comment-reply' );
+  }
+  
+  // Check required fields on comment form
+  wp_register_script( 'checkcomments', get_template_directory_uri() . '/js/fc-checkcomment.js' );
+  if ( get_option('require_name_email') && is_singular() ) {
+    wp_enqueue_script('checkcomments');
+  }
 }
-add_action( 'init', 'fc_add_jquery' );
+add_action( 'wp_enqueue_scripts', 'onemozilla_load_scripts' );
 
 /*********
 * Remove WP version from head (helps us evade spammers/hackers)
 */
 remove_action('wp_head', 'wp_generator');
+
+/*********
+ * Removes the default styles that are packaged with the Recent Comments widget.
+ */
+function onemozilla_remove_recent_comments_style() {
+	add_filter( 'show_recent_comments_widget_style', '__return_false' );
+}
+add_action( 'widgets_init', 'onemozilla_remove_recent_comments_style' );
 
 /*********
 * Customize the password protected form
@@ -553,6 +580,9 @@ function onemozilla_comment($comment, $args, $depth) {
 } /* end onemozilla_comment */
 endif;
 
+/*********
+* Featured posts widget for sidebar
+*/
 class moz_widget_featuredPosts extends WP_Widget {
   function widget($args,$instance) {
     $args['title'] = $instance['title'];
@@ -611,14 +641,9 @@ function moz_featuredPosts($args) {
   endif;
 }
 
-
-add_action("widgets_init","myplugin_widget_init");
-
-function myplugin_widget_init() {
+function featuredposts_widget_init() {
     register_widget("moz_widget_featuredPosts");
 }
+add_action("widgets_init","featuredposts_widget_init");
 
-
-
-
-
+?>
