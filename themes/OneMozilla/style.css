@@ -1406,6 +1406,9 @@ input:-moz-placeholder {
     padding-bottom: 20px;
     border-bottom: 1px solid;
   }
+  #masthead.image hgroup {
+    padding-right: 0;
+  }
   #site-title {
     font-size: 2em;
     letter-spacing: -.5px;
