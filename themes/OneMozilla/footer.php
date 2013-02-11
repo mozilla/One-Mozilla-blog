@@ -20,6 +20,7 @@
         <li><a href="http://www.mozilla.org/en-US/privacy" rel="external"><?php _e('Privacy Policy', 'onemozilla'); ?></a></li>
         <li><a href="http://www.mozilla.org/<?php echo get_bloginfo('language')?>/about/legal.html" rel="external"><?php _e('Legal Notices', 'onemozilla'); ?></a></li>
         <li><a href="http://www.mozilla.org/<?php echo get_bloginfo('language')?>/legal/fraud-report/index.html" rel="external"><?php _e('Report Trademark Abuse', 'onemozilla'); ?></a></li>
+        <li><a href="https://github.com/mozilla/One-Mozilla-blog/" rel="external"><?php _e('Source Code ', 'onemozilla'); ?></a></li>
       </ul>
     </nav>
   </div>
