@@ -12,7 +12,11 @@
         </time>
       </p>
     <?php endif; ?>
-    
+    <?php if ( $theme_options['share_posts'] == 1 ) : ?>
+      <div class="share">
+        <div class="socialshare" data-type="small-bubbles"></div>
+      </div>
+    <?php endif; ?>
   </header><!-- .entry-header -->
 
   <div class="entry-content">
@@ -23,11 +27,6 @@
   </div><!-- .entry-content -->
 
   <footer class="entry-meta">
-  <?php if ( $theme_options['share_posts'] == 1 ) : ?>
-    <div class="share">
-      <div class="socialshare" data-type="small-bubbles"></div>
-    </div>
-  <?php endif; ?>
   <?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
     <?php if (has_tag()) : ?>
       <p class="meta"><b><?php _e('Tags','onemozilla'); ?>:</b> <?php $tags_list = the_tags('',', ',''); ?></p>

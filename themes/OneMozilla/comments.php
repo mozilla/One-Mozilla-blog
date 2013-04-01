@@ -1,7 +1,10 @@
 <?php // Do not delete these lines
   if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
     die ('Please do not load this page directly. Thanks!');
-
+  
+  /* Get the number of comments */
+  $comment_count = get_comments_number($post->ID);
+  
   /* This variable is for alternating comment background */
   $oddcomment = 'alt';
 ?>

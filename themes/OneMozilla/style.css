@@ -536,7 +536,7 @@ a:active {
   border-bottom: 1px solid rgba(255,255,255,.5);
   box-shadow: inset 0 0 3px rgba(0,0,0,.1);
   clear: both;
-  font: .785em/1.1 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font-size: .857em;
   margin: 24px 0 0;
   padding: 12px 24px 8px;
 }
@@ -576,6 +576,14 @@ a:active {
 }
 .post.no-results .entry-title {
   min-height: auto;
+}
+.entry-header .share {
+  margin: .5em 0 .25em;
+  text-align: right;
+}
+.entry-header .socialshare #share-options {
+  left: auto;
+  right: 0;
 }
 
 /*** Post @Author */
@@ -774,6 +782,7 @@ a:active {
   -webkit-transition: all .1s ease-out;
   transition: all .1s ease-out;
   padding: 1px;
+  max-width: 96.5%;
 }
 .entry-content a:hover img,
 .entry-content a:focus img,
