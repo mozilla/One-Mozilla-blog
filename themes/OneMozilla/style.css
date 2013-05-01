@@ -2,7 +2,7 @@
 Theme Name: One Mozilla
 Author: Craig Cook
 Description: The standard WordPress theme for Mozilla network blogs.
-Version: 1.2
+Version: 1.3
 Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, custom-header, custom-menu, editor-style, featured-images, featured-posts, full-width-template, microformats, sticky-post, theme-options, translation-ready
 
 @@Font sizes -
@@ -221,11 +221,11 @@ a:active {
 .wrap {
   margin: 0 auto;
   position: relative;
-  -moz-transition: padding, width .5s linear;
-  -ms-transition: padding, width .5s linear;
-  -o-transition: padding, width .5s linear;
-  -webkit-transition: padding, width .5s linear;
-  transition: padding, width .5s linear;
+  -moz-transition: padding, width .5s ease-out;
+  -ms-transition: padding, width .5s ease-out;
+  -o-transition: padding, width .5s ease-out;
+  -webkit-transition: padding, width .5s ease-out;
+  transition: padding, width .5s ease-out;
   width: 1000px;
 }
 #masthead {
@@ -244,11 +244,11 @@ a:active {
   font-size: 4.5em;
   letter-spacing: -3px;
   margin: 0 0 .15em -5px;
-  -moz-transition: font-size, letter-spacing .5s linear;
-  -ms-transition: font-size, letter-spacing .5s linear;
-  -o-transition: font-size, letter-spacing .5s linear;
-  -webkit-transition: font-size, letter-spacing .5s linear;
-  transition: font-size, letter-spacing .5s linear;
+  -moz-transition: font-size, letter-spacing .5s ease-out;
+  -ms-transition: font-size, letter-spacing .5s ease-out;
+  -o-transition: font-size, letter-spacing .5s ease-out;
+  -webkit-transition: font-size, letter-spacing .5s ease-out;
+  transition: font-size, letter-spacing .5s ease-out;
 }
 #site-title a {
   color: #333;
@@ -314,12 +314,14 @@ a:active {
 .widget_calendar thead th {
   border: 0;
 }
-
 .widget_calendar th,
 .widget_calendar td {
   border: 1px solid rgba(0,0,0,.15);
   padding: 1px;
   text-align: center;
+}
+.widget_calendar a {
+  display: block;
 }
 
 .sub .widget_nav_menu:first-child {
@@ -525,10 +527,6 @@ a:active {
   float: left;
   width: 410px;
 }
-.single-post .show-comments.no-author .entry-title {
-  float: none;
-  width: auto;
-}
 
 /*** Entry @Meta */
 .entry-meta {
@@ -552,7 +550,7 @@ a:active {
 /*** Entry @Header */
 .entry-header {
   margin: 0 0 20px;
-  padding: .5em 0 1em;
+  padding: .5em 0 0;
   position: relative;
 }
 .entry-header:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
@@ -568,9 +566,6 @@ a:active {
 .no-author .entry-header {
   padding-bottom: 0;
 }
-.single-post .entry-title {
-  margin-bottom: 0;
-}
 .post.no-results .entry-header {
   padding-left: 0;
 }
@@ -578,7 +573,7 @@ a:active {
   min-height: auto;
 }
 .entry-header .share {
-  margin: .5em 0 .25em;
+  float: right;
   text-align: right;
 }
 .entry-header .socialshare #share-options {
@@ -596,13 +591,13 @@ a:active {
   border: 1px solid #fff;
   float: left;
   font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
-  margin: 0 0 0 -92px;
+  margin: 0 0 10px -92px;
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1);
   -o-box-shadow: 0 1px 1px rgba(0,0,0,.1);
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  padding: 15px 20px 15px 70px;
+  padding: 15px 20px 15px 65px;
   position: relative;
-  width: 410px;
+  width: 415px;
 }
 .no-comments .entry-header .vcard {
   width: 530px;
@@ -613,7 +608,7 @@ a:active {
 .entry-header .vcard img {
   border: 1px solid #fff;
   left: 0;
-  left: 24px;
+  left: 20px;
   position: absolute;
   top: .75em;
 }
@@ -628,7 +623,7 @@ a:active {
   background: #fff;
   float: right;
   font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
-  margin: 0;
+  margin: 0 0 10px;
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1);
   -o-box-shadow: 0 1px 1px rgba(0,0,0,.1);
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
@@ -654,6 +649,13 @@ a:active {
 /*** @Edit buttons */
 .edit {
   font-size: .857em;
+}
+.entry-header .edit {
+  float: left;
+  margin-left: -92px;
+}
+.page .entry-header .edit {
+  margin: 1.35em 0 .5em;
 }
 .edit a {
   display: inline-block;
@@ -753,6 +755,14 @@ a:active {
 .entry-content tbody th {
   text-align: left;
 }
+
+.entry-content .gist table,
+.entry-content .gist th,
+.entry-content .gist td {
+  border: 0;
+  margin: 0;
+}
+
 .entry-content pre {
   overflow: auto;
 }
@@ -770,30 +780,14 @@ a:active {
   max-width: 100%;
 }
 
-
 .entry-content img,
 .entry-summary img {
   background-color: #fff;
-  border: 9px solid #fff;
+  border: 10px solid #fff;
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  -moz-transition: all .1s ease-out;
-  -ms-transition: all .1s ease-out;
-  -o-transition: all .1s ease-out;
-  -webkit-transition: all .1s ease-out;
-  transition: all .1s ease-out;
-  padding: 1px;
   max-width: 96.5%;
 }
-.entry-content a:hover img,
-.entry-content a:focus img,
-.entry-content a:active img {
-  background-color: #872727;
-  -moz-transition: all .1s ease-out;
-  -ms-transition: all .1s ease-out;
-  -o-transition: all .1s ease-out;
-  -webkit-transition: all .1s ease-out;
-  transition: all .1s ease-out;
-}
+
 .entry-content .wp-smiley,
 .entry-summary .wp-smiley {
   background: transparent;
@@ -1066,14 +1060,14 @@ input:-moz-placeholder {
   -moz-appearance: textfield;
   -o-appearance: textfield;
   appearance: textfield;
-  padding: 6px 20px 6px 5px;
+  padding: 6px 7.5% 6px 5px;
+  width: 90%;
   -webkit-appearance: textfield;
   -moz-transition: all 0.1s linear;
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  width: 90%;
 }
 .fm-search #s:hover {
   background-color: rgba(255,255,255,.9);
@@ -1173,8 +1167,13 @@ input:-moz-placeholder {
   text-align: center;
 }
 #comment-list .comment-util {
-  font-size: .846em;
+  font-size: 1em;
   margin: 1em 0 0;
+  padding: .5em 0 0;
+  border-top: 1px dotted rgba(100,100,100,.2);
+}
+#comment-list .comment-util a {
+  margin-right: 20px;
 }
 #comment-list .comment-reply-link:after {
   content: "\00A0\00BB"; /* nbsp raquo */
@@ -1258,6 +1257,11 @@ input:-moz-placeholder {
 #comment-form textarea {
   font-size: .857em;
   width: 96%;
+}
+#comment-form #cmt-ackbar { 
+  position: absolute; 
+  left: -999em;
+  height: 0; 
 }
 
 /* @Footer *********/
@@ -1453,11 +1457,14 @@ input:-moz-placeholder {
   .post .entry-header {
     padding-left: 0;
   }
+  .entry-header .edit {
+    margin-left: 0;
+  }
 
   .entry-posted {
-    background: none;
-    font-size: .857em;
-    margin: -.25em 0 1em;
+    background-image: none;
+    font-size: 1em;
+    margin: 0 0 1em;
     padding: 0;
     position: static;
     text-align: left;
@@ -1486,6 +1493,11 @@ input:-moz-placeholder {
   }
   .entry-header .avatar {
     display: none;
+  }
+  
+  .entry-content .wp-post-image,
+  .entry-summary .wp-post-image {
+    width: 60px;
   }
 
   .entry-comments {
@@ -1566,11 +1578,11 @@ input:-moz-placeholder {
     clear: both;
     float: none;
     margin: 0 20px 1em;
-    -moz-transition: width .5s linear;
-    -ms-transition: width .5s linear;
-    -o-transition: width .5s linear;
-    -webkit-transition: width .5s linear;
-    transition: width .5s linear;
+    -moz-transition: width .5s ease-out;
+    -ms-transition: width .5s ease-out;
+    -o-transition: width .5s ease-out;
+    -webkit-transition: width .5s ease-out;
+    transition: width .5s ease-out;
     width: auto;
   }
   #foot-logo a {
@@ -1608,13 +1620,19 @@ input:-moz-placeholder {
     -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     overflow: auto;
-    padding: 24px;
+    padding: 20px;
+  }
+  .sub .featured-posts ul {
+    margin: 0;
   }
   .sub .featured-posts .feature {
-    margin-bottom: 0;
+    margin: 0;
+    float: none;
+    clear: both;
+    min-height: 60px;
   }
-  .sub .featured-posts .feature-img {
-    margin: 0 24px 12px 0;
+  .sub .featured-posts .feature .feature-img {
+    margin: 0 20px 12px 0;
   }
 
 }

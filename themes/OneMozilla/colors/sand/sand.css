@@ -33,11 +33,6 @@ a:active {
   color: #0073aa;
   text-decoration: underline;
 }
-.entry-content a:hover img,
-.entry-content a:focus img,
-.entry-content a:active img {
-  background-color: #0073aa;
-}
 
 .entry-comments a {
   background-image: url("icn-comment.png");

@@ -1,0 +1,170 @@
+/* Customize GeSHi styles used by WP-Syntax.
+ * All these !important overrides make my skin crawl but blame GeSHi for that.
+ */
+.wp_syntax {
+	color: #97abc8;
+	background-color: #1e2029;
+	border: 1px solid #13141a;
+	padding: 5px;
+	margin: 0 0 1.5em 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 15 : 0);
+	width: 98%;
+}
+
+.wp_syntax table {
+	border: none !important;
+	border-collapse: collapse !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100% !important
+}
+
+.wp_syntax caption {
+	margin: 0 0 10px !important;
+	padding: 3px 1% !important;
+	width: 98% !important;
+	background-color: #30323f !important;
+	text-align: left !important;
+	font-family: monospace !important;
+	font-size: 12px !important;
+	line-height: 1.2em !important;
+}
+
+.wp_syntax caption a {
+	color: #fc9 !important;
+	text-align: left !important;
+	font-family: monospace !important;
+	font-size: 12px !important;
+	line-height: 16px !important;
+	text-decoration: none !important;
+}
+
+.wp_syntax caption a:hover, 
+.wp_syntax caption a:focus,
+.wp_syntax caption a:active {
+	color: #ffefc9 !important;
+	text-decoration: underline !important;
+}
+
+.wp_syntax div, .wp_syntax td {
+	border: none !important;
+	text-align: left !important;
+	padding: 0 !important;
+	vertical-align: top !important;
+}
+
+.wp_syntax td.code{
+	background-color: #1e2029;
+	background-image: -webkit-linear-gradient( transparent 50%, rgba(48, 50, 63, .2) 50% );
+	background-image: -moz-linear-gradient( transparent 50%, rgba(48, 50, 63, .2) 50% );
+	background-image: -ms-linear-gradient( transparent 50%, rgba(48, 50, 63, .2) 50% );
+	background-image: -o-linear-gradient( transparent 50%, rgba(48, 50, 63, .2) 50% );
+	background-image: linear-gradient( transparent 50%, rgba(48, 50, 63, .2) 50% );
+	background-size: 1px 2.29em;
+	line-height: normal !important;
+	white-space: normal !important;
+	width: 100% !important;
+}
+
+/* potential overrides for other styles */
+.wp_syntax pre {
+	background: transparent !important;
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: auto !important;
+	float: none !important;
+	clear: none !important;
+	overflow: visible !important;
+	font-family: monospace !important;
+	font-size: 12px !important;
+	line-height: 16px !important;
+	padding: 0 4px !important;
+	white-space: pre !important;
+	-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important; /* FF3.5+ */
+	-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important; /* Saf3.0+, Chrome */
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important; /* Opera 10.5, IE 9.0 */
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.wp_syntax td.line_numbers pre {
+	background-color: #13141a !important;
+	color: #999 !important;
+	text-align: right !important;
+	width: 16px !important;
+}
+
+
+/* Highlighs */
+.xtra, .ln-xtra { display: block; background-color: #4a4e62; }
+
+/* default styles-- non-keywords, etc. */
+.de1 { color: #97abc8; }
+.de2 { color: #97abc8; }
+
+/* language keywords... some languages have more than others. */
+.kw1 {color: #dedbb3; }
+.kw2 {color: #f9efac; }
+.kw3 {color: #d6b57f; }
+.kw4 {color: #f9efac; font-weight: bold; }
+
+/* various kinds of comments. */
+.co0, .co1, .co2, co3, .co4, .coMULTI {color: #7c9176; font-style: italic}
+
+/* strings */
+.st0 {color: #bff98f; }
+.st_h {color: #bff98f; } /* "hard" strings (usu. singlequotes) */
+
+/* escape characters ESCAPE_CHAR */
+.es0 { color: #9caaa6; }
+.es_h { color: #9caaa6; } /* in "hard" strings */
+
+
+/* brackets, braces, and the like */
+.br0 { color: #dedede; }
+
+/* symbols */
+.sy0 { color: #e0d79a; } 
+.sy1 { color: #e0d79a; } 
+
+/* numbers */
+.nu0 { color: #ddafd9; }
+.nu8 { color: #ddafd9; } /* octal - GESHI_NUMBER_OCT_PREFIX */
+.nu12 { color: #ddafd9; } /* hex - GESHI_NUMBER_HEX_PREFIX */
+.nu19 { color: #ddafd9; } /* scientific- GESHI_NUMBER_FLT_SCI_ZERO */
+
+/* methods */
+.me1 { color: #db7e62; font-weight: bold; }
+.me2 { color: #db7e62}
+
+/* misc other regexp-based constructs, differ widely by language */
+.re0 { color: #fff; font-weight: bold; } /* variables, in most langs  */
+.re1 { color: #ccc; font-weight: bold; }
+.re2 { color: #fff; }
+.re3 { color: #fff; }
+.re4 { color: #fff; }
+.re5 { color: #fff; }
+.re6 { color: #fff; }
+.re7 { color: #fff; }
+.re8 { color: #fff; }
+.re9 { color: #fff; }
+
+/* links, for if you've got documentation linkage turned on */
+a { text-decoration: none; }
+
+/* special diff colors to sort of make sense... see wp-syntax/geshi/geshi/diff.php */
+.diff .kw1 { color: #aaaaaa; font-style: italic; }
+.diff .re0 { color: #440088; }
+.diff .re1 { color: #ff3333; }
+.diff .re2 { color: #00b000; }
+.diff .re3 { color: #f96; }
+.diff .re4 { color: #9f9; }
+.diff .re5 { color: #0011dd; }
+.diff .re6 { color: #96f; }
+.diff .re7 { color: #fbb; }
+.diff .re8 { color: #cfc; }
+.diff .re9 { color: #888822; }

@@ -1,4 +1,3 @@
-<?php $options = onemozilla_get_theme_options(); ?>
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
       <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permanent link to &ldquo;%s&rdquo;', 'onemozilla' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php esc_attr(the_title()); ?></a></h2>
@@ -13,7 +12,7 @@
       </p>
     <?php endif; ?>
 
-    <?php if ( $options['hide_author'] != 1 ) : ?>
+    <?php if ( get_option('onemozilla_hide_authors') != 1 ) : ?>
       <address class="vcard"><cite class="author fn"><a class="url" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>" title="<?php printf( esc_attr__( 'See all %1$s posts by %2$s', 'onemozilla'), get_the_author_posts(), get_the_author() ); ?>"><?php esc_html(the_author()); ?> <?php echo get_avatar(get_the_author_meta('user_email'), 24) ?></a></cite></address>
     <?php endif; ?>
 

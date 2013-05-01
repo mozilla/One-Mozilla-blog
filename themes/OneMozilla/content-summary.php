@@ -12,7 +12,7 @@
     </p>
   <?php endif; ?>
 
-  <?php if ( $options['hide_author'] != 1 ) : ?>
+  <?php if ( get_option('onemozilla_hide_authors') != 1 ) : ?>
     <address class="vcard"><cite class="author fn"><a class="url" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>" title="<?php printf( esc_attr__('See all %1$s posts by %2$s', 'onemozilla'), the_author_posts(), the_author())?>"><?php the_author() ?> <?php echo get_avatar(get_the_author_meta('user_email'), 24) ?></a></cite></address>
   <?php endif; ?>
 

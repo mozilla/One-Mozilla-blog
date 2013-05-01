@@ -43,14 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #2e475a;
   border-color: #2e475a;
 }
-.entry-content a:hover img,
-.entry-content a:focus img,
-.entry-content a:active img,
-.entry-summary a:hover img,
-.entry-summary a:focus img,
-.entry-summary a:active img {
-  background-color: #ffe400;
-}
+
 .entry-meta {
   border-bottom: 1px solid rgba(197,204,201,.1);
 }

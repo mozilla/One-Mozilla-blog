@@ -28,11 +28,7 @@ a:focus,
 a:active {
   color: #4090c4;
 }
-.entry-content a:hover img,
-.entry-content a:focus img,
-.entry-content a:active img {
-  background-color: #4090c4;
-}
+
 #site-title a:hover,
 #site-title a:focus,
 #site-title a:active {

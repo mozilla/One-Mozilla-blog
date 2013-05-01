@@ -1,0 +1,494 @@
+/*
+Theme Name:     One Mozilla - Webdev 2013
+Description:    The Mozilla webdev blog, a child theme of One Mozilla.
+Author:         Craig Cook
+Template:       OneMozilla
+Version:        1.0
+
+Colors:
+base            #252731
+dark            #1e2029
+darker          #13141a
+darkest         #08090d
+light           #30323f
+lighter         #4a4e62
+
+text            #b4b4b4
+link            #fc9
+hover           #ffefc9
+*/
+
+@import url("../OneMozilla/style.css");
+
+html {
+  background: #252731;
+}
+body {
+  color: #b4b4b4;
+}
+.webdev #page {
+  padding: 0 80px 84px;
+  background-color: #252731;
+  background: url(img/tree.png) 10px -280px repeat-y,
+    url(img/bg-gradient.png) center top repeat-x,
+    url(img/activity.png) center bottom repeat-x,
+    #252731 url(img/bg-tile.png);
+}
+
+#page > .wrap {
+  padding-bottom: 84px;
+  margin-bottom: -84px;
+}
+
+#content-sub {
+  background: #1e2029;
+  background: rgba(19,20,26,.15);
+  padding: 20px;
+  margin: 0 -10px 1em 70px;
+  border-radius: 8px;
+  box-shadow: inset rgba(19,20,26,.15) 0 0 2px, rgba(255,255,255,0.1) 0 1px 0;
+}
+
+.featured-posts {
+  background: #1e2029;
+  background: rgba(19,20,26,.15);
+  border-bottom: 1px solid #313442;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.05);
+  border-radius: 8px;
+}
+.featured-posts .wp-post-image {
+  background-color: #30323f;
+  border-color: #30323f;
+}
+
+/* @Header *********/
+.webdev #site-title,
+.webdev #site-title a:link,
+.webdev #site-title a:visited {
+  color: #fc9;
+}
+.webdev #site-title a:hover,
+.webdev #site-title a:focus,
+.webdev #site-title a:active {
+  color: #ffefc9;
+}
+.webdev #site-description {
+  color: #b4b4b4;
+}
+
+/* @Content *********/
+h1, h2, h3, h4, h5, h6 {
+  color: #b4b4b4;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+.entry-content table {
+  border-color: #373a48;
+}
+.entry-content th,
+.entry-content td {
+  border-bottom-color: #373a48;
+}
+
+.wp-caption {
+  background-color: #30323f;
+}
+.webdev .entry-content img,
+.webdev .entry-summary img {
+  background-color: #30323f;
+  border-color: #30323f;
+}
+.webdev .entry-content a:hover img,
+.webdev .entry-content a:focus img,
+.webdev .entry-content a:active img,
+.webdev .entry-summary a:hover img,
+.webdev .entry-summary a:focus img,
+.webdev .entry-summary a:active img {
+  background-color: #4a4e62;
+}
+
+.webdev ::-moz-selection {
+  background: #fc9;
+  color: #08090d;
+}
+.webdev ::selection {
+  background: #fc9;
+  color: #08090d;
+}
+
+/* @Links *********/
+.webdev a:link,
+.webdev a:visited {
+  color: #fc9;
+}
+.webdev a:hover,
+.webdev a:focus,
+.webdev a:active {
+  color: #ffefc9;
+}
+
+/*** Link buttons */
+.edit a,
+#cancel-comment-reply a {
+  border-color: #313441;
+  background: #414456;
+  background: linear-gradient(top, #414456 0, #313441 100%);
+}
+.edit a:hover,
+.edit a:focus,
+.edit a:active,
+#cancel-comment-reply a:hover,
+#cancel-comment-reply a:focus,
+#cancel-comment-reply a:active {
+  border-color: #333;
+}
+
+/*** Post Author */
+.entry-header .vcard {
+  border: 0;
+  border-bottom: 1px solid #313442;
+  background: #1e2029;
+  background: rgba(19,20,26,.15);
+  border-radius: 6px;
+}
+.entry-header .vcard img {
+  border-color: #1d1e26;
+}
+.entry-meta {
+  border-radius: 6px;
+  border-bottom: 1px solid #313442;
+  background: #1e2029;
+  background: rgba(19,20,26,.15);
+}
+
+/*** @Posted date */
+.entry-posted {
+  background-image: url(img/bg-date.png);
+}
+.entry-posted a:link,
+.entry-posted a:visited,
+.entry-posted a:hover,
+.entry-posted a:focus,
+.entry-posted a:active {
+  color: inherit;
+}
+
+/*** Comment Count */
+.post .entry-comments {
+  background: #1e2029;
+  background: rgba(19,20,26,.15);
+  border-radius: 6px;
+}
+.post .entry-comments a {
+  background-image: url("img/icn-comment.png");
+  border: 0;
+  border-bottom: 1px solid #313442;
+  border-radius: 6px;
+}
+
+/* @Comments *********/
+#comment-list .comment,
+#comment-list .pingback,
+#comment-list .trackback {
+  background: #1e2029;
+  background: rgba(30,32,41,.5);
+  border-color: #1e2029;
+  box-shadow: inset rgba(19,20,26,.5) 0 0 8px, rgba(255,255,255,0.1) 0 1px 0;
+  border-radius: 8px;
+}
+#comment-list .alt {
+  background: transparent;
+}
+#comment-list .byuser {
+  border-color: #3e4151;
+  background: #30323f;
+  background: rgba(48,50,63,.2);
+}
+#comment-list .avatar {
+  border-color: #5d83a0;
+}
+#comment-submit button {
+  font-size: 1em;
+}
+
+.webdev #comment-form #errors {
+  background: #39303f;
+  border: 1px solid #473851;
+  border-radius: 6px;
+}
+.webdev #comment-form .err {
+  background: #39303f;
+}
+
+/* @Social @Sharing *********/
+.webdev .socialshare > div > a,
+.webdev .socialshare > div > a:after {
+  background-image: url("img/icn-share.png");
+}
+.webdev .socialshare > div > a {
+  color: #fc9;
+}
+.webdev .socialshare > div > a:after {
+  background-color: #4a4e62;
+}
+.webdev .share-active-state,
+.webdev .socialshare.open > div > a,
+.webdev .socialshare > div > a:hover,
+.webdev .socialshare > div > a:focus {
+  color: #ffefc9;
+}
+.webdev .share-active-state span,
+.webdev .socialshare > div > a:hover span,
+.webdev .socialshare > div > a:focus span,
+.webdev .socialshare.open > div > a span {
+  border-color: #ffefc9;
+}
+.webdev .socialshare > div > a:focus span {
+  outline-color: #ffefc9;
+}
+.webdev .socialshare > div > a span {
+  border-bottom-color: #fc9;
+}
+
+/* @Sidebar *********/
+.author-links {
+  list-style: none;
+}
+.author-links a {
+  padding-left: 24px;
+  background: url(img/author-links.png) no-repeat;
+}
+.author-links .website {
+  background-position: 0 2px;
+}
+.author-links .twitter {
+  background-position: 0 -48px;
+}
+.author-links .github {
+  background-position: 0 -98px;
+}
+
+.widget_nav_menu li,
+.widget_categories li,
+.widget_categories .children li,
+.widget_recent_entries li,
+.widget_recent_comments li {
+  border-color: #313442;
+}
+
+.fm-search #s {
+  background-color: #252731;
+  border-color: #13141a;
+  color: #b4b4b4;
+}
+.fm-search #s:hover,
+.fm-search #s:focus {
+  background-color: #30323f;
+  border-color: #4a4e62;
+}
+
+.widget_calendar #today {
+  background-color: #13141a;
+}
+.widget_calendar tbody a {
+  background-color: #30323f;
+}
+
+/* @Navigation ***/
+#nav-primary,
+.nav-paging {
+  border-radius: 6px;
+  border-top: 1px solid #3b3f51;
+  background: #30323f;
+  background: rgba(48,50,63,.5);
+  box-shadow: 0 0 1px rgba(0,0,0,.15);
+}
+#nav-primary .current-menu-item a:link,
+#nav-primary .current-menu-item a:visited,
+.widget_nav_menu .current-menu-item a:link,
+.widget_nav_menu .current-menu-item a:visited {
+  color: #fff;
+}
+.webdev #nav-primary a,
+.webdev #nav-primary li {
+  border-color: #3b3f51;
+}
+
+/* @Forms *********/
+.webdev input[type=email],
+.webdev input[type=url],
+.webdev input[type=password],
+.webdev input[type=text],
+.webdev textarea {
+  background-color: #252731;
+  border-color: #13141a;
+  color: #b4b4b4;
+  border-radius: 6px;
+}
+.webdev input[type=email]:hover,
+.webdev input[type=url]:hover,
+.webdev input[type=password]:hover,
+.webdev input[type=text]:hover,
+.webdev textarea:hover {
+  border-color: #4a4e62;
+}
+.webdev input[type=email]:focus,
+.webdev input[type=url]:focus,
+.webdev input[type=password]:focus,
+.webdev input[type=text]:focus,
+.webdev textarea:focus {
+  background-color: #30323f;
+  border-color: #4a4e62;
+  box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
+}
+.webdev label .note {
+  color: #b4b4b4;
+}
+
+.webdev input[type=submit],
+.webdev button {
+  border-radius: .25em;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.1),inset 0 -2px 0 0 rgba(0,0,0,0.2);
+  color: #fc9;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 24px;
+  border: 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+  font: .857em/1.1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  background-color: #30323f;
+  background-image: linear-gradient(#4a4e62,#30323f);
+  transition: all .25s linear;
+}
+.webdev input[type=submit]:hover,
+.webdev input[type=submit]:focus,
+.webdev button:hover,
+.webdev button:focus {
+  color: #ffefc9;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.2), inset 0 12px 24px 2px #525772;
+}
+
+
+/* @Author list *********/
+.author-list {
+  list-style: none;
+  margin: 1em -10px;
+  overflow: auto;
+}
+.author-list .vcard {
+  width: 220px;
+  float: left;
+  margin: 0 10px 1.5em;
+  position: relative;
+  padding-left: 80px;
+  min-height: 60px;
+}
+.author-list .vcard:nth-child(2n+1) {
+  clear: left;
+}
+.author-list .fn {
+  font-style: normal;
+  font-size: 1.285rem;
+}
+.author-list .post-count {
+  display: block;
+  font-size: .928rem;
+  font-weight: normal;
+}
+.author-list .photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 4px solid #4a4e62;
+  padding: 1px;
+  background-color: #4a4e62;
+  transition: background-color .1s .1s ease-in;
+}
+.author-list a:hover .photo,
+.author-list a:focus .photo,
+.author-list a:active .photo {
+  background-color: #ffefc9;
+  transition: background-color .1s ease-in;
+}
+.author-list .desc {
+  font-size: .928em;
+}
+
+/* @Footer **********/
+#site-info {
+  background-color: #13141a;
+  color: #737790;
+}
+#site-info a:link,
+#site-info a:visited {
+  color: #b8936e;
+}
+#site-info a:hover,
+#site-info a:focus,
+#site-info a:active {
+  color: #fc9;
+}
+
+@media only screen and (max-width: 1215px) {
+  .webdev #page {
+    padding: 0 30px 84px;
+    background: url(img/tree-sm.png) 10px -10px repeat-y,
+    url(img/bg-gradient.png) center top repeat-x,
+    url(img/activity.png) center bottom repeat-x,
+    #252731 url(img/bg-tile.png);
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .webdev #page {
+    padding: 0 0 84px;
+    background: url(img/bg-gradient.png) center top repeat-x,
+    url(img/activity.png) center bottom repeat-x,
+    #252731 url(img/bg-tile.png);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  #content-sub {
+    padding: 10px;
+    margin: 0 -20px 1em 0;
+  }
+  .webdev #page {
+    padding: 0 0 84px;
+    background: url(img/bg-gradient.png) center top repeat-x,
+    url(img/activity.png) center bottom repeat-x,
+    #252731 url(img/bg-tile.png);
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .webdev #page {
+    padding: 0 0 84px;
+    background: url(img/bg-gradient.png) center top repeat-x,
+    url(img/activity.png) center bottom repeat-x,
+    #252731 url(img/bg-tile.png);
+  }
+
+  .entry-posted {
+    background-image: none;
+  }
+
+  #content-sub {
+    padding: 20px;
+    width: auto;
+    margin: 0 0 1em;
+  }
+
+  .sub .featured-posts {
+    background: #fff;
+    -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    overflow: auto;
+    padding: 24px;
+  }
+
+}

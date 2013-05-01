@@ -1,9 +1,9 @@
 <div id="content-sub" class="sub sidebar widgets" role="complementary">
 
 <?php if ( !is_active_sidebar('sidebar') ) : ?>
-  <?php
+  <?php $options = onemozilla_get_theme_options();
   /* If we're showing authors, show the bio in the sidebar */
-  if ( (get_option('onemozilla_hide_authors') != 1) && (is_single() || is_author()) ) : ?>
+  if ( ($options['hide_author'] != 1) && (is_single() || is_author()) ) : ?>
     <aside class="widget vcard author-bio">
       <h3 class="widget-title">
       <?php if (get_the_author_meta('description')) : ?><?php _e('About','onemozilla'); ?><?php endif; ?>
@@ -49,7 +49,7 @@
 
   <?php $options = onemozilla_get_theme_options();
   /* If we're showing authors, show the bio in the sidebar */
-  if ( (get_option('onemozilla_hide_authors') != 1) && (is_single() || is_author()) ) : ?>
+  if ( ($options['hide_author'] != 1) && (is_single() || is_author()) ) : ?>
     <aside class="widget vcard author-bio">
       <h3 class="widget-title">
       <?php if (get_the_author_meta('description')) : ?><?php _e('About','onemozilla'); ?><?php endif; ?>
@@ -70,6 +70,8 @@
       <?php if (get_the_author_meta('description')) : ?>
       <p><?php esc_html(the_author_meta('description')); ?></p>
       <?php endif; ?>
+
+      <?php dw_get_author_meta(); ?>
 
       <?php if (!is_author()) :
         if (get_the_author_meta('first_name')) :

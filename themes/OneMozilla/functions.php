@@ -69,6 +69,24 @@ function onemozilla_setup() {
     )
    )
   );
+  
+  // We've moved the share_posts and hide_authors out of theme options but we'll bring over those settings (if they exist)
+  $options = get_option( 'onemozilla_theme_options' );
+
+  // Stash the values in variables
+  $color_scheme = $options['color_scheme'];
+  $share_posts = $options['share_posts'];
+  $hide_authors = $options['hide_author'];
+  
+  if ( $options['share_posts'] && (get_option('onemozilla_share_posts') == null) ) {
+    update_option('onemozilla_share_posts', $share_posts);
+  }
+  if ( $options['hide_author'] && (get_option('onemozilla_hide_authors') == null) ) {
+    update_option('onemozilla_hide_authors', $hide_authors);
+  }
+  // Remove the old values from theme_options, we're only keeping the color scheme
+  update_option('onemozilla_theme_options', array('color_scheme' => $color_scheme));
+  
 }
 endif; // onemozilla_setup
 
@@ -78,16 +96,78 @@ endif; // onemozilla_setup
 add_action( 'after_setup_theme', 'onemozilla_setup' );
 
 /*********
+ * Register and define the Social Sharing and Hide Authors settings
+ */
+function onemozilla_admin_init(){
+  register_setting(
+    'reading',
+    'onemozilla_share_posts'
+  );
+  add_settings_field( 
+    'share_posts',
+    __( 'Social sharing', 'onemozilla' ), 
+    'onemozilla_settings_field_share_posts',
+    'reading', 
+    'default' 
+  );
+  
+  register_setting(
+    'reading',
+    'onemozilla_hide_authors'
+  );
+  add_settings_field( 
+    'hide_authors',
+    __( 'Hide post authors', 'onemozilla' ), 
+    'onemozilla_settings_field_hide_authors',
+    'reading', 
+    'default' 
+  );
+}
+add_action('admin_init', 'onemozilla_admin_init');
+
+/**
+ * Renders the Add Sharing setting field.
+ */
+function onemozilla_settings_field_share_posts() { ?>
+	<div class="layout share-posts">
+	<label>
+		<input type="checkbox" id="onemozilla_share_posts" name="onemozilla_share_posts" value="1" <?php checked( '1', get_option('onemozilla_share_posts') ); ?> />
+		<span>
+			<?php _e('Add social sharing buttons to posts and pages', 'onemozilla'); ?>
+		</span>
+		<p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
+	</label>
+	</div>
+	<?php
+}
+
+/**
+ * Renders the Show Author setting field.
+ */
+function onemozilla_settings_field_hide_authors() { ?>
+	<div class="layout hide-authors">
+	<label>
+		<input type="checkbox" name="onemozilla_hide_authors" value="1" <?php checked( '1', get_option('onemozilla_hide_authors') ); ?> />
+		<span>
+			<?php _e('Hide post authors', 'onemozilla'); ?>
+		</span>
+		<p class="description"><?php _e('This removes the author byline and author bio from individual posts.', 'onemozilla' ); ?></p>
+	</label>
+	</div>
+	<?php
+}
+
+
+/*********
  * Adds classes to the array of post classes. We'll use these as style hooks for post headers.
  */
 function onemozilla_post_classes( $classes ) {
-  $options = onemozilla_get_theme_options();
   $comment_count = get_comments_number($post->ID);
 
-  if ( $options['hide_author'] != 1 ) {
+  if ( get_option('onemozilla_hide_authors') != 1 ) {
     $classes[] = 'show-author';
   }
-  elseif ( $options['hide_author'] == 1 ) {
+  elseif ( get_option('onemozilla_hide_authors') == 1 ) {
     $classes[] = 'no-author';
   }
   if ( comments_open($post->ID) || pings_open($post->ID) || ($comment_count > 0) ) {
@@ -96,12 +176,13 @@ function onemozilla_post_classes( $classes ) {
   elseif ( !comments_open($post->ID) && !pings_open($post->ID) && ($comment_count == 0) ) {
     $classes[] = 'no-comments';
   }
-  if ( $options['share_posts'] == 1 ) {
+  if ( get_option('onemozilla_share_posts') == 1 ) {
     $classes[] = 'show-sharing';
   }
   return $classes;
 }
 add_filter( 'post_class', 'onemozilla_post_classes' );
+
 
 /*********
 * Use auto-excerpts for meta description if hand-crafted exerpt is missing
@@ -220,8 +301,7 @@ function onemozilla_load_scripts() {
 
   // Register and load the socialsharing script
   wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js' );
-  $options = onemozilla_get_theme_options();
-  if ( ($options['share_posts'] === 1) && is_singular() ) {
+  if ( (get_option('onemozilla_share_posts') == 1) && is_singular() ) {
     wp_enqueue_script( 'socialshare' );
   }
 
@@ -242,6 +322,26 @@ add_action( 'wp_enqueue_scripts', 'onemozilla_load_scripts' );
 * Remove WP version from head (helps us evade spammers/hackers)
 */
 remove_action('wp_head', 'wp_generator');
+
+/*********
+* Catch spambots with a honeypot field in the comment form.
+* It's hidden from view with CSS so most humans will leave it blank, but robots will kindly fill it in to alert us to their presence.
+* The field has an innucuous name -- 'age' in this case -- likely to be autofilled by a robot.
+*/
+function fc_honeypot( array $data ){
+  if( !isset($_POST['comment'])) { die("No Direct Access"); }  // Make sure the form has actually been submitted
+
+  if($_POST['age']) {  // If the Honeypot field has been filled in
+    $message = _e('Sorry, you appear to be a spamming robot because you filled in the hidden spam trap field. To show you are not a spammer, submit your comment again and leave the field blank.', 'onemozilla');
+    $title = 'Spam Prevention';
+    $args = array('response' => 200);
+    wp_die( $message, $title, $args );
+    exit(0);
+  } else {
+	   return $data;
+	}
+}
+add_filter('preprocess_comment','fc_honeypot');
 
 /*********
  * Removes the default styles that are packaged with the Recent Comments widget.
@@ -326,7 +426,7 @@ function fc_featured_meta_box($post){
   ?>
   <label class="selectit" for="fc_featuredpost">
   <input type="checkbox" name="_fc_featuredpost" id="fc_featuredpost" value="1" <?php if ($featured) { ?>checked<?php } ?> />
-  <?php _e('Feature this post?', 'onemozilla'); ?></label>
+  <?php _e('Make this a featured post?', 'onemozilla'); ?></label>
 <?php
 }
 
@@ -627,7 +727,7 @@ function moz_featuredPosts($args) {
               <?php if (has_post_thumbnail()) : ?>
                 <?php the_post_thumbnail(array(115,115), array('alt' => "", 'title' => "")); ?>
               <?php else : ?>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/featured.png" alt="" width="115" height="115" class="wp-post-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/featured.png" alt="" width="115" height="115" class="wp-post-image">
               <?php endif; ?>
               </span>
               <?php the_title(); ?>
@@ -642,7 +742,7 @@ function moz_featuredPosts($args) {
 }
 
 function featuredposts_widget_init() {
-    register_widget("moz_widget_featuredPosts");
+  register_widget("moz_widget_featuredPosts");
 }
 add_action("widgets_init","featuredposts_widget_init");
 
