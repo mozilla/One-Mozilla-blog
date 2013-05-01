@@ -11,12 +11,12 @@ get_header(); ?>
 
   <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
   <h1 class="page-title">
-  <?php if (is_category()) : ?><?php printf(__('Archive for %s','onemozilla'), single_cat_title()); ?>
-  <?php elseif (is_tag()) : ?><?php printf(__('Posts tagged with “%s”','onemozilla'), single_tag_title()); ?>
-  <?php elseif (is_day()) : ?><?php printf(__('Posts from %s', 'onemozilla'), get_the_date()); ?>
-  <?php elseif (is_month()) : ?><?php printf(__('Posts from %s', 'onemozilla'), get_the_date('F, Y')); ?>
-  <?php elseif (is_year()) : ?><?php printf(__('Posts from %s', 'onemozilla'), get_the_date('Y')); ?>
-  <?php elseif (is_author()) : ?><?php printf(__('Posts by %s','onemozilla'), esc_html(get_userdata(intval($author))->display_name) ); ?></span>
+  <?php if (is_category()) : ?><?php printf( __( 'Posts in “%s”', 'onemozilla' ), single_cat_title('',false) ); ?> 
+  <?php elseif (is_tag()) : ?><?php printf( __('Posts tagged with “%s”','onemozilla'), single_tag_title('',false) ); ?>
+  <?php elseif (is_day()) : ?><?php printf( __('Posts from %s', 'onemozilla'), get_the_date() ); ?>
+  <?php elseif (is_month()) : ?><?php printf( __('Posts from %s', 'onemozilla'), get_the_date('F, Y') ); ?>
+  <?php elseif (is_year()) : ?><?php printf( __('Posts from %s', 'onemozilla'), get_the_date('Y') ); ?>
+  <?php elseif (is_author()) : ?><?php printf( __('Posts by %s','onemozilla'), esc_html(get_userdata(intval($author))->display_name) ); ?></span>
   <?php elseif (is_search()) : ?><?php printf( _n('We found one result for “%2$s”', 'We found %1$s results for “%2$s”', $total_results, 'onemozilla'), $total_results, esc_html(get_search_query()) ); ?>
   <?php else : ?><?php _e('Archives','onemozilla'); ?>
   <?php endif; ?>

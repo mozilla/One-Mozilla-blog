@@ -1058,7 +1058,7 @@ input:-moz-placeholder {
 }
 .fm-search #s {
   background: #fafafa;
-  background: rgba(255,255,255,.8);
+  background: rgba(255,255,255,.8) url("img/icn-search.png") 96% 50% no-repeat;
   border: 1px solid #ccc;
   border-radius: 6px;
   box-shadow: 0 0 0 3px rgba(0,0,0,.02) inset;
@@ -1066,21 +1066,21 @@ input:-moz-placeholder {
   -moz-appearance: textfield;
   -o-appearance: textfield;
   appearance: textfield;
-  padding: 6px 5px;
+  padding: 6px 20px 6px 5px;
   -webkit-appearance: textfield;
   -moz-transition: all 0.1s linear;
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  width: 94%;
+  width: 90%;
 }
 .fm-search #s:hover {
-  background: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,.9);
   border-color: #999;
 }
 .fm-search #s:focus {
-  background: #fff;
+  background-color: #fff;
   border-color: #3c3c3c;
   outline: 0;
 }
@@ -1181,7 +1181,7 @@ input:-moz-placeholder {
   font-size: 1.2em;
 }
 #comment-list .comment-util .edit {
-  margin-left: 20px;
+  font-size: 1em;
 }
 #comment-list ol.children {
   list-style: none;

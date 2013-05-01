@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php 
+// Don't allow direct access to the theme
+if(!function_exists('get_header')) {
+  exit('Direct template access is not allowed');
+}
+ 
+get_header(); ?>
 
   <div id="content-main" class="main" role="main">
 

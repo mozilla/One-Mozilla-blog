@@ -110,15 +110,16 @@ h5 { font-size: 1.125em; }
 h6 { font-size: 1em; }
 
 /* @Content *********/
-ul { list-style-type: square; }
-li ul, li ol { margin: 0 0 0 20px; }
-blockquote { padding: 0 20px; font-style: italic; }
+ul, ol { margin: 0 0 1.5em 24px; }
+li ul, li ol { margin: 0 0 0 24px; }
+blockquote {   font-style: italic; padding: 0 24px; }
 blockquote em, blockquote i, blockquote cite { font-style: normal; }
 dt { font-style: italic; }
-dd { padding-left: 20px; }
-table { border-collapse: collapse; border-width: 1px 1px 0; border-style: solid; border-color: #2e404e; }
-th, td { border-bottom: 1px #2e404e; padding: 0 4px; color: #c5ccd2; font-family: inherit; font-size: 100%; }
-thead th { font-size: .857em; text-align: left; font-weight: normal; }
+dd { padding-left: 24px; }
+table { border-collapse: collapse; border-width: 1px 1px 0; border-style: solid; border-color: #ddd; }
+tr:nth-child(even) { background-color: rgba(200,200,200,.1); }
+th, td { border-bottom: 1px solid #ddd; padding: 0 6px; }
+thead th { font-size: .857em; text-align: left; font-weight: normal; background-color: rgba(200,200,200,.2); }
 tbody th { text-align: left; }
 pre { overflow: auto; }
 code { font-size: .857em; }

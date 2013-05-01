@@ -110,12 +110,12 @@ a:link, a:visited { color: #67a7d0; text-decoration: none; }
 a:hover, a:focus, a:active { color: #4090c4; text-decoration: underline; }
 
 /* @Content *********/
-ul { list-style-type: square; }
-li ul, li ol { margin: 0 0 0 20px; }
-blockquote { padding: 0 20px; font-style: italic; }
+ul, ol { margin: 0 0 1.5em 24px; }
+li ul, li ol { margin: 0 0 0 24px; }
+blockquote {   font-style: italic; padding: 0 24px; }
 blockquote em, blockquote i, blockquote cite { font-style: normal; }
 dt { font-style: italic; }
-dd { padding-left: 20px; }
+dd { padding-left: 24px; }
 table { border-collapse: collapse; border-width: 1px 1px 0; border-style: solid; border-color: #ddd; }
 tr:nth-child(even) { background-color: rgba(200,200,200,.1); }
 th, td { border-bottom: 1px solid #ddd; padding: 0 6px; }
