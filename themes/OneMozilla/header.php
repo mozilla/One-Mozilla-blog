@@ -69,7 +69,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class($theme_options[color_scheme]); ?> role="document">
+<body <?php body_class($theme_options[color_scheme]); ?>>
 <div id="page"><div class="wrap">
   <nav id="nav-access">
     <ul role="navigation">
@@ -85,4 +85,4 @@
 
   <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav', 'container_id' => 'nav-primary', 'fallback_cb' => 'false', ) ); ?>
 
-  <div id="content">
+  <main id="content">

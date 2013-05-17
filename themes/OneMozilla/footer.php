@@ -1,6 +1,6 @@
 <?php $theme_options = onemozilla_get_theme_options(); ?>
 
-  </div><!-- #content -->
+  </main><!-- #content -->
 </div></div><!-- /.wrap /#page -->
 
 <footer id="site-info" role="contentinfo">

@@ -69,7 +69,7 @@ function onemozilla_setup() {
     )
    )
   );
-  
+
   // We've moved the share_posts and hide_authors out of theme options but we'll bring over those settings (if they exist)
   $options = get_option( 'onemozilla_theme_options' );
 
@@ -77,16 +77,21 @@ function onemozilla_setup() {
   $color_scheme = $options['color_scheme'];
   $share_posts = $options['share_posts'];
   $hide_authors = $options['hide_author'];
-  
+
   if ( $options['share_posts'] && (get_option('onemozilla_share_posts') == null) ) {
     update_option('onemozilla_share_posts', $share_posts);
   }
   if ( $options['hide_author'] && (get_option('onemozilla_hide_authors') == null) ) {
     update_option('onemozilla_hide_authors', $hide_authors);
   }
-  // Remove the old values from theme_options, we're only keeping the color scheme
-  update_option('onemozilla_theme_options', array('color_scheme' => $color_scheme));
-  
+  // Remove the old values from theme_options, we're only keeping the color scheme (if set)
+  if ( $options['color_scheme'] ) {
+    update_option('onemozilla_theme_options', array('color_scheme' => $color_scheme));
+  }
+  else {
+    update_option('onemozilla_theme_options', array('color_scheme' => 'stone'));
+  }
+
 }
 endif; // onemozilla_setup
 
@@ -103,24 +108,24 @@ function onemozilla_admin_init(){
     'reading',
     'onemozilla_share_posts'
   );
-  add_settings_field( 
+  add_settings_field(
     'share_posts',
-    __( 'Social sharing', 'onemozilla' ), 
+    __( 'Social sharing', 'onemozilla' ),
     'onemozilla_settings_field_share_posts',
-    'reading', 
-    'default' 
+    'reading',
+    'default'
   );
-  
+
   register_setting(
     'reading',
     'onemozilla_hide_authors'
   );
-  add_settings_field( 
+  add_settings_field(
     'hide_authors',
-    __( 'Hide post authors', 'onemozilla' ), 
+    __( 'Hide post authors', 'onemozilla' ),
     'onemozilla_settings_field_hide_authors',
-    'reading', 
-    'default' 
+    'reading',
+    'default'
   );
 }
 add_action('admin_init', 'onemozilla_admin_init');
@@ -309,7 +314,7 @@ function onemozilla_load_scripts() {
   if ( get_option('thread_comments') && is_singular() ) {
     wp_enqueue_script( 'comment-reply' );
   }
-  
+
   // Check required fields on comment form
   wp_register_script( 'checkcomments', get_template_directory_uri() . '/js/fc-checkcomment.js' );
   if ( get_option('require_name_email') && is_singular() ) {
