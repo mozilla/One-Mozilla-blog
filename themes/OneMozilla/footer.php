@@ -16,10 +16,11 @@
 
     <nav id="nav-meta">
       <ul role="navigation">
-        <li><a href="http://www.mozilla.org/contact/" rel="external"><?php _e('Contact Us', 'onemozilla'); ?></a></li>
-        <li><a href="http://www.mozilla.org/en-US/privacy" rel="external"><?php _e('Privacy Policy', 'onemozilla'); ?></a></li>
-        <li><a href="http://www.mozilla.org/<?php echo get_bloginfo('language')?>/about/legal.html" rel="external"><?php _e('Legal Notices', 'onemozilla'); ?></a></li>
-        <li><a href="http://www.mozilla.org/<?php echo get_bloginfo('language')?>/legal/fraud-report/index.html" rel="external"><?php _e('Report Trademark Abuse', 'onemozilla'); ?></a></li>
+        <li><a href="https://www.mozilla.org/contact/" rel="external"><?php _e('Contact Us', 'onemozilla'); ?></a></li>
+        <li><a href="https://www.mozilla.org/en-US/privacy/" rel="external"><?php _e('Privacy Policy', 'onemozilla'); ?></a></li>
+        <li><a href="https://www.mozilla.org/en-US/about/legal.html" rel="external"><?php _e('Legal Notices', 'onemozilla'); ?></a></li>
+        <li><a href="https://www.mozilla.org/en-US/legal/fraud-report/index.html" rel="external"><?php _e('Report Trademark Abuse', 'onemozilla'); ?></a></li>
+        <li><a href="https://github.com/mozilla/One-Mozilla-blog/" rel="external"><?php _e('Theme Code ', 'onemozilla'); ?></a></li>
       </ul>
     </nav>
   </div>
