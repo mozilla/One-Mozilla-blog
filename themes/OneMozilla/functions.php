@@ -334,7 +334,7 @@ remove_action('wp_head', 'wp_generator');
 * The field has an innucuous name -- 'age' in this case -- likely to be autofilled by a robot.
 */
 function fc_honeypot( array $data ){
-  if( !isset($_POST['comment'])) { die("No Direct Access"); }  // Make sure the form has actually been submitted
+  if( !isset($_POST['comment']) && !isset($_POST['content'])) { die("No Direct Access"); }  // Make sure the form has actually been submitted
 
   if($_POST['age']) {  // If the Honeypot field has been filled in
     $message = _e('Sorry, you appear to be a spamming robot because you filled in the hidden spam trap field. To show you are not a spammer, submit your comment again and leave the field blank.', 'onemozilla');

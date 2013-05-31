@@ -93,7 +93,7 @@ Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, cust
 }
 
 /* @Reset defaults *********/
-header, hgroup, nav, section, article, aside, footer { display: block; }
+header, hgroup, nav, section, article, aside, footer, main { display: block; }
 html, body, form, fieldset, legend, h1, h2, h3, h4, h5, h6, dd { margin: 0; padding: 0; }
 p, pre, blockquote, ul, ol, dl, table, figure { margin: 0 0 1.5em; padding: 0; }
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
@@ -113,7 +113,7 @@ html {
   background: #fff;
 }
 body {
-  font: 14px/1.5 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 14px/1.6 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
   color: #333;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
@@ -359,8 +359,9 @@ a:active {
   border-top: 1px dotted rgba(0,0,0,0.2);
   padding-left: 20px;
 }
-.widget_nav_menu a, .widget_categories a {
-  display: block;
+.widget_nav_menu a, 
+.widget_categories a {
+  display: inline-block;
   padding: 8px 0;
 }
 .widget_nav_menu .current-menu-item a:link,
