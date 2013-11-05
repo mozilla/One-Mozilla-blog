@@ -1,0 +1,157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Mozilla Press Center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-14 15:31-0800\n"
+"PO-Revision-Date: 2013-10-15 08:31-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../archive-ataglance.php:5
+msgid "Mozilla At a Glance"
+msgstr "Mozilla em Resumo"
+
+#: ../archive-bios.php:43
+#: ../single-bios.php:42
+msgid "Website"
+msgstr ""
+
+#: ../archive-bios.php:46
+#: ../single-bios.php:45
+msgid "Twitter"
+msgstr ""
+
+#: ../archive-bios.php:49
+#: ../single-bios.php:48
+msgid "Download high-res JPEG"
+msgstr ""
+
+#: ../functions.php:27
+msgid "At a Glance"
+msgstr ""
+
+#: ../functions.php:28
+msgid "At a Glance Item"
+msgstr ""
+
+#: ../functions.php:29
+#: ../functions.php:63
+msgid "Add New"
+msgstr ""
+
+#: ../functions.php:30
+msgid "Add New At a Glance Item"
+msgstr ""
+
+#: ../functions.php:31
+msgid "Edit Item"
+msgstr ""
+
+#: ../functions.php:32
+msgid "View Item"
+msgstr ""
+
+#: ../functions.php:33
+msgid "Search At a Glance Items"
+msgstr ""
+
+#: ../functions.php:34
+#: ../functions.php:68
+msgid "Nothing found"
+msgstr ""
+
+#: ../functions.php:35
+#: ../functions.php:69
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: ../functions.php:61
+msgid "Speaker Bios"
+msgstr "Biografias"
+
+#: ../functions.php:62
+msgid "Bio"
+msgstr ""
+
+#: ../functions.php:64
+msgid "Add New Speaker Bio"
+msgstr ""
+
+#: ../functions.php:65
+msgid "Edit Bio"
+msgstr ""
+
+#: ../functions.php:66
+msgid "View Bio"
+msgstr ""
+
+#: ../functions.php:67
+msgid "Search Bios"
+msgstr ""
+
+#: ../functions.php:97
+msgid "Title/Position"
+msgstr ""
+
+#: ../functions.php:112
+msgid "Blog Name"
+msgstr ""
+
+#: ../functions.php:116
+msgid "Blog URL"
+msgstr ""
+
+#: ../functions.php:116
+msgid "full URL, including \"http://\""
+msgstr ""
+
+#: ../functions.php:120
+msgid "Twitter Name"
+msgstr ""
+
+#: ../home.php:4
+msgid "Mozilla News"
+msgstr "Notícias da Mozilla"
+
+#: ../home.php:18
+#: ../index.php:17
+msgid "Older posts"
+msgstr ""
+
+#: ../home.php:19
+#: ../index.php:18
+msgid "Newer posts"
+msgstr ""
+
+#: ../home.php:28
+#: ../index.php:27
+msgid "Nothing Found"
+msgstr ""
+
+#: ../home.php:32
+#: ../index.php:31
+msgid "Sorry, we couldn't find any results for the requested archive. Perhaps try searching?"
+msgstr ""
+
+#: ../media-library.php:10
+msgid "Media Library"
+msgstr "Biblioteca de Mídia"
+
+#: ../media-library.php:26
+msgid "Edit Page"
+msgstr ""
+
+#: ../media-library.php:44
+msgid "Download high resolution image of "
+msgstr ""
+
+#: ../media-library.php:48
+msgid "See bio"
+msgstr ""
+
