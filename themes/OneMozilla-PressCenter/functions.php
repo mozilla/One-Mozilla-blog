@@ -4,7 +4,7 @@ function presscenter_remove_parent_filters() {
   remove_filter( 'get_the_excerpt', 'onemozilla_custom_excerpt_more' );
   remove_filter( 'excerpt_more', 'onemozilla_auto_excerpt_more' );
 }
-add_action('after_setup_theme', 'presscenter_remove_parent_filters'); 
+add_action('after_setup_theme', 'presscenter_remove_parent_filters');
 
 /**
  * Set up the child theme's textdomain.
@@ -19,7 +19,7 @@ add_action( 'after_setup_theme', 'mozpress_theme_setup' );
 
 /*********
 * Set up At a Glance post type
-*/ 
+*/
 function create_type_glance() {
 	register_post_type( 'ataglance',
 		array(
@@ -53,7 +53,7 @@ add_action( 'init', 'create_type_glance' );
 
 /*********
 * Set up speaker bio post type
-*/ 
+*/
 function create_type_bios() {
 	register_post_type( 'bios',
 		array(
@@ -129,7 +129,7 @@ function admin_init_bios(){
   add_meta_box("bio_blog", "Elsewhere", "bio_elsewhere", "bios", "normal", "high");
 }
 add_action("admin_init", "admin_init_bios");
- 
+
 function save_bio_details(){
   global $post;
   update_post_meta($post->ID, "bio_position", $_POST["bio_position"]);
@@ -137,7 +137,7 @@ function save_bio_details(){
   update_post_meta($post->ID, "bio_blog_url", $_POST["bio_blog_url"]);
   update_post_meta($post->ID, "bio_twitter", $_POST["bio_twitter"]);
 }
-add_action('save_post', 'save_bio_details'); 
+add_action('save_post', 'save_bio_details');
 
 
 /*********
@@ -148,7 +148,7 @@ function bios_edit_columns($columns){
     "cb" => "<input type=\"checkbox\" />",
     "title" => "Speaker Bio",
     "bio_position" => "Position",
-  ); 
+  );
   return $columns;
 }
 function bios_custom_columns($column){
@@ -160,14 +160,15 @@ function bios_custom_columns($column){
       break;
   }
 }
-add_action("manage_posts_custom_column",  "bios_custom_columns");
+add_action("manage_posts_custom_column", "bios_custom_columns");
 add_filter("manage_edit-bio_columns", "bios_edit_columns");
+
 
 /*********
  * Create a special role for Translators
  */
 $trancando = array(
-  'read' =>  true, 
+  'read' =>  true,
   'edit_posts' => true,
   'edit_pages' => true,
   'edit_published_posts' => true,
@@ -191,5 +192,10 @@ if ( function_exists('register_nav_menus') ) :
   	'media_tabs' => 'Media Library Tabs'
   ) );
 endif;
+
+/*********
+* Enable the Link Manager that existed in WordPress until version 3.5 (now hidden by default)
+*/
+add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 
 ?>
