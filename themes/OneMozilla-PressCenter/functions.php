@@ -12,7 +12,7 @@ add_action('after_setup_theme', 'presscenter_remove_parent_filters');
  * Translations can be filed in the /languages/ directory.
  */
 function mozpress_theme_setup() {
-	load_child_theme_textdomain( 'mozpress', get_stylesheet_directory() . '/languages' );
+  load_child_theme_textdomain( 'mozpress', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'mozpress_theme_setup' );
 
@@ -21,32 +21,32 @@ add_action( 'after_setup_theme', 'mozpress_theme_setup' );
 * Set up At a Glance post type
 */
 function create_type_glance() {
-	register_post_type( 'ataglance',
-		array(
-			'labels' => array(
-				'name' => __('At a Glance'),
-				'singular_name' => __('At a Glance Item'),
-				'add_new' => __('Add New'),
-		    'add_new_item' => __('Add New At a Glance Item'),
-		    'edit_item' => __('Edit Item'),
-		    'view_item' => __('View Item'),
-    		'search_items' => __('Search At a Glance Items'),
-		    'not_found' =>  __('Nothing found'),
-		    'not_found_in_trash' => __('Nothing found in Trash'),
-		    'parent_item_colon' => ''
-			),
-		'public' => true,
-		'has_archive' => true,
-		'rewrite' => array('slug' => 'ataglance'),
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'menu_position' => 5,
-		'show_in_nav_menus' => false,
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'supports' => array('title','revisions','editor','page-attributes')
-		)
-	);
+  register_post_type( 'ataglance',
+    array(
+      'labels' => array(
+        'name' => __('At a Glance'),
+        'singular_name' => __('At a Glance Item'),
+        'add_new' => __('Add New'),
+        'add_new_item' => __('Add New At a Glance Item'),
+        'edit_item' => __('Edit Item'),
+        'view_item' => __('View Item'),
+        'search_items' => __('Search At a Glance Items'),
+        'not_found' =>  __('Nothing found'),
+        'not_found_in_trash' => __('Nothing found in Trash'),
+        'parent_item_colon' => ''
+      ),
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array('slug' => 'ataglance'),
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'menu_position' => 5,
+    'show_in_nav_menus' => false,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','revisions','editor','page-attributes')
+    )
+  );
 }
 add_action( 'init', 'create_type_glance' );
 
@@ -55,32 +55,32 @@ add_action( 'init', 'create_type_glance' );
 * Set up speaker bio post type
 */
 function create_type_bios() {
-	register_post_type( 'bios',
-		array(
-			'labels' => array(
-				'name' => __('Speaker Bios'),
-				'singular_name' => __('Bio'),
-				'add_new' => __('Add New'),
-		    'add_new_item' => __('Add New Speaker Bio'),
-		    'edit_item' => __('Edit Bio'),
-		    'view_item' => __('View Bio'),
-    		'search_items' => __('Search Bios'),
-		    'not_found' =>  __('Nothing found'),
-		    'not_found_in_trash' => __('Nothing found in Trash'),
-		    'parent_item_colon' => ''
-			),
-		'public' => true,
-		'has_archive' => true,
-		'rewrite' => array('slug' => 'bios'),
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'menu_position' => 5,
-		'show_in_nav_menus' => false,
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'supports' => array('title','thumbnail','revisions','editor','custom-fields','page-attributes')
-		)
-	);
+  register_post_type( 'bios',
+    array(
+      'labels' => array(
+        'name' => __('Speaker Bios'),
+        'singular_name' => __('Bio'),
+        'add_new' => __('Add New'),
+        'add_new_item' => __('Add New Speaker Bio'),
+        'edit_item' => __('Edit Bio'),
+        'view_item' => __('View Bio'),
+        'search_items' => __('Search Bios'),
+        'not_found' =>  __('Nothing found'),
+        'not_found_in_trash' => __('Nothing found in Trash'),
+        'parent_item_colon' => ''
+      ),
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array('slug' => 'bios'),
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'menu_position' => 5,
+    'show_in_nav_menus' => false,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','thumbnail','revisions','editor','custom-fields','page-attributes')
+    )
+  );
 }
 add_action( 'init', 'create_type_bios' );
 
@@ -187,9 +187,9 @@ add_role( 'translator', 'Translator', $trancando );
 */
 if ( function_exists('register_nav_menus') ) :
   register_nav_menus( array(
-  	'nav_press_center' => 'Press Center Nav',
-  	'connect' => 'Connect With Us',
-  	'media_tabs' => 'Media Library Tabs'
+    'nav_press_center' => 'Press Center Nav',
+    'connect' => 'Connect With Us',
+    'media_tabs' => 'Media Library Tabs'
   ) );
 endif;
 
@@ -197,5 +197,3 @@ endif;
 * Enable the Link Manager that existed in WordPress until version 3.5 (now hidden by default)
 */
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
-
-?>
