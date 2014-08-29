@@ -1,0 +1,312 @@
+/* @Fonts *********/
+
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+ html[dir="rtl"] body {
+  font: 14px/1.6"Droid Arabic Naskh", "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+/* @Headings ***/
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+  font-family: "Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+html[dir="rtl"] #nav-access a:focus,
+html[dir="rtl"] #nav-access a:active {
+  right: 0;
+  left: auto;
+}
+html[dir="rtl"] #foot-logo .top:focus,
+html[dir="rtl"] #foot-logo .top:active {
+  right: 48px;
+  left: auto;
+}
+html[dir="rtl"] #masthead {
+  background-position: left top;
+  margin: 0 0 0 30px;
+  padding: 72px 30px 48px 0;
+}
+html[dir="rtl"] #masthead.image hgroup {
+  padding-left: 340px;
+  padding-right: unset;
+}
+html[dir="rtl"] #site-title {
+  margin: 0 -5px .15em 0;
+}
+html[dir="rtl"] #masthead #tabzilla {
+  left: 0;
+  right: auto;
+}
+html[dir="rtl"] .main {
+  float: right;
+}
+html[dir="rtl"] .sub {
+  float: right;
+  margin: 0 90px 0 10px;
+}
+html[dir="rtl"] .widget_nav_menu,
+html[dir="rtl"] .widget_categories {
+  font: 1.285em/1.1"Droid Arabic Naskh", "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+html[dir="rtl"] .widget_nav_menu {
+  font-family: "Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+html[dir="rtl"] .widget_categories .children li {
+  padding-right: 20px;
+  padding-left: unset;
+}
+html[dir="rtl"] .author-bio .author .avatar {
+  right: -1px;
+  left: auto;
+}
+html[dir="rtl"] #nav-primary {
+  font-family: "Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+html[dir="rtl"] #nav-primary a {
+  border-right: 1px dotted #ccc;
+  border-left: none;
+}
+html[dir="rtl"] #nav-primary li:first-child a {
+  border-right: 0;
+  border-left: 0;
+}
+html[dir="rtl"] .featured-posts .feature {
+  float: right;
+  margin: 0 0 0 40px;
+}
+html[dir="rtl"] .featured-posts .feature:last-child {
+  margin-left: 0;
+  margin-right: auto;
+}
+html[dir="rtl"] .show-comments.no-author .entry-title {
+  float: right;
+}
+html[dir="rtl"] .post .entry-header {
+  padding-right: 92px;
+  padding-left: unset;
+}
+html[dir="rtl"] .post.no-results .entry-header {
+  padding-right: 0;
+  padding-left: unset;
+}
+html[dir="rtl"] .entry-header .share {
+  float: left;
+  text-align: left;
+}
+html[dir="rtl"] .entry-header .socialshare #share-options {
+  left: 0;
+  right: auto;
+}
+html[dir="rtl"] .entry-header .vcard {
+  float: right;
+  font: 1em/1"Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  margin: 0 -92px 10px 0;
+  padding: 15px 65px 15px 20px;
+}
+html[dir="rtl"] .entry-header .vcard img {
+  right: 20px;
+  left: auto,
+}
+html[dir="rtl"] .entry-comments {
+  float: left;
+  font: 1em/1"Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+html[dir="rtl"] .entry-comments a {
+  padding: 15px 47px 15px 5px;
+}
+html[dir="rtl"] .show-comments.no-author .entry-comments {
+  left: 0;
+  right: auto;
+}
+html[dir="rtl"] .entry-header .edit {
+  float: right;
+  margin-right: -92px;
+  margin-left: auto;
+}
+html[dir="rtl"] .entry-posted {
+  font: 10px/1"Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  right: 0;
+}
+html[dir="rtl"] .entry-content ul,
+html[dir="rtl"] .entry-content ol {
+  margin: 0 24px 1.5em 0;
+}
+html[dir="rtl"] .entry-content li ul,
+html[dir="rtl"] .entry-content li ol {
+  margin: 0 24px 0 0;
+}
+html[dir="rtl"] .entry-content dd {
+  padding-right: 24px;
+  padding-left: unset;
+}
+html[dir="rtl"] .entry-content thead th {
+  text-align: right;
+}
+html[dir="rtl"] .entry-content tbody th {
+  text-align: right;
+}
+html[dir="rtl"] .alignleft {
+  float: right;
+  margin: 0 0 .5em 24px;
+}
+html[dir="rtl"] a .alignleft {
+  margin: 0 0 .5em 24px;
+}
+html[dir="rtl"] .alignright {
+  float: left;
+  margin: 0 24px .5em 0;
+}
+html[dir="rtl"] a .alignright {
+  margin: 0 24px .5em 0;
+}
+html[dir="rtl"] .entry-content .wp-post-image,
+html[dir="rtl"] .entry-summary .wp-post-image {
+  float: right;
+  margin: 0 0 1em 20px;
+}
+html[dir="rtl"] .gallery-item {
+  float: right;
+}
+html[dir="rtl"] .pages span,
+html[dir="rtl"] .pages b,
+html[dir="rtl"] .pages a {
+  margin-left: 2px;
+  margin-right: auto;
+}
+html[dir="rtl"] .nav-paging {
+  font: 1em/1"Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+html[dir="rtl"] .nav-paging .prev {
+  float: right;
+  text-align: right;
+}
+html[dir="rtl"] .nav-paging .next {
+  float: left;
+  text-align: left;
+}
+html[dir="rtl"] input[type=submit],
+html[dir="rtl"] button {
+  font: .857em/1.1"Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+html[dir="rtl"] label {
+  font: 1em/1.2"Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+html[dir="rtl"] .fm-search #s {
+  font-family: "Droid Arabic Naskh", "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  padding: 6px 5px 6px 7.5%;
+}
+html[dir="rtl"] #comment-list.av .comment {
+  padding-right: 92px;
+  padding-left: unset;
+}
+html[dir="rtl"] #comment-list .avatar {
+  right: 19px;
+  left: auto;
+}
+html[dir="rtl"] #comment-list .comment-util a {
+  margin-left: 20px;
+  margin-right: auto;
+}
+html[dir="rtl"] #comment-list ol.children .comment {
+  margin: 0 -72px 0 0;
+}
+html[dir="rtl"] #comment-form legend span {
+  font: 1.5em/1"Droid Arabic Kufi", "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+html[dir="rtl"] #comment-form .self .logout {
+  margin-right: 1em;
+  margin-left: auto;
+}
+html[dir="rtl"] #comment-list .children #respond {
+  margin-right: -50px;
+  margin-left: auto;
+}
+html[dir="rtl"] #cancel-comment-reply {
+  left: 0;
+  right: auto;
+}
+html[dir="rtl"] #cancel-comment-reply a {
+  margin-right: 20px;
+  margin-left: auto;
+}
+html[dir="rtl"] #foot-logo,
+html[dir="rtl"] #colophon,
+html[dir="rtl"] #nav-meta {
+  float: right;
+  margin-left: 24px;
+  margin-right: auto;
+}
+html[dir="rtl"] #foot-logo .logo {
+  float: right;
+}
+html[dir="rtl"] #nav-meta a {
+  font-family: "Droid Arabic Naskh", "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  html[dir="rtl"] .sub {
+    float: left;
+  }
+  html[dir="rtl"] #site-title {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  html[dir="rtl"] .featured-posts .feature {
+    margin-left: 20px;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html[dir="rtl"] #masthead hgroup {
+    padding-left: 0;
+    padding-right: unset;
+  }
+  html[dir="rtl"] #masthead.image hgroup {
+    padding-left: 0;
+    padding-right: unset;
+  }
+  html[dir="rtl"] #site-title {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  html[dir="rtl"] .post .entry-header {
+    padding-right: 0;
+    paddin-left: auto;
+  }
+  html[dir="rtl"] .entry-header .edit {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  html[dir="rtl"] .entry-posted {
+    text-align: right;
+  }
+  html[dir="rtl"] .entry-comments a {
+    padding: 6px 36px 6px 0;
+  }
+  html[dir="rtl"] #comment-list.av .comment {
+    padding-right: 19px;
+    padding-left: unset;
+  }
+  html[dir="rtl"] #nav-primary {
+    text-align: right;
+  }
+  html[dir="rtl"] .featured-posts .feature .wp-post-image {
+    float: right;
+    margin: -.5em 0 12px 20px;
+  }
+  html[dir="rtl"] .sub .featured-posts .feature .feature-img {
+    margin: 0 0 12px 20px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  html[dir="rtl"] #site-title {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  html[dir="rtl"] #content-sub .sidebar {
+    float: right;
+  }
+}
