@@ -1,6 +1,6 @@
 /*
 Theme Name:     One Mozilla - Press Center
-Description:    Site theme for the Mozilla Press Center. This theme is a child of the One Mozilla WordPress theme. 
+Description:    Site theme for the Mozilla Press Center. This theme is a child of the One Mozilla WordPress theme.
 Author:         Craig Cook
 Template:       OneMozilla
 Version:        1.0
@@ -73,30 +73,30 @@ ul.index a:hover, ul.index a:focus, ul.index a:active { color: #2f2f2f; text-dec
 
 
 /* @Speaker @Bios *********/
-.single-bios #content-main, 
-.post-type-archive-bios #content-main { 
-  width: 460px; 
+.single-bios #content-main,
+.post-type-archive-bios #content-main {
+  width: 460px;
 }
 
 .bio .entry-title { border: 0; }
 .bio .bio-position { letter-spacing: normal; font-size: 1em; margin: -.75em 0 1em; }
 
 .bio-image { float: right; margin: 0 0 .5em 12px; }
-.bio-image img { padding: 1px; background-color: #fff; border: 11px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1); 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
+.bio-image img { padding: 1px; background-color: #fff; border: 11px solid #fff; box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
-  -ms-box-sizing: border-box; 
-  box-sizing: border-box; 
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
   -moz-transition: all .1s ease-out;
   -webkit-transition: all .1s ease-out;
   -o-transition: all .1s ease-out;
   -ms-transition: all .1s ease-out;
-  transition: all .1s ease-out; 
+  transition: all .1s ease-out;
 }
-.bio-image a:hover img, .bio-image a:focus img, .bio-image a:active img { background-color: #0073aa; 
-  -moz-transition: all .1s ease-in; 
-  -webkit-transition: all .1s ease-in; 
+.bio-image a:hover img, .bio-image a:focus img, .bio-image a:active img { background-color: #0073aa;
+  -moz-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
   -ms-transition: all .1s ease-in;
   transition: all .1s ease-in;
@@ -112,15 +112,15 @@ ul.index a:hover, ul.index a:focus, ul.index a:active { color: #2f2f2f; text-dec
 /*  @Tablet @Layout: 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-  .single-bios #content-main, 
-  .post-type-archive-bios #content-main { 
-    width: 340px; 
+  .single-bios #content-main,
+  .post-type-archive-bios #content-main {
+    width: 340px;
   }
-  
-  #nav-bios { 
-    width: 160px; 
+
+  #nav-bios {
+    width: 160px;
   }
-  
+
   .gallery li { width: 30%; }
   .gallery li:nth-child(4n+1) { clear: none; margin-left: 24px; }
   .gallery li:nth-child(3n+1) { clear: left; margin-left: 0; }
@@ -155,7 +155,7 @@ ul.index a:hover, ul.index a:focus, ul.index a:active { color: #2f2f2f; text-dec
     display: block;
     border: 0;
   }
-  
+
   /* @Tabbed boxes *********/
   .tabbed-on { margin: 12px 0 24px; padding: 0; position: relative; }
   .tabbed-on ul.index { position: static; }
@@ -164,7 +164,7 @@ ul.index a:hover, ul.index a:focus, ul.index a:active { color: #2f2f2f; text-dec
   .tabbed-on ul.index li { display: block; border: 0; border-top: 1px dotted #ccc; color: #0096dd; padding: 4px 0; cursor: pointer; float: none; margin: 0; }
   .tabbed-on ul.index li:first-child { border-top: 0; }
 
-  .gallery .size-thumbnail, 
+  .gallery .size-thumbnail,
   .gallery .wp-post-image {
       height: auto;
       max-width: 100%;
@@ -173,18 +173,18 @@ ul.index a:hover, ul.index a:focus, ul.index a:active { color: #2f2f2f; text-dec
   .gallery li { width: 43%; margin-left: 24px; }
   .gallery li:nth-child(3n+1) { clear: none; margin-left: 24px; }
   .gallery li:nth-child(odd) { clear: left; margin-left: 0; }
-  
+
   .gallery li.vcard { width: 43%; margin-left: 35px; }
   .gallery.headshots li:nth-child(4n+1), .gallery.headshots li:nth-child(3n+1) { clear: none; margin-left: 35px; }
   .gallery.headshots li:nth-child(odd) { clear: left; margin-left: 0; }
 
-  .single-bios #content-main, 
-  .post-type-archive-bios #content-main { 
-    width: auto; 
+  .single-bios #content-main,
+  .post-type-archive-bios #content-main {
+    width: auto;
   }
 
-  #nav-bios { 
-    width: 160px; 
+  #nav-bios {
+    width: 160px;
   }
 
 }

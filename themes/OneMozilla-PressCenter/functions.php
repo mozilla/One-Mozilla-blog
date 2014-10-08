@@ -189,7 +189,8 @@ if ( function_exists('register_nav_menus') ) :
   register_nav_menus( array(
     'nav_press_center' => 'Press Center Nav',
     'connect' => 'Connect With Us',
-    'media_tabs' => 'Media Library Tabs'
+    'media_tabs' => 'Media Library Tabs',
+    'presskit_tabs' => 'Press Kit Tabs'
   ) );
 endif;
 
@@ -197,3 +198,5 @@ endif;
 * Enable the Link Manager that existed in WordPress until version 3.5 (now hidden by default)
 */
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
+?>
