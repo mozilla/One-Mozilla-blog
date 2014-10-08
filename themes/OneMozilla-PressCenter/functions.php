@@ -198,3 +198,5 @@ endif;
 * Enable the Link Manager that existed in WordPress until version 3.5 (now hidden by default)
 */
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
+?>
