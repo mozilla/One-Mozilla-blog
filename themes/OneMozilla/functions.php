@@ -52,7 +52,17 @@ function onemozilla_setup() {
 
   // Add a way for the custom header to be styled in the admin panel that controls
   // custom headers. See onemozilla_admin_header_style(), below.
-  add_custom_image_header( 'onemozilla_header_style', 'onemozilla_admin_header_style', 'onemozilla_admin_header_image' );
+  global $wp_version;
+  if ( version_compare( $wp_version, '3.4', '>=' ) ) {
+    $defaults = array(
+      'wp-head-callback' => 'onemozilla_header_style',
+      'admin-head-callback' => 'onemozilla_admin_header_style',
+      'admin-preview-callback' => 'onemozilla_admin_header_image',
+    );
+    add_theme_support( 'custom-header', $defaults );
+  } else {
+    add_custom_image_header( 'onemozilla_header_style', 'onemozilla_admin_header_style', 'onemozilla_admin_header_image' );
+  }
 
   // Disable the header text and color options
   define( 'NO_HEADER_TEXT', true );
@@ -74,18 +84,26 @@ function onemozilla_setup() {
   $options = get_option( 'onemozilla_theme_options' );
 
   // Stash the values in variables
-  $color_scheme = $options['color_scheme'];
-  $share_posts = $options['share_posts'];
-  $hide_authors = $options['hide_author'];
+  if (isset($options['color_scheme'])) {
+    $color_scheme = $options['color_scheme'];
+  }
 
-  if ( $options['share_posts'] && (get_option('onemozilla_share_posts') == null) ) {
+  if (isset($options['share_posts'])) {
+    $share_posts = $options['share_posts'];
+  }
+
+  if (isset($options['hide_author'])) {
+    $hide_authors = $options['hide_author'];
+  }
+
+  if ( isset($share_posts) && (get_option('onemozilla_share_posts') == null) ) {
     update_option('onemozilla_share_posts', $share_posts);
   }
-  if ( $options['hide_author'] && (get_option('onemozilla_hide_authors') == null) ) {
+  if ( isset($hide_authors) && (get_option('onemozilla_hide_authors') == null) ) {
     update_option('onemozilla_hide_authors', $hide_authors);
   }
   // Remove the old values from theme_options, we're only keeping the color scheme (if set)
-  if ( $options['color_scheme'] ) {
+  if ( isset($color_scheme) ) {
     update_option('onemozilla_theme_options', array('color_scheme' => $color_scheme));
   }
   else {
@@ -167,6 +185,7 @@ function onemozilla_settings_field_hide_authors() { ?>
  * Adds classes to the array of post classes. We'll use these as style hooks for post headers.
  */
 function onemozilla_post_classes( $classes ) {
+  global $post;
   $comment_count = get_comments_number($post->ID);
 
   if ( get_option('onemozilla_hide_authors') != 1 ) {
@@ -362,7 +381,7 @@ add_action( 'widgets_init', 'onemozilla_remove_recent_comments_style' );
 function fc_password_form() {
   global $post;
   $label = 'pwbox-'.(empty($post->ID) ? rand() : $post->ID);
-  $output = '<form class="pwform" action="' . get_option('siteurl') . '/wp-pass.php" method="post">
+  $output = '<form class="pwform" action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
             <p>'.__("This post is password protected. To view it, please enter the password.", "onemozilla").'</p>
             <ol><li><label for="'.$label.'">'.__("Password", "onemozilla").'</label><input name="post_password" id="'.$label.'" type="password" size="20" /></li><li><button type="submit" name="Submit">'.esc_attr__("Submit").'</button></li></ol>
             </form>';
@@ -442,7 +461,9 @@ add_action('admin_init', 'register_fc_featuredpost', 1);
 
 function save_fc_featuredpost() {
   global $post;
-  update_post_meta($post->ID, "_fc_featuredpost", $_POST["_fc_featuredpost"]);
+  if (isset($_POST["_fc_featuredpost"])) {
+    update_post_meta($post->ID, "_fc_featuredpost", $_POST["_fc_featuredpost"]);
+  }  
 }
 add_action('save_post', 'save_fc_featuredpost');
 
