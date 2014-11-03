@@ -52,7 +52,17 @@ function onemozilla_setup() {
 
   // Add a way for the custom header to be styled in the admin panel that controls
   // custom headers. See onemozilla_admin_header_style(), below.
-  add_custom_image_header( 'onemozilla_header_style', 'onemozilla_admin_header_style', 'onemozilla_admin_header_image' );
+  global $wp_version;
+  if ( version_compare( $wp_version, '3.4', '>=' ) ) {
+    $defaults = array(
+      'wp-head-callback' => 'onemozilla_header_style',
+      'admin-head-callback' => 'onemozilla_admin_header_style',
+      'admin-preview-callback' => 'onemozilla_admin_header_image',
+    );
+    add_theme_support( 'custom-header', $defaults );
+  } else {
+    add_custom_image_header( 'onemozilla_header_style', 'onemozilla_admin_header_style', 'onemozilla_admin_header_image' );
+  }
 
   // Disable the header text and color options
   define( 'NO_HEADER_TEXT', true );
