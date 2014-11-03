@@ -74,18 +74,26 @@ function onemozilla_setup() {
   $options = get_option( 'onemozilla_theme_options' );
 
   // Stash the values in variables
-  $color_scheme = $options['color_scheme'];
-  $share_posts = $options['share_posts'];
-  $hide_authors = $options['hide_author'];
+  if (array_key_exists('color_scheme', $options)) {
+    $color_scheme = $options['color_scheme'];
+  }
 
-  if ( $options['share_posts'] && (get_option('onemozilla_share_posts') == null) ) {
+  if (array_key_exists('share_posts', $options)) {
+    $share_posts = $options['share_posts'];
+  }
+
+  if (array_key_exists('hide_author', $options)) {
+    $hide_authors = $options['hide_author'];
+  }
+
+  if ( isset($share_posts) && (get_option('onemozilla_share_posts') == null) ) {
     update_option('onemozilla_share_posts', $share_posts);
   }
-  if ( $options['hide_author'] && (get_option('onemozilla_hide_authors') == null) ) {
+  if ( isset($hide_authors) && (get_option('onemozilla_hide_authors') == null) ) {
     update_option('onemozilla_hide_authors', $hide_authors);
   }
   // Remove the old values from theme_options, we're only keeping the color scheme (if set)
-  if ( $options['color_scheme'] ) {
+  if ( isset($color_scheme) ) {
     update_option('onemozilla_theme_options', array('color_scheme' => $color_scheme));
   }
   else {
