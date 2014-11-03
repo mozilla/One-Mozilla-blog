@@ -63,7 +63,7 @@
         <p id="cancel-comment-reply"><?php cancel_comment_reply_link('Cancel Reply'); ?></p>
         <ol>
         <?php if ( $user_ID ) : ?>
-          <li class="self"><?php printf( __( 'You are logged in as <a href="%1$s">%2$s</a>. <a class="logout" href="%3$s">Log out?</a>', 'onemozilla' ), admin_url( 'profile.php' ), esc_html($user_identity), wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ); ?></li>
+          <li class="self"><?php printf( __( 'You are logged in as <a href="%1$s">%2$s</a>. <a class="logout" href="%3$s">Log out?</a>', 'onemozilla' ), admin_url( 'profile.php' ), esc_html($user_identity), wp_logout_url( apply_filters( 'the_permalink', get_permalink() ) ) ); ?></li>
         <?php else : ?>
           <li id="cmt-name">
             <label for="author"><?php _e('Name', 'onemozilla'); ?> <?php if ($req) : ?><span class="note"><?php _e('(required)', 'onemozilla'); ?></span><?php endif; ?></label>
