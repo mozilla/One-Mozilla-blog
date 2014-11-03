@@ -84,15 +84,15 @@ function onemozilla_setup() {
   $options = get_option( 'onemozilla_theme_options' );
 
   // Stash the values in variables
-  if (array_key_exists('color_scheme', $options)) {
+  if (isset($options['color_scheme'])) {
     $color_scheme = $options['color_scheme'];
   }
 
-  if (array_key_exists('share_posts', $options)) {
+  if (isset($options['share_posts'])) {
     $share_posts = $options['share_posts'];
   }
 
-  if (array_key_exists('hide_author', $options)) {
+  if (isset($options['hide_author'])) {
     $hide_authors = $options['hide_author'];
   }
 
