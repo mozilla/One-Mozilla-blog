@@ -461,7 +461,9 @@ add_action('admin_init', 'register_fc_featuredpost', 1);
 
 function save_fc_featuredpost() {
   global $post;
-  update_post_meta($post->ID, "_fc_featuredpost", $_POST["_fc_featuredpost"]);
+  if (isset($_POST["_fc_featuredpost"])) {
+    update_post_meta($post->ID, "_fc_featuredpost", $_POST["_fc_featuredpost"]);
+  }  
 }
 add_action('save_post', 'save_fc_featuredpost');
 
