@@ -175,6 +175,7 @@ function onemozilla_settings_field_hide_authors() { ?>
  * Adds classes to the array of post classes. We'll use these as style hooks for post headers.
  */
 function onemozilla_post_classes( $classes ) {
+  global $post;
   $comment_count = get_comments_number($post->ID);
 
   if ( get_option('onemozilla_hide_authors') != 1 ) {
