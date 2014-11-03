@@ -58,7 +58,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class($theme_options[color_scheme]); ?>>
+<body <?php body_class($theme_options['color_scheme']); ?>>
 <div id="page"><div class="wrap">
   <nav id="nav-access">
     <ul role="navigation">
