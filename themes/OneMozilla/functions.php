@@ -381,7 +381,7 @@ add_action( 'widgets_init', 'onemozilla_remove_recent_comments_style' );
 function fc_password_form() {
   global $post;
   $label = 'pwbox-'.(empty($post->ID) ? rand() : $post->ID);
-  $output = '<form class="pwform" action="' . get_option('siteurl') . '/wp-pass.php" method="post">
+  $output = '<form class="pwform" action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
             <p>'.__("This post is password protected. To view it, please enter the password.", "onemozilla").'</p>
             <ol><li><label for="'.$label.'">'.__("Password", "onemozilla").'</label><input name="post_password" id="'.$label.'" type="password" size="20" /></li><li><button type="submit" name="Submit">'.esc_attr__("Submit").'</button></li></ol>
             </form>';
