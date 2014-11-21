@@ -5,30 +5,30 @@ header, hgroup, nav, section, article, aside, footer { display: block; }
 /* Light */
 @font-face {
   font-family: "Open Sans Light";
-  src: url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.eot");
-  src: url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.woff") format("woff"),
-       url("//www.mozilla.org/media/fonts/OpenSans-Light-webfont.ttf") format("truetype");
+  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.eot");
+  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.woff") format("woff"),
+       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.eot");
-  src: url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"),
-       url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.woff") format("woff"),
-       url("//www.mozilla.org/media/fonts/OpenSans-LightItalic-webfont.ttf") format("truetype");
+  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.eot");
+  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.woff") format("woff"),
+       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot");
-  src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.woff") format("woff"),
-       url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.eot");
+  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.woff") format("woff"),
+       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
