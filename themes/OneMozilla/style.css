@@ -113,7 +113,7 @@ html {
   background: #fff;
 }
 body {
-  font: 14px/1.6 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 14px/1.6 "Open Sans", sans-serif;
   color: #333;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
@@ -125,31 +125,41 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 .25em;
   color: #484848;
-  line-height: 1;
-  font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  line-height: 1.05;
+  font-family: "Open Sans Light", sans-serif;
   font-weight: normal;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+  letter-spacing: -.05em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .75);
 }
+
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
+  font-size: 48px;
+  font-size: 3rem;
 }
+
 h2 {
-  font-size: 2em;
-  letter-spacing: -1px;
+  font-size: 32px;
+  font-size: 2rem;
 }
+
 h3 {
-  font-size: 1.75em;
-  letter-spacing: -0.5px;
+  font-size: 28px;
+  font-size: 1.75rem;
 }
+
 h4 {
-  font-size: 1.5em; letter-spacing: -0.25px;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
+
 h5 {
-  font-size: 1.125em;
+  font-size: 16px;
+  font-size: 1rem;
 }
+
 h6 {
-  font-size: 1em;
+  font-size: 14px;
+  font-size: .875rem;
 }
 
 /* @Links ***/
@@ -167,8 +177,9 @@ a:active {
 
 /* @Accessible skip links ***/
 #nav-access {
+  margin-left: 30px;
   position: absolute;
-  top: -50em;
+  top: -100em;
 }
 
 #foot-logo .top {
@@ -183,8 +194,6 @@ a:active {
   border-radius: 4px;
   display: block;
   box-shadow: 1px 1px 1px rgba(0,0,0,.1);
-  -ms-box-shadow: 1px 1px 1px rgba(0,0,0,.1);
-  -o-box-shadow: 1px 1px 1px rgba(0,0,0,.1);
   outline: 0;
   padding: .25em 24px;
   position: absolute;
@@ -199,7 +208,7 @@ a:active {
   background: rgba(255,255,255,.5);
   border: 1px solid #20679e;
   left: 0;
-  top: 51em;
+  top: 101em;
 }
 
 #foot-logo .top:focus,
@@ -221,11 +230,9 @@ a:active {
 .wrap {
   margin: 0 auto;
   position: relative;
-  -moz-transition: padding, width .5s ease-out;
-  -ms-transition: padding, width .5s ease-out;
-  -o-transition: padding, width .5s ease-out;
-  -webkit-transition: padding, width .5s ease-out;
-  transition: padding, width .5s ease-out;
+  -moz-transition: padding .5s ease-out, width .5s ease-out;
+  -webkit-transition: padding .5s ease-out, width .5s ease-out;
+  transition: padding .5s ease-out, width .5s ease-out;
   width: 1000px;
 }
 #masthead {
@@ -244,11 +251,9 @@ a:active {
   font-size: 4.5em;
   letter-spacing: -3px;
   margin: 0 0 .15em -5px;
-  -moz-transition: font-size, letter-spacing .5s ease-out;
-  -ms-transition: font-size, letter-spacing .5s ease-out;
-  -o-transition: font-size, letter-spacing .5s ease-out;
-  -webkit-transition: font-size, letter-spacing .5s ease-out;
-  transition: font-size, letter-spacing .5s ease-out;
+  -moz-transition: font-size .5s ease-out, letter-spacing .5s ease-out;
+  -webkit-transition: font-size .5s ease-out, letter-spacing .5s ease-out;
+  transition: font-size .5s ease-out, letter-spacing .5s ease-out;
 }
 #site-title a {
   color: #333;
@@ -330,10 +335,10 @@ a:active {
 
 .widget_nav_menu,
 .widget_categories {
-  font: 1.285em/1.1 "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 1.285em/1.1 "Open Sans", sans-serif;
 }
 .widget_nav_menu {
-  font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font-family: "Open Sans Light", sans-serif;
 }
 .widget_categories {
   font-size: 1em;
@@ -359,7 +364,7 @@ a:active {
   border-top: 1px dotted rgba(0,0,0,0.2);
   padding-left: 20px;
 }
-.widget_nav_menu a, 
+.widget_nav_menu a,
 .widget_categories a {
   display: inline-block;
   padding: 8px 0;
@@ -391,8 +396,6 @@ a:active {
   border: 1px solid #fff;
   left: -1px;
   -moz-transition: all .1s linear;
-  -ms-transition: all .1s linear;
-  -o-transition: all .1s linear;
   -webkit-transition: all .1s linear;
   transition: all .1s linear;
   position: absolute;
@@ -411,7 +414,7 @@ a:active {
 /* @Primary @navigation *********/
 #nav-primary {
   background-color: #fff;
-  font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font-family: "Open Sans Light", sans-serif;
   margin: 0 0 48px;
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -591,7 +594,7 @@ a:active {
   background: linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
   border: 1px solid #fff;
   float: left;
-  font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 1em/1 "Open Sans Light", sans-serif;
   margin: 0 0 10px -92px;
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1);
   -o-box-shadow: 0 1px 1px rgba(0,0,0,.1);
@@ -623,7 +626,7 @@ a:active {
 .entry-comments {
   background: #fff;
   float: right;
-  font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 1em/1 "Open Sans Light", sans-serif;
   margin: 0 0 10px;
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1);
   -o-box-shadow: 0 1px 1px rgba(0,0,0,.1);
@@ -679,7 +682,7 @@ a:active {
 /*** @Posted date */
 .entry-posted {
   background: url("img/bg-date-lt.png") center top no-repeat;
-  font: 10px/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 10px/1 "Open Sans Light", sans-serif;
   left: 0;
   padding: 6px 10px 16px;
   position: absolute;
@@ -913,7 +916,7 @@ a.go:after {
 .nav-paging {
   background-color: #fff;
   box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
-  font: 1em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 1em/1 "Open Sans Light", sans-serif;
   margin: 24px 0;
   padding: 12px 20px;
 }
@@ -965,8 +968,6 @@ textarea {
   padding: 6px 10px;
   -moz-transition: all .1s linear;
   -webkit-transition: all .1s linear;
-  -ms-transition: all .1s linear;
-  -o-transition: all .1s linear;
   transition: all .1s linear;
 }
 input[type=email]:hover,
@@ -998,7 +999,7 @@ input[type=submit], button {
   padding: 8px 24px;
   border: 0;
   text-shadow: 0 1px 0 rgba(0,0,0,0.25);
-  font: .857em/1.1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: .857em/1.1 "Open Sans Light", sans-serif;
   background-color: #266194;
   background-image: -moz-linear-gradient(#3c88cc,#276195);
   background-image: -ms-linear-gradient(#3c88cc,#276195);
@@ -1007,7 +1008,6 @@ input[type=submit], button {
   background-image: linear-gradient(#3c88cc,#276195);
   -moz-transition: all .25s linear;
   -webkit-transition: all .25s linear;
-  -o-transition: all .25s linear;
   transition: all .25s linear;
 }
 input[type=submit]:hover,
@@ -1022,7 +1022,7 @@ form li {
 }
 label {
   display: block;
-  font: 1em/1.2 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 1em/1.2 "Open Sans Light", sans-serif;
   padding: 0 0 .5em;
 }
 label .note {
@@ -1057,7 +1057,7 @@ input:-moz-placeholder {
   border: 1px solid #ccc;
   border-radius: 6px;
   box-shadow: 0 0 0 3px rgba(0,0,0,.02) inset;
-  font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font-family: "Open Sans", sans-serif;
   -moz-appearance: textfield;
   -o-appearance: textfield;
   appearance: textfield;
@@ -1065,8 +1065,6 @@ input:-moz-placeholder {
   width: 90%;
   -webkit-appearance: textfield;
   -moz-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
@@ -1141,8 +1139,6 @@ input:-moz-placeholder {
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
   left: 19px;
   -moz-transition: all .1s linear;
-  -ms-transition: all .1s linear;
-  -o-transition: all .1s linear;
   -webkit-transition: all .1s linear;
   transition: all .1s linear;
   position: absolute;
@@ -1198,7 +1194,7 @@ input:-moz-placeholder {
   position: relative;
 }
 #comment-form legend span {
-  font: 1.5em/1 "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font: 1.5em/1 "Open Sans Light", sans-serif;
   letter-spacing: -1px;
   margin: 0 0 .25em;
   position: absolute;
@@ -1259,10 +1255,10 @@ input:-moz-placeholder {
   font-size: .857em;
   width: 96%;
 }
-#comment-form #cmt-ackbar { 
-  position: absolute; 
+#comment-form #cmt-ackbar {
+  position: absolute;
   left: -999em;
-  height: 0; 
+  height: 0;
 }
 
 /* @Footer *********/
@@ -1297,8 +1293,6 @@ input:-moz-placeholder {
   float: left;
   height: 26px;
   -moz-transition: opacity .1s linear;
-  -ms-transition: opacity .1s linear;
-  -o-transition: opacity .1s linear;
   -webkit-transition: opacity .1s linear;
   transition: opacity .1s linear;
   opacity: .8;
@@ -1315,7 +1309,7 @@ input:-moz-placeholder {
   list-style: none;
 }
 #nav-meta a {
-  font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Calibri, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*  @Tablet @Layout: 768px */
@@ -1433,8 +1427,9 @@ input:-moz-placeholder {
     letter-spacing: normal;
   }
 
-  #nav-access a:focus, #nav-access a:active {
-    top: 60em;
+  #nav-access a:focus,
+  #nav-access a:active {
+    top: 110em;
   }
 
   .post .entry-title {
@@ -1495,7 +1490,7 @@ input:-moz-placeholder {
   .entry-header .avatar {
     display: none;
   }
-  
+
   .entry-content .wp-post-image,
   .entry-summary .wp-post-image {
     width: 60px;
@@ -1580,8 +1575,6 @@ input:-moz-placeholder {
     float: none;
     margin: 0 20px 1em;
     -moz-transition: width .5s ease-out;
-    -ms-transition: width .5s ease-out;
-    -o-transition: width .5s ease-out;
     -webkit-transition: width .5s ease-out;
     transition: width .5s ease-out;
     width: auto;

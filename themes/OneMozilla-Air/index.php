@@ -8,23 +8,23 @@
 	 /* Get last 10 sticky posts */
     $sticky = get_option( 'sticky_posts' );
     query_posts( array( 'posts_per_page' => 10, 'post__in'  => $sticky, 'ignore_sticky_posts' => 1 ) );
-    if ( $sticky[0] ) :
+    if ( $sticky ) :
       while ( have_posts() ) : the_post(); ?>
-       
+
        <?php get_template_part( 'content', 'featured' ); ?>
-    	
+
       <?php endwhile; wp_reset_query(); ?>
       <h2 class="section-title"><?php _e('Recent Videos','airmoz'); ?></h2>
     <?php endif; ?>
 <?php endif; ?>
 
-	<?php 
+	<?php
 	 query_posts( array( 'post__not_in'  => get_option( 'sticky_posts' ), 'ignore_sticky_posts' => 0, 'paged' => get_query_var('paged') ) );
-	 if ( have_posts() ) : 
+	 if ( have_posts() ) :
 	   while ( have_posts() ) : the_post(); ?>
-  
+
     <?php get_template_part( 'content', 'summary' ); ?>
-  
+
   <?php endwhile; ?>
 
     <?php if (fc_show_posts_nav()) : ?>
@@ -49,8 +49,8 @@
 			</div><!-- .entry-content -->
 		</article><!-- #post-0 -->
 
-	<?php endif;   
-	rewind_posts(); 
+	<?php endif;
+	rewind_posts();
   wp_reset_query(); ?>
 
 	</div><!-- #content-main -->

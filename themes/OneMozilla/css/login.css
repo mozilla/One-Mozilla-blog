@@ -43,13 +43,10 @@ h1 a { position: absolute; left: -999em; }
   font-weight: normal;
   background-color: #266194;
   background-image: -moz-linear-gradient(#3c88cc,#276195);
-  background-image: -ms-linear-gradient(#3c88cc,#276195);
   background-image: -webkit-linear-gradient(#3c88cc,#276195);
-  background-image: -o-linear-gradient(#3c88cc,#276195);
   background-image: linear-gradient(#3c88cc,#276195);
   -moz-transition: all .25s linear;
   -webkit-transition: all .25s linear;
-  -o-transition: all .25s linear;
   transition: all .25s linear;
 }
 #wp-submit:hover,

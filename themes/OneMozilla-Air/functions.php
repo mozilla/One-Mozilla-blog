@@ -5,11 +5,11 @@ function airmozilla_remove_parent_filters() {
   remove_filter( 'excerpt_more', 'onemozilla_auto_excerpt_more' );
   remove_action( 'widgets_init', 'onemozilla_widgets_init' );
 }
-add_action('after_setup_theme', 'airmozilla_remove_parent_filters'); 
+add_action('after_setup_theme', 'airmozilla_remove_parent_filters');
 
 function remove_onemozilla_options() {
-	remove_custom_background();
-	remove_custom_image_header();
+  remove_theme_support('custom-background');
+	remove_theme_support('custom-header');
 }
 add_action( 'after_setup_theme','remove_onemozilla_options', 100 );
 
@@ -32,7 +32,7 @@ function airmozilla_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-	
+
 	register_sidebar( array(
 		'name' => __( 'Sidebar Bottom', 'airmoz' ),
 		'description' => __( 'Appears at the bottom of the sidebar, after the generated content', 'airmoz' ),
@@ -89,11 +89,11 @@ function airVidly($atts) {
   return '
   <video controls width="100%" controls preload="none" poster="http://cf.cdn.vid.ly/'.$code.'/poster.jpg">
     <source src="http://cf.cdn.vid.ly/'.$code.'/mp4.mp4" type="video/mp4">
-    <source src="http://cf.cdn.vid.ly/'.$code.'/webm.webm" type="video/webm"> 
+    <source src="http://cf.cdn.vid.ly/'.$code.'/webm.webm" type="video/webm">
     <source src="http://cf.cdn.vid.ly/'.$code.'/ogv.ogv" type="video/ogg">
     <a target="_blank" href="http://vid.ly/'.$code.'"><img src="http://cf.cdn.vid.ly /'.$code.'/poster.jpg" width="500" alt=""></a>
   </video>';
-   
+
 }
 add_shortcode('vidly', 'airVidly');
 
@@ -115,24 +115,24 @@ function airEdgecast($atts) {
   extract(shortcode_atts(array('file' => ''), $atts));
   return '
     <div id="player"></div>
-    <script> 
-    jwplayer("player").setup({ 
-      "flashplayer":"http://videos.mozilla.org/serv/air_mozilla/player.swf", 
-      "file":"'.$file.'", 
-      "provider":"rtmp", 
-      "streamer":"rtmp://fml.1237.edgecastcdn.net/201237/", 
-      "rtmp.subscribe":"true", 
-      "controlbar":"over", 
-      "playlist":"none", 
-      "dock":"true", 
-      "icons":"true", 
-      "quality":"true", 
-      "autostart":"true", 
-      "image":"http://videos.mozilla.org/serv/air_mozilla/PleaseStandBy.png", 
-      "width":"620", 
-      "height":"350" }); 
+    <script>
+    jwplayer("player").setup({
+      "flashplayer":"http://videos.mozilla.org/serv/air_mozilla/player.swf",
+      "file":"'.$file.'",
+      "provider":"rtmp",
+      "streamer":"rtmp://fml.1237.edgecastcdn.net/201237/",
+      "rtmp.subscribe":"true",
+      "controlbar":"over",
+      "playlist":"none",
+      "dock":"true",
+      "icons":"true",
+      "quality":"true",
+      "autostart":"true",
+      "image":"http://videos.mozilla.org/serv/air_mozilla/PleaseStandBy.png",
+      "width":"620",
+      "height":"350" });
     </script>
-  
+
   ';
 }
 add_shortcode('edgecast', 'airEdgecast');

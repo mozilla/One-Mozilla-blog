@@ -16,16 +16,16 @@ $time_format = get_option( 'time_format' );
         currentTime();
         setInterval('currentTime()', 60000 );
       });
-    
+
       function currentTime() {
         var currentTime = new Date();
         var currentHours = currentTime.getUTCHours();
         var currentMinutes = currentTime.getUTCMinutes();
-        
+
         // Add leading zeroes when needed
         currentHours = ( currentHours < 10 ? "0" : "" ) + currentHours;
         currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-        
+
         var currentTimeString = currentHours + ":" + currentMinutes + " UTC";
         jQuery("#current-time .time").text(currentTimeString);
       }
@@ -41,7 +41,7 @@ $time_format = get_option( 'time_format' );
 
 <?php
 // Show up to 10 non-sticky posts tagged "live" (we should almost never have more than a few)
-  $liveposts = get_posts( 
+  $liveposts = get_posts(
     array(
       'numberposts' => 10,
       'orderby' => 'date',
@@ -88,7 +88,7 @@ $time_format = get_option( 'time_format' );
 <?php
 // Show the last 3 non-sticky posts in the "featured" category
   $featured_cat = get_category_by_slug('featured')->term_id;
-  $featuredposts = get_posts( 
+  $featuredposts = get_posts(
     array(
       'numberposts' => 3,
       'orderby' => 'date',
@@ -96,7 +96,7 @@ $time_format = get_option( 'time_format' );
       'post__not_in' => get_option('sticky_posts')
     )
   );
- 
+
  if ($featuredposts) : ?>
   <aside id="also-featured" class="widget more-posts hfeed">
     <h3 class="widget-title"><?php _e('Featured Videos','airmoz'); ?></h3>
@@ -134,7 +134,7 @@ $time_format = get_option( 'time_format' );
 
 <?php
 // Show the next 3 pending posts
-  $upcoming = get_posts( 
+  $upcoming = get_posts(
     array(
       'numberposts' => 3,
       'orderby' => 'date',
@@ -142,7 +142,7 @@ $time_format = get_option( 'time_format' );
       'post_status' => 'future'
     )
   );
- 
+
  if ($upcoming) : ?>
   <aside id="also-featured" class="widget more-posts hfeed">
     <h3 class="widget-title"><?php _e('Upcoming','airmoz'); ?></h3>

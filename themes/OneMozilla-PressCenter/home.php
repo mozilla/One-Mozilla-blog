@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 
-	<div id="content-main" class="main" role="main">
-	<h1 class="section-title"><?php _e('Mozilla News','mozpress'); ?></h1>
+  <div id="content-main" class="main" role="main">
+  <h1 class="section-title"><?php _e('Mozilla News','mozpress'); ?></h1>
 
-	<?php if ( have_posts() ) : ?>
+  <?php if ( have_posts() ) : ?>
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
+    <?php /* Start the Loop */ ?>
+    <?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content-syndicated' ); ?>
+      <?php get_template_part( 'content-syndicated' ); ?>
 
-		<?php endwhile; ?>
+    <?php endwhile; ?>
 
     <?php if (fc_show_posts_nav()) : ?>
     <nav class="nav-paging">
@@ -21,22 +21,22 @@
     </nav>
     <?php endif; ?>
 
-	<?php else : ?>
+  <?php else : ?>
 
-		<article id="post-0" class="post no-results not-found">
-			<header class="entry-header">
-				<h1 class="entry-title"><?php _e( 'Nothing Found', 'onemozilla' ); ?></h1>
-			</header><!-- .entry-header -->
+    <article id="post-0" class="post no-results not-found">
+      <header class="entry-header">
+        <h1 class="entry-title"><?php _e( 'Nothing Found', 'onemozilla' ); ?></h1>
+      </header><!-- .entry-header -->
 
-			<div class="entry-content">
-				<p><?php _e( "Sorry, we couldn't find any results for the requested archive. Perhaps try searching?", "onemozilla" ); ?></p>
-				<?php get_search_form(); ?>
-			</div><!-- .entry-content -->
-		</article><!-- #post-0 -->
+      <div class="entry-content">
+        <p><?php _e( "Sorry, we couldn't find any results for the requested archive. Perhaps try searching?", "onemozilla" ); ?></p>
+        <?php get_search_form(); ?>
+      </div><!-- .entry-content -->
+    </article><!-- #post-0 -->
 
-	<?php endif; ?>
+  <?php endif; ?>
 
-	</div><!-- #content-main -->
+  </div><!-- #content-main -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

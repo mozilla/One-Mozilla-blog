@@ -1,19 +1,19 @@
 <?php
 
 function remove_onemozilla_theme_options() {
- remove_submenu_page('themes.php', 'theme_options');
+  remove_submenu_page('themes.php', 'theme_options');
 }
 add_action('admin_init', 'remove_onemozilla_theme_options', 11);
 
 function remove_onemozilla_options() {
-	remove_custom_background();
+	remove_theme_support('custom-background');
 }
 add_action('after_setup_theme','remove_onemozilla_options', 100);
 
 function mozweb_remove_parent_filters() {
   remove_filter('mce_css', 'fc_editor_style');
 }
-add_action('after_setup_theme', 'mozweb_remove_parent_filters'); 
+add_action('after_setup_theme', 'mozweb_remove_parent_filters');
 
 
 function child_theme_class($class) {

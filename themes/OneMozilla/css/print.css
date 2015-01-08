@@ -1,5 +1,5 @@
 /* Styles for print */
-header, hgroup, nav, section, article, aside, footer { display: block; }
+header, hgroup, nav, section, article, aside, footer, main { display: block; }
 
 /* @Fonts *********/
 /* Light */
@@ -35,31 +35,31 @@ header, hgroup, nav, section, article, aside, footer { display: block; }
 
 
 /* Hidden elements */
-#header, 
-#content-sub, 
-#respond, 
-#breadcrumbs, 
-#nav-access, 
-.spread, 
-#sub-footer, 
-#footer-logo, 
-#footer-menu, 
-.comment-util, 
-.cmt-post { 
-  display: none; 
+#header,
+#content-sub,
+#respond,
+#breadcrumbs,
+#nav-access,
+.spread,
+#sub-footer,
+#footer-logo,
+#footer-menu,
+.comment-util,
+.cmt-post {
+  display: none;
 }
 
 #page { width: 90%; margin: 0 auto; background: #fff none !important; }
 
-body { font: 14pt/1.5 Georgia, "Times New Roman", Times, serif; color: #000; }
+body { font: 14pt/1.5 "Open Sans", sans-serif; color: #000; }
 
-h1, h2, h3, h4, h5, h6 { margin: 0 0 .25em; color: #484848; line-height: 1; font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; font-weight: normal; }
-h1 { font-size: 3em; letter-spacing: -2px; }
-h2 { font-size: 2em; letter-spacing: -1px; }
-h3 { font-size: 1.75em; letter-spacing: -0.5px; }
-h4 { font-size: 1.5em; letter-spacing: -0.25px; }
-h5 { font-size: 1.125em; }
-h6 { font-size: 1em; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .25em; color: #484848; line-height: 1; font-family: "Open Sans Light", sans-serif; font-weight: normal; letter-spacing: -.05em; }
+h1 { font-size: 48px; font-size: 3rem; }
+h2 { font-size: 32px; font-size: 2rem; }
+h3 { font-size: 28px; font-size: 1.75rem; }
+h4 { font-size: 24px; font-size: 1.5rem; }
+h5 { font-size: 16px; font-size: 1rem; }
+h6 { font-size: 14px; font-size: .875rem; }
 
 #masthead { position: relative; padding: 1em 0; margin: 0 0 2em; border-bottom: 3px double #ccc; text-align: left; background: none !important; }
 #tabzilla { position: absolute; top: 0; right: 0; }
@@ -71,13 +71,13 @@ h6 { font-size: 1em; }
 .post .entry-title { font-size: 140%; padding-right: 120px; }
 .entry-header a { text-decoration: none; color: #000; }
 
-.entry-header { font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+.entry-header { font-family: "Open Sans Light", sans-serif; }
 .entry-header:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
 .entry-header .entry-posted, .entry-header .vcard, .entry-header .entry-comments { float: left; margin: 0 24px 1em 0; }
 .entry-header address, .entry-header cite { font-style: normal; }
 .entry-header .vcard img { margin: 0 0 -.25em 6px; }
 
-.entry-meta { font: .857em "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
+.entry-meta { font: .857em "Open Sans Light", sans-serif; }
 .entry-meta p { margin: 0 0 .5em; }
 .entry-meta b { margin-right: 10px; font-weight: normal; text-transform: uppercase; }
 

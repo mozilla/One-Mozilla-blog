@@ -4,7 +4,7 @@
       <?php while ( have_posts() ) : the_post(); ?>
         <?php get_template_part( 'content', 'page' ); ?>
       <?php endwhile; // end of the loop. ?>
-      
+
       <!-- List authors -->
       <section class="about-authors">
         <h2><?php _e('Authors','mozwebdev') ?></h2>

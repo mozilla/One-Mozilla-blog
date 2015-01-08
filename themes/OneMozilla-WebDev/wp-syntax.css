@@ -41,7 +41,7 @@
 	text-decoration: none !important;
 }
 
-.wp_syntax caption a:hover, 
+.wp_syntax caption a:hover,
 .wp_syntax caption a:focus,
 .wp_syntax caption a:active {
 	color: #ffefc9 !important;
@@ -128,8 +128,8 @@
 .br0 { color: #dedede; }
 
 /* symbols */
-.sy0 { color: #e0d79a; } 
-.sy1 { color: #e0d79a; } 
+.sy0 { color: #e0d79a; }
+.sy1 { color: #e0d79a; }
 
 /* numbers */
 .nu0 { color: #ddafd9; }

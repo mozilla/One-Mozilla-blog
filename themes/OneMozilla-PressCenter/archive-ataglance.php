@@ -24,7 +24,7 @@ if (jQuery) {
     jQuery(".expander-content").hide();
     jQuery(".expander-header a").addClass("closed").attr("title", "Open");
   });
-  
+
   jQuery(".expander-header a").click(function(){
     jQuery(this).toggleClass('closed').toggleClass('open').blur();
     jQuery(this).parents(".expander-item").find(".expander-content").slideToggle('fast');

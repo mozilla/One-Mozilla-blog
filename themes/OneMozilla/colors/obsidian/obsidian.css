@@ -134,7 +134,6 @@ textarea:focus {
   border-color: #62869f;
   -moz-box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
   -webkit-box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
-  -o-box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
   box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
 }
 label .note {
@@ -160,8 +159,6 @@ label .note {
   background: #4c667a;
   background: -webkit-linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
   background: -moz-linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
-  background: -ms-linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
-  background: -o-linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
   background: linear-gradient(left, rgba(87,117,140,0.75) 0%, rgba(87,117,140,0.75) 10%, rgba(87,117,140,0.1) 50%, rgba(87,117,140,.75) 90%, rgba(87,117,140,0.75) 100%);
 }
 .entry-header .vcard img {
@@ -255,7 +252,6 @@ label .note {
 .nav-paging {
   background-color: #2e475a;
   -webkit-box-shadow: inset rgba(0,0,0, 0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
-  -o-box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
   box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
 }
 #nav-primary .current-menu-item a:link,
@@ -290,13 +286,6 @@ label .note {
   .entry-posted a:focus,
   .entry-posted a:active {
     color: #c5ccd2;
-  }
-  #nav-access a:link,
-  #nav-access a:visited,
-  #nav-access a:hover,
-  #nav-access a:focus,
-  #nav-access a:active {
-    color: #2e475a;
   }
 
 }

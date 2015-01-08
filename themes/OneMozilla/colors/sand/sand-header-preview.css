@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Open Sans Light";
-  src: url("../../css/fonts/OpenSans-Light-webfont.eot");
-  src: url("../../css/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("../../css/fonts/OpenSans-Light-webfont.woff") format("woff"),
-       url("../../css/fonts/OpenSans-Light-webfont.ttf") format("truetype");
+  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.eot");
+  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
+       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.woff") format("woff"),
+       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -35,7 +35,7 @@
 #header-preview h2 {
   line-height: 1;
   padding: 0;
-  font-family: "Open Sans Light", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: "Open Sans Light", sans-serif;
   font-weight: normal;
   text-shadow: 0 1px 0 rgba(255,255,255,0.75);
 }
