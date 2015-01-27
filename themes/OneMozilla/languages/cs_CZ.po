@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: One Mozilla 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-17 08:52-0800\n"
-"PO-Revision-Date: 2015-01-09 12:45+0100\n"
+"PO-Revision-Date: 2015-01-27 13:05+0100\n"
 "Last-Translator: Michal Stanke <michal.stanke@mikk.cz>\n"
 "Language-Team: Mozilla.cz <info@mozilla.cz>\n"
 "Language: cs\n"
@@ -359,7 +359,7 @@ msgstr "Pingback z "
 
 #: ../functions.php:649 ../functions.php:659
 msgid "wrote on"
-msgstr ""
+msgstr "napsal(a)"
 
 #: ../functions.php:669
 msgid "Your comment is awaiting moderation."
@@ -443,7 +443,7 @@ msgstr ""
 #: ../sidebar.php:35 ../sidebar.php:81
 #, php-format
 msgid "More from %s"
-msgstr "Více z %s"
+msgstr "Více od %s"
 
 #: ../inc/theme-options.php:45
 msgid "Color Scheme"
