@@ -7,11 +7,11 @@
   <div class="wrap">
     <p id="foot-logo">
       <a class="top" href="#page"><?php _e('Return to top', 'onemozilla'); ?></a>
-      <a class="logo" href="http://mozilla.org" rel="external">Mozilla</a>
+      <a class="logo" href="https://www.mozilla.org/" rel="external">Mozilla</a>
     </p>
 
     <p id="colophon">
-      <?php printf(__('Except where otherwise <a href="%1s" rel="external">noted</a>, content on this site is licensed under the <a href="%2s" rel="external license">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.', 'onemozilla'), esc_attr('http://www.mozilla.org/en-US/about/legal.html#site'), esc_attr('http://creativecommons.org/licenses/by-sa/3.0/') ); ?>
+      <?php printf(__('Except where otherwise <a href="%1s" rel="external">noted</a>, content on this site is licensed under the <a href="%2s" rel="external license">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.', 'onemozilla'), esc_attr('https://www.mozilla.org/about/legal.html'), esc_attr('http://creativecommons.org/licenses/by-sa/3.0/') ); ?>
     </p>
 
     <nav id="nav-meta">

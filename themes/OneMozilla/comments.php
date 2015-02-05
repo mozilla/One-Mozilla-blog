@@ -26,7 +26,7 @@
 ?>
 
   <header class="comments-head">
-    <h2><?php if($comment_count > 0) { printf(_n( 'One response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet'); } ?></h2>
+    <h2><?php if($comment_count > 0) { printf(_n( 'One response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet', 'onemozilla'); } ?></h2>
     <?php if (comments_open()) : ?><p class="cmt-post"><a href="#respond"><?php _e('Post a comment','onemozilla'); ?></a></p><?php endif; ?>
   </header>
 
@@ -59,7 +59,7 @@
   <?php else : // else show the form ?>
     <form id="comment-form" action="<?php echo esc_attr(get_option('siteurl')); ?>/wp-comments-post.php" method="post">
       <fieldset>
-        <legend><span><?php comment_form_title( __('Post Your Comment'), __('Reply to %s' ) ); ?></span></legend>
+        <legend><span><?php comment_form_title( __('Post Your Comment', 'onemozilla'), __('Reply to %s' ) ); ?></span></legend>
         <p id="cancel-comment-reply"><?php cancel_comment_reply_link('Cancel Reply'); ?></p>
         <ol>
         <?php if ( $user_ID ) : ?>
