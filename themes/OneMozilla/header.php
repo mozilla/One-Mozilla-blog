@@ -25,7 +25,7 @@
   <meta name="MSSmartTagsPreventParsing" content="true">
   <meta http-equiv="imagetoolbar" content="no">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/html5.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
   <![endif]-->
 
   <link rel="copyright" href="#colophon">
