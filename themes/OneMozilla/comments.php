@@ -59,7 +59,7 @@
   <?php else : // else show the form ?>
     <form id="comment-form" action="<?php echo esc_attr(get_option('siteurl')); ?>/wp-comments-post.php" method="post">
       <fieldset>
-        <legend><span><?php comment_form_title( __('Post Your Comment', 'onemozilla'), __('Reply to %s' ) ); ?></span></legend>
+        <legend><span><?php comment_form_title( __('Post Your Comment', 'onemozilla'), __('Reply to %s', 'onemozilla') ); ?></span></legend>
         <p id="cancel-comment-reply"><?php cancel_comment_reply_link('Cancel Reply'); ?></p>
         <ol>
         <?php if ( $user_ID ) : ?>
@@ -95,11 +95,11 @@
   <?php if (get_option('require_name_email')) :
     wp_enqueue_script('fc-checkcomment', get_template_directory_uri() . '/js/fc-checkcomment.js');
     wp_localize_script('fc-checkcomment', 'objectL10n', array(
-      'nonameemail' => __('You must provide a name and e-mail (your e-mail address won’t be published).'),
-      'noname' => __('You must provide a name.'),
-      'noemail' => __('You must provide an e-mail address (it won’t be published).'),
-      'bademail' => __('The e-mail address you entered doesn’t look like a complete e-mail address. It should look like “yourname@example.com”.'),
-      'nocomment' => __('You must enter a comment.')
+      'nonameemail' => __('You must provide a name and e-mail (your e-mail address won’t be published).', 'onemozilla'),
+      'noname' => __('You must provide a name.', 'onemozilla'),
+      'noemail' => __('You must provide an e-mail address (it won’t be published).', 'onemozilla'),
+      'bademail' => __('The e-mail address you entered doesn’t look like a complete e-mail address. It should look like “yourname@example.com”.', 'onemozilla'),
+      'nocomment' => __('You must enter a comment.', 'onemozilla')
     ) );
   ?>
   <script type="text/javascript">jQuery("#comment-form").submit(function() { return fc_checkform(<?php if ($req) : echo "'req'"; endif; ?>); });</script>

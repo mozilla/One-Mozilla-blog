@@ -18,7 +18,7 @@
 
   <?php $comment_count = get_comments_number($post->ID);
   if ( comments_open() || pings_open() || ($comment_count > 0) ) : ?>
-    <p class="entry-comments"><a href="<?php comments_link() ?>" title="<?php if($comment_count > 0) { printf(_n( '1 response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet'); } ?>"><?php if ($comment_count > 999) : comments_number('0','1','1000+'); else : comments_number('0','1','%'); endif; ?></a></p>
+    <p class="entry-comments"><a href="<?php comments_link() ?>" title="<?php if($comment_count > 0) { printf(_n( '1 response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet', 'onemozilla'); } ?>"><?php if ($comment_count > 999) : comments_number('0','1','1000+'); else : comments_number('0','1','%'); endif; ?></a></p>
   <?php endif; ?>
   </header>
 
