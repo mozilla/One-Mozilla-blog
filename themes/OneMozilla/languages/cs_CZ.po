@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: One Mozilla 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-17 08:52-0800\n"
-"PO-Revision-Date: 2015-01-27 13:05+0100\n"
-"Last-Translator: Michal Stanke <michal.stanke@mikk.cz>\n"
+"POT-Creation-Date: 2015-03-17 16:18-0800\n"
+"PO-Revision-Date: 2015-03-17 16:28-0800\n"
+"Last-Translator: \n"
 "Language-Team: Mozilla.cz <info@mozilla.cz>\n"
-"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-KeywordsList: _e;gettext;gettext_noop;__\n"
 "X-Poedit-Basepath: .\n"
@@ -22,25 +22,16 @@ msgid "Well, this is embarrassing…"
 msgstr "Ale toto je nepříjemné…"
 
 #: ../404.php:10
-msgid ""
-"We hate to say it, but we couldn’t find the page or file you’re looking for."
-msgstr ""
-"Je nám líto, ale stránku nebo soubor, který hledáte, se nepodařilo nalézt."
+msgid "We hate to say it, but we couldn’t find the page or file you’re looking for."
+msgstr "Je nám líto, ale stránku nebo soubor, který hledáte, se nepodařilo nalézt."
 
 #: ../404.php:11
 msgid "If you typed in the address, try double-checking the spelling."
-msgstr ""
-"Pokud jste adresu zadávali ručně, zkontrolujte prosím znovu její zadání."
+msgstr "Pokud jste adresu zadávali ručně, zkontrolujte prosím znovu její zadání."
 
 #: ../404.php:12
-msgid ""
-"If you followed a link from somewhere, please let us know at <em>webmaster "
-"at mozilla dot com</em>. Be sure to tell us where you came from and what you "
-"were looking for, and we’ll do our best to fix it."
-msgstr ""
-"Pokud jste přišli před odkaz z jiné stránky, napište nám prosím na "
-"<em>webmaster zavináč mozilla tečka com</em>, odkud jste přišli a co jste "
-"hledali, abychom mohli nefunkční odkaz opravit."
+msgid "If you followed a link from somewhere, please let us know at <em>webmaster at mozilla dot com</em>. Be sure to tell us where you came from and what you were looking for, and we’ll do our best to fix it."
+msgstr "Pokud jste přišli před odkaz z jiné stránky, napište nám prosím na <em>webmaster zavináč mozilla tečka com</em>, odkud jste přišli a co jste hledali, abychom mohli nefunkční odkaz opravit."
 
 #: ../archive.php:14
 #, php-format
@@ -52,8 +43,12 @@ msgstr "Příspěvky v “%s”"
 msgid "Posts tagged with “%s”"
 msgstr "Příspěvky se štítkem “%s”"
 
-#: ../archive.php:16 ../archive.php:17 ../archive.php:18 ../header.php:50
-#: ../header.php:51 ../header.php:52
+#: ../archive.php:16
+#: ../archive.php:17
+#: ../archive.php:18
+#: ../header.php:50
+#: ../header.php:51
+#: ../header.php:52
 #, php-format
 msgid "Posts from %s"
 msgstr "Příspěvky z %s"
@@ -67,35 +62,39 @@ msgstr "Příspěvky od %s"
 msgid "Archives"
 msgstr "Archivy"
 
-#: ../archive.php:28 ../archive.php:44 ../index.php:49 ../search.php:18
+#: ../archive.php:28
+#: ../archive.php:44
+#: ../index.php:49
+#: ../search.php:18
 #: ../search.php:34
 msgid "Older posts"
 msgstr "Starší příspěvky"
 
-#: ../archive.php:29 ../archive.php:45 ../index.php:50 ../search.php:19
+#: ../archive.php:29
+#: ../archive.php:45
+#: ../index.php:50
+#: ../search.php:19
 #: ../search.php:35
 msgid "Newer posts"
 msgstr "Novější příspěvky"
 
-#: ../archive.php:54 ../index.php:59 ../search.php:42
+#: ../archive.php:54
+#: ../index.php:59
+#: ../search.php:42
 msgid "Nothing Found"
 msgstr "Nic nebylo nalezeno"
 
 #: ../archive.php:58
-msgid ""
-"Apologies, but no results were found for the requested archive. Perhaps "
-"searching will help find a related post."
-msgstr ""
-"Je nám líto, ale pro požadovaný archiv nebyly nalezeny žádné výsledky. "
-"Zkuste použít vyhledávání pro nalezení podobného příspěvky."
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Je nám líto, ale pro požadovaný archiv nebyly nalezeny žádné výsledky. Zkuste použít vyhledávání pro nalezení podobného příspěvky."
 
 #: ../comments.php:17
-msgid ""
-"This post is password protected. Enter the password to view any comments."
-msgstr ""
-"Tento příspěvek je chráněn heslem. Pro zobrazení obsahu prosím zadejte heslo."
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Tento příspěvek je chráněn heslem. Pro zobrazení obsahu prosím zadejte heslo."
 
-#: ../comments.php:29 ../content-single.php:11 ../content-summary.php:21
+#: ../comments.php:29
+#: ../content-single.php:11
+#: ../content-summary.php:21
 #: ../content.php:21
 msgid "No responses yet"
 msgstr "Zatím žádné odpovědi"
@@ -110,12 +109,8 @@ msgstr "Více komentářů:"
 
 #: ../comments.php:48
 #, php-format
-msgid ""
-"Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post"
-"\">trackbacks</a> are open."
-msgstr ""
-"Komentáře jsou uzavřené, ale <a href=\"%1$s\" title=\"Trackback URL pro "
-"tento příspěvek\">trackbacky</a> jsou stále povolené."
+msgid "Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post\">trackbacks</a> are open."
+msgstr "Komentáře jsou uzavřené, ale <a href=\"%1$s\" title=\"Trackback URL pro tento příspěvek\">trackbacky</a> jsou stále povolené."
 
 #: ../comments.php:57
 #, php-format
@@ -133,12 +128,8 @@ msgstr "Odpověď na %s"
 
 #: ../comments.php:66
 #, php-format
-msgid ""
-"You are logged in as <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href="
-"\"%3$s\">Log out?</a>"
-msgstr ""
-"Jste přihlášeni jako <a href=\"%1$s\">%2$s</a>. Chcete se <a class=\"logout"
-"\" href=\"%3$s\">odhlásit?</a>"
+msgid "You are logged in as <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href=\"%3$s\">Log out?</a>"
+msgstr "Jste přihlášeni jako <a href=\"%1$s\">%2$s</a>. Chcete se <a class=\"logout\" href=\"%3$s\">odhlásit?</a>"
 
 #: ../comments.php:69
 msgid "Name"
@@ -162,8 +153,7 @@ msgstr "Webová adresa"
 
 #: ../comments.php:81
 msgid "Spam robots, please fill in this field. Humans should leave it blank."
-msgstr ""
-"Spamovací roboti, vyplňte prosím toto pole. Lidé by jej měli nechat prázdné."
+msgstr "Spamovací roboti, vyplňte prosím toto pole. Lidé by jej měli nechat prázdné."
 
 #: ../comments.php:85
 msgid "Your comment"
@@ -174,8 +164,7 @@ msgid "Submit Comment"
 msgstr "Přidat komentář"
 
 #: ../comments.php:98
-msgid ""
-"You must provide a name and e-mail (your e-mail address won’t be published)."
+msgid "You must provide a name and e-mail (your e-mail address won’t be published)."
 msgstr "Musíte zadat jméno a e-mail (vaše e-mailová adresa nebude zveřejněna)."
 
 #: ../comments.php:99
@@ -187,12 +176,8 @@ msgid "You must provide an e-mail address (it won’t be published)."
 msgstr "Musíte zadat e-mailovou adresu (nebude zveřejněna)."
 
 #: ../comments.php:101
-msgid ""
-"The e-mail address you entered doesn’t look like a complete e-mail address. "
-"It should look like “yourname@example.com”."
-msgstr ""
-"E-mailová adresa, kterou jste zadali, nevypadá jako platná e-mailová adresa. "
-"Měla by vypadat asi takto “vasejmeno@example.com”."
+msgid "The e-mail address you entered doesn’t look like a complete e-mail address. It should look like “yourname@example.com”."
+msgstr "E-mailová adresa, kterou jste zadali, nevypadá jako platná e-mailová adresa. Měla by vypadat asi takto “vasejmeno@example.com”."
 
 #: ../comments.php:102
 msgid "You must enter a comment."
@@ -202,26 +187,37 @@ msgstr "Musíte vložit text komentáře."
 msgid "Edit Page"
 msgstr "Upravit stránku"
 
-#: ../content-page.php:14 ../content-single.php:35 ../content.php:29
+#: ../content-page.php:14
+#: ../content-single.php:35
+#: ../content.php:29
 #: ../image.php:41
 msgid "Pages:"
 msgstr "Stránky:"
 
-#: ../content-single.php:17 ../content-single.php:19 ../content-summary.php:8
-#: ../content-summary.php:10 ../content.php:8 ../content.php:10
+#: ../content-single.php:17
+#: ../content-single.php:19
+#: ../content-summary.php:8
+#: ../content-summary.php:10
+#: ../content.php:8
+#: ../content.php:10
 #, php-format
 msgid "See all posts from %s"
 msgstr "Zobrazit všechny příspěvky od %s"
 
-#: ../content-single.php:29 ../content.php:32
+#: ../content-single.php:29
+#: ../content.php:32
 msgid "Edit Post"
 msgstr "Upravit příspěvek"
 
-#: ../content-single.php:41 ../content-summary.php:33 ../content.php:37
+#: ../content-single.php:41
+#: ../content-summary.php:33
+#: ../content.php:37
 msgid "Tags"
 msgstr "Štítky"
 
-#: ../content-single.php:43 ../content-summary.php:35 ../content.php:39
+#: ../content-single.php:43
+#: ../content-summary.php:35
+#: ../content.php:39
 msgid "Categories"
 msgstr "Rubriky"
 
@@ -235,16 +231,8 @@ msgstr "Vrátit se nahoru"
 
 #: ../footer.php:14
 #, php-format
-msgid ""
-"Except where otherwise <a href=\"%1s\" rel=\"external\">noted</a>, content "
-"on this site is licensed under the <a href=\"%2s\" rel=\"external license"
-"\">Creative Commons Attribution Share-Alike License v3.0</a> or any later "
-"version."
-msgstr ""
-"Pokud není <a href=\"%1s\" rel=\"external\">řečeno jinak</a>, obsah této "
-"stránky je dostupný pod licencí <a href=\"%2s\" rel=\"external license"
-"\">Creative Commons Attribution Share-Alike License v3.0</a> nebo jakoukoliv "
-"novější."
+msgid "Except where otherwise <a href=\"%1s\" rel=\"external\">noted</a>, content on this site is licensed under the <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License v3.0</a> or any later version."
+msgstr "Pokud není <a href=\"%1s\" rel=\"external\">řečeno jinak</a>, obsah této stránky je dostupný pod licencí <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License v3.0</a> nebo jakoukoliv novější."
 
 #: ../footer.php:19
 msgid "Contact Us"
@@ -270,110 +258,110 @@ msgstr "Kód vzhledu"
 msgid "Primary Menu"
 msgstr "Hlavní menu"
 
-#: ../functions.php:68
+#: ../functions.php:78
 msgid "Firefox Logo"
 msgstr "Logo Firefox"
 
-#: ../functions.php:108
+#: ../functions.php:131
 msgid "Social sharing"
 msgstr "Sdílení"
 
-#: ../functions.php:120 ../functions.php:152
+#: ../functions.php:143
+#: ../functions.php:175
 msgid "Hide post authors"
 msgstr "Skrývat autora příspěvků"
 
-#: ../functions.php:136
+#: ../functions.php:159
 msgid "Add social sharing buttons to posts and pages"
 msgstr "Přidat tlačítka sociálních sítí k příspěvkům a stránkám"
 
-#: ../functions.php:138
+#: ../functions.php:161
 msgid "Adds buttons for Facebook, Twitter, and Google+."
 msgstr "Přidá tlačítka pro Facebook, Twitter a Google+."
 
-#: ../functions.php:154
+#: ../functions.php:177
 msgid "This removes the author byline and author bio from individual posts."
 msgstr "Toto odstraní z jednotlivých příspěvků řádek s informacemi o autorovi."
 
-#: ../functions.php:278
+#: ../functions.php:302
 #, php-format
 msgid "Page %s"
 msgstr "Stránka %s"
 
-#: ../functions.php:335
-msgid ""
-"Sorry, you appear to be a spamming robot because you filled in the hidden "
-"spam trap field. To show you are not a spammer, submit your comment again "
-"and leave the field blank."
-msgstr ""
-"Je nám líto, ale protože jste vyplnili skryté pole, které je pastí pro "
-"spamovací roboty, zřejmě jste robotem. Pokud jste skutečně člověk, vložte "
-"prosím svůj příspěvek znovu a zmiňované pole ponechte prázdné."
+#: ../functions.php:359
+msgid "Sorry, you appear to be a spamming robot because you filled in the hidden spam trap field. To show you are not a spammer, submit your comment again and leave the field blank."
+msgstr "Je nám líto, ale protože jste vyplnili skryté pole, které je pastí pro spamovací roboty, zřejmě jste robotem. Pokud jste skutečně člověk, vložte prosím svůj příspěvek znovu a zmiňované pole ponechte prázdné."
 
-#: ../functions.php:361
+#: ../functions.php:385
 msgid "This post is password protected. To view it, please enter the password."
-msgstr ""
-"Tento příspěvek je chráněn heslem. Pro jeho zobrazení prosím zadejte heslo."
+msgstr "Tento příspěvek je chráněn heslem. Pro jeho zobrazení prosím zadejte heslo."
 
-#: ../functions.php:362
+#: ../functions.php:386
 msgid "Password"
 msgstr "Heslo"
 
-#: ../functions.php:429
+#: ../functions.php:453
 msgid "Make this a featured post?"
 msgstr "Nastavit tento příspěvek jako zvýrazněný?"
 
-#: ../functions.php:434
+#: ../functions.php:459
 msgid "Featured Post"
 msgstr "Zvýrazněný příspěvek"
 
-#: ../functions.php:475
+#: ../functions.php:504
 msgid "Continue reading"
 msgstr "Číst dále"
 
-#: ../functions.php:522
+#: ../functions.php:551
 msgid "Sidebar"
 msgstr "Postranní panel"
 
-#: ../functions.php:623
+#: ../functions.php:652
 msgid "Trackback from "
 msgstr "Trackback z "
 
-#: ../functions.php:625 ../functions.php:634
+#: ../functions.php:654
+#: ../functions.php:663
 msgid "on"
 msgstr "na"
 
-#: ../functions.php:626 ../functions.php:635 ../functions.php:650
-#: ../functions.php:660
+#: ../functions.php:655
+#: ../functions.php:664
+#: ../functions.php:679
+#: ../functions.php:689
 msgid "Permanent link to this comment by "
 msgstr "Trvalý odkaz na tento komentář od "
 
-#: ../functions.php:629 ../functions.php:638 ../functions.php:653
-#: ../functions.php:663
+#: ../functions.php:658
+#: ../functions.php:667
+#: ../functions.php:682
+#: ../functions.php:692
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s v %2$s"
 
-#: ../functions.php:632
+#: ../functions.php:661
 msgid "Pingback from "
 msgstr "Pingback z "
 
-#: ../functions.php:649 ../functions.php:659
+#: ../functions.php:678
+#: ../functions.php:688
 msgid "wrote on"
 msgstr "napsal(a)"
 
-#: ../functions.php:669
+#: ../functions.php:698
 msgid "Your comment is awaiting moderation."
 msgstr "Váš komentář čeká na schválení."
 
-#: ../functions.php:677
+#: ../functions.php:706
 msgid "Edit Comment"
 msgstr "Upravit komentář"
 
-#: ../functions.php:694
+#: ../functions.php:723
 msgid "This widget shows the three most recent featured posts."
 msgstr "Tento widget zobrazí tři nejnovější zvýrazněné příspěvky."
 
-#: ../functions.php:706
+#: ../functions.php:735
 msgid "Title:"
 msgstr "Nadpis:"
 
@@ -386,28 +374,22 @@ msgstr "Výsledky vyhledávání pro “%s”"
 msgid "Not Found"
 msgstr "Nenalezeno"
 
-#: ../header.php:76
+#: ../header.php:65
 msgid "Skip to main content"
 msgstr "Přejít na hlavní obsah"
 
-#: ../header.php:77
+#: ../header.php:66
 msgid "Skip to sidebar"
 msgstr "Přejít na postranní panel"
 
-#: ../header.php:79
+#: ../header.php:68
 msgid "Skip to blog search"
 msgstr "Přejít na vyhledávání"
 
 #: ../image.php:13
 #, php-format
-msgid ""
-"Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</"
-"time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
-"%5$s</a>"
-msgstr ""
-"Publikováno <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</"
-"time> v <a href=\"%3$s\" title=\"Odkaz na plnou velikost\">%4$s &times; "
-"%5$s</a>"
+msgid "Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a>"
+msgstr "Publikováno <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> v <a href=\"%3$s\" title=\"Odkaz na plnou velikost\">%4$s &times; %5$s</a>"
 
 #: ../image.php:22
 msgid "Edit Attachment"
@@ -418,12 +400,8 @@ msgid "Featured"
 msgstr "Zvýrazněný"
 
 #: ../index.php:63
-msgid ""
-"Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps "
-"try searching?"
-msgstr ""
-"Je nám líto, ale pro požadovaný archiv nebyly nalezeny žádné výsledky. "
-"Chcete zkusit vyhledávání?"
+msgid "Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?"
+msgstr "Je nám líto, ale pro požadovaný archiv nebyly nalezeny žádné výsledky. Chcete zkusit vyhledávání?"
 
 #: ../masthead.php:6
 msgid "Go to the front page"
@@ -432,15 +410,15 @@ msgstr "Přejít na úvodní stránku"
 #: ../search.php:45
 #, php-format
 msgid "Sorry, we didn't find anything for “%s.” Try another search."
-msgstr ""
-"Je nám líto, ale pro “%s” nebyly nalezeny žádné výsledky. Zkuste prosím jiné "
-"vyhledávání."
+msgstr "Je nám líto, ale pro “%s” nebyly nalezeny žádné výsledky. Zkuste prosím jiné vyhledávání."
 
-#: ../sidebar.php:9 ../sidebar.php:55
+#: ../sidebar.php:9
+#: ../sidebar.php:55
 msgid "About"
 msgstr ""
 
-#: ../sidebar.php:35 ../sidebar.php:81
+#: ../sidebar.php:35
+#: ../sidebar.php:81
 #, php-format
 msgid "More from %s"
 msgstr "Více od %s"
@@ -449,63 +427,34 @@ msgstr "Více od %s"
 msgid "Color Scheme"
 msgstr "Barevné schéma"
 
-#: ../inc/theme-options.php:79 ../inc/theme-options.php:80
+#: ../inc/theme-options.php:79
+#: ../inc/theme-options.php:80
 msgid "Theme Options"
 msgstr "Nastavení vzhledu"
 
 #: ../inc/theme-options.php:95
-msgid ""
-"Some themes provide customization options that are grouped together on a "
-"Theme Options screen. If you change themes, options may change or disappear, "
-"as they are theme-specific. Your current theme, One Mozilla, provides the "
-"following Theme Options:"
-msgstr ""
-"Některé vzhledy poskytují možnosti přizpůsobení, které jsou zobrazeny "
-"společně na stránce Přizpůsobení. Pokud si vyberete jiný vzhled, původní "
-"nastavení se mohou změnit nebo zcela ztratit, protože jsou pro každý vzhled "
-"specifická. Váš současný vzhled One Mozilla nabízí tyto možnosti "
-"přizpůsobení:"
+msgid "Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, One Mozilla, provides the following Theme Options:"
+msgstr "Některé vzhledy poskytují možnosti přizpůsobení, které jsou zobrazeny společně na stránce Přizpůsobení. Pokud si vyberete jiný vzhled, původní nastavení se mohou změnit nebo zcela ztratit, protože jsou pro každý vzhled specifická. Váš současný vzhled One Mozilla nabízí tyto možnosti přizpůsobení:"
 
 #: ../inc/theme-options.php:97
-msgid ""
-"<strong>Color Scheme</strong>: You can choose from a few different color "
-"schemes: “Sand” (orange-tan background) is suitable for most Mozilla blogs. "
-"“Sky” (light blue/gray background) suitable for Firefox-related blogs. "
-"“Obsidian” is a light-on-dark scheme. “Stone” is the default scheme, a "
-"light, neutral gray."
-msgstr ""
-"<strong>Barevné schéma</strong>: Můžete si vybrat z několik barevných "
-"schémat: “Sand” (oranžové tóny pozadí) je vhodné pro většinu blogů Mozilla. "
-"“Sky” (světle šedomodré pozadí) vhodné pro blogy o Firefoxu. “Obsidian” je "
-"kontrastní tmavé schéma a výchozí “Stone” je světlé, neutrálně šedé."
+msgid "<strong>Color Scheme</strong>: You can choose from a few different color schemes: “Sand” (orange-tan background) is suitable for most Mozilla blogs. “Sky” (light blue/gray background) suitable for Firefox-related blogs. “Obsidian” is a light-on-dark scheme. “Stone” is the default scheme, a light, neutral gray."
+msgstr "<strong>Barevné schéma</strong>: Můžete si vybrat z několik barevných schémat: “Sand” (oranžové tóny pozadí) je vhodné pro většinu blogů Mozilla. “Sky” (světle šedomodré pozadí) vhodné pro blogy o Firefoxu. “Obsidian” je kontrastní tmavé schéma a výchozí “Stone” je světlé, neutrálně šedé."
 
 #: ../inc/theme-options.php:99
-msgid ""
-"Remember to click “Save Changes” to save any changes you have made to the "
-"theme options."
-msgstr ""
-"Nezapomeňte klepnout na “Uložit” pro uložení změn, které jste v nastavení "
-"vzhledu udělali."
+msgid "Remember to click “Save Changes” to save any changes you have made to the theme options."
+msgstr "Nezapomeňte klepnout na “Uložit” pro uložení změn, které jste v nastavení vzhledu udělali."
 
 #: ../inc/theme-options.php:101
 msgid "For more information:"
 msgstr "Pro více informací:"
 
 #: ../inc/theme-options.php:102
-msgid ""
-"<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" "
-"target=\"_blank\">Documentation on Theme Options</a>"
-msgstr ""
-"<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" "
-"target=\"_blank\">Dokumentace k přizpůsobení vzhledu</a>"
+msgid "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Dokumentace k přizpůsobení vzhledu</a>"
 
 #: ../inc/theme-options.php:103
-msgid ""
-"<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</"
-"a>"
-msgstr ""
-"<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</"
-"a>"
+msgid "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
 
 #: ../inc/theme-options.php:110
 msgid "Overview"
@@ -531,3 +480,4 @@ msgstr "Obsidian"
 #, php-format
 msgid "%s Theme Options"
 msgstr "Nastavení vzhledu %s"
+

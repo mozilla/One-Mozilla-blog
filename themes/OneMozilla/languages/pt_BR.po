@@ -2,557 +2,573 @@ msgid ""
 msgstr ""
 "Project-Id-Version: One Mozilla v1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-07 12:21-0800\n"
-"PO-Revision-Date: 2014-03-08 14:53:48+0000\n"
-"Last-Translator: Samuel Moraes\n"
+"POT-Creation-Date: 2015-03-17 16:18-0800\n"
+"PO-Revision-Date: 2015-03-17 16:28-0800\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: CSL v1.x\n"
-"X-Poedit-Language: \n"
-"X-Poedit-Country: \n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: ..\n"
-"X-Textdomain-Support: yes"
 
-#: 404.php:7
-#@ onemozilla
-msgid "Well, this is embarrassing&hellip;"
+# @ onemozilla
+#: ../404.php:7
+#, fuzzy
+msgid "Well, this is embarrassing…"
 msgstr "Bem, isso é embaraçoso..."
 
-#: 404.php:10
-#@ onemozilla
-msgid "We hate to say it, but we couldn&#8217;t find the page or file you&#8217;re looking for."
+# @ onemozilla
+#: ../404.php:10
+#, fuzzy
+msgid "We hate to say it, but we couldn’t find the page or file you’re looking for."
 msgstr "Odeio ter que dizer isto, mas não foi possível encontrar a página ou arquivo que você está procurando."
 
-#: 404.php:11
-#@ onemozilla
+# @ onemozilla
+#: ../404.php:11
 msgid "If you typed in the address, try double-checking the spelling."
 msgstr "Se você digitou o endereço, tente verificar se ele está correto."
 
-#: 404.php:12
-#@ onemozilla
-msgid "If you followed a link from somewhere, please let us know at <em>webmaster at mozilla dot com</em>. Be sure to tell us where you came from and what you were looking for, and we&#8217;ll do our best to fix it."
+# @ onemozilla
+#: ../404.php:12
+#, fuzzy
+msgid "If you followed a link from somewhere, please let us know at <em>webmaster at mozilla dot com</em>. Be sure to tell us where you came from and what you were looking for, and we’ll do our best to fix it."
 msgstr "Se você chegou aqui através de um link, por favor, entre em contato com o <em>webmaster arroba mozilla ponto com</em>. Não se esqueça de indicar de onde veio e o que estava procurando que nós vamos fazer o nosso melhor para corrigi-lo."
 
-#: archive.php:14
-#@ onemozilla
-msgid "Archive for "
-msgstr "Arquivos para  "
+#: ../archive.php:14
+#, php-format
+msgid "Posts in “%s”"
+msgstr ""
 
-#: archive.php:15
-#@ onemozilla
-msgid "Posts tagged with "
+# @ onemozilla
+#: ../archive.php:15
+#, fuzzy, php-format
+msgid "Posts tagged with “%s”"
 msgstr "Posts com a tag "
 
-#: archive.php:16
-#: archive.php:17
-#: archive.php:18
-#@ onemozilla
-msgid "Posts from "
+# @ onemozilla
+#: ../archive.php:16
+#: ../archive.php:17
+#: ../archive.php:18
+#: ../header.php:50
+#: ../header.php:51
+#: ../header.php:52
+#, fuzzy, php-format
+msgid "Posts from %s"
 msgstr "Posts de "
 
-#: archive.php:19
-#@ onemozilla
-msgid "Posts by "
+# @ onemozilla
+#: ../archive.php:19
+#, fuzzy, php-format
+msgid "Posts by %s"
 msgstr "Posts de "
 
-#: archive.php:20
-#: search.php:13
-#, php-format
-#@ onemozilla
-msgid "We found %1s results for &ldquo;%2s&ldquo;"
-msgstr "Encontramos %1s resultador para &ldquo;%2s&ldquo;"
-
-#: archive.php:21
-#@ onemozilla
+# @ onemozilla
+#: ../archive.php:21
 msgid "Archives"
 msgstr "Arquivos"
 
-#: archive.php:28
-#: archive.php:44
-#: index.php:43
-#: search.php:18
-#: search.php:34
-#@ onemozilla
+# @ onemozilla
+#: ../archive.php:28
+#: ../archive.php:44
+#: ../index.php:49
+#: ../search.php:18
+#: ../search.php:34
 msgid "Older posts"
 msgstr "Posts mais antigos"
 
-#: archive.php:29
-#: archive.php:45
-#: index.php:44
-#: search.php:19
-#: search.php:35
-#@ onemozilla
+# @ onemozilla
+#: ../archive.php:29
+#: ../archive.php:45
+#: ../index.php:50
+#: ../search.php:19
+#: ../search.php:35
 msgid "Newer posts"
 msgstr "Posts mais recentes"
 
-#: archive.php:54
-#: index.php:53
-#: search.php:42
-#@ onemozilla
+# @ onemozilla
+#: ../archive.php:54
+#: ../index.php:59
+#: ../search.php:42
 msgid "Nothing Found"
 msgstr "Nada encontrado"
 
-#: archive.php:58
-#@ onemozilla
+# @ onemozilla
+#: ../archive.php:58
 msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
 msgstr "Desculpa, mas nenhum resultado foi encontrado para o arquivo solicitado. Talvez a pesquisa o ajude a encontrar um post relacionado."
 
-#: comments.php:14
-#@ onemozilla
+# @ onemozilla
+#: ../comments.php:17
 msgid "This post is password protected. Enter the password to view any comments."
 msgstr "Este post está protegido por senha. Entre com sua senha para ver os comentários."
 
-#: comments.php:27
-#@ onemozilla
+#: ../comments.php:29
+#: ../content-single.php:11
+#: ../content-summary.php:21
+#: ../content.php:21
+msgid "No responses yet"
+msgstr ""
+
+# @ onemozilla
+#: ../comments.php:30
 msgid "Post a comment"
 msgstr "Enviar um comentário"
 
-#: comments.php:36
-#@ onemozilla
+# @ onemozilla
+#: ../comments.php:39
 msgid "More comments:"
 msgstr "Mais comentários:"
 
-#: comments.php:46
+#: ../comments.php:48
 #, php-format
-#@ onemozilla
+msgid "Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post\">trackbacks</a> are open."
+msgstr ""
+
+# @ onemozilla
+#: ../comments.php:57
+#, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Você precisa <a href=\"%s\">fazer login</a> para postar um comentário."
 
-#: comments.php:51
-#@ default
+# @ default
+#: ../comments.php:62
 msgid "Post Your Comment"
 msgstr "Publicar seu comentário"
 
-#: comments.php:51
+# @ default
+#: ../comments.php:62
 #, php-format
-#@ default
 msgid "Reply to %s"
 msgstr "Responder à %s"
 
-#: comments.php:55
+# @ onemozilla
+#: ../comments.php:66
 #, php-format
-#@ onemozilla
 msgid "You are logged in as <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href=\"%3$s\">Log out?</a>"
 msgstr "Você está logado como <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href =\"%3$s\">Sair?</a>"
 
-#: comments.php:58
-#@ onemozilla
+# @ onemozilla
+#: ../comments.php:69
 msgid "Name"
 msgstr "Nome"
 
-#: comments.php:58
-#@ onemozilla
-msgid "<span class=\"note\">(required)</span>"
-msgstr "<span class=\"note\">(obrigatório)</ span>"
+#: ../comments.php:69
+msgid "(required)"
+msgstr ""
 
-#: comments.php:62
-#@ onemozilla
+# @ onemozilla
+#: ../comments.php:73
 msgid "E-mail"
 msgstr "E-mail"
 
-#: comments.php:62
-#@ onemozilla
-msgid "<span class=\"note\">(required, will not be published)</span>"
+# @ onemozilla
+#: ../comments.php:73
+#, fuzzy
+msgid "(required, will not be published)"
 msgstr "<span class=\"note\">(obrigatório, não será publicado)</span>"
 
-#: comments.php:66
-#@ onemozilla
+# @ onemozilla
+#: ../comments.php:77
 msgid "Website"
 msgstr "Site"
 
-#: comments.php:70
-#@ onemozilla
+#: ../comments.php:81
+msgid "Spam robots, please fill in this field. Humans should leave it blank."
+msgstr ""
+
+# @ onemozilla
+#: ../comments.php:85
 msgid "Your comment"
 msgstr "Seu comentário"
 
-#: comments.php:71
-#@ onemozilla
+# @ onemozilla
+#: ../comments.php:86
 msgid "Submit Comment"
 msgstr "Enviar Comentário"
 
-#: content-page.php:7
-#@ onemozilla
+#: ../comments.php:98
+msgid "You must provide a name and e-mail (your e-mail address won’t be published)."
+msgstr ""
+
+#: ../comments.php:99
+msgid "You must provide a name."
+msgstr ""
+
+#: ../comments.php:100
+msgid "You must provide an e-mail address (it won’t be published)."
+msgstr ""
+
+#: ../comments.php:101
+msgid "The e-mail address you entered doesn’t look like a complete e-mail address. It should look like “yourname@example.com”."
+msgstr ""
+
+# @ onemozilla
+#: ../comments.php:102
+#, fuzzy
+msgid "You must enter a comment."
+msgstr "Enviar um comentário"
+
+# @ onemozilla
+#: ../content-page.php:9
 msgid "Edit Page"
 msgstr "Editar Página"
 
-#: content-page.php:9
-#: content-single.php:20
-#: content.php:30
-#: image.php:39
-#@ onemozilla
+# @ onemozilla
+#: ../content-page.php:14
+#: ../content-single.php:35
+#: ../content.php:29
+#: ../image.php:41
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: content-single.php:8
-#: content-single.php:10
-#: content-summary.php:8
-#: content-summary.php:10
-#: content.php:9
-#: content.php:11
+# @ onemozilla
+#: ../content-single.php:17
+#: ../content-single.php:19
+#: ../content-summary.php:8
+#: ../content-summary.php:10
+#: ../content.php:8
+#: ../content.php:10
 #, php-format
-#@ onemozilla
 msgid "See all posts from %s"
 msgstr "Ver todos os posts de %s"
 
-#: content-single.php:17
-#: content.php:33
-#@ onemozilla
+# @ onemozilla
+#: ../content-single.php:29
+#: ../content.php:32
 msgid "Edit Post"
 msgstr "Editar Post"
 
-#: content-single.php:26
-#: content-summary.php:33
-#: content.php:38
-#@ onemozilla
+# @ onemozilla
+#: ../content-single.php:41
+#: ../content-summary.php:33
+#: ../content.php:37
 msgid "Tags"
 msgstr "Tags"
 
-#: content-single.php:28
-#: content-summary.php:35
-#: content.php:40
-#: sidebar.php:41
-#@ onemozilla
+# @ onemozilla
+#: ../content-single.php:43
+#: ../content-summary.php:35
+#: ../content.php:39
 msgid "Categories"
 msgstr "Categorias"
 
-#: content-summary.php:16
-#: content.php:17
-#@ onemozilla
-msgid "Posted by"
-msgstr "Postado por"
-
-#: content.php:29
-#@ onemozilla
+# @ onemozilla
+#: ../content.php:28
 msgid "Continue reading &hellip;"
 msgstr "Continue lendo..."
 
-#: footer.php:8
-#@ onemozilla
+# @ onemozilla
+#: ../footer.php:9
 msgid "Return to top"
 msgstr "Voltar para o topo"
 
-#: footer.php:13
+# @ onemozilla
+#: ../footer.php:14
 #, php-format
-#@ onemozilla
 msgid "Except where otherwise <a href=\"%1s\" rel=\"external\">noted</a>, content on this site is licensed under the <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License v3.0</a> or any later version."
 msgstr "Exceto quanto possuir uma <a href=\"%1s\" rel=\"external\">observação</a>, o conteúdo deste site está sob a licença <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License v3.0</a> ou a versão mais recente."
 
-#: footer.php:18
-#@ onemozilla
+# @ onemozilla
+#: ../footer.php:19
 msgid "Contact Us"
 msgstr "Entre em contato"
 
-#: footer.php:19
-#@ onemozilla
+# @ onemozilla
+#: ../footer.php:20
 msgid "Privacy Policy"
 msgstr "Política de Privacidade"
 
-#: footer.php:20
-#@ onemozilla
+# @ onemozilla
+#: ../footer.php:21
 msgid "Legal Notices"
 msgstr "Avisos Legais"
 
-#: footer.php:21
-#@ onemozilla
+# @ onemozilla
+#: ../footer.php:22
 msgid "Report Trademark Abuse"
 msgstr "Denunciar abuso de marcas registradas"
 
-#: functions.php:35
-#@ onemozilla
+#: ../footer.php:23
+msgid "Theme Code "
+msgstr ""
+
+# @ onemozilla
+#: ../functions.php:35
 msgid "Primary Menu"
 msgstr "Menu principal"
 
-#: functions.php:67
-#@ onemozilla
+# @ onemozilla
+#: ../functions.php:78
 msgid "Firefox Logo"
 msgstr "Logo Firefox"
 
-#. translators: header image description 
-#: functions.php:193
-#, php-format
-#@ wordpress
-msgid "Page %s"
-msgstr "Página %s"
+#: ../functions.php:131
+msgid "Social sharing"
+msgstr ""
 
-#: functions.php:230
-#@ onemozilla
-msgid "This post is password protected. To view it, please enter the password."
-msgstr "Este post é protegido por senha. Para visualizá-lo, por favor digite a senha."
-
-#: functions.php:231
-#@ onemozilla
-msgid "Password"
-msgstr "Senha"
-
-#: functions.php:357
-#@ onemozilla
-msgid "Feature this post?"
-msgstr "Destacar este post?"
-
-#: functions.php:362
-#@ default
-msgid "Featured Post"
-msgstr "Post em Destaque"
-
-#: functions.php:390
-#@ onemozilla
-msgid "Continue reading"
-msgstr "Continue lendo"
-
-#: functions.php:437
-#@ onemozilla
-msgid "Sidebar"
-msgstr "Barra Lateral"
-
-#: functions.php:536
-#@ onemozilla
-msgid "Trackback from "
-msgstr "Trackback de "
-
-#: functions.php:537
-#: functions.php:541
-#@ onemozilla
-msgid "on"
-msgstr "em"
-
-#: functions.php:537
-#: functions.php:541
-#: functions.php:550
-#: functions.php:556
-#@ onemozilla
-msgid "Permanent link to this comment by "
-msgstr "Link permanente para este comentário de "
-
-#: functions.php:540
-#@ onemozilla
-msgid "Pingback from "
-msgstr "Pingback de "
-
-#: functions.php:550
-#: functions.php:556
-#@ onemozilla
-msgid "wrote on"
-msgstr "escreveu em"
-
-#: functions.php:562
-#@ onemozilla
-msgid "Your comment is awaiting moderation."
-msgstr "Seu comentário está aguardando moderação."
-
-#: functions.php:570
-#@ onemozilla
-msgid "Edit Comment"
-msgstr "Editar comentário"
-
-#: functions.php:584
-#@ default
-msgid "This widget shows the three most recent featured posts."
-msgstr "Esse widget mostra os três posts mais recentes em destaque."
-
-#: functions.php:596
-#@ wordpress
-msgid "Title:"
-msgstr "Título:"
-
-#: header.php:45
-#, php-format
-#@ onemozilla
-msgid "Search results for \"%s\""
-msgstr "Resultados da busca por \"%s\""
-
-#: header.php:46
-#: header.php:47
-#: header.php:48
-#@ onemozilla
-msgid "Posts for "
-msgstr "Posts para "
-
-#: header.php:49
-#@ onemozilla
-msgid "Not Found"
-msgstr "Não Encontrado"
-
-#: header.php:64
-#@ onemozilla
-msgid "Skip to main content"
-msgstr "Ir para o conteúdo principal"
-
-#: header.php:65
-#@ onemozilla
-msgid "Skip to sidebar"
-msgstr "Ir para a barra lateral."
-
-#: header.php:67
-#@ onemozilla
-msgid "Skip to blog search"
-msgstr "Ir para a busca"
-
-#: image.php:12
-#, php-format
-#@ onemozilla
-msgid "<p class=\"attach-meta\">Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a>"
-msgstr "<p class=\"attach-meta\">Publicado dia <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> com <a href=\"%3$s\" title=\"Imagem em tamanho original\">%4$spx &times; %5$spx</a>"
-
-#: image.php:20
-#@ onemozilla
-msgid "Edit Attachment"
-msgstr "Editar anexo"
-
-#: index.php:10
-#@ onemozilla
-msgid "Featured"
-msgstr "Destaque"
-
-#: index.php:57
-#@ onemozilla
-msgid "Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?"
-msgstr "Desculpe, não conseguimos encontrar nenhum resultado para o arquivo solicitado. Talvez você gostaria de efetuar uma busca?"
-
-#: masthead.php:6
-#@ onemozilla
-msgid "Go to the front page"
-msgstr "Ir para a página inicial"
-
-#: search.php:45
-#, php-format
-#@ onemozilla
-msgid "Sorry, we didn't find anything for &ldquo;%s.&rdquo; Try another search."
-msgstr "Desculpe, não encontramos nada por \"%s\". Tente buscar algo diferente."
-
-#: searchform.php:3
-#@ onemozilla
-msgid "Search"
-msgstr "Busca"
-
-#: sidebar.php:9
-#: sidebar.php:55
-#@ onemozilla
-msgid "About"
-msgstr "Sobre"
-
-#: sidebar.php:35
-#: sidebar.php:81
-#@ onemozilla
-msgid "More from "
-msgstr "Mais de "
-
-#: inc/theme-options.php:46
-#@ onemozilla
-msgid "Color Scheme"
-msgstr "Esquema de cores"
-
-#: inc/theme-options.php:54
-#@ onemozilla
+# @ onemozilla
+#: ../functions.php:143
+#: ../functions.php:175
 msgid "Hide post authors"
 msgstr "Ocultar autores dos posts"
 
-#: inc/theme-options.php:88
-#: inc/theme-options.php:89
-#@ onemozilla
+#: ../functions.php:159
+msgid "Add social sharing buttons to posts and pages"
+msgstr ""
+
+#: ../functions.php:161
+msgid "Adds buttons for Facebook, Twitter, and Google+."
+msgstr ""
+
+#: ../functions.php:177
+msgid "This removes the author byline and author bio from individual posts."
+msgstr ""
+
+# @ wordpress
+#: ../functions.php:302
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+#: ../functions.php:359
+msgid "Sorry, you appear to be a spamming robot because you filled in the hidden spam trap field. To show you are not a spammer, submit your comment again and leave the field blank."
+msgstr ""
+
+# @ onemozilla
+#: ../functions.php:385
+msgid "This post is password protected. To view it, please enter the password."
+msgstr "Este post é protegido por senha. Para visualizá-lo, por favor digite a senha."
+
+# @ onemozilla
+#: ../functions.php:386
+msgid "Password"
+msgstr "Senha"
+
+#: ../functions.php:453
+msgid "Make this a featured post?"
+msgstr ""
+
+# @ default
+#: ../functions.php:459
+msgid "Featured Post"
+msgstr "Post em Destaque"
+
+# @ onemozilla
+#: ../functions.php:504
+msgid "Continue reading"
+msgstr "Continue lendo"
+
+# @ onemozilla
+#: ../functions.php:551
+msgid "Sidebar"
+msgstr "Barra Lateral"
+
+# @ onemozilla
+#: ../functions.php:652
+msgid "Trackback from "
+msgstr "Trackback de "
+
+# @ onemozilla
+#: ../functions.php:654
+#: ../functions.php:663
+msgid "on"
+msgstr "em"
+
+# @ onemozilla
+#: ../functions.php:655
+#: ../functions.php:664
+#: ../functions.php:679
+#: ../functions.php:689
+msgid "Permanent link to this comment by "
+msgstr "Link permanente para este comentário de "
+
+#: ../functions.php:658
+#: ../functions.php:667
+#: ../functions.php:682
+#: ../functions.php:692
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+# @ onemozilla
+#: ../functions.php:661
+msgid "Pingback from "
+msgstr "Pingback de "
+
+# @ onemozilla
+#: ../functions.php:678
+#: ../functions.php:688
+msgid "wrote on"
+msgstr "escreveu em"
+
+# @ onemozilla
+#: ../functions.php:698
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está aguardando moderação."
+
+# @ onemozilla
+#: ../functions.php:706
+msgid "Edit Comment"
+msgstr "Editar comentário"
+
+# @ default
+#: ../functions.php:723
+msgid "This widget shows the three most recent featured posts."
+msgstr "Esse widget mostra os três posts mais recentes em destaque."
+
+# @ wordpress
+#: ../functions.php:735
+msgid "Title:"
+msgstr "Título:"
+
+# @ onemozilla
+#: ../header.php:49
+#, fuzzy, php-format
+msgid "Search results for “%s”"
+msgstr "Resultados da busca por \"%s\""
+
+# @ onemozilla
+#: ../header.php:53
+msgid "Not Found"
+msgstr "Não Encontrado"
+
+# @ onemozilla
+#: ../header.php:65
+msgid "Skip to main content"
+msgstr "Ir para o conteúdo principal"
+
+# @ onemozilla
+#: ../header.php:66
+msgid "Skip to sidebar"
+msgstr "Ir para a barra lateral."
+
+# @ onemozilla
+#: ../header.php:68
+msgid "Skip to blog search"
+msgstr "Ir para a busca"
+
+# @ onemozilla
+#: ../image.php:13
+#, fuzzy, php-format
+msgid "Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a>"
+msgstr "<p class=\"attach-meta\">Publicado dia <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> com <a href=\"%3$s\" title=\"Imagem em tamanho original\">%4$spx &times; %5$spx</a>"
+
+# @ onemozilla
+#: ../image.php:22
+msgid "Edit Attachment"
+msgstr "Editar anexo"
+
+# @ onemozilla
+#: ../index.php:16
+msgid "Featured"
+msgstr "Destaque"
+
+# @ onemozilla
+#: ../index.php:63
+msgid "Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?"
+msgstr "Desculpe, não conseguimos encontrar nenhum resultado para o arquivo solicitado. Talvez você gostaria de efetuar uma busca?"
+
+# @ onemozilla
+#: ../masthead.php:6
+msgid "Go to the front page"
+msgstr "Ir para a página inicial"
+
+# @ onemozilla
+#: ../search.php:45
+#, fuzzy, php-format
+msgid "Sorry, we didn't find anything for “%s.” Try another search."
+msgstr "Desculpe, não encontramos nada por \"%s\". Tente buscar algo diferente."
+
+# @ onemozilla
+#: ../sidebar.php:9
+#: ../sidebar.php:55
+msgid "About"
+msgstr "Sobre"
+
+# @ onemozilla
+#: ../sidebar.php:35
+#: ../sidebar.php:81
+#, fuzzy, php-format
+msgid "More from %s"
+msgstr "Mais de "
+
+# @ onemozilla
+#: ../inc/theme-options.php:45
+msgid "Color Scheme"
+msgstr "Esquema de cores"
+
+# @ onemozilla
+#: ../inc/theme-options.php:79
+#: ../inc/theme-options.php:80
 msgid "Theme Options"
 msgstr "Opções do tema"
 
-#: inc/theme-options.php:104
-#@ onemozilla
+# @ onemozilla
+#: ../inc/theme-options.php:95
 msgid "Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, One Mozilla, provides the following Theme Options:"
 msgstr "Alguns temas oferecem opções de personalização que são agrupados na página opções de tema. Se você alterar o tema estas opções poderão voltar ao padrão pois são específicas dele. Seu tema atual, One Mozilla, oferece as seguintes opções de personalização:"
 
-#: inc/theme-options.php:106
-#@ onemozilla
-msgid "<strong>Color Scheme</strong>: You can choose from a few different color schemes: \"Sand\" (orange-tan background) is the default, suitable for most Mozilla blogs. \"Sky\" (light blue/gray background) suitable for Firefox-related blogs. \"Stone\" is a light, neutral gray. \"Obsidian\" is a light-on-dark scheme"
+# @ onemozilla
+#: ../inc/theme-options.php:97
+#, fuzzy
+msgid "<strong>Color Scheme</strong>: You can choose from a few different color schemes: “Sand” (orange-tan background) is suitable for most Mozilla blogs. “Sky” (light blue/gray background) suitable for Firefox-related blogs. “Obsidian” is a light-on-dark scheme. “Stone” is the default scheme, a light, neutral gray."
 msgstr "<strong>Color Scheme</strong>: You can choose from a few different color schemes: \"Sand\" (orange-tan background) is the default, suitable for most Mozilla blogs. \"Sky\" (light blue/gray background) suitable for Firefox-related blogs. \"Stone\" is a light, neutral gray. \"Obsidian\" is a light-on-dark scheme"
 
-#: inc/theme-options.php:107
-#@ onemozilla
-msgid "<strong>Hide post authors</strong>: Post authors are shown by default, with an author bio in the sidebar on single post pages. You can choose to hide post authors and the blog will be anonymous to the public, though authors will still be visible in the administration panel."
-msgstr "<strong>Hide post authors</strong>: Post authors are shown by default, with an author bio in the sidebar on single post pages. You can choose to hide post authors and the blog will be anonymous to the public, though authors will still be visible in the administration panel."
-
-#: inc/theme-options.php:109
-#@ onemozilla
-msgid "Remember to click \"Save Changes\" to save any changes you have made to the theme options."
+# @ onemozilla
+#: ../inc/theme-options.php:99
+#, fuzzy
+msgid "Remember to click “Save Changes” to save any changes you have made to the theme options."
 msgstr "Lembre-se de clicar em \"Salvar alterações\" para salvar as alterações feitas nas opções de tema."
 
-#: inc/theme-options.php:111
-#@ onemozilla
+# @ onemozilla
+#: ../inc/theme-options.php:101
 msgid "For more information:"
 msgstr "Para mais informações:"
 
-#: inc/theme-options.php:112
-#@ onemozilla
+# @ onemozilla
+#: ../inc/theme-options.php:102
 msgid "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
 msgstr "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation sobre Opções de Temas</a>"
 
-#: inc/theme-options.php:113
-#@ onemozilla
+# @ onemozilla
+#: ../inc/theme-options.php:103
 msgid "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
 msgstr "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Fórum de Suporte</a>"
 
-#: inc/theme-options.php:120
-#@ onemozilla
+# @ onemozilla
+#: ../inc/theme-options.php:110
 msgid "Overview"
 msgstr "Visão Geral"
 
-#: inc/theme-options.php:152
-#@ onemozilla
+# @ onemozilla
+#: ../inc/theme-options.php:140
 msgid "Stone"
 msgstr "Stone"
 
-#: inc/theme-options.php:157
-#@ onemozilla
+# @ onemozilla
+#: ../inc/theme-options.php:145
 msgid "Sand"
 msgstr "Sand"
 
-#: inc/theme-options.php:162
-#@ onemozilla
+# @ onemozilla
+#: ../inc/theme-options.php:150
 msgid "Sky"
 msgstr "Sky"
 
-#: inc/theme-options.php:167
-#@ onemozilla
+# @ onemozilla
+#: ../inc/theme-options.php:155
 msgid "Obsidian"
 msgstr "Obsidian"
 
-#: inc/theme-options.php:213
-#@ onemozilla
-msgid "Hide post authors (makes posts anonymous to the public)"
-msgstr "Hide post authors (makes posts anonymous to the public)"
-
-#: inc/theme-options.php:227
+# @ onemozilla
+#: ../inc/theme-options.php:198
 #, php-format
-#@ onemozilla
 msgid "%s Theme Options"
 msgstr "%s Opções do Tema"
-
-#: content-summary.php:3
-#: content.php:4
-#: functions.php:615
-#: index.php:15
-#, php-format
-#@ onemozilla
-msgid "Permanent link to &ldquo;%s&rdquo;"
-msgstr ""
-
-#: content-summary.php:16
-#, php-format
-#@ onemozilla
-msgid "See all %1$s posts by %2$s"
-msgstr ""
-
-#: content.php:17
-#, php-format
-#@ onemozilla
-msgid "See all %1s posts by %2s"
-msgstr ""
-
-#: functions.php:231
-#@ default
-msgid "Submit"
-msgstr ""
 
