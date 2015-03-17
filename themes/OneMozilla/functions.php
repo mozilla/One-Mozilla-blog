@@ -449,8 +449,9 @@ function fc_featured_meta_box($post){
   $featured = get_post_meta($post->ID, '_fc_featuredpost', true);
   ?>
   <label class="selectit" for="fc_featuredpost">
-  <input type="checkbox" name="_fc_featuredpost" id="fc_featuredpost" value="1" <?php if ($featured) { ?>checked<?php } ?> />
-  <?php _e('Make this a featured post?', 'onemozilla'); ?></label>
+    <input type="checkbox" name="_fc_featuredpost" id="fc_featuredpost" value="1" <?php if ($featured) { ?>checked<?php } ?> />
+    <?php _e('Make this a featured post?', 'onemozilla'); ?>
+  </label>
 <?php
 }
 
@@ -461,9 +462,11 @@ add_action('admin_init', 'register_fc_featuredpost', 1);
 
 function save_fc_featuredpost() {
   global $post;
-  if (isset($_POST["_fc_featuredpost"])) {
-    update_post_meta($post->ID, "_fc_featuredpost", $_POST["_fc_featuredpost"]);
-  }  
+  if (isset($_POST['_fc_featuredpost'])) {
+    update_post_meta($post->ID, '_fc_featuredpost', true);
+  } else {
+    update_post_meta($post->ID, '_fc_featuredpost', false);
+  }
 }
 add_action('save_post', 'save_fc_featuredpost');
 
