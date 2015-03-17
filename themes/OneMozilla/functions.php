@@ -456,7 +456,7 @@ function fc_featured_meta_box($post){
 }
 
 function register_fc_featuredpost(){
-  add_meta_box('meta-featured-post', __('Featured Post'), 'fc_featured_meta_box', 'post', 'side', 'low');
+  add_meta_box('meta-featured-post', __('Featured Post', 'onemozilla'), 'fc_featured_meta_box', 'post', 'side', 'low');
 }
 add_action('admin_init', 'register_fc_featuredpost', 1);
 
@@ -720,7 +720,7 @@ class moz_widget_featuredPosts extends WP_Widget {
 
   function moz_widget_featuredPosts() {
     $widget_options = array(
-      'description'=>__('This widget shows the three most recent featured posts.')
+      'description'=>__('This widget shows the three most recent featured posts.', 'onemozilla')
     );
     $this->WP_Widget('moz_widget_featuredPosts','Featured Posts',$widget_options);
   }
