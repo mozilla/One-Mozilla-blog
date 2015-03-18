@@ -1,10 +1,10 @@
 <?php // Do not delete these lines
   if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
     die ('Please do not load this page directly. Thanks!');
-  
+
   /* Get the number of comments */
   $comment_count = get_comments_number($post->ID);
-  
+
   /* This variable is for alternating comment background */
   $oddcomment = 'alt';
 ?>
@@ -26,7 +26,7 @@
 ?>
 
   <header class="comments-head">
-    <h2><?php if($comment_count > 0) { printf(_n( 'One response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet', 'onemozilla'); } ?></h2>
+    <h2><?php if($comment_count > 0) { printf(_n( '1 response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet', 'onemozilla'); } ?></h2>
     <?php if (comments_open()) : ?><p class="cmt-post"><a href="#respond"><?php _e('Post a comment','onemozilla'); ?></a></p><?php endif; ?>
   </header>
 
