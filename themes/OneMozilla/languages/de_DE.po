@@ -1,16 +1,20 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: One Mozilla 1.1\n"
+"Project-Id-Version: One Mozilla 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-17 16:18-0800\n"
-"PO-Revision-Date: 2015-03-17 16:26-0800\n"
+"POT-Creation-Date: 2015-03-19 13:24-0800\n"
+"PO-Revision-Date: 2015-03-19 13:24-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;esc_attr__\n"
 "X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../404.php:7
@@ -18,7 +22,8 @@ msgid "Well, this is embarrassing…"
 msgstr ""
 
 #: ../404.php:10
-msgid "We hate to say it, but we couldn’t find the page or file you’re looking for."
+msgid ""
+"We hate to say it, but we couldn’t find the page or file you’re looking for."
 msgstr ""
 
 #: ../404.php:11
@@ -26,7 +31,10 @@ msgid "If you typed in the address, try double-checking the spelling."
 msgstr ""
 
 #: ../404.php:12
-msgid "If you followed a link from somewhere, please let us know at <em>webmaster at mozilla dot com</em>. Be sure to tell us where you came from and what you were looking for, and we’ll do our best to fix it."
+msgid ""
+"If you followed a link from somewhere, please let us know at <em>webmaster "
+"at mozilla dot com</em>. Be sure to tell us where you came from and what you "
+"were looking for, and we’ll do our best to fix it."
 msgstr ""
 
 #: ../archive.php:14
@@ -39,12 +47,8 @@ msgstr ""
 msgid "Posts tagged with “%s”"
 msgstr ""
 
-#: ../archive.php:16
-#: ../archive.php:17
-#: ../archive.php:18
-#: ../header.php:50
-#: ../header.php:51
-#: ../header.php:52
+#: ../archive.php:16 ../archive.php:17 ../archive.php:18 ../header.php:50
+#: ../header.php:51 ../header.php:52
 #, php-format
 msgid "Posts from %s"
 msgstr ""
@@ -54,44 +58,46 @@ msgstr ""
 msgid "Posts by %s"
 msgstr ""
 
+#: ../archive.php:20 ../search.php:13
+#, php-format
+msgid "We found one result for “%2$s”"
+msgid_plural "We found %1$s results for “%2$s”"
+msgstr[0] ""
+msgstr[1] ""
+
 #: ../archive.php:21
 msgid "Archives"
 msgstr ""
 
-#: ../archive.php:28
-#: ../archive.php:44
-#: ../index.php:49
-#: ../search.php:18
+#: ../archive.php:28 ../archive.php:44 ../index.php:49 ../search.php:18
 #: ../search.php:34
 msgid "Older posts"
 msgstr ""
 
-#: ../archive.php:29
-#: ../archive.php:45
-#: ../index.php:50
-#: ../search.php:19
+#: ../archive.php:29 ../archive.php:45 ../index.php:50 ../search.php:19
 #: ../search.php:35
 msgid "Newer posts"
 msgstr ""
 
-#: ../archive.php:54
-#: ../index.php:59
-#: ../search.php:42
+#: ../archive.php:54 ../index.php:59 ../search.php:42
 msgid "Nothing Found"
 msgstr ""
 
 #: ../archive.php:58
-msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
 msgstr ""
 
 #: ../comments.php:17
-msgid "This post is password protected. Enter the password to view any comments."
-msgstr "Dieser Artikel ist passwortgeschützt. Um die Kommentare zu sehen, musst du das Passwort eingeben."
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Dieser Artikel ist passwortgeschützt. Um die Kommentare zu sehen, musst du "
+"das Passwort eingeben."
 
-#: ../comments.php:29
-#: ../content-single.php:11
-#: ../content-summary.php:21
-#: ../content.php:21
+#: ../comments.php:29 ../content-single.php:17 ../content-summary.php:38
+#: ../content.php:38
 msgid "No responses yet"
 msgstr ""
 
@@ -105,13 +111,16 @@ msgstr ""
 
 #: ../comments.php:48
 #, php-format
-msgid "Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post\">trackbacks</a> are open."
+msgid ""
+"Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> are open."
 msgstr ""
 
 #: ../comments.php:57
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "Du musst <a href=\"%s\">angemeldet</a> sein, um einen Kommentar abzugeben."
+msgstr ""
+"Du musst <a href=\"%s\">angemeldet</a> sein, um einen Kommentar abzugeben."
 
 #: ../comments.php:62
 msgid "Post Your Comment"
@@ -124,7 +133,9 @@ msgstr ""
 
 #: ../comments.php:66
 #, php-format
-msgid "You are logged in as <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href=\"%3$s\">Log out?</a>"
+msgid ""
+"You are logged in as <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href="
+"\"%3$s\">Log out?</a>"
 msgstr ""
 
 #: ../comments.php:69
@@ -160,7 +171,8 @@ msgid "Submit Comment"
 msgstr ""
 
 #: ../comments.php:98
-msgid "You must provide a name and e-mail (your e-mail address won’t be published)."
+msgid ""
+"You must provide a name and e-mail (your e-mail address won’t be published)."
 msgstr ""
 
 #: ../comments.php:99
@@ -172,53 +184,62 @@ msgid "You must provide an e-mail address (it won’t be published)."
 msgstr ""
 
 #: ../comments.php:101
-msgid "The e-mail address you entered doesn’t look like a complete e-mail address. It should look like “yourname@example.com”."
+msgid ""
+"The e-mail address you entered doesn’t look like a complete e-mail address. "
+"It should look like “yourname@example.com”."
 msgstr ""
 
 #: ../comments.php:102
-#, fuzzy
 msgid "You must enter a comment."
-msgstr "Dein Kommentar"
+msgstr ""
 
 #: ../content-page.php:9
 msgid "Edit Page"
 msgstr ""
 
-#: ../content-page.php:14
-#: ../content-single.php:35
-#: ../content.php:29
+#: ../content-page.php:14 ../content-single.php:47 ../content.php:50
 #: ../image.php:41
 msgid "Pages:"
 msgstr ""
 
-#: ../content-single.php:17
-#: ../content-single.php:19
-#: ../content-summary.php:8
-#: ../content-summary.php:10
-#: ../content.php:8
-#: ../content.php:10
+#: ../content-single.php:8 ../content-summary.php:28 ../content.php:28
+#, php-format
+msgid "See all posts by %1$s"
+msgstr ""
+
+#: ../content-single.php:17 ../content-summary.php:38 ../content.php:38
+#, php-format
+msgid "1 response"
+msgid_plural "%d responses"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../content-single.php:23 ../content-single.php:29 ../content-summary.php:12
+#: ../content-summary.php:18 ../content.php:12 ../content.php:18
 #, php-format
 msgid "See all posts from %s"
 msgstr ""
 
-#: ../content-single.php:29
-#: ../content.php:32
+#: ../content-single.php:41 ../content-summary.php:43 ../content.php:43
 msgid "Edit Post"
 msgstr ""
 
-#: ../content-single.php:41
-#: ../content-summary.php:33
-#: ../content.php:37
+#: ../content-single.php:53 ../content-summary.php:54 ../content.php:56
 msgid "Tags"
 msgstr "Schlagwörtern"
 
-#: ../content-single.php:43
-#: ../content-summary.php:35
-#: ../content.php:39
+#: ../content-single.php:55 ../content-summary.php:56 ../content.php:58
+#: ../sidebar.php:41
 msgid "Categories"
 msgstr "Kategorien"
 
-#: ../content.php:28
+#: ../content-summary.php:4 ../content.php:4 ../functions.php:754
+#: ../index.php:21
+#, php-format
+msgid "Permanent link to “%s”"
+msgstr ""
+
+#: ../content.php:49
 msgid "Continue reading &hellip;"
 msgstr ""
 
@@ -228,8 +249,16 @@ msgstr ""
 
 #: ../footer.php:14
 #, php-format
-msgid "Except where otherwise <a href=\"%1s\" rel=\"external\">noted</a>, content on this site is licensed under the <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License v3.0</a> or any later version."
-msgstr "Soweit nicht andersweitig <a href=\"%1s\" rel=\"external\">vermerkt</a>, ist der Inhalt dieser Seite im Rahmen der <a href=\"%2s\" rel=\"external license\">Creative Commons Attribution Share-Alike License V3.0</a> oder jedweder späteren Version lizensiert. "
+msgid ""
+"Except where otherwise <a href=\"%1s\" rel=\"external\">noted</a>, content "
+"on this site is licensed under the <a href=\"%2s\" rel=\"external license"
+"\">Creative Commons Attribution Share-Alike License v3.0</a> or any later "
+"version."
+msgstr ""
+"Soweit nicht andersweitig <a href=\"%1s\" rel=\"external\">vermerkt</a>, ist "
+"der Inhalt dieser Seite im Rahmen der <a href=\"%2s\" rel=\"external license"
+"\">Creative Commons Attribution Share-Alike License V3.0</a> oder jedweder "
+"späteren Version lizensiert. "
 
 #: ../footer.php:19
 msgid "Contact Us"
@@ -263,8 +292,7 @@ msgstr ""
 msgid "Social sharing"
 msgstr ""
 
-#: ../functions.php:143
-#: ../functions.php:175
+#: ../functions.php:143 ../functions.php:175
 msgid "Hide post authors"
 msgstr ""
 
@@ -286,15 +314,25 @@ msgid "Page %s"
 msgstr ""
 
 #: ../functions.php:359
-msgid "Sorry, you appear to be a spamming robot because you filled in the hidden spam trap field. To show you are not a spammer, submit your comment again and leave the field blank."
+msgid ""
+"Sorry, you appear to be a spamming robot because you filled in the hidden "
+"spam trap field. To show you are not a spammer, submit your comment again "
+"and leave the field blank."
 msgstr ""
 
 #: ../functions.php:385
+#, fuzzy
 msgid "This post is password protected. To view it, please enter the password."
 msgstr ""
+"Dieser Artikel ist passwortgeschützt. Um die Kommentare zu sehen, musst du "
+"das Passwort eingeben."
 
 #: ../functions.php:386
 msgid "Password"
+msgstr ""
+
+#: ../functions.php:386
+msgid "Submit"
 msgstr ""
 
 #: ../functions.php:453
@@ -317,22 +355,17 @@ msgstr ""
 msgid "Trackback from "
 msgstr ""
 
-#: ../functions.php:654
-#: ../functions.php:663
+#: ../functions.php:654 ../functions.php:663
 msgid "on"
 msgstr ""
 
-#: ../functions.php:655
-#: ../functions.php:664
-#: ../functions.php:679
+#: ../functions.php:655 ../functions.php:664 ../functions.php:679
 #: ../functions.php:689
 msgid "Permanent link to this comment by "
 msgstr ""
 
 # Comment headings read "<Name> wrote on <Date> at <Time>"
-#: ../functions.php:658
-#: ../functions.php:667
-#: ../functions.php:682
+#: ../functions.php:658 ../functions.php:667 ../functions.php:682
 #: ../functions.php:692
 #, php-format
 msgid "%1$s at %2$s"
@@ -342,8 +375,7 @@ msgstr ""
 msgid "Pingback from "
 msgstr ""
 
-#: ../functions.php:678
-#: ../functions.php:688
+#: ../functions.php:678 ../functions.php:688
 msgid "wrote on"
 msgstr ""
 
@@ -352,8 +384,9 @@ msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #: ../functions.php:706
+#, fuzzy
 msgid "Edit Comment"
-msgstr ""
+msgstr "Dein Kommentar"
 
 #: ../functions.php:723
 msgid "This widget shows the three most recent featured posts."
@@ -386,60 +419,45 @@ msgstr ""
 
 #: ../image.php:13
 #, php-format
-msgid "Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a>"
+msgid ""
+"Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</"
+"time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a>"
 msgstr ""
 
 #: ../image.php:22
 msgid "Edit Attachment"
 msgstr ""
 
-#: ../index.php:16
-msgid "Featured"
-msgstr ""
-
-#: ../index.php:63
-msgid "Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps try searching?"
-msgstr ""
-
-#: ../masthead.php:6
-msgid "Go to the front page"
-msgstr ""
-
-#: ../search.php:45
-#, php-format
-msgid "Sorry, we didn't find anything for “%s.” Try another search."
-msgstr ""
-
-#: ../sidebar.php:9
-#: ../sidebar.php:55
-msgid "About"
-msgstr ""
-
-#: ../sidebar.php:35
-#: ../sidebar.php:81
-#, php-format
-msgid "More from %s"
-msgstr ""
-
 #: ../inc/theme-options.php:45
 msgid "Color Scheme"
 msgstr ""
 
-#: ../inc/theme-options.php:79
-#: ../inc/theme-options.php:80
+#: ../inc/theme-options.php:79 ../inc/theme-options.php:80
 msgid "Theme Options"
 msgstr ""
 
 #: ../inc/theme-options.php:95
-msgid "Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, One Mozilla, provides the following Theme Options:"
+msgid ""
+"Some themes provide customization options that are grouped together on a "
+"Theme Options screen. If you change themes, options may change or disappear, "
+"as they are theme-specific. Your current theme, One Mozilla, provides the "
+"following Theme Options:"
 msgstr ""
 
 #: ../inc/theme-options.php:97
-msgid "<strong>Color Scheme</strong>: You can choose from a few different color schemes: “Sand” (orange-tan background) is suitable for most Mozilla blogs. “Sky” (light blue/gray background) suitable for Firefox-related blogs. “Obsidian” is a light-on-dark scheme. “Stone” is the default scheme, a light, neutral gray."
+msgid ""
+"<strong>Color Scheme</strong>: You can choose from a few different color "
+"schemes: “Sand” (orange-tan background) is suitable for most Mozilla blogs. "
+"“Sky” (light blue/gray background) suitable for Firefox-related blogs. "
+"“Obsidian” is a light-on-dark scheme. “Stone” is the default scheme, a "
+"light, neutral gray."
 msgstr ""
 
 #: ../inc/theme-options.php:99
-msgid "Remember to click “Save Changes” to save any changes you have made to the theme options."
+msgid ""
+"Remember to click “Save Changes” to save any changes you have made to the "
+"theme options."
 msgstr ""
 
 #: ../inc/theme-options.php:101
@@ -447,11 +465,15 @@ msgid "For more information:"
 msgstr ""
 
 #: ../inc/theme-options.php:102
-msgid "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
+msgid ""
+"<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" "
+"target=\"_blank\">Documentation on Theme Options</a>"
 msgstr ""
 
 #: ../inc/theme-options.php:103
-msgid "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
+msgid ""
+"<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</"
+"a>"
 msgstr ""
 
 #: ../inc/theme-options.php:110
@@ -477,6 +499,34 @@ msgstr ""
 #: ../inc/theme-options.php:198
 #, php-format
 msgid "%s Theme Options"
+msgstr ""
+
+#: ../index.php:16
+msgid "Featured"
+msgstr ""
+
+#: ../index.php:63
+msgid ""
+"Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps "
+"try searching?"
+msgstr ""
+
+#: ../masthead.php:6
+msgid "Go to the front page"
+msgstr ""
+
+#: ../search.php:45
+#, php-format
+msgid "Sorry, we didn't find anything for “%s.” Try another search."
+msgstr ""
+
+#: ../sidebar.php:9 ../sidebar.php:55
+msgid "About"
+msgstr ""
+
+#: ../sidebar.php:35 ../sidebar.php:81
+#, php-format
+msgid "More from %s"
 msgstr ""
 
 #~ msgid "<span class=\"note\">(required)</span>"

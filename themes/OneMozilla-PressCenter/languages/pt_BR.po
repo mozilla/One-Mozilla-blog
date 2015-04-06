@@ -2,46 +2,53 @@ msgid ""
 msgstr ""
 "Project-Id-Version: One Mozilla Press Center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-14 15:31-0800\n"
-"PO-Revision-Date: 2013-10-15 08:31-0800\n"
+"POT-Creation-Date: 2015-03-19 16:06-0800\n"
+"PO-Revision-Date: 2015-03-19 16:06-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-KeywordsList: __;_n:1,2;esc_attr__;_e\n"
 "X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../archive-ataglance.php:5
 msgid "Mozilla At a Glance"
 msgstr "Mozilla em Resumo"
 
-#: ../archive-bios.php:43
-#: ../single-bios.php:42
+#: ../archive-bios.php:43 ../single-bios.php:42
+#, fuzzy
 msgid "Website"
-msgstr ""
+msgstr "Site"
 
-#: ../archive-bios.php:46
-#: ../single-bios.php:45
+#: ../archive-bios.php:46 ../single-bios.php:45
 msgid "Twitter"
 msgstr ""
 
-#: ../archive-bios.php:49
-#: ../single-bios.php:48
+#: ../archive-bios.php:49 ../single-bios.php:48
 msgid "Download high-res JPEG"
 msgstr ""
 
+#: ../content-syndicated.php:4
+#, fuzzy, php-format
+msgid "Permanent link to &ldquo;%s&rdquo;"
+msgstr "Link permanente para este comentário de "
+
 #: ../functions.php:27
+#, fuzzy
 msgid "At a Glance"
-msgstr ""
+msgstr "Mozilla em Resumo"
 
 #: ../functions.php:28
 msgid "At a Glance Item"
 msgstr ""
 
-#: ../functions.php:29
-#: ../functions.php:63
+#: ../functions.php:29 ../functions.php:63
 msgid "Add New"
 msgstr ""
 
@@ -50,8 +57,9 @@ msgid "Add New At a Glance Item"
 msgstr ""
 
 #: ../functions.php:31
+#, fuzzy
 msgid "Edit Item"
-msgstr ""
+msgstr "Editar Página"
 
 #: ../functions.php:32
 msgid "View Item"
@@ -61,13 +69,12 @@ msgstr ""
 msgid "Search At a Glance Items"
 msgstr ""
 
-#: ../functions.php:34
-#: ../functions.php:68
+#: ../functions.php:34 ../functions.php:68
+#, fuzzy
 msgid "Nothing found"
-msgstr ""
+msgstr "Nada encontrado"
 
-#: ../functions.php:35
-#: ../functions.php:69
+#: ../functions.php:35 ../functions.php:69
 msgid "Nothing found in Trash"
 msgstr ""
 
@@ -119,24 +126,25 @@ msgstr ""
 msgid "Mozilla News"
 msgstr "Notícias da Mozilla"
 
-#: ../home.php:18
-#: ../index.php:17
+#: ../home.php:18 ../index.php:17
+#, fuzzy
 msgid "Older posts"
-msgstr ""
+msgstr "Posts mais antigos"
 
-#: ../home.php:19
-#: ../index.php:18
+#: ../home.php:19 ../index.php:18
+#, fuzzy
 msgid "Newer posts"
-msgstr ""
+msgstr "Posts mais recentes"
 
-#: ../home.php:28
-#: ../index.php:27
+#: ../home.php:28 ../index.php:27
+#, fuzzy
 msgid "Nothing Found"
-msgstr ""
+msgstr "Nada encontrado"
 
-#: ../home.php:32
-#: ../index.php:31
-msgid "Sorry, we couldn't find any results for the requested archive. Perhaps try searching?"
+#: ../home.php:32 ../index.php:31
+msgid ""
+"Sorry, we couldn't find any results for the requested archive. Perhaps try "
+"searching?"
 msgstr ""
 
 #: ../media-library.php:10
@@ -144,8 +152,9 @@ msgid "Media Library"
 msgstr "Biblioteca de Mídia"
 
 #: ../media-library.php:26
+#, fuzzy
 msgid "Edit Page"
-msgstr ""
+msgstr "Editar Página"
 
 #: ../media-library.php:44
 msgid "Download high resolution image of "
@@ -154,4 +163,3 @@ msgstr ""
 #: ../media-library.php:48
 msgid "See bio"
 msgstr ""
-
