@@ -37,14 +37,6 @@ function onemozilla_setup() {
   // This theme uses Featured Images (also known as post thumbnails)
   add_theme_support( 'post-thumbnails' );
 
-  // Set default image sizes
-  update_option('thumbnail_size_w', 160);
-  update_option('thumbnail_size_h', 160);
-  update_option('medium_size_w', 252);
-  update_option('medium_size_h', 0);
-  update_option('large_size_w', 600);
-  update_option('large_size_h', 0);
-
   // The height and width of your custom header.
   // Add a filter to onemozilla_header_image_width and onemozilla_header_image_height to change these values.
   define( 'HEADER_IMAGE_WIDTH', apply_filters( 'onemozilla_header_image_width', 340 ) );
@@ -112,11 +104,26 @@ function onemozilla_setup() {
 
 }
 endif; // onemozilla_setup
+add_action('after_setup_theme', 'onemozilla_setup');
+
 
 /*********
- * Tell WordPress to run onemozilla_setup() when the 'after_setup_theme' hook is run.
+ * Do some stuff when the theme is activated.
  */
-add_action( 'after_setup_theme', 'onemozilla_setup' );
+if ( ! function_exists( 'onemozilla_activate' ) ):
+  function onemozilla_activate() {
+    // Set default media options
+    update_option('thumbnail_size_w', 160, true);
+    update_option('thumbnail_size_h', 160, true);
+    update_option('thumbnail_crop', 1);
+    update_option('medium_size_w', 250, true);
+    update_option('medium_size_h', '', true);
+    update_option('large_size_w', 600, true);
+    update_option('large_size_h', '', true);
+  }
+endif; // onemozilla_activate
+add_action('after_switch_theme', 'onemozilla_activate');
+
 
 /*********
  * Register and define the Social Sharing and Hide Authors settings

@@ -656,6 +656,7 @@ a:active {
 }
 .entry-header .edit {
   float: left;
+  clear: both;
   margin-left: -92px;
 }
 .page .entry-header .edit {
