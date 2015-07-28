@@ -231,6 +231,7 @@ function fc_meta_desc() {
     } else {
       $text = $post->post_content;
     }
+    $text = do_shortcode($text);
     $text = str_replace(array("\r\n", "\r", "\n", "  "), " ", $text);
     $text = str_replace(array("\""), "", $text);
     $text = trim(strip_tags($text));
