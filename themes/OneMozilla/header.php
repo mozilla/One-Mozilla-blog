@@ -15,7 +15,7 @@
   <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); ?>
     <meta property="og:image" content="<?php echo $thumb['0']; ?>">
   <?php elseif (function_exists('get_avatar')) : ?>
-    <meta property="og:image" content="<?php echo esc_url( get_avatar_url( get_the_author_meta('user_email'), array('size' => '200') )); ?>">
+    <meta property="og:image" content="<?php echo esc_url( get_avatar_url( get_queried_object()->post_author, array('size' => '200') )); ?>">
   <?php endif; ?>
 <?php elseif (get_header_image()) : ?>
   <meta property="og:image" content="<?php echo get_header_image(); ?>">
