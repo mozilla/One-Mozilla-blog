@@ -41,7 +41,7 @@ endif; ?>
     ?>
         <li class="vcard">
           <figure class="headshot">
-            <a href="<?php echo $headshot[0]; ?>" class="photo" title="<?php _e('Download high resolution image of ','mozpress'); esc_attr(the_title()); ?>"><?php the_post_thumbnail('thumbnail', array('alt' => "", 'title' => "")); ?></a>
+            <a href="<?php echo $headshot[0]; ?>" class="photo" title="<?php _e('Download photo','mozpress'); ?>"><?php the_post_thumbnail('thumbnail', array('alt' => "", 'title' => "")); ?></a>
             <figcaption>
               <strong class="fn"><?php esc_attr(the_title()); ?></strong>
               <?php if ($position) : ?><span class="title"><?php echo esc_attr($position); ?></span><?php endif; ?>

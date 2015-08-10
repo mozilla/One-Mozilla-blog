@@ -45,7 +45,7 @@ endif;
         <p class="bio-extra"><?php _e('Twitter','mozpress'); ?>: <a href="//twitter.com/<?php echo urlencode($twitter); ?>" rel="external" class="url nickname">@<?php echo esc_attr($twitter); ?></a></p>
       <?php endif; ?>
       <?php if (has_post_thumbnail()) : ?>
-        <p class="bio-extra"><a href="<?php echo $headshot[0]; ?>"><?php _e('Download high-res JPEG', 'mozpress'); ?></a></p>
+        <p class="bio-extra"><a href="<?php echo $headshot[0]; ?>"><?php _e('Download photo', 'mozpress'); ?></a></p>
       <?php endif; ?>
     </div>
 
