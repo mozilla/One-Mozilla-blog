@@ -54,7 +54,7 @@ ul.index a:hover, ul.index a:focus, ul.index a:active { color: #2f2f2f; text-dec
 .entry-content .gallery { list-style: none; margin: 1em 0; padding: 0; }
 .gallery li { float: left; margin: 0 0 1.5em 24px; width: 22%; font-size: .857em; }
 .gallery li:nth-child(4n+1) { clear: left; margin-left: 0; } /* the first and every fifth item clears the row above it (four per row) */
-.gallery a img, .gallery .wp-post-image { border-width: 5px; margin-left: -5px; }
+.gallery a img, .gallery .wp-post-image { border-width: 5px; margin-left: -5px; float: none; }
 .gallery strong, .gallery b { display: block; font: normal 1.12em "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; }
 
 .gallery li.vcard { margin: 0 0 1.5em 3%; width: 30%; }
