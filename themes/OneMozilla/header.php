@@ -17,6 +17,12 @@
   <?php elseif (function_exists('get_avatar')) : ?>
     <meta property="og:image" content="<?php echo esc_url( get_avatar_url( get_queried_object()->post_author, array('size' => '200') )); ?>">
   <?php endif; ?>
+  <?php if ($thumbs = get_attached_media('image')) : ?>
+    <?php foreach ($thumbs as $thumb) : ?>
+      <?php $thumb = wp_get_attachment_image_src( $thumb->ID, 'medium' ); ?>
+      <meta property="og:image" content="<?php echo $thumb['0']; ?>">
+    <?php endforeach; ?>
+  <?php endif; ?>
 <?php elseif (get_header_image()) : ?>
   <meta property="og:image" content="<?php echo get_header_image(); ?>">
 <?php endif; ?>
