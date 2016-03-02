@@ -9,5 +9,8 @@
       <h2 id="site-description"><?php echo esc_attr( get_bloginfo('description', 'display') ); ?></h2>
     <?php endif; ?>
     </hgroup>
-    <a href="https://www.mozilla.org/" id="tabzilla">Mozilla</a>
+
+    <span id="tabzilla">
+      <a href="https://www.mozilla.org/">Mozilla</a>
+    </span>
   </header><!-- #masthead -->
