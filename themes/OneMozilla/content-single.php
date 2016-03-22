@@ -2,20 +2,26 @@
   <header class="entry-header">
     <h1 class="entry-title"><?php the_title(); ?></h1>
 
-  <?php if ( get_option('onemozilla_hide_authors') != 1 ) : ?>
-    <address class="vcard">
-      <cite class="author fn">
-        <a class="url" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>" title="<?php printf( esc_attr__( 'See all posts by %1$s', 'onemozilla'), get_the_author() ); ?>">
-          <?php esc_html(the_author()); ?> <?php echo get_avatar(get_the_author_meta('user_email'), 24) ?>
-        </a>
-      </cite>
-    </address>
-  <?php endif; ?>
+<?php if ( (get_option('onemozilla_hide_authors') != 1) || comments_open() || get_comments_number() ) : ?>
+    <div class="entry-info">
 
-  <?php $comment_count = get_comments_number($post->ID);
-  if ( comments_open() || pings_open() || ($comment_count > 0) ) : ?>
-    <p class="entry-comments"><a href="<?php comments_link() ?>" title="<?php if($comment_count > 0) { printf(_n( '1 response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet', 'onemozilla'); } ?>"><?php if ($comment_count > 999) : comments_number('0','1','1000+'); else : comments_number('0','1','%'); endif; ?></a></p>
-  <?php endif; ?>
+    <?php if ( get_option('onemozilla_hide_authors') != 1 ) : ?>
+      <address class="vcard">
+        <cite class="author fn">
+          <a class="url" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>" title="<?php printf( esc_attr__( 'See all posts by %1$s', 'onemozilla'), get_the_author() ); ?>">
+            <?php esc_html(the_author()); ?> <?php echo get_avatar(get_the_author_meta('user_email'), 24) ?>
+          </a>
+        </cite>
+      </address>
+    <?php endif; ?>
+
+    <?php if ( comments_open() || get_comments_number() ) : ?>
+      <p class="entry-comments">
+        <?php comments_popup_link( __( 'No responses yet', 'onemozilla' ), __( '1 response', 'onemozilla' ), __( '% responses', 'onemozilla' ) ); ?>
+      </p>
+    <?php endif; ?>
+  </div>
+<?php endif; ?>
 
   <?php if ( 'post' == get_post_type() ) : // No posted date for Pages ?>
     <p class="entry-posted">

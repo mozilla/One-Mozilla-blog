@@ -22,6 +22,8 @@
       </p>
     <?php endif; ?>
 
+  <?php if ( (get_option('onemozilla_hide_authors') != 1) || comments_open() || get_comments_number() ) : ?>
+    <div class="entry-info">
     <?php if ( get_option('onemozilla_hide_authors') != 1 ) : ?>
       <address class="vcard">
         <cite class="author fn">
@@ -32,15 +34,14 @@
       </address>
     <?php endif; ?>
 
-    <?php $comment_count = get_comments_number($post->ID);
-    if ( comments_open() || pings_open() || ($comment_count > 0) ) : ?>
+    <?php if ( comments_open() || get_comments_number() ) : ?>
       <p class="entry-comments">
-        <a href="<?php comments_link() ?>" title="<?php if($comment_count > 0) { printf( _n( '1 response', '%d responses', $comment_count, 'onemozilla'), $comment_count ); } else { _e('No responses yet', 'onemozilla'); } ?>">
-          <?php if ($comment_count > 999) : comments_number('0','1','1000+'); else : comments_number('0','1','%'); endif; ?>
-        </a>
+        <?php comments_popup_link( __( 'No responses yet', 'onemozilla' ), __( '1 response', 'onemozilla' ), __( '% responses', 'onemozilla' ) ); ?>
       </p>
     <?php endif; ?>
     <?php edit_post_link( __( 'Edit Post', 'onemozilla' ), '<p class="edit">', '</p>' ); ?>
+    </div>
+  <?php endif; ?>
   </header>
 
   <div class="entry-summary">

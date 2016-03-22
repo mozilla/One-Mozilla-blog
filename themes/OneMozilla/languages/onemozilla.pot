@@ -1,7 +1,8 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: One Mozilla 1.4\n"
-"POT-Creation-Date: 2015-03-19 13:21-0800\n"
+"POT-Creation-Date: 2016-05-11 10:56-0700\n"
 "PO-Revision-Date: 2015-03-19 13:21-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -46,8 +47,8 @@ msgstr ""
 msgid "Posts tagged with “%s”"
 msgstr ""
 
-#: ../archive.php:16 ../archive.php:17 ../archive.php:18 ../header.php:50
-#: ../header.php:51 ../header.php:52
+#: ../archive.php:16 ../archive.php:17 ../archive.php:18 ../header.php:61
+#: ../header.php:62 ../header.php:63
 #, php-format
 msgid "Posts from %s"
 msgstr ""
@@ -93,8 +94,16 @@ msgid ""
 "This post is password protected. Enter the password to view any comments."
 msgstr ""
 
-#: ../comments.php:29 ../content-single.php:17 ../content-summary.php:38
-#: ../content.php:38
+#: ../comments.php:29 ../content-single.php:20 ../content-summary.php:39
+#: ../content.php:39
+#, php-format
+msgid "1 response"
+msgid_plural "%d responses"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:29 ../content-single.php:20 ../content-summary.php:39
+#: ../content.php:39
 msgid "No responses yet"
 msgstr ""
 
@@ -193,49 +202,46 @@ msgstr ""
 msgid "Edit Page"
 msgstr ""
 
-#: ../content-page.php:14 ../content-single.php:47 ../content.php:50
+#: ../content-page.php:14 ../content-single.php:53 ../content.php:51
 #: ../image.php:41
 msgid "Pages:"
 msgstr ""
 
-#: ../content-single.php:8 ../content-summary.php:28 ../content.php:28
+#: ../content-single.php:11 ../content-summary.php:30 ../content.php:30
 #, php-format
 msgid "See all posts by %1$s"
 msgstr ""
 
-#: ../content-single.php:17 ../content-summary.php:38 ../content.php:38
-#, php-format
-msgid "1 response"
-msgid_plural "%d responses"
-msgstr[0] ""
-msgstr[1] ""
+#: ../content-single.php:20 ../content-summary.php:39 ../content.php:39
+msgid "% responses"
+msgstr ""
 
-#: ../content-single.php:23 ../content-single.php:29 ../content-summary.php:12
+#: ../content-single.php:29 ../content-single.php:35 ../content-summary.php:12
 #: ../content-summary.php:18 ../content.php:12 ../content.php:18
 #, php-format
 msgid "See all posts from %s"
 msgstr ""
 
-#: ../content-single.php:41 ../content-summary.php:43 ../content.php:43
+#: ../content-single.php:47 ../content-summary.php:42 ../content.php:44
 msgid "Edit Post"
 msgstr ""
 
-#: ../content-single.php:53 ../content-summary.php:54 ../content.php:56
+#: ../content-single.php:59 ../content-summary.php:55 ../content.php:57
 msgid "Tags"
 msgstr ""
 
-#: ../content-single.php:55 ../content-summary.php:56 ../content.php:58
+#: ../content-single.php:61 ../content-summary.php:57 ../content.php:59
 #: ../sidebar.php:41
 msgid "Categories"
 msgstr ""
 
-#: ../content-summary.php:4 ../content.php:4 ../functions.php:754
+#: ../content-summary.php:4 ../content.php:4 ../functions.php:762
 #: ../index.php:21
 #, php-format
 msgid "Permanent link to “%s”"
 msgstr ""
 
-#: ../content.php:49
+#: ../content.php:50
 msgid "Continue reading &hellip;"
 msgstr ""
 
@@ -276,131 +282,131 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: ../functions.php:78
+#: ../functions.php:70
 msgid "Firefox Logo"
 msgstr ""
 
-#: ../functions.php:131
+#: ../functions.php:138
 msgid "Social sharing"
 msgstr ""
 
-#: ../functions.php:143 ../functions.php:175
+#: ../functions.php:150 ../functions.php:182
 msgid "Hide post authors"
 msgstr ""
 
-#: ../functions.php:159
+#: ../functions.php:166
 msgid "Add social sharing buttons to posts and pages"
 msgstr ""
 
-#: ../functions.php:161
+#: ../functions.php:168
 msgid "Adds buttons for Facebook, Twitter, and Google+."
 msgstr ""
 
-#: ../functions.php:177
+#: ../functions.php:184
 msgid "This removes the author byline and author bio from individual posts."
 msgstr ""
 
-#: ../functions.php:302
+#: ../functions.php:310
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: ../functions.php:359
+#: ../functions.php:367
 msgid ""
 "Sorry, you appear to be a spamming robot because you filled in the hidden "
 "spam trap field. To show you are not a spammer, submit your comment again "
 "and leave the field blank."
 msgstr ""
 
-#: ../functions.php:385
+#: ../functions.php:393
 msgid "This post is password protected. To view it, please enter the password."
 msgstr ""
 
-#: ../functions.php:386
+#: ../functions.php:394
 msgid "Password"
 msgstr ""
 
-#: ../functions.php:386
+#: ../functions.php:394
 msgid "Submit"
 msgstr ""
 
-#: ../functions.php:453
+#: ../functions.php:461
 msgid "Make this a featured post?"
 msgstr ""
 
-#: ../functions.php:459
+#: ../functions.php:467
 msgid "Featured Post"
 msgstr ""
 
-#: ../functions.php:504
+#: ../functions.php:512
 msgid "Continue reading"
 msgstr ""
 
-#: ../functions.php:551
+#: ../functions.php:559
 msgid "Sidebar"
 msgstr ""
 
-#: ../functions.php:652
+#: ../functions.php:660
 msgid "Trackback from "
 msgstr ""
 
-#: ../functions.php:654 ../functions.php:663
+#: ../functions.php:662 ../functions.php:671
 msgid "on"
 msgstr ""
 
-#: ../functions.php:655 ../functions.php:664 ../functions.php:679
-#: ../functions.php:689
+#: ../functions.php:663 ../functions.php:672 ../functions.php:687
+#: ../functions.php:697
 msgid "Permanent link to this comment by "
 msgstr ""
 
-#: ../functions.php:658 ../functions.php:667 ../functions.php:682
-#: ../functions.php:692
+#: ../functions.php:666 ../functions.php:675 ../functions.php:690
+#: ../functions.php:700
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../functions.php:661
+#: ../functions.php:669
 msgid "Pingback from "
 msgstr ""
 
-#: ../functions.php:678 ../functions.php:688
+#: ../functions.php:686 ../functions.php:696
 msgid "wrote on"
 msgstr ""
 
-#: ../functions.php:698
+#: ../functions.php:706
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../functions.php:706
+#: ../functions.php:714
 msgid "Edit Comment"
 msgstr ""
 
-#: ../functions.php:723
+#: ../functions.php:731
 msgid "This widget shows the three most recent featured posts."
 msgstr ""
 
-#: ../functions.php:735
+#: ../functions.php:743
 msgid "Title:"
 msgstr ""
 
-#: ../header.php:49
+#: ../header.php:60
 #, php-format
 msgid "Search results for “%s”"
 msgstr ""
 
-#: ../header.php:53
+#: ../header.php:64
 msgid "Not Found"
 msgstr ""
 
-#: ../header.php:65
+#: ../header.php:76
 msgid "Skip to main content"
 msgstr ""
 
-#: ../header.php:66
+#: ../header.php:77
 msgid "Skip to sidebar"
 msgstr ""
 
-#: ../header.php:68
+#: ../header.php:79
 msgid "Skip to blog search"
 msgstr ""
 

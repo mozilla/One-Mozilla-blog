@@ -623,36 +623,25 @@ html[dir='rtl'] #tabzilla {
   right: 0;
 }
 
+.post .entry-info {
+  clear: both;
+  overflow: hidden;
+  margin-left: -92px;
+}
+
 /*** Post @Author */
 .entry-header .vcard {
-  background: #fff;
-  background: -moz-linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
-  background: -o-linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
-  background: -webkit-linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
-  background: linear-gradient(left, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 10%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.75) 90%, rgba(255,255,255,0.75) 100%);
-  border: 1px solid #fff;
-  float: left;
-  font: 1em/1 "Open Sans Light", sans-serif;
-  margin: 0 0 10px -92px;
-  -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  -o-box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  padding: 15px 20px 15px 65px;
-  position: relative;
-  width: 415px;
-}
-.no-comments .entry-header .vcard {
-  width: 530px;
+  font-size: 16px;
+  margin: .75em 0 .25em;
+  clear: right;
 }
 .entry-header cite {
   font-style: normal;
 }
 .entry-header .vcard img {
   border: 1px solid #fff;
-  left: 0;
-  left: 20px;
-  position: absolute;
-  top: .75em;
+  float: left;
+  margin-right: 10px;
 }
 .entry-header .vcard a:hover img,
 .entry-header .vcard a:focus img,
@@ -662,43 +651,25 @@ html[dir='rtl'] #tabzilla {
 
 /*** Comment Count */
 .entry-comments {
-  background: #fff;
-  float: right;
-  font: 1em/1 "Open Sans Light", sans-serif;
-  margin: 0 0 10px;
-  -ms-box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  -o-box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  width: 100px;
+  clear: left;
+  margin: .75em 0;
 }
 .entry-comments a {
-  background: transparent url("img/icn-comment.png") 24px 17px no-repeat;
-  border: 1px solid #fff;
-  display: block;
-  padding: 15px 5px 15px 47px;
+  display: inline-block;
+  background: url("img/icn-comment.png") 0 .35em no-repeat;
+  padding-left: 35px;
 }
-.entry-comments a:hover,
-.entry-comments a:focus,
-.entry-comments a:active {
-  background-position: 24px -83px;
-}
-.show-comments.no-author .entry-comments {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+
 
 /*** @Edit buttons */
 .edit {
   font-size: .857em;
 }
 .entry-header .edit {
-  float: left;
   clear: both;
-  margin-left: -92px;
-}
-.page .entry-header .edit {
-  margin: 1.35em 0 .5em;
+  float: right;
+  margin: 1em 0;
+  text-align: right;
 }
 .edit a {
   display: inline-block;
@@ -1122,15 +1093,14 @@ input:-moz-placeholder {
   clear: both;
   margin: 48px 0 24px;
 }
-#comment-list {
+.comment-list {
   list-style: none;
   margin: 0 0 48px;
   padding: 0;
 }
-#comment-list .comment,
-#comment-list .pingback,
-#comment-list .trackback {
-  font-size: .875em;
+.comment-list .comment,
+.comment-list .pingback,
+.comment-list .trackback {
   padding: 19px;
   margin: 0 0 24px;
   background: #fff;
@@ -1140,60 +1110,62 @@ input:-moz-placeholder {
   -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
-#comment-list .alt {
+.comment-list .alt {
   background: #f7f7f7;
   -o-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
   -ms-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
 }
-#comment-list .byuser {
+.comment-list .byuser {
   border-color: #cdd3dc;
   -o-box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
   -ms-box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
   box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
 }
 
-#comment-list.av .comment {
+.comment-list.av .comment,
+#comments.comments-area .comment {
   min-height: 70px;
   padding-left: 92px;
   position: relative;
 }
-#comment-list .entry-title {
+.comment-list .entry-title {
   font-size: 1.25em;
   letter-spacing: normal;
   margin: 0 0 1.5em;
   min-height: 0;
 }
-#comment-list .author {
+.comment-list .author {
   font-style: normal;
 }
-#comment-list .entry-title cite {
+.comment-list .entry-title cite {
   font-style: normal;
 }
-#comment-list .comment-meta {
+.comment-list .comment-meta {
   font-size: .857em;
+  margin: 0 0 1em;
 }
-#comment-list .avatar {
+.comment-list .avatar {
   border: 1px solid #fff;
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
-  left: 19px;
   -moz-transition: all .1s linear;
   -webkit-transition: all .1s linear;
   transition: all .1s linear;
   position: absolute;
-  top: 19px;
+  top: 9px;
+  left: 9px;
 }
-#comment-list a:hover .avatar,
-#comment-list a:focus .avatar,
-#comment-list a:active .avatar {
+.comment-list a:hover .avatar,
+.comment-list a:focus .avatar,
+.comment-list a:active .avatar {
   border-color: inherit;
 }
-#comment-list .entry-content p,
-#comment-list .entry-content pre,
-#comment-list .entry-content blockquote {
+.comment-list .entry-content p,
+.comment-list .entry-content pre,
+.comment-list .entry-content blockquote {
   margin: .75em 0 0;
 }
-#comment-list .mod {
+.comment-list .mod {
   background: #fff2db;
   border: 1px solid #f0dfc0;
   color: #3c3c3c;
@@ -1202,27 +1174,27 @@ input:-moz-placeholder {
   padding: .5em 15px;
   text-align: center;
 }
-#comment-list .comment-util {
+.comment-list .comment-util {
   font-size: 1em;
   margin: 1em 0 0;
   padding: .5em 0 0;
   border-top: 1px dotted rgba(100,100,100,.2);
 }
-#comment-list .comment-util a {
+.comment-list .comment-util a {
   margin-right: 20px;
 }
-#comment-list .comment-reply-link:after {
+.comment-list .comment-reply-link:after {
   content: "\00A0\00BB"; /* nbsp raquo */
   font-size: 1.2em;
 }
-#comment-list .comment-util .edit {
+.comment-list .comment-util .edit {
   font-size: 1em;
 }
-#comment-list ol.children {
+.comment-list ol.children {
   list-style: none;
   margin: 24px 0 0;
 }
-#comment-list ol.children .comment {
+.comment-list ol.children .comment {
   font-size: 1em;
   margin: 0 0 0 -72px;
 }
