@@ -144,15 +144,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*** Post Author */
-.entry-header .vcard {
-  border: 0;
-  border-bottom: 1px solid #313442;
+.entry-header .entry-info {
   background: #1e2029;
   background: rgba(19,20,26,.15);
+  border-bottom: 1px solid #313442;
   border-radius: 6px;
+  padding: 10px;
+}
+.entry-header .entry-info .vcard {
+  margin: 0;
 }
 .entry-header .vcard img {
   border-color: #1d1e26;
+}
+.entry-header .entry-info .entry-comments {
+  margin: .5em 0 0;
 }
 .entry-meta {
   border-radius: 6px;
@@ -174,16 +180,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*** Comment Count */
-.post .entry-comments {
-  background: #1e2029;
-  background: rgba(19,20,26,.15);
-  border-radius: 6px;
-}
 .post .entry-comments a {
   background-image: url("img/icn-comment.png");
-  border: 0;
-  border-bottom: 1px solid #313442;
-  border-radius: 6px;
 }
 
 /* @Comments *********/

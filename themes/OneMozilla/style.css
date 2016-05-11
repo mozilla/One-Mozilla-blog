@@ -23,40 +23,44 @@ Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, cust
 /* Regular */
 @font-face {
   font-family: "Open Sans";
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.eot");
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.woff") format("woff"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+  src: url("fonts/opensans-regular.eot");
+  src: url("fonts/opensans-regular.eot?#iefix") format("embedded-opentype"),
+       url("fonts/opensans-regular.woff2") format("woff2"),
+       url("fonts/opensans-regular.woff") format("woff"),
+       url("fonts/opensans-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.eot");
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.woff") format("woff"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.ttf") format("truetype");
+  src: url("fonts/opensans-italic.eot");
+  src: url("fonts/opensans-italic.eot?#iefix") format("embedded-opentype"),
+       url("fonts/opensans-italic.woff2") format("woff2"),
+       url("fonts/opensans-italic.woff") format("woff"),
+       url("fonts/opensans-italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Semibold-webfont.eot");
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Semibold-webfont.woff") format("woff"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Semibold-webfont.ttf") format("truetype");
+  src: url("fonts/opensans-semibold.eot");
+  src: url("fonts/opensans-semibold.eot?#iefix") format("embedded-opentype"),
+       url("fonts/opensans-semibold.woff2") format("woff2"),
+       url("fonts/opensans-semibold.woff") format("woff"),
+       url("fonts/opensans-semibold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-SemiboldItalic-webfont.eot");
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix") format("embedded-opentype"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-SemiboldItalic-webfont.woff") format("woff"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-SemiboldItalic-webfont.ttf") format("truetype");
+  src: url("fonts/opensans-semibolditalic.eot");
+  src: url("fonts/opensans-semibolditalic.eot?#iefix") format("embedded-opentype"),
+       url("fonts/opensans-semibolditalic.woff2") format("woff2"),
+       url("fonts/opensans-semibolditalic.woff") format("woff"),
+       url("fonts/opensans-semibolditalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
@@ -64,30 +68,33 @@ Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, cust
 /* Light */
 @font-face {
   font-family: "Open Sans Light";
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.eot");
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.woff") format("woff"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.ttf") format("truetype");
+  src: url("fonts/opensans-light.eot");
+  src: url("fonts/opensans-light.eot?#iefix") format("embedded-opentype"),
+       url("fonts/opensans-light.woff2") format("woff2"),
+       url("fonts/opensans-light.woff") format("woff"),
+       url("fonts/opensans-light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.eot");
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.woff") format("woff"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.ttf") format("truetype");
+  src: url("fonts/opensans-lightitalic.eot");
+  src: url("fonts/opensans-lightitalic.eot?#iefix") format("embedded-opentype"),
+       url("fonts/opensans-lightitalic.woff2") format("woff2"),
+       url("fonts/opensans-lightitalic.woff") format("woff"),
+       url("fonts/opensans-lightitalic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.eot");
-  src: url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.woff") format("woff"),
-       url("https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+  src: url("fonts/opensans-regular.eot");
+  src: url("fonts/opensans-regular.eot?#iefix") format("embedded-opentype"),
+       url("fonts/opensans-regular.woff2") format("woff2"),
+       url("fonts/opensans-regular.woff") format("woff"),
+       url("fonts/opensans-regular.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
