@@ -31,7 +31,7 @@
   </header>
 
 <?php if ( have_comments() ) : // If there are comments ?>
-  <ol id="comment-list" class="hfeed <?php if (get_option('show_avatars')) echo 'av'; // provides a style hook when avatars are enabled ?>">
+  <ol id="comment-list" class="comment-list hfeed <?php if (get_option('show_avatars')) echo 'av'; // provides a style hook when avatars are enabled ?>">
   <?php wp_list_comments('type=all&style=ol&callback=onemozilla_comment'); // Comment template is in functions.php ?>
   </ol>
 

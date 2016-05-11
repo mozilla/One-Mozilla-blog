@@ -692,7 +692,7 @@ function onemozilla_comment($comment, $args, $depth) {
     <?php else : // author has no link ?>
       <h3 class="entry-title vcard">
         <cite class="author fn"><?php esc_html(comment_author()); ?></cite>
-        <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 48 ).'</span>'); endif; ?>
+        <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 64 ).'</span>'); endif; ?>
         <span class="comment-meta"><?php _e('wrote on', 'onemozilla'); ?>
         <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>">
         <time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>">
