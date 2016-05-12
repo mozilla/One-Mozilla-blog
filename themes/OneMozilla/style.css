@@ -629,7 +629,6 @@ html[dir='rtl'] #tabzilla {
   left: auto;
   right: 0;
 }
-
 .post .entry-info {
   clear: both;
   overflow: hidden;
@@ -664,7 +663,7 @@ html[dir='rtl'] #tabzilla {
 .entry-comments a {
   display: inline-block;
   background: url("img/icn-comment.png") 0 .35em no-repeat;
-  padding-left: 35px;
+  padding-left: 25px;
 }
 
 
@@ -685,11 +684,7 @@ html[dir='rtl'] #tabzilla {
   border: 1px solid #ccc;
   border-radius: 4px;
   background: #eee;
-  background: -moz-linear-gradient(top, #fff 0, #eee 100%);
-  background: -ms-linear-gradient(top, #fff 0, #eee 100%);
-  background: -o-linear-gradient(top, #fff 0, #eee 100%);
-  background: -webkit-linear-gradient(top, #fff 0, #eee 100%);
-  background: linear-gradient(top, #fff 0, #eee 100%);
+  background: linear-gradient(to bottom, #fff 0, #eee 100%);
 }
 .edit a:hover,
 .edit a:focus {
@@ -1018,12 +1013,7 @@ input[type=submit], button {
   text-shadow: 0 1px 0 rgba(0,0,0,0.25);
   font: .857em/1.1 "Open Sans Light", sans-serif;
   background-color: #266194;
-  background-image: -moz-linear-gradient(#3c88cc,#276195);
-  background-image: -ms-linear-gradient(#3c88cc,#276195);
-  background-image: -webkit-linear-gradient(#3c88cc,#276195);
-  background-image: -o-linear-gradient(#3c88cc,#276195);
   background-image: linear-gradient(#3c88cc,#276195);
-  -moz-transition: all .25s linear;
   -webkit-transition: all .25s linear;
   transition: all .25s linear;
 }
@@ -1137,7 +1127,8 @@ input:-moz-placeholder {
   position: relative;
 }
 .comment-list .entry-title {
-  font-size: 1.25em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
   letter-spacing: normal;
   margin: 0 0 1.5em;
   min-height: 0;
@@ -1147,10 +1138,6 @@ input:-moz-placeholder {
 }
 .comment-list .entry-title cite {
   font-style: normal;
-}
-.comment-list .comment-meta {
-  font-size: .857em;
-  margin: 0 0 1em;
 }
 .comment-list .avatar {
   border: 1px solid #fff;
@@ -1240,11 +1227,7 @@ input:-moz-placeholder {
 }
 #cancel-comment-reply a {
   background: #eee;
-  background: -moz-linear-gradient(top, #fff 0, #eee 100%);
-  background: -ms-linear-gradient(top, #fff 0, #eee 100%);
-  background: -o-linear-gradient(top, #fff 0, #eee 100%);
-  background: -webkit-linear-gradient(top, #fff 0, #eee 100%);
-  background: linear-gradient(top, #fff 0, #eee 100%);
+  background: linear-gradient(to bottom, #fff 0, #eee 100%);
   border: 1px solid #ccc;
   border-radius: 4px;
   display: inline-block;
@@ -1458,8 +1441,7 @@ input:-moz-placeholder {
     font-size: 1.75em;
     letter-spacing: -0.5px;
   }
-  .single .entry-title,
-  .page .entry-title {
+  .entry-title {
     font-size: 2em;
     letter-spacing: -1px;
     margin-bottom: .5em;
@@ -1471,8 +1453,10 @@ input:-moz-placeholder {
   .post .entry-header {
     padding-left: 0;
   }
+  .entry-header .share,
   .entry-header .edit {
-    margin-left: 0;
+    float: none;
+    text-align: left;
   }
 
   .entry-posted {
@@ -1498,17 +1482,17 @@ input:-moz-placeholder {
     display: inline;
     font-size: 1em;
   }
-
+  .post .entry-info {
+    margin-left: 0;
+  }
   .post .entry-header .vcard {
     float: none;
     margin: .5em 0;
-    padding: 6px 12px;
     width: auto;
   }
   .entry-header .avatar {
     display: none;
   }
-
   .entry-content .wp-post-image,
   .entry-summary .wp-post-image {
     width: 60px;
@@ -1519,16 +1503,6 @@ input:-moz-placeholder {
     float: none;
     margin: .5em 0;
     width: auto;
-  }
-  .entry-comments a {
-    background-position: 12px 8px;
-    padding: 0;
-    padding: 6px 0 6px 36px;
-  }
-  .entry-comments a:hover,
-  .entry-comments a:focus,
-  .entry-comments a:active {
-    background-position: 12px -92px;
   }
   .show-comments.no-author .entry-comments {
     position: static;
@@ -1548,16 +1522,16 @@ input:-moz-placeholder {
     max-width: 100%;
   }
 
-  #comment-list.av .comment {
+  .comment-list.av .comment {
     padding-left: 19px;
   }
-  #comment-list ol.children .comment {
+  .comment-list ol.children .comment {
     margin: 0 -10px -10px;
   }
-  #comment-list .avatar {
+  .comment-list .avatar {
     display: none;
   }
-  #comment-list .entry-title {
+  .comment-list .entry-title {
     font-size: 1em;
   }
 
