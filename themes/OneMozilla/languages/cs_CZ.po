@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: One Mozilla 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 13:30-0800\n"
-"PO-Revision-Date: 2015-04-11 11:35+0100\n"
+"POT-Creation-Date: 2016-05-14 14:20+0100\n"
+"PO-Revision-Date: 2016-05-14 14:22+0100\n"
 "Last-Translator: Michal Stanke <michal.stanke@mikk.cz>\n"
 "Language-Team: Mozilla.cz <info@mozilla.cz>\n"
 "Language: cs_CZ\n"
@@ -16,6 +16,105 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
+
+#: ../image.php:13
+#, php-format
+msgid ""
+"Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</"
+"time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a>"
+msgstr ""
+"Publikováno <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</"
+"time> v <a href=\"%3$s\" title=\"Odkaz na plnou velikost\">%4$s &times; "
+"%5$s</a>"
+
+#: ../image.php:22
+msgid "Edit Attachment"
+msgstr "Upravit přílohu"
+
+#: ../image.php:41 ../content.php:51 ../content-single.php:53
+#: ../content-page.php:14
+msgid "Pages:"
+msgstr "Stránky:"
+
+#: ../index.php:16
+msgid "Featured"
+msgstr "Zvýrazněný"
+
+#: ../index.php:21 ../content.php:4 ../content-summary.php:4
+#: ../functions.php:762
+#, php-format
+msgid "Permanent link to “%s”"
+msgstr "Trvalý odkaz na “%s”"
+
+#: ../index.php:49 ../search.php:18 ../search.php:34 ../archive.php:28
+#: ../archive.php:44
+msgid "Older posts"
+msgstr "Starší příspěvky"
+
+#: ../index.php:50 ../search.php:19 ../search.php:35 ../archive.php:29
+#: ../archive.php:45
+msgid "Newer posts"
+msgstr "Novější příspěvky"
+
+#: ../index.php:59 ../search.php:42 ../archive.php:54
+msgid "Nothing Found"
+msgstr "Nic nebylo nalezeno"
+
+#: ../index.php:63
+msgid ""
+"Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps "
+"try searching?"
+msgstr ""
+"Je nám líto, ale pro požadovaný archiv nebyly nalezeny žádné výsledky. "
+"Chcete zkusit vyhledávání?"
+
+#: ../content.php:12 ../content.php:18 ../content-single.php:29
+#: ../content-single.php:35 ../content-summary.php:12
+#: ../content-summary.php:18
+#, php-format
+msgid "See all posts from %s"
+msgstr "Zobrazit všechny příspěvky z %s"
+
+#: ../content.php:30 ../content-single.php:11 ../content-summary.php:30
+#, php-format
+msgid "See all posts by %1$s"
+msgstr "Zobrazit všechny příspěvky od %1$s"
+
+#: ../content.php:39 ../comments.php:29 ../content-single.php:20
+#: ../content-summary.php:39
+msgid "No responses yet"
+msgstr "Zatím žádné odpovědi"
+
+#: ../content.php:39 ../comments.php:29 ../content-single.php:20
+#: ../content-summary.php:39
+#, php-format
+msgid "1 response"
+msgid_plural "%d responses"
+msgstr[0] "Jedna odpověď"
+msgstr[1] "%d odpovědi"
+msgstr[2] "%d odpovědí"
+
+#: ../content.php:39 ../content-single.php:20 ../content-summary.php:39
+msgid "% responses"
+msgstr "% odpovědí"
+
+#: ../content.php:44 ../content-single.php:47 ../content-summary.php:42
+msgid "Edit Post"
+msgstr "Upravit příspěvek"
+
+#: ../content.php:50
+msgid "Continue reading &hellip;"
+msgstr "Číst dále &hellip;"
+
+#: ../content.php:57 ../content-single.php:59 ../content-summary.php:55
+msgid "Tags"
+msgstr "Štítky"
+
+#: ../content.php:59 ../content-single.php:61 ../content-summary.php:57
+#: ../sidebar.php:41
+msgid "Categories"
+msgstr "Rubriky"
 
 #: ../404.php:7
 msgid "Well, this is embarrassing…"
@@ -42,80 +141,11 @@ msgstr ""
 "<em>webmaster zavináč mozilla tečka com</em>, odkud jste přišli a co jste "
 "hledali, abychom mohli nefunkční odkaz opravit."
 
-#: ../archive.php:14
-#, php-format
-msgid "Posts in “%s”"
-msgstr "Příspěvky v “%s”"
-
-#: ../archive.php:15
-#, php-format
-msgid "Posts tagged with “%s”"
-msgstr "Příspěvky se štítkem “%s”"
-
-#: ../archive.php:16 ../archive.php:17 ../archive.php:18 ../header.php:50
-#: ../header.php:51 ../header.php:52
-#, php-format
-msgid "Posts from %s"
-msgstr "Příspěvky z %s"
-
-#: ../archive.php:19
-#, php-format
-msgid "Posts by %s"
-msgstr "Příspěvky od %s"
-
-#: ../archive.php:20 ../search.php:13
-#, php-format
-msgid "We found one result for “%2$s”"
-msgid_plural "We found %1$s results for “%2$s”"
-msgstr[0] "Jeden výsledek vyhledávání pro “%2$s”"
-msgstr[1] "%1$s výsledky vyhledávání pro “%2$s”"
-msgstr[2] "%1$s výsledků vyhledávání pro “%2$s”"
-
-#: ../archive.php:21
-msgid "Archives"
-msgstr "Archivy"
-
-#: ../archive.php:28 ../archive.php:44 ../index.php:49 ../search.php:18
-#: ../search.php:34
-msgid "Older posts"
-msgstr "Starší příspěvky"
-
-#: ../archive.php:29 ../archive.php:45 ../index.php:50 ../search.php:19
-#: ../search.php:35
-msgid "Newer posts"
-msgstr "Novější příspěvky"
-
-#: ../archive.php:54 ../index.php:59 ../search.php:42
-msgid "Nothing Found"
-msgstr "Nic nebylo nalezeno"
-
-#: ../archive.php:58
-msgid ""
-"Apologies, but no results were found for the requested archive. Perhaps "
-"searching will help find a related post."
-msgstr ""
-"Je nám líto, ale pro požadovaný archiv nebyly nalezeny žádné výsledky. "
-"Zkuste použít vyhledávání pro nalezení podobného příspěvky."
-
 #: ../comments.php:17
 msgid ""
 "This post is password protected. Enter the password to view any comments."
 msgstr ""
 "Tento příspěvek je chráněn heslem. Pro zobrazení obsahu prosím zadejte heslo."
-
-#: ../comments.php:29 ../content-single.php:17 ../content-summary.php:38
-#: ../content.php:38
-#, php-format
-msgid "1 response"
-msgid_plural "%d responses"
-msgstr[0] "Jedna odpověď"
-msgstr[1] "%d odpovědi"
-msgstr[2] "%d odpovědí"
-
-#: ../comments.php:29 ../content-single.php:17 ../content-summary.php:38
-#: ../content.php:38
-msgid "No responses yet"
-msgstr "Zatím žádné odpovědi"
 
 #: ../comments.php:30
 msgid "Post a comment"
@@ -215,48 +245,139 @@ msgstr ""
 msgid "You must enter a comment."
 msgstr "Musíte vložit text komentáře."
 
+#: ../search.php:13 ../archive.php:20
+#, php-format
+msgid "We found one result for “%2$s”"
+msgid_plural "We found %1$s results for “%2$s”"
+msgstr[0] "Jeden výsledek vyhledávání pro “%2$s”"
+msgstr[1] "%1$s výsledky vyhledávání pro “%2$s”"
+msgstr[2] "%1$s výsledků vyhledávání pro “%2$s”"
+
+#: ../search.php:45
+#, php-format
+msgid "Sorry, we didn't find anything for “%s.” Try another search."
+msgstr ""
+"Je nám líto, ale pro “%s” nebyly nalezeny žádné výsledky. Zkuste prosím jiné "
+"vyhledávání."
+
 #: ../content-page.php:9
 msgid "Edit Page"
 msgstr "Upravit stránku"
 
-#: ../content-page.php:14 ../content-single.php:47 ../content.php:50
-#: ../image.php:41
-msgid "Pages:"
-msgstr "Stránky:"
+#: ../functions.php:35
+msgid "Primary Menu"
+msgstr "Hlavní menu"
 
-#: ../content-single.php:8 ../content-summary.php:28 ../content.php:28
+#: ../functions.php:70
+msgid "Firefox Logo"
+msgstr "Logo Firefox"
+
+#: ../functions.php:138
+msgid "Social sharing"
+msgstr "Sdílení"
+
+#: ../functions.php:150 ../functions.php:182
+msgid "Hide post authors"
+msgstr "Skrývat autora příspěvků"
+
+#: ../functions.php:166
+msgid "Add social sharing buttons to posts and pages"
+msgstr "Přidat tlačítka sociálních sítí k příspěvkům a stránkám"
+
+#: ../functions.php:168
+msgid "Adds buttons for Facebook, Twitter, and Google+."
+msgstr "Přidá tlačítka pro Facebook, Twitter a Google+."
+
+#: ../functions.php:184
+msgid "This removes the author byline and author bio from individual posts."
+msgstr "Toto odstraní z jednotlivých příspěvků řádek s informacemi o autorovi."
+
+#: ../functions.php:310
 #, php-format
-msgid "See all posts by %1$s"
-msgstr "Zobrazit všechny příspěvky od %1$s"
+msgid "Page %s"
+msgstr "Stránka %s"
 
-#: ../content-single.php:23 ../content-single.php:29 ../content-summary.php:12
-#: ../content-summary.php:18 ../content.php:12 ../content.php:18
+#: ../functions.php:367
+msgid ""
+"Sorry, you appear to be a spamming robot because you filled in the hidden "
+"spam trap field. To show you are not a spammer, submit your comment again "
+"and leave the field blank."
+msgstr ""
+"Je nám líto, ale protože jste vyplnili skryté pole, které je pastí pro "
+"spamovací roboty, zřejmě jste robotem. Pokud jste skutečně člověk, vložte "
+"prosím svůj příspěvek znovu a zmiňované pole ponechte prázdné."
+
+#: ../functions.php:393
+msgid "This post is password protected. To view it, please enter the password."
+msgstr ""
+"Tento příspěvek je chráněn heslem. Pro jeho zobrazení prosím zadejte heslo."
+
+#: ../functions.php:394
+msgid "Password"
+msgstr "Heslo"
+
+#: ../functions.php:394
+msgid "Submit"
+msgstr "Odeslat"
+
+#: ../functions.php:461
+msgid "Make this a featured post?"
+msgstr "Nastavit tento příspěvek jako zvýrazněný?"
+
+#: ../functions.php:467
+msgid "Featured Post"
+msgstr "Zvýrazněný příspěvek"
+
+#: ../functions.php:512
+msgid "Continue reading"
+msgstr "Číst dále"
+
+#: ../functions.php:559
+msgid "Sidebar"
+msgstr "Postranní panel"
+
+#: ../functions.php:660
+msgid "Trackback from "
+msgstr "Trackback z "
+
+#: ../functions.php:662 ../functions.php:671
+msgid "on"
+msgstr "dne"
+
+#: ../functions.php:663 ../functions.php:672 ../functions.php:687
+#: ../functions.php:697
+msgid "Permanent link to this comment by "
+msgstr "Trvalý odkaz na tento komentář od "
+
+#: ../functions.php:666 ../functions.php:675 ../functions.php:690
+#: ../functions.php:700
 #, php-format
-msgid "See all posts from %s"
-msgstr "Zobrazit všechny příspěvky z %s"
+msgid "%1$s at %2$s"
+msgstr "%1$s v %2$s"
 
-#: ../content-single.php:41 ../content-summary.php:43 ../content.php:43
-msgid "Edit Post"
-msgstr "Upravit příspěvek"
+#: ../functions.php:669
+msgid "Pingback from "
+msgstr "Pingback z "
 
-#: ../content-single.php:53 ../content-summary.php:54 ../content.php:56
-msgid "Tags"
-msgstr "Štítky"
+#: ../functions.php:686 ../functions.php:696
+msgid "wrote on"
+msgstr "napsal(a)"
 
-#: ../content-single.php:55 ../content-summary.php:56 ../content.php:58
-#: ../sidebar.php:41
-msgid "Categories"
-msgstr "Rubriky"
+#: ../functions.php:706
+msgid "Your comment is awaiting moderation."
+msgstr "Váš komentář čeká na schválení."
 
-#: ../content-summary.php:4 ../content.php:4 ../functions.php:754
-#: ../index.php:21
-#, php-format
-msgid "Permanent link to “%s”"
-msgstr "Trvalý odkaz na “%s”"
+#: ../functions.php:714
+msgid "Edit Comment"
+msgstr "Upravit komentář"
 
-#: ../content.php:49
-msgid "Continue reading &hellip;"
-msgstr "Číst dále &hellip;"
+#: ../functions.php:731
+msgid "This widget shows the three most recent featured posts."
+msgstr "Tento widget zobrazí tři nejnovější zvýrazněné příspěvky."
+
+#: ../functions.php:743
+msgid "Title:"
+msgstr "Nadpis:"
 
 #: ../footer.php:9
 msgid "Return to top"
@@ -295,156 +416,72 @@ msgstr "Nahlásit zneužití ochranné známky"
 msgid "Theme Code "
 msgstr "Kód vzhledu"
 
-#: ../functions.php:35
-msgid "Primary Menu"
-msgstr "Hlavní menu"
-
-#: ../functions.php:78
-msgid "Firefox Logo"
-msgstr "Logo Firefox"
-
-#: ../functions.php:131
-msgid "Social sharing"
-msgstr "Sdílení"
-
-#: ../functions.php:143 ../functions.php:175
-msgid "Hide post authors"
-msgstr "Skrývat autora příspěvků"
-
-#: ../functions.php:159
-msgid "Add social sharing buttons to posts and pages"
-msgstr "Přidat tlačítka sociálních sítí k příspěvkům a stránkám"
-
-#: ../functions.php:161
-msgid "Adds buttons for Facebook, Twitter, and Google+."
-msgstr "Přidá tlačítka pro Facebook, Twitter a Google+."
-
-#: ../functions.php:177
-msgid "This removes the author byline and author bio from individual posts."
-msgstr "Toto odstraní z jednotlivých příspěvků řádek s informacemi o autorovi."
-
-#: ../functions.php:302
+#: ../archive.php:14
 #, php-format
-msgid "Page %s"
-msgstr "Stránka %s"
+msgid "Posts in “%s”"
+msgstr "Příspěvky v “%s”"
 
-#: ../functions.php:359
+#: ../archive.php:15
+#, php-format
+msgid "Posts tagged with “%s”"
+msgstr "Příspěvky se štítkem “%s”"
+
+#: ../archive.php:16 ../archive.php:17 ../archive.php:18 ../header.php:61
+#: ../header.php:62 ../header.php:63
+#, php-format
+msgid "Posts from %s"
+msgstr "Příspěvky z %s"
+
+#: ../archive.php:19
+#, php-format
+msgid "Posts by %s"
+msgstr "Příspěvky od %s"
+
+#: ../archive.php:21
+msgid "Archives"
+msgstr "Archivy"
+
+#: ../archive.php:58
 msgid ""
-"Sorry, you appear to be a spamming robot because you filled in the hidden "
-"spam trap field. To show you are not a spammer, submit your comment again "
-"and leave the field blank."
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
 msgstr ""
-"Je nám líto, ale protože jste vyplnili skryté pole, které je pastí pro "
-"spamovací roboty, zřejmě jste robotem. Pokud jste skutečně člověk, vložte "
-"prosím svůj příspěvek znovu a zmiňované pole ponechte prázdné."
+"Je nám líto, ale pro požadovaný archiv nebyly nalezeny žádné výsledky. "
+"Zkuste použít vyhledávání pro nalezení podobného příspěvky."
 
-#: ../functions.php:385
-msgid "This post is password protected. To view it, please enter the password."
-msgstr ""
-"Tento příspěvek je chráněn heslem. Pro jeho zobrazení prosím zadejte heslo."
+#: ../masthead.php:6
+msgid "Go to the front page"
+msgstr "Přejít na úvodní stránku"
 
-#: ../functions.php:386
-msgid "Password"
-msgstr "Heslo"
-
-#: ../functions.php:386
-msgid "Submit"
-msgstr "Odeslat"
-
-#: ../functions.php:453
-msgid "Make this a featured post?"
-msgstr "Nastavit tento příspěvek jako zvýrazněný?"
-
-#: ../functions.php:459
-msgid "Featured Post"
-msgstr "Zvýrazněný příspěvek"
-
-#: ../functions.php:504
-msgid "Continue reading"
-msgstr "Číst dále"
-
-#: ../functions.php:551
-msgid "Sidebar"
-msgstr "Postranní panel"
-
-#: ../functions.php:652
-msgid "Trackback from "
-msgstr "Trackback z "
-
-#: ../functions.php:654 ../functions.php:663
-msgid "on"
-msgstr "dne"
-
-#: ../functions.php:655 ../functions.php:664 ../functions.php:679
-#: ../functions.php:689
-msgid "Permanent link to this comment by "
-msgstr "Trvalý odkaz na tento komentář od "
-
-#: ../functions.php:658 ../functions.php:667 ../functions.php:682
-#: ../functions.php:692
-#, php-format
-msgid "%1$s at %2$s"
-msgstr "%1$s v %2$s"
-
-#: ../functions.php:661
-msgid "Pingback from "
-msgstr "Pingback z "
-
-#: ../functions.php:678 ../functions.php:688
-msgid "wrote on"
-msgstr "napsal(a)"
-
-#: ../functions.php:698
-msgid "Your comment is awaiting moderation."
-msgstr "Váš komentář čeká na schválení."
-
-#: ../functions.php:706
-msgid "Edit Comment"
-msgstr "Upravit komentář"
-
-#: ../functions.php:723
-msgid "This widget shows the three most recent featured posts."
-msgstr "Tento widget zobrazí tři nejnovější zvýrazněné příspěvky."
-
-#: ../functions.php:735
-msgid "Title:"
-msgstr "Nadpis:"
-
-#: ../header.php:49
+#: ../header.php:60
 #, php-format
 msgid "Search results for “%s”"
 msgstr "Výsledky vyhledávání pro “%s”"
 
-#: ../header.php:53
+#: ../header.php:64
 msgid "Not Found"
 msgstr "Nenalezeno"
 
-#: ../header.php:65
+#: ../header.php:76
 msgid "Skip to main content"
 msgstr "Přejít na hlavní obsah"
 
-#: ../header.php:66
+#: ../header.php:77
 msgid "Skip to sidebar"
 msgstr "Přejít na postranní panel"
 
-#: ../header.php:68
+#: ../header.php:79
 msgid "Skip to blog search"
 msgstr "Přejít na vyhledávání"
 
-#: ../image.php:13
-#, php-format
-msgid ""
-"Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</"
-"time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
-"%5$s</a>"
-msgstr ""
-"Publikováno <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</"
-"time> v <a href=\"%3$s\" title=\"Odkaz na plnou velikost\">%4$s &times; "
-"%5$s</a>"
+#: ../sidebar.php:9 ../sidebar.php:55
+msgid "About"
+msgstr "O autorovi"
 
-#: ../image.php:22
-msgid "Edit Attachment"
-msgstr "Upravit přílohu"
+#: ../sidebar.php:35 ../sidebar.php:81
+#, php-format
+msgid "More from %s"
+msgstr "Více od %s"
 
 #: ../inc/theme-options.php:45
 msgid "Color Scheme"
@@ -532,35 +569,3 @@ msgstr "Obsidian"
 #, php-format
 msgid "%s Theme Options"
 msgstr "Nastavení vzhledu %s"
-
-#: ../index.php:16
-msgid "Featured"
-msgstr "Zvýrazněný"
-
-#: ../index.php:63
-msgid ""
-"Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps "
-"try searching?"
-msgstr ""
-"Je nám líto, ale pro požadovaný archiv nebyly nalezeny žádné výsledky. "
-"Chcete zkusit vyhledávání?"
-
-#: ../masthead.php:6
-msgid "Go to the front page"
-msgstr "Přejít na úvodní stránku"
-
-#: ../search.php:45
-#, php-format
-msgid "Sorry, we didn't find anything for “%s.” Try another search."
-msgstr ""
-"Je nám líto, ale pro “%s” nebyly nalezeny žádné výsledky. Zkuste prosím jiné "
-"vyhledávání."
-
-#: ../sidebar.php:9 ../sidebar.php:55
-msgid "About"
-msgstr "O autorovi"
-
-#: ../sidebar.php:35 ../sidebar.php:81
-#, php-format
-msgid "More from %s"
-msgstr "Více od %s"
