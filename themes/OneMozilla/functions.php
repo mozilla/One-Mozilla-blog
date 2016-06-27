@@ -676,18 +676,18 @@ function onemozilla_comment($comment, $args, $depth) {
     </h3>
   <?php else : ?>
     <?php if ( ( $comment->comment_author_url != "http://" ) && ( $comment->comment_author_url != "" ) ) : // if author has a link ?>
-     <h3 class="entry-title vcard">
-       <a href="<?php comment_author_url(); ?>" class="url" rel="nofollow external" title="<?php esc_html(comment_author_url()); ?>">
-         <cite class="author fn"><?php esc_html(comment_author()); ?></cite>
-         <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 48 ).'</span>'); endif; ?>
-       </a>
-       <span class="comment-meta">
-       <?php /* L10N: Comment headings read "<Name> wrote on <Date> at <Time>:" */ ?>
-       <?php _e('wrote on', 'onemozilla'); ?>
-        <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>">
-        <time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>">
+      <h3 class="entry-title vcard">
+        <cite class="author fn"><?php esc_html(comment_author()); ?></cite>
+        <?php if (function_exists('get_avatar')) : echo ('<span class="photo">'.get_avatar( $comment, 48 ).'</span>'); endif; ?>
+        <span class="comment-meta">
         <?php /* L10N: Comment headings read "<Name> wrote on <Date> at <Time>:" */ ?>
-        <?php printf( __('%1$s at %2$s','onemozilla'), get_comment_date($date_format), get_comment_time($time_format) ); ?></time></a>:</span>
+        <?php _e('wrote on', 'onemozilla'); ?>
+          <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" rel="bookmark" title="<?php _e('Permanent link to this comment by ','onemozilla'); comment_author(); ?>">
+            <time class="published" datetime="<?php comment_date('Y-m-d'); ?>" title="<?php comment_date('Y-m-d'); ?>">
+            <?php /* L10N: Comment headings read "<Name> wrote on <Date> at <Time>:" */ ?>
+            <?php printf( __('%1$s at %2$s','onemozilla'), get_comment_date($date_format), get_comment_time($time_format) ); ?></time>
+          </a>:
+        </span>
      </h3>
     <?php else : // author has no link ?>
       <h3 class="entry-title vcard">

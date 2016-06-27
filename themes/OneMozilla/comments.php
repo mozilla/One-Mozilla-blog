@@ -73,10 +73,6 @@
             <label for="email"><?php _e('E-mail', 'onemozilla'); ?> <?php if ($req) : ?><span class="note"><?php _e('(required, will not be published)', 'onemozilla'); ?></span><?php endif; ?></label>
             <input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="25" <?php if ($req) echo "required aria-required='true'"; ?>>
           </li>
-          <li id="cmt-web">
-            <label for="url"><?php _e('Website', 'onemozilla'); ?></label>
-            <input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="25">
-          </li>
           <li id="cmt-ackbar">
             <label for="age"><?php _e('Spam robots, please fill in this field. Humans should leave it blank.', 'onemozilla'); ?></label>
             <input type="text" name="age" id="age" size="4" tabindex="-1">
