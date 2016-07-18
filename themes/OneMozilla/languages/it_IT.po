@@ -1,0 +1,580 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Mozilla 1.4\n"
+"POT-Creation-Date: 2016-07-15 22:26+0200\n"
+"PO-Revision-Date: 2016-07-16 10:59+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;esc_attr__;esc_html__\n"
+"Last-Translator: Francesco Lodolo [:flod] <flod@lodolo.net>\n"
+"Language: it_IT\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:7
+msgid "Well, this is embarrassing…"
+msgstr "Oops, questo è imbarazzante…"
+
+#: ../404.php:10
+msgid ""
+"We hate to say it, but we couldn’t find the page or file you’re looking for."
+msgstr ""
+"Ci dispiace ammetterlo ma non riusciamo a trovare la pagina o il file che "
+"stavi cercando."
+
+#: ../404.php:11
+msgid "If you typed in the address, try double-checking the spelling."
+msgstr "Se hai digitato l’indirizzo, controlla che non ci siano errori."
+
+#: ../404.php:12
+msgid ""
+"If you followed a link from somewhere, please let us know at <em>webmaster "
+"at mozilla dot com</em>. Be sure to tell us where you came from and what you "
+"were looking for, and we’ll do our best to fix it."
+msgstr ""
+"Se hai selezionato un link puoi aiutarci a risolvere il problema scrivendo a "
+"<em>webmaster at mozilla dot com</em>. Non dimenticare di specificare da "
+"quale pagina arrivi e cosa stavi cercando. Faremo del nostro meglio per "
+"risolvere l’errore."
+
+#: ../archive.php:14
+#, php-format
+msgid "Posts in “%s”"
+msgstr "Articoli in “%s”"
+
+#: ../archive.php:15
+#, php-format
+msgid "Posts tagged with “%s”"
+msgstr "Articoli con etichetta “%s”"
+
+#: ../archive.php:16 ../archive.php:17 ../archive.php:18 ../header.php:61
+#: ../header.php:62 ../header.php:63
+#, php-format
+msgid "Posts from %s"
+msgstr "Articoli da %s"
+
+#: ../archive.php:19
+#, php-format
+msgid "Posts by %s"
+msgstr "Articoli di %s"
+
+#: ../archive.php:20 ../search.php:13
+#, php-format
+msgid "We found one result for “%2$s”"
+msgid_plural "We found %1$s results for “%2$s”"
+msgstr[0] "È stato trovato un risultato per “%2$s”"
+msgstr[1] "Sono stati trovati %1$s risultati per “%2$s”"
+
+#: ../archive.php:21
+msgid "Archives"
+msgstr "Archivi"
+
+#: ../archive.php:28 ../archive.php:44 ../index.php:49 ../search.php:18
+#: ../search.php:34
+msgid "Older posts"
+msgstr "Articoli più vecchi"
+
+#: ../archive.php:29 ../archive.php:45 ../index.php:50 ../search.php:19
+#: ../search.php:35
+msgid "Newer posts"
+msgstr "Articoli più recenti"
+
+#: ../archive.php:54 ../index.php:59 ../search.php:42
+msgid "Nothing Found"
+msgstr "Nessun elemento trovato"
+
+#: ../archive.php:58
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+"Siamo spiacenti ma non è stato trovato alcun risultato per l’archivio "
+"richiesto. Una ricerca potrebbe aiutare a trovare l’articolo che stavi "
+"cercando."
+
+#: ../comments.php:17
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Questo articolo è protetto da password. Inserire la password per "
+"visualizzare i commenti."
+
+#: ../comments.php:29 ../content-single.php:20 ../content-summary.php:39
+#: ../content.php:39
+#, php-format
+msgid "1 response"
+msgid_plural "%d responses"
+msgstr[0] "1 risposta"
+msgstr[1] "%d risposte"
+
+#: ../comments.php:29 ../content-single.php:20 ../content-summary.php:39
+#: ../content.php:39
+msgid "No responses yet"
+msgstr "Ancora nessuna risposta"
+
+#: ../comments.php:30
+msgid "Post a comment"
+msgstr "Inserisci un commento"
+
+#: ../comments.php:39
+msgid "More comments:"
+msgstr "Altri commenti:"
+
+#: ../comments.php:48
+#, php-format
+msgid ""
+"Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post"
+"\">trackbacks</a> are open."
+msgstr ""
+"I commenti sono chiusi ma i <a href=\"%1$s\" title=“URL per il trackback a "
+"questo articolo”>trackback</a> sono aperti."
+
+#: ../comments.php:57
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+"È necessario <a href=\"%s\">effettuare l’accesso</a> per inserire un "
+"commento."
+
+#: ../comments.php:62
+msgid "Post Your Comment"
+msgstr "Inserisci un commento"
+
+#: ../comments.php:62
+#, php-format
+msgid "Reply to %s"
+msgstr "Risposta da %s"
+
+#: ../comments.php:66
+#, php-format
+msgid ""
+"You are logged in as <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href="
+"\"%3$s\">Log out?</a>"
+msgstr ""
+"Accesso effettuato come <a href=\"%1$s\">%2$s</a>. <a class=\"logout\" href="
+"\"%3$s\">Disconnettersi?</a>"
+
+#: ../comments.php:69
+msgid "Name"
+msgstr "Nome"
+
+#: ../comments.php:69
+msgid "(required)"
+msgstr "(obbligatorio)"
+
+#: ../comments.php:73
+msgid "E-mail"
+msgstr "Email"
+
+#: ../comments.php:73
+msgid "(required, will not be published)"
+msgstr "(obbligatorio, non verrà pubblicato)"
+
+#: ../comments.php:77
+msgid "Website"
+msgstr "Sito web"
+
+#: ../comments.php:81
+msgid "Spam robots, please fill in this field. Humans should leave it blank."
+msgstr ""
+"Se sei un robot spammer compila questo campo. Se sei un essere umano "
+"lascialo vuoto."
+
+#: ../comments.php:85
+msgid "Your comment"
+msgstr "Il tuo commento"
+
+#: ../comments.php:86
+msgid "Submit Comment"
+msgstr "Invia commento"
+
+#: ../comments.php:98
+msgid ""
+"You must provide a name and e-mail (your e-mail address won’t be published)."
+msgstr ""
+"È necessario fornire nome e indirizzo email (l’indirizzo email non verrà "
+"pubblicato)."
+
+#: ../comments.php:99
+msgid "You must provide a name."
+msgstr "È necessario fornire un nome."
+
+#: ../comments.php:100
+msgid "You must provide an e-mail address (it won’t be published)."
+msgstr "È necessario fornire un indirizzo email (non verrà pubblicato)."
+
+#: ../comments.php:101
+msgid ""
+"The e-mail address you entered doesn’t look like a complete e-mail address. "
+"It should look like “yourname@example.com”."
+msgstr ""
+"L’indirizzo email inserito non sembra essere un indirizzo email completo "
+"(es. \"iltuonome@example.com\")."
+
+#: ../comments.php:102
+msgid "You must enter a comment."
+msgstr "È necessario inserire un commento."
+
+#: ../content-page.php:9
+msgid "Edit Page"
+msgstr "Modifica pagina"
+
+#: ../content-page.php:14 ../content-single.php:53 ../content.php:51
+#: ../image.php:41
+msgid "Pages:"
+msgstr "Pagine:"
+
+#: ../content-single.php:11 ../content-summary.php:30 ../content.php:30
+#, php-format
+msgid "See all posts by %1$s"
+msgstr "Visualizza tutti gli articoli di %1$s"
+
+#: ../content-single.php:20 ../content-summary.php:39 ../content.php:39
+msgid "% responses"
+msgstr "% risposte"
+
+#: ../content-single.php:29 ../content-single.php:35 ../content-summary.php:12
+#: ../content-summary.php:18 ../content.php:12 ../content.php:18
+#, php-format
+msgid "See all posts from %s"
+msgstr "Visualizza tutti gli articoli di %s"
+
+#: ../content-single.php:47 ../content-summary.php:42 ../content.php:44
+msgid "Edit Post"
+msgstr "Modifica articolo"
+
+#: ../content-single.php:59 ../content-summary.php:55 ../content.php:57
+msgid "Tags"
+msgstr "Etichette"
+
+#: ../content-single.php:61 ../content-summary.php:57 ../content.php:59
+#: ../sidebar.php:41
+msgid "Categories"
+msgstr "Categorie"
+
+#: ../content-summary.php:4 ../content.php:4 ../functions.php:762
+#: ../index.php:21
+#, php-format
+msgid "Permanent link to “%s”"
+msgstr "Link permanente a \"%s\""
+
+#: ../content.php:50
+msgid "Continue reading &hellip;"
+msgstr "Continua a leggere &hellip;"
+
+#: ../footer.php:9
+msgid "Return to top"
+msgstr "Torna in cima"
+
+#: ../footer.php:14
+#, php-format
+msgid ""
+"Except where otherwise <a href=\"%1s\" rel=\"external\">noted</a>, content "
+"on this site is licensed under the <a href=\"%2s\" rel=\"external license"
+"\">Creative Commons Attribution Share-Alike License v3.0</a> or any later "
+"version."
+msgstr ""
+"Eccetto dove diversamente <a href=\"%1s\" rel=\"external\">indicato</a>, i "
+"contenuti di questo sito sono disponibili con <a href=\"%2s\" rel=\"external "
+"license\">licenza Creative Commons Attribuzione - Condividi allo stesso modo "
+"v3.0</a> o qualsiasi versione successiva."
+
+#: ../footer.php:19
+msgid "Contact Us"
+msgstr "Contattaci"
+
+#: ../footer.php:20
+msgid "Privacy Policy"
+msgstr "Informativa sulla privacy"
+
+#: ../footer.php:21
+msgid "Legal Notices"
+msgstr "Note legali"
+
+#: ../footer.php:22
+msgid "Report Trademark Abuse"
+msgstr "Segnala un abuso dei marchi"
+
+#: ../footer.php:23
+msgid "Theme Code "
+msgstr "Codice del tema"
+
+#: ../functions.php:35
+msgid "Primary Menu"
+msgstr "Menu principale"
+
+#: ../functions.php:70
+msgid "Firefox Logo"
+msgstr "Logo di Firefox"
+
+#: ../functions.php:138
+msgid "Social sharing"
+msgstr "Condivisione sui social"
+
+#: ../functions.php:150 ../functions.php:182
+msgid "Hide post authors"
+msgstr "Nascondi autori degli articoli"
+
+#: ../functions.php:166
+msgid "Add social sharing buttons to posts and pages"
+msgstr "Aggiungi la condivisione sui social ad articoli e pagine"
+
+#: ../functions.php:168
+msgid "Adds buttons for Facebook, Twitter, and Google+."
+msgstr "Aggiungi pulsanti per Facebook, Twitter e Google+."
+
+#: ../functions.php:184
+msgid "This removes the author byline and author bio from individual posts."
+msgstr ""
+"Questo rimuove l’attribuzione dell'autore e la biografia dai singoli "
+"articoli."
+
+#: ../functions.php:310
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: ../functions.php:367
+msgid ""
+"Sorry, you appear to be a spamming robot because you filled in the hidden "
+"spam trap field. To show you are not a spammer, submit your comment again "
+"and leave the field blank."
+msgstr ""
+"Siamo spiacenti ma ci risulta che tu sia un robot spammer, dal momento che "
+"hai compilato un campo nascosto e utilizzato come trappola antispam. Se non "
+"sei uno spammer invia nuovamente il tuo commento e assicurati di lasciare "
+"vuoto il campo in questione."
+
+#: ../functions.php:393
+msgid "This post is password protected. To view it, please enter the password."
+msgstr ""
+"Questo articolo è protetto da password. Inserire la password per "
+"visualizzarlo."
+
+#: ../functions.php:394
+msgid "Password"
+msgstr "Password"
+
+#: ../functions.php:394
+msgid "Submit"
+msgstr "Invia"
+
+#: ../functions.php:461
+msgid "Make this a featured post?"
+msgstr "Impostare come articolo in primo piano?"
+
+#: ../functions.php:467
+msgid "Featured Post"
+msgstr "Articolo in primo piano"
+
+#: ../functions.php:512
+msgid "Continue reading"
+msgstr "Continua a leggere"
+
+#: ../functions.php:559
+msgid "Sidebar"
+msgstr "Barra laterale"
+
+#: ../functions.php:660
+msgid "Trackback from "
+msgstr "Trackback da"
+
+#: ../functions.php:662 ../functions.php:671
+msgid "on"
+msgstr "il"
+
+#: ../functions.php:663 ../functions.php:672 ../functions.php:687
+#: ../functions.php:697
+msgid "Permanent link to this comment by "
+msgstr "Link permanente a questo commento di "
+
+#: ../functions.php:666 ../functions.php:675 ../functions.php:690
+#: ../functions.php:700
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s alle %2$s"
+
+#: ../functions.php:669
+msgid "Pingback from "
+msgstr "Pingback da "
+
+#: ../functions.php:686 ../functions.php:696
+msgid "wrote on"
+msgstr "scritto il"
+
+#: ../functions.php:706
+msgid "Your comment is awaiting moderation."
+msgstr "Il commento è in attesa di moderazione."
+
+#: ../functions.php:714
+msgid "Edit Comment"
+msgstr "Modifica commento"
+
+#: ../functions.php:731
+msgid "This widget shows the three most recent featured posts."
+msgstr "Questo widget visualizza i tre articoli in primo piano più recenti."
+
+#: ../functions.php:743
+msgid "Title:"
+msgstr "Titolo:"
+
+#: ../header.php:60
+#, php-format
+msgid "Search results for “%s”"
+msgstr "Risultati della ricerca di \"%s\""
+
+#: ../header.php:64
+msgid "Not Found"
+msgstr "Non trovato"
+
+#: ../header.php:76
+msgid "Skip to main content"
+msgstr "Passa al contenuto principale"
+
+#: ../header.php:77
+msgid "Skip to sidebar"
+msgstr "Passa alla barra laterale"
+
+#: ../header.php:79
+msgid "Skip to blog search"
+msgstr "Passa alla ricerca nel blog"
+
+#: ../image.php:13
+#, php-format
+msgid ""
+"Published <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">%2$s</"
+"time> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a>"
+msgstr ""
+"Pubblicato il <time class=\"published\" title=\"%1$s\" datetime=\"%1$s\">"
+"%2$s</time> alle <a href=\"%3$s\" title=\"Link all’immagine nelle dimensioni "
+"originali\">%4$s &times; %5$s</a>"
+
+#: ../image.php:22
+msgid "Edit Attachment"
+msgstr "Modifica allegato"
+
+#: ../inc/theme-options.php:45
+msgid "Color Scheme"
+msgstr "Schema di colori"
+
+#: ../inc/theme-options.php:79 ../inc/theme-options.php:80
+msgid "Theme Options"
+msgstr "Opzioni tema"
+
+#: ../inc/theme-options.php:95
+msgid ""
+"Some themes provide customization options that are grouped together on a "
+"Theme Options screen. If you change themes, options may change or disappear, "
+"as they are theme-specific. Your current theme, One Mozilla, provides the "
+"following Theme Options:"
+msgstr ""
+"Alcuni temi offrono opzioni di personalizzazione disponibili nella schermata "
+"Opzioni tema. Se cambi tema le opzioni esistenti potrebbero sparire o "
+"cambiare, in quanto sono specifiche per ogni tema. Il tema attuale, One "
+"Mozilla, offre le seguenti opzioni:"
+
+#: ../inc/theme-options.php:97
+msgid ""
+"<strong>Color Scheme</strong>: You can choose from a few different color "
+"schemes: “Sand” (orange-tan background) is suitable for most Mozilla blogs. "
+"“Sky” (light blue/gray background) suitable for Firefox-related blogs. "
+"“Obsidian” is a light-on-dark scheme. “Stone” is the default scheme, a "
+"light, neutral gray."
+msgstr ""
+"<strong>Schema di colori</strong>: è possibile scegliere tra diversi schemi "
+"di colore: “Sabbia” (sfondo arancio-marrone) è adatto alla maggior parte dei "
+"blog Mozilla. “Cielo” (sfondo blu chiaro/grigio) è adatto a blog relativi a "
+"Firefox. “Ossidiana” è uno schema di colori con elementi chiari su sfondo "
+"scuro. “Pietra” è lo schema predefinito, con un grigio chiaro e neutro."
+
+#: ../inc/theme-options.php:99
+msgid ""
+"Remember to click “Save Changes” to save any changes you have made to the "
+"theme options."
+msgstr ""
+"Ricorda di fare clic su “Salva modifiche” per salvare le modifiche "
+"effettuate alle opzioni del tema."
+
+#: ../inc/theme-options.php:101
+msgid "For more information:"
+msgstr "Per ulteriori informazioni:"
+
+#: ../inc/theme-options.php:102
+msgid ""
+"<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" "
+"target=\"_blank\">Documentation on Theme Options</a>"
+msgstr ""
+"<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" "
+"target=\"_blank\">Documentazione su Opzioni tema</a>"
+
+#: ../inc/theme-options.php:103
+msgid ""
+"<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</"
+"a>"
+msgstr ""
+"<a href=\"http://wordpress.org/support/\" target=\"_blank\">Forum di "
+"supporto</a>"
+
+#: ../inc/theme-options.php:110
+msgid "Overview"
+msgstr "Anteprima"
+
+#: ../inc/theme-options.php:140
+msgid "Stone"
+msgstr "Pietra"
+
+#: ../inc/theme-options.php:145
+msgid "Sand"
+msgstr "Sabbia"
+
+#: ../inc/theme-options.php:150
+msgid "Sky"
+msgstr "Cielo"
+
+#: ../inc/theme-options.php:155
+msgid "Obsidian"
+msgstr "Ossidiana"
+
+#: ../inc/theme-options.php:198
+#, php-format
+msgid "%s Theme Options"
+msgstr "%s - Opzioni tema"
+
+#: ../index.php:16
+msgid "Featured"
+msgstr "In primo piano"
+
+#: ../index.php:63
+msgid ""
+"Sorry, we couldn&#8217;t find any results for the requested archive. Perhaps "
+"try searching?"
+msgstr ""
+"Siamo spiacenti, non è stato trovato alcun risultato per l’archivio "
+"richiesto. Una ricerca potrebbe aiutare a trovare l’articolo che stavi "
+"cercando."
+
+#: ../masthead.php:6
+msgid "Go to the front page"
+msgstr "Vai alla pagina iniziale"
+
+#: ../search.php:45
+#, php-format
+msgid "Sorry, we didn't find anything for “%s.” Try another search."
+msgstr ""
+"Siamo spiacenti, non è stato trovato alcun risultato per \"%s\". Riprovare "
+"con una ricerca diversa."
+
+#: ../sidebar.php:9 ../sidebar.php:55
+msgid "About"
+msgstr "Informazioni su"
+
+#: ../sidebar.php:35 ../sidebar.php:81
+#, php-format
+msgid "More from %s"
+msgstr "Altro da %s"

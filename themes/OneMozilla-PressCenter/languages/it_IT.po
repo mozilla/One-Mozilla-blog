@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mozilla Press Center\n"
+"POT-Creation-Date: 2016-07-15 22:16+0200\n"
+"PO-Revision-Date: 2016-07-16 09:59+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;_n:1,2;__;esc_attr__\n"
+"Last-Translator: Francesco Lodolo [:flod] <flod@lodolo.net>\n"
+"Language: it_IT\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../archive-ataglance.php:5
+msgid "Mozilla At a Glance"
+msgstr "Mozilla - A colpo d’occhio"
+
+#: ../archive-bios.php:43 ../single-bios.php:42
+msgid "Website"
+msgstr "Sito web"
+
+#: ../archive-bios.php:46 ../single-bios.php:45
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../archive-bios.php:49 ../single-bios.php:48
+msgid "Download high-res JPEG"
+msgstr "Scarica JPEG ad alta risoluzione"
+
+#: ../content-syndicated.php:4
+#, php-format
+msgid "Permanent link to &ldquo;%s&rdquo;"
+msgstr "Link permanente a &ldquo;%s&rdquo;"
+
+#: ../functions.php:27
+msgid "At a Glance"
+msgstr "A colpo d’occhio"
+
+#: ../functions.php:28
+msgid "At a Glance Item"
+msgstr "Elemento A colpo d’occhio"
+
+#: ../functions.php:29 ../functions.php:63
+msgid "Add New"
+msgstr "Aggiungi nuovo"
+
+#: ../functions.php:30
+msgid "Add New At a Glance Item"
+msgstr "Aggiungi nuovo elemento A colpo d’occhio"
+
+#: ../functions.php:31
+msgid "Edit Item"
+msgstr "Modifica elemento"
+
+#: ../functions.php:32
+msgid "View Item"
+msgstr "Visualizza elemento"
+
+#: ../functions.php:33
+msgid "Search At a Glance Items"
+msgstr "Cerca in tutti gli elementi A colpo d’occhio"
+
+#: ../functions.php:34 ../functions.php:68
+msgid "Nothing found"
+msgstr "Nessun elemento trovato"
+
+#: ../functions.php:35 ../functions.php:69
+msgid "Nothing found in Trash"
+msgstr "Nessun elemento trovato nel cestino"
+
+#: ../functions.php:61
+msgid "Speaker Bios"
+msgstr "Biografia speaker"
+
+#: ../functions.php:62
+msgid "Bio"
+msgstr "Biografia"
+
+#: ../functions.php:64
+msgid "Add New Speaker Bio"
+msgstr "Aggiungi nuova biografia speaker"
+
+#: ../functions.php:65
+msgid "Edit Bio"
+msgstr "Modifica biografia"
+
+#: ../functions.php:66
+msgid "View Bio"
+msgstr "Visualizza biografia"
+
+#: ../functions.php:67
+msgid "Search Bios"
+msgstr "Cerca nelle biografie"
+
+#: ../functions.php:97
+msgid "Title/Position"
+msgstr "Titolo/posizione"
+
+#: ../functions.php:112
+msgid "Blog Name"
+msgstr "Nome del blog"
+
+#: ../functions.php:116
+msgid "Blog URL"
+msgstr "URL del blog"
+
+#: ../functions.php:116
+msgid "full URL, including \"http://\""
+msgstr "URL completo, incluso \"http://\""
+
+#: ../functions.php:120
+msgid "Twitter Name"
+msgstr "Nome Twitter"
+
+#: ../home.php:4
+msgid "Mozilla News"
+msgstr "Notizie Mozilla"
+
+#: ../home.php:18 ../index.php:17
+msgid "Older posts"
+msgstr "Articoli più vecchi"
+
+#: ../home.php:19 ../index.php:18
+msgid "Newer posts"
+msgstr "Articoli più recenti"
+
+#: ../home.php:28 ../index.php:27
+msgid "Nothing Found"
+msgstr "Nessun elemento trovato"
+
+#: ../home.php:32 ../index.php:31
+msgid ""
+"Sorry, we couldn't find any results for the requested archive. Perhaps try "
+"searching?"
+msgstr ""
+"Siamo spiacenti, non è stato trovato alcun risultato per l’archivio "
+"richiesto. Una ricerca potrebbe aiutare a trovare l’articolo che stavi "
+"cercando."
+
+#: ../media-library.php:10
+msgid "Media Library"
+msgstr "Libreria multimediale"
+
+#: ../media-library.php:26
+msgid "Edit Page"
+msgstr "Modifica pagina"
+
+#: ../media-library.php:44
+msgid "Download high resolution image of "
+msgstr "Scarica immagine ad alta risoluzione di "
+
+#: ../media-library.php:48
+msgid "See bio"
+msgstr "Visualizza biografia"
