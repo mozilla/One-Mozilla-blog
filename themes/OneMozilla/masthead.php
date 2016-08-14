@@ -13,4 +13,7 @@
     <span id="tabzilla">
       <a href="https://www.mozilla.org/">Mozilla</a>
     </span>
+
+    <?php wp_nav_menu( array( 'theme_location' => 'top', 'container' => 'nav', 'container_id' => 'nav-top', 'fallback_cb' => 'false', ) ); ?>
+
   </header><!-- #masthead -->

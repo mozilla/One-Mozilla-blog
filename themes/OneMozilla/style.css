@@ -487,6 +487,23 @@ html[dir='rtl'] #tabzilla {
   border-left: 0;
 }
 
+/* @Top @navigation *********/
+#nav-top {
+  position: absolute;
+  top: 0;
+  right: 150px;
+  font-size: 13px;
+}
+#nav-top li {
+  float: left;
+  display: inline-block;
+  text-transform: uppercase;
+}
+#nav-top a {
+  display: inline-block;
+  padding: 6px 12px;
+}
+
 /* @Featured posts *********/
 .featured-posts {
   background: #fff;

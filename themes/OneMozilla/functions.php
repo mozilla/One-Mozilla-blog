@@ -31,8 +31,9 @@ function onemozilla_setup() {
   // Load up our theme options page and related code.
   require( get_template_directory() . '/inc/theme-options.php' );
 
-  // This theme uses wp_nav_menu() in one location.
+  // This theme uses wp_nav_menu() in two locations.
   register_nav_menu( 'primary', __( 'Primary Menu', 'onemozilla' ) );
+  register_nav_menu( 'top', __( 'Top Menu', 'onemozilla' ) );
 
   // This theme uses Featured Images (also known as post thumbnails)
   add_theme_support( 'post-thumbnails' );
