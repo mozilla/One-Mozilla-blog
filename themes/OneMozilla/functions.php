@@ -136,8 +136,20 @@ function onemozilla_admin_init(){
   );
   add_settings_field(
     'share_posts',
-    __( 'Social sharing', 'onemozilla' ),
+    __( 'Social sharing for posts', 'onemozilla' ),
     'onemozilla_settings_field_share_posts',
+    'reading',
+    'default'
+  );
+
+  register_setting(
+    'reading',
+    'onemozilla_share_pages'
+  );
+  add_settings_field(
+    'share_pages',
+    __( 'Social sharing for pages', 'onemozilla' ),
+    'onemozilla_settings_field_share_pages',
     'reading',
     'default'
   );
@@ -157,14 +169,30 @@ function onemozilla_admin_init(){
 add_action('admin_init', 'onemozilla_admin_init');
 
 /**
- * Renders the Add Sharing setting field.
+ * Renders the Add Sharing setting field for posts.
  */
 function onemozilla_settings_field_share_posts() { ?>
 	<div class="layout share-posts">
 	<label>
 		<input type="checkbox" id="onemozilla_share_posts" name="onemozilla_share_posts" value="1" <?php checked( '1', get_option('onemozilla_share_posts') ); ?> />
 		<span>
-			<?php _e('Add social sharing buttons to posts and pages', 'onemozilla'); ?>
+			<?php _e('Add social sharing buttons to posts', 'onemozilla'); ?>
+		</span>
+		<p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
+	</label>
+	</div>
+	<?php
+}
+
+/**
+ * Renders the Add Sharing setting field for pages.
+ */
+function onemozilla_settings_field_share_pages() { ?>
+	<div class="layout share-pages">
+	<label>
+		<input type="checkbox" id="onemozilla_share_pages" name="onemozilla_share_pages" value="1" <?php checked( '1', get_option('onemozilla_share_pages') ); ?> />
+		<span>
+			<?php _e('Add social sharing buttons to pages', 'onemozilla'); ?>
 		</span>
 		<p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
 	</label>
@@ -208,7 +236,7 @@ function onemozilla_post_classes( $classes ) {
   elseif ( !comments_open($post->ID) && !pings_open($post->ID) && ($comment_count == 0) ) {
     $classes[] = 'no-comments';
   }
-  if ( get_option('onemozilla_share_posts') == 1 ) {
+  if ( get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1 ) {
     $classes[] = 'show-sharing';
   }
   return $classes;
@@ -334,7 +362,7 @@ function onemozilla_load_scripts() {
 
   // Register and load the socialsharing script
   wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js' );
-  if ( (get_option('onemozilla_share_posts') == 1) && is_singular() ) {
+  if ( (get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1) && is_singular() ) {
     wp_enqueue_script( 'socialshare' );
   }
 

@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <header class="entry-header">
     <h1 class="entry-title"><?php the_title(); ?></h1>
-  <?php if ( get_option('onemozilla_share_posts') == 1 ) : ?>
+  <?php if ( get_option('onemozilla_share_pages') == 1 ) : ?>
     <div class="share">
       <div class="socialshare" data-type="small-bubbles"></div>
     </div>
