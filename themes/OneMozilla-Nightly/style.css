@@ -1,0 +1,86 @@
+/*
+Theme Name:     One Mozilla - Nightly
+Description:    Site theme for the Firefox Nightly blog. This theme is a child of the One Mozilla WordPress theme.
+Author:         Kohei Yoshino
+Template:       OneMozilla
+Version:        1.0
+*/
+
+@import url(../OneMozilla/style.css);
+
+body.nightly {
+  color: #D6D6D6;
+  background: #000;
+}
+
+body.nightly h1,
+body.nightly h2,
+body.nightly h3,
+body.nightly h4,
+body.nightly h5,
+body.nightly h6 {
+  color: #FFF;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, .5);
+}
+
+body.nightly a:link,
+body.nightly a:visited,
+body.nightly a:hover,
+body.nightly a:focus,
+body.nightly a:active {
+  color: #79D8FF;
+}
+
+body.nightly input[type="email"],
+body.nightly input[type="url"],
+body.nightly input[type="search"],
+body.nightly input[type="password"],
+body.nightly input[type="text"],
+body.nightly textarea {
+  border-color: rgba(255, 255, 255, .5);
+}
+
+body.nightly #page {
+  background: #000 url(img/background.png) no-repeat top center;
+  background: url(img/background.png) no-repeat top center,
+              linear-gradient(to bottom, transparent, #000 580px),
+              #0B3D61;
+}
+
+body.nightly #site-title a {
+  color: inherit;
+}
+
+body.nightly #site-description {
+  color: #BBB;
+}
+
+body.nightly .entry-posted,
+body.nightly .entry-posted a:link,
+body.nightly .entry-posted a:visited,
+body.nightly .entry-posted a:hover,
+body.nightly .entry-posted a:focus,
+body.nightly .entry-posted a:active {
+  color: #333;
+}
+
+body.nightly .edit a {
+  color: #666;
+}
+
+body.nightly .entry-meta {
+  border-bottom-color: rgba(255, 255, 255, .15);
+}
+
+body.nightly #site-info {
+  border: 0;
+  background: #000;
+  background: linear-gradient(to bottom, #000, #0D2846);
+}
+
+@media only screen and (max-width: 767px) {
+  body.nightly .entry-posted,
+  body.nightly .entry-posted a {
+    color: inherit !important;
+  }
+}
