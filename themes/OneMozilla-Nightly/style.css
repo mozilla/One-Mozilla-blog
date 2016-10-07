@@ -6,7 +6,7 @@ Template:       OneMozilla
 Version:        1.0
 */
 
-@import url(../OneMozilla/style.css);
+@import url('../OneMozilla/style.css');
 
 body.nightly {
   color: #D6D6D6;
@@ -68,6 +68,10 @@ body.nightly .edit a {
   color: #666;
 }
 
+body.nightly .post .entry-comments a {
+  background-image: url('img/icn-comment.png');
+}
+
 body.nightly .entry-meta {
   border-bottom-color: rgba(255, 255, 255, .15);
 }
@@ -84,3 +88,76 @@ body.nightly #site-info {
     color: inherit !important;
   }
 }
+
+/* @Comments *********/
+body.nightly #comment-list .comment,
+body.nightly #comment-list .pingback,
+body.nightly #comment-list .trackback {
+  background: #17324f;
+  background: rgba(23,50,79,.5);
+  border-color: #17324f;
+  border-radius: 8px;
+}
+
+body.nightly #comment-list .alt {
+  background: transparent;
+}
+
+body.nightly #comment-list .byuser {
+  border-color: #3068a5;
+}
+
+body.nightly #comment-list .avatar {
+  border-color: #5d83a0;
+}
+
+body.nightly #comment-submit button {
+  font-size: 1em;
+}
+
+body.nightly #comment-form #errors {
+  background: #39303f;
+  border: 1px solid #473851;
+  border-radius: 6px;
+}
+
+body.nightly #comment-form .err {
+  background: #39303f;
+}
+
+/* @Social @Sharing *********/
+body.nightly .socialshare > div > a,
+body.nightly .socialshare > div > a:after {
+  background-image: url('img/icn-share.png');
+}
+
+body.nightly .socialshare > div > a {
+  color: #a2e2ff;
+}
+
+body.nightly .socialshare > div > a:after {
+  background-color: #294863;
+}
+
+body.nightly .share-active-state,
+body.nightly .socialshare.open > div > a,
+body.nightly .socialshare > div > a:hover,
+body.nightly .socialshare > div > a:focus {
+  color: #a2e2ff;
+}
+
+body.nightly .share-active-state span,
+body.nightly .socialshare > div > a:hover span,
+body.nightly .socialshare > div > a:focus span,
+body.nightly .socialshare.open > div > a span {
+  border-color: #a2e2ff;
+}
+
+body.nightly .socialshare > div > a:focus span {
+  outline-color: #a2e2ff;
+}
+
+body.nightly .socialshare > div > a span {
+  border-bottom-color: #a2e2ff;
+}
+
