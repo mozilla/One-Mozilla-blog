@@ -21,7 +21,7 @@
   <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); ?>
     <meta property="og:image" content="<?php echo $thumb['0']; ?>">
   <?php else : ?>
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/mozilla-wordmark.png">
+    <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/page-image.png">
   <?php endif; ?>
 <?php elseif (get_header_image()) : ?>
   <meta property="og:image" content="<?php echo get_header_image(); ?>">
