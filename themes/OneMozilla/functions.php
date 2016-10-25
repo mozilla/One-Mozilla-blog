@@ -156,6 +156,18 @@ function onemozilla_admin_init(){
 
   register_setting(
     'reading',
+    'onemozilla_tweet_at'
+  );
+  add_settings_field(
+    'tweet_at',
+    __( 'Twitter account to share via', 'onemozilla' ),
+    'onemozilla_settings_field_tweet_at',
+    'reading',
+    'default'
+  );
+
+  register_setting(
+    'reading',
     'onemozilla_hide_authors'
   );
   add_settings_field(
@@ -195,6 +207,19 @@ function onemozilla_settings_field_share_pages() { ?>
 			<?php _e('Add social sharing buttons to pages', 'onemozilla'); ?>
 		</span>
 		<p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
+	</label>
+	</div>
+	<?php
+}
+
+/**
+ * Renders the Twitter account setting field to share via.
+ */
+function onemozilla_settings_field_tweet_at() { ?>
+	<div class="layout tweet-at">
+	<label>
+		<input type="checkbox" id="onemozilla_tweet_at" name="onemozilla_tweet_at" value="<?php echo get_option('onemozilla_tweet_at', 'firefox'); ?>" />
+		<p class="description"><?php _e('Sets Twitter account to share via.', 'onemozilla' ); ?></p>
 	</label>
 	</div>
 	<?php
