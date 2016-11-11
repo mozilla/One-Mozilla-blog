@@ -218,7 +218,7 @@ function onemozilla_settings_field_share_pages() { ?>
 function onemozilla_settings_field_tweet_at() { ?>
 	<div class="layout tweet-at">
 	<label>
-		<input type="checkbox" id="onemozilla_tweet_at" name="onemozilla_tweet_at" value="<?php echo get_option('onemozilla_tweet_at', 'firefox'); ?>" />
+		<input type="text" id="onemozilla_tweet_at" name="onemozilla_tweet_at" value="<?php echo get_option('onemozilla_tweet_at', 'firefox'); ?>" />
 		<p class="description"><?php _e('Sets Twitter account to share via.', 'onemozilla' ); ?></p>
 	</label>
 	</div>
