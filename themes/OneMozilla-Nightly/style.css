@@ -55,6 +55,12 @@ body.nightly #site-description {
   color: #BBB;
 }
 
+body.nightly #nav-primary,
+body.nightly .featured-posts {
+  background: #17324f;
+  background: rgba(23,50,79,.5);
+}
+
 body.nightly .entry-posted,
 body.nightly .entry-posted a:link,
 body.nightly .entry-posted a:visited,
