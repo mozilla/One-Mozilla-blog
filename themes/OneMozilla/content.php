@@ -25,13 +25,32 @@
   <?php if ( (get_option('onemozilla_hide_authors') != 1) || comments_open() || get_comments_number() ) : ?>
     <div class="entry-info">
     <?php if ( get_option('onemozilla_hide_authors') != 1 ) : ?>
-      <address class="vcard">
-        <cite class="author fn">
-          <a class="url" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>" title="<?php printf( esc_attr__( 'See all posts by %1$s', 'onemozilla'), get_the_author() ); ?>">
-            <?php esc_html(the_author()); ?> <?php echo get_avatar(get_the_author_meta('user_email'), 24) ?>
-          </a>
-        </cite>
-      </address>
+
+      <?php if (function_exists('coauthors')) : ?>
+        <?php
+          $authors = get_coauthors($post->ID);
+          $authorPos = 0;
+        ?>
+        <?php foreach ($authors as $author) : ?>
+          <?php $authorPos++; ?>
+          <address class="vcard">
+            <cite class="author fn">
+              <a class="url" href="<?php echo esc_url( get_author_posts_url($author->ID) ) ?>" title="<?php printf( esc_attr__( 'See all posts by %1$s', 'onemozilla'), get_the_author() ); ?>">
+                <?php echo esc_html($author->display_name); ?> <?php echo get_avatar($author, 24) ?>
+              </a>
+            </cite>
+          </address>
+        <?php endforeach; ?>
+      <?php else : /* if the plugin is disabled, fall back to single author */ ?>
+        <address class="vcard">
+          <cite class="author fn">
+            <a class="url" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>" title="<?php printf( esc_attr__( 'See all posts by %1$s', 'onemozilla'), get_the_author() ); ?>">
+              <?php esc_html(the_author()); ?> <?php echo get_avatar(get_the_author_meta('user_email'), 24) ?>
+            </a>
+          </cite>
+        </address>
+      <?php endif; ?>
+
     <?php endif; ?>
 
     <?php if ( comments_open() || get_comments_number() ) : ?>
