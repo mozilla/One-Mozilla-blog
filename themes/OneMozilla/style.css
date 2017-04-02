@@ -1198,13 +1198,6 @@ input:-moz-placeholder {
 #comment-form p {
   margin-bottom: 1em;
 }
-#comment-form .self {
-  margin-bottom: 1em;
-}
-#comment-form .self .logout {
-  font-size: .923em;
-  margin-left: 1em;
-}
 #comment-list #respond {
   margin: 1em 20px;
   width: auto;
