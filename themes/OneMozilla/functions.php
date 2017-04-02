@@ -410,6 +410,17 @@ add_action( 'wp_enqueue_scripts', 'onemozilla_load_scripts' );
 remove_action('wp_head', 'wp_generator');
 
 /*********
+* Ensure the comment textarea is the last in the form.
+*/
+function onemozilla_comment_textarea_to_the_bottom( $fields ) {
+  $comment_field = $fields['comment'];
+  unset( $fields['comment'] );
+  $fields['comment'] = $comment_field;
+  return $fields;
+}
+add_filter( 'comment_form_fields', 'onemozilla_comment_textarea_to_the_bottom' );
+
+/*********
 * Catch spambots with a honeypot field in the comment form.
 * It's hidden from view with CSS so most humans will leave it blank, but robots will kindly fill it in to alert us to their presence.
 * The field has an innucuous name -- 'age' in this case -- likely to be autofilled by a robot.
