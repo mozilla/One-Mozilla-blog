@@ -1191,23 +1191,12 @@ input:-moz-placeholder {
 }
 
 /* @Comment @Form *********/
-#comment-form {
-  padding: 3em 0 0;
-  position: relative;
-}
-#comment-form legend span {
+#reply-title {
   font: 1.5em/1 "Open Sans Light", sans-serif;
   letter-spacing: -1px;
-  margin: 0 0 .25em;
-  position: absolute;
-  top: 0;
 }
-#comment-form .self {
+#comment-form p {
   margin-bottom: 1em;
-}
-#comment-form .self .logout {
-  font-size: .923em;
-  margin-left: 1em;
 }
 #comment-list #respond {
   margin: 1em 20px;
@@ -1216,24 +1205,19 @@ input:-moz-placeholder {
 #comment-list .children #respond {
   margin-left: -50px;
 }
-#cancel-comment-reply {
-  font-size: .857em;
-  position: absolute;
-  right: 0;
-  top: .15em;
-}
-#cancel-comment-reply a {
+#cancel-comment-reply-link {
+  font-size: .8em;
+  float: right;
   background: #eee;
   background: linear-gradient(to bottom, #fff 0, #eee 100%);
   border: 1px solid #ccc;
   border-radius: 4px;
   display: inline-block;
-  margin-left: 20px;
   padding: 1px 5px;
 }
-#cancel-comment-reply a:hover,
-#cancel-comment-reply a:focus,
-#cancel-comment-reply a:active {
+#cancel-comment-reply-link:hover,
+#cancel-comment-reply-link:focus,
+#cancel-comment-reply-link:active {
   border-color: #999;
 }
 #comment-form #errors {
@@ -1248,7 +1232,7 @@ input:-moz-placeholder {
 #comment-form .err {
   background: #ffeef0;
 }
-#comment-form input,
+#comment-form input:not([type=submit]),
 #comment-form textarea {
   font-size: .857em;
   width: 96%;

@@ -400,6 +400,13 @@ function onemozilla_load_scripts() {
   wp_register_script( 'checkcomments', get_template_directory_uri() . '/js/fc-checkcomment.js' );
   if ( get_option('require_name_email') && is_singular() ) {
     wp_enqueue_script('checkcomments');
+    wp_localize_script('checkcomments', 'objectL10n', array(
+      'nonameemail' => __('You must provide a name and e-mail (your e-mail address won’t be published).', 'onemozilla'),
+      'noname' => __('You must provide a name.', 'onemozilla'),
+      'noemail' => __('You must provide an e-mail address (it won’t be published).', 'onemozilla'),
+      'bademail' => __('The e-mail address you entered doesn’t look like a complete e-mail address. It should look like “yourname@example.com”.', 'onemozilla'),
+      'nocomment' => __('You must enter a comment.', 'onemozilla')
+    ) );
   }
 }
 add_action( 'wp_enqueue_scripts', 'onemozilla_load_scripts' );
@@ -410,10 +417,29 @@ add_action( 'wp_enqueue_scripts', 'onemozilla_load_scripts' );
 remove_action('wp_head', 'wp_generator');
 
 /*********
+* Ensure the comment textarea is the last in the form.
+*/
+function onemozilla_comment_textarea_to_the_bottom( $fields ) {
+  $comment_field = $fields['comment'];
+  unset( $fields['comment'] );
+  $fields['comment'] = $comment_field;
+  return $fields;
+}
+add_filter( 'comment_form_fields', 'onemozilla_comment_textarea_to_the_bottom' );
+
+/*********
 * Catch spambots with a honeypot field in the comment form.
 * It's hidden from view with CSS so most humans will leave it blank, but robots will kindly fill it in to alert us to their presence.
 * The field has an innucuous name -- 'age' in this case -- likely to be autofilled by a robot.
 */
+function fc_honeyport_field( array $fields ) {
+  $fields['cmt-ackbar'] =
+    '<p id="cmt-ackbar"><label for="age">' . __('Spam robots, please fill in this field. Humans should leave it blank.', 'onemozilla') . '</label>' .
+    '<input type="text" name="age" id="age" size="4" tabindex="-1"></p>';
+  return $fields;
+}
+add_filter( 'comment_form_default_fields', 'fc_honeyport_field' );
+
 function fc_honeypot( array $data ){
   if( !isset($_POST['comment']) && !isset($_POST['content'])) { die("No Direct Access"); }  // Make sure the form has actually been submitted
 
