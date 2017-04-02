@@ -388,12 +388,12 @@ function onemozilla_load_scripts() {
 
   if ( has_nav_menu( 'mobile' ) ) {
     // Register and load the nav-mobile script
-    wp_register_script( 'nav-mobile', get_template_directory_uri() . '/js/nav-mobile.js' );
+    wp_register_script( 'nav-mobile', get_template_directory_uri() . '/js/nav-mobile.js', array( 'jquery' ) );
     wp_enqueue_script( 'nav-mobile' );
   }
 
   // Register and load the socialsharing script
-  wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js' );
+  wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js', array( 'jquery' ) );
   if ( (get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1) && is_singular() ) {
     wp_enqueue_script( 'socialshare' );
   }
@@ -404,7 +404,7 @@ function onemozilla_load_scripts() {
   }
 
   // Check required fields on comment form
-  wp_register_script( 'checkcomments', get_template_directory_uri() . '/js/fc-checkcomment.js' );
+  wp_register_script( 'checkcomments', get_template_directory_uri() . '/js/fc-checkcomment.js', array( 'jquery' ) );
   if ( get_option('require_name_email') && is_singular() ) {
     wp_enqueue_script('checkcomments');
   }

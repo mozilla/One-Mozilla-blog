@@ -1,6 +1,6 @@
-$( document ).ready(function() {
-  $( '#nav-mobile-toggle' ).on( 'click', function() {
-    $( '#nav-mobile' ).toggleClass( 'visible' );
+jQuery( document ).ready(function() {
+  jQuery( '#nav-mobile-toggle' ).on( 'click', function() {
+    jQuery( '#nav-mobile' ).toggleClass( 'visible' );
   });
 });
 
