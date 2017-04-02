@@ -4,7 +4,7 @@
 * Requires jQuery. 
 */
 
-function fc_checkform(req) {
+function fc_checkform() {
   author  = document.getElementById("author");
   email   = document.getElementById("email");
   comment = document.getElementById("comment");
@@ -12,11 +12,10 @@ function fc_checkform(req) {
 if (jQuery("#errors").length > 0) { jQuery("#errors").remove(); }
 jQuery("#author, #email, #comment").removeClass("err");
 
-if (req == 'req') {
   if ((author.value == "") && (email.value == "")) {
     author.focus();
     jQuery("#author, #email").addClass("err");
-    jQuery("#comment-form ol").before("<div id='errors'></div>");
+    jQuery("#comment-form .comment-notes").after("<div id='errors'></div>");
     jQuery("#errors").html("<p>" + objectL10n.nonameemail + "</p>");
     return false;
   }
@@ -24,7 +23,7 @@ if (req == 'req') {
     author.focus();
     jQuery("#author").addClass("err");
     jQuery("#email").removeClass("err");
-    jQuery("#comment-form ol").before("<div id='errors'></div>");
+    jQuery("#comment-form .comment-notes").after("<div id='errors'></div>");
     jQuery("#errors").html("<p>" + objectL10n.noname + "</p>");
     return false;
   }
@@ -32,11 +31,10 @@ if (req == 'req') {
     email.focus();
     jQuery("#email").addClass("err");
     jQuery("#author").removeClass("err");
-    jQuery("#comment-form ol").before("<div id='errors'></div>");
+    jQuery("#comment-form .comment-notes").after("<div id='errors'></div>");
     jQuery("#errors").html("<p>" + objectL10n.noemail + "</p>");
     return false;
   }
-}
 
 // check email format
 var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
@@ -64,3 +62,7 @@ else {
 /* if everything checks out, return true */
 return true;
 }
+
+jQuery( document ).ready(function() {
+  jQuery("#comment-form").submit(fc_checkform);
+});

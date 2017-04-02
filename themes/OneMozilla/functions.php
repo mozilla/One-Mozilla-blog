@@ -400,6 +400,13 @@ function onemozilla_load_scripts() {
   wp_register_script( 'checkcomments', get_template_directory_uri() . '/js/fc-checkcomment.js' );
   if ( get_option('require_name_email') && is_singular() ) {
     wp_enqueue_script('checkcomments');
+    wp_localize_script('checkcomments', 'objectL10n', array(
+      'nonameemail' => __('You must provide a name and e-mail (your e-mail address won’t be published).', 'onemozilla'),
+      'noname' => __('You must provide a name.', 'onemozilla'),
+      'noemail' => __('You must provide an e-mail address (it won’t be published).', 'onemozilla'),
+      'bademail' => __('The e-mail address you entered doesn’t look like a complete e-mail address. It should look like “yourname@example.com”.', 'onemozilla'),
+      'nocomment' => __('You must enter a comment.', 'onemozilla')
+    ) );
   }
 }
 add_action( 'wp_enqueue_scripts', 'onemozilla_load_scripts' );
