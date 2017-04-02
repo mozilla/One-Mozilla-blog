@@ -31,9 +31,10 @@ function onemozilla_setup() {
   // Load up our theme options page and related code.
   require( get_template_directory() . '/inc/theme-options.php' );
 
-  // This theme uses wp_nav_menu() in two locations.
+  // This theme uses wp_nav_menu() in three locations.
   register_nav_menu( 'primary', __( 'Primary Menu', 'onemozilla' ) );
   register_nav_menu( 'top', __( 'Top Menu', 'onemozilla' ) );
+  register_nav_menu( 'mobile', __( 'Mobile Menu', 'onemozilla' ) );
 
   // This theme uses Featured Images (also known as post thumbnails)
   add_theme_support( 'post-thumbnails' );
@@ -385,6 +386,12 @@ function onemozilla_load_scripts() {
   // Load the default jQuery
   wp_enqueue_script('jquery');
 
+  if ( has_nav_menu( 'mobile' ) ) {
+    // Register and load the nav-mobile script
+    wp_register_script( 'nav-mobile', get_template_directory_uri() . '/js/nav-mobile.js' );
+    wp_enqueue_script( 'nav-mobile' );
+  }
+
   // Register and load the socialsharing script
   wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js' );
   if ( (get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1) && is_singular() ) {
@@ -602,7 +609,6 @@ function onemozilla_page_menu_args( $args ) {
   return $args;
 }
 add_filter( 'wp_page_menu_args', 'onemozilla_page_menu_args' );
-
 
 /**
  * Register the widgetized sidebar.

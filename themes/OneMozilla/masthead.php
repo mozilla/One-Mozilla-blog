@@ -1,5 +1,9 @@
   <header id="masthead" <?php if (get_header_image()) : ?>class="image"<?php endif; ?>>
     <hgroup>
+    <?php if ( has_nav_menu( 'mobile' ) ) : ?>
+      <span id="nav-mobile-toggle"></span>
+      <?php wp_nav_menu( array( 'theme_location' => 'mobile', 'container' => 'nav', 'container_id' => 'nav-mobile', 'fallback_cb' => 'false', ) ); ?>
+    <?php endif; ?>
     <?php if ( (is_front_page()) && ($paged < 1) ) : ?>
       <h1 id="site-title"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></h1>
     <?php else : ?>
