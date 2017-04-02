@@ -4,63 +4,78 @@
 * Requires jQuery. 
 */
 
+function fc_clear_errors(elements) {
+  if (jQuery("#errors").length > 0) {
+    jQuery("#errors").remove();
+  }
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].removeClass("err");
+  }
+}
+
+function fc_add_error(element, error) {
+  errorsDiv = document.getElementById("errors");
+  if (errorsDiv == null) {
+    errorsDiv = document.createElement("div");
+    errorsDiv.id = "errors";
+    jQuery("#comment-form .comment-notes").after(errorsDiv);
+    jQuery("#comment-form .logged-in-as").after(errorsDiv);
+  }
+  errorP = document.createElement("p");
+  errorP.innerHTML = error;
+  errorsDiv.insertBefore(errorP, errorsDiv.firstChild);
+  element.addClass("err");
+}
+
+function fc_check_author(author) {
+  if (author.val() == "") {
+    fc_add_error(author, objectL10n.noname);
+    return false;
+  }
+  return true;
+}
+
+function fc_check_email(email) {
+   if (email.val() == "") {
+    fc_add_error(email, objectL10n.noemail);
+    return false;
+  } else {
+    // check email format
+    var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    if (!filter.test(email.val())) {
+      fc_add_error(email, objectL10n.bademail);
+      return false;
+    }
+  }
+  return true;
+}
+
+function fc_check_comment(comment) {
+  if (comment.val() == "") {
+    fc_add_error(comment, objectL10n.nocomment);
+    return false;
+  }
+  return true;
+}
+
 function fc_checkform() {
-  author  = document.getElementById("author");
-  email   = document.getElementById("email");
-  comment = document.getElementById("comment");
-  
-if (jQuery("#errors").length > 0) { jQuery("#errors").remove(); }
-jQuery("#author, #email, #comment").removeClass("err");
+  comment = jQuery("#comment");
+  email = jQuery("#email");
+  author = jQuery("#author");
 
-  if ((author.value == "") && (email.value == "")) {
-    author.focus();
-    jQuery("#author, #email").addClass("err");
-    jQuery("#comment-form .comment-notes").after("<div id='errors'></div>");
-    jQuery("#errors").html("<p>" + objectL10n.nonameemail + "</p>");
-    return false;
+  fc_clear_errors([comment, email, author]);
+
+  if (comment.length > 0) {
+    fc_check_comment(comment) || comment.focus();
   }
-  if ((author.value == "") && (email.value != "")) {
-    author.focus();
-    jQuery("#author").addClass("err");
-    jQuery("#email").removeClass("err");
-    jQuery("#comment-form .comment-notes").after("<div id='errors'></div>");
-    jQuery("#errors").html("<p>" + objectL10n.noname + "</p>");
-    return false;
+  if (email.length > 0) {
+    fc_check_email(email) || email.focus();
   }
-  if ((author.value != "") && (email.value == "")) {
-    email.focus();
-    jQuery("#email").addClass("err");
-    jQuery("#author").removeClass("err");
-    jQuery("#comment-form .comment-notes").after("<div id='errors'></div>");
-    jQuery("#errors").html("<p>" + objectL10n.noemail + "</p>");
-    return false;
+  if (author.length > 0) {
+    fc_check_author(author) || author.focus();;
   }
 
-// check email format
-var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
-if ((email.value != "") && (filter.test(email.value))) {
-  jQuery("#email").removeClass("err");
-}
-else {
-  jQuery("#email").addClass("err").focus();
-  jQuery("#comment-form ol").before("<div id='errors'></div>");
-  jQuery("#errors").html("<p>" + objectL10n.bademail + "</p>");
-  return false;
-}
-  
-if ( comment.value == "" ) {
-  comment.focus();
-  jQuery("#comment").addClass("err");
-  jQuery("#comment-form ol").before("<div id='errors'></div>");
-  jQuery("#errors").html("<p>" + objectL10n.nocomment + "</p>");
-  return false;
-}
-else {
-  jQuery("#comment").removeClass("err");
-}
-  
-/* if everything checks out, return true */
-return true;
+  return jQuery("#errors").length == 0;
 }
 
 jQuery( document ).ready(function() {
