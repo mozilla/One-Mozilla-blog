@@ -184,61 +184,61 @@ add_action('admin_init', 'onemozilla_admin_init');
  * Renders the Add Sharing setting field for posts.
  */
 function onemozilla_settings_field_share_posts() { ?>
-	<div class="layout share-posts">
-	<label>
-		<input type="checkbox" id="onemozilla_share_posts" name="onemozilla_share_posts" value="1" <?php checked( '1', get_option('onemozilla_share_posts') ); ?> />
-		<span>
-			<?php _e('Add social sharing buttons to posts', 'onemozilla'); ?>
-		</span>
-		<p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
-	</label>
-	</div>
-	<?php
+  <div class="layout share-posts">
+  <label>
+    <input type="checkbox" id="onemozilla_share_posts" name="onemozilla_share_posts" value="1" <?php checked( '1', get_option('onemozilla_share_posts') ); ?> />
+    <span>
+      <?php _e('Add social sharing buttons to posts', 'onemozilla'); ?>
+    </span>
+    <p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
+  </label>
+  </div>
+  <?php
 }
 
 /**
  * Renders the Add Sharing setting field for pages.
  */
 function onemozilla_settings_field_share_pages() { ?>
-	<div class="layout share-pages">
-	<label>
-		<input type="checkbox" id="onemozilla_share_pages" name="onemozilla_share_pages" value="1" <?php checked( '1', get_option('onemozilla_share_pages') ); ?> />
-		<span>
-			<?php _e('Add social sharing buttons to pages', 'onemozilla'); ?>
-		</span>
-		<p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
-	</label>
-	</div>
-	<?php
+  <div class="layout share-pages">
+  <label>
+    <input type="checkbox" id="onemozilla_share_pages" name="onemozilla_share_pages" value="1" <?php checked( '1', get_option('onemozilla_share_pages') ); ?> />
+    <span>
+      <?php _e('Add social sharing buttons to pages', 'onemozilla'); ?>
+    </span>
+    <p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
+  </label>
+  </div>
+  <?php
 }
 
 /**
  * Renders the Twitter account setting field to share via.
  */
 function onemozilla_settings_field_tweet_at() { ?>
-	<div class="layout tweet-at">
-	<label>
-		<input type="text" id="onemozilla_tweet_at" name="onemozilla_tweet_at" value="<?php echo get_option('onemozilla_tweet_at', 'firefox'); ?>" />
-		<p class="description"><?php _e('Sets Twitter account to share via.', 'onemozilla' ); ?></p>
-	</label>
-	</div>
-	<?php
+  <div class="layout tweet-at">
+  <label>
+    <input type="text" id="onemozilla_tweet_at" name="onemozilla_tweet_at" value="<?php echo get_option('onemozilla_tweet_at', 'firefox'); ?>" />
+    <p class="description"><?php _e('Sets Twitter account to share via.', 'onemozilla' ); ?></p>
+  </label>
+  </div>
+  <?php
 }
 
 /**
  * Renders the Show Author setting field.
  */
 function onemozilla_settings_field_hide_authors() { ?>
-	<div class="layout hide-authors">
-	<label>
-		<input type="checkbox" name="onemozilla_hide_authors" value="1" <?php checked( '1', get_option('onemozilla_hide_authors') ); ?> />
-		<span>
-			<?php _e('Hide post authors', 'onemozilla'); ?>
-		</span>
-		<p class="description"><?php _e('This removes the author byline and author bio from individual posts.', 'onemozilla' ); ?></p>
-	</label>
-	</div>
-	<?php
+  <div class="layout hide-authors">
+  <label>
+    <input type="checkbox" name="onemozilla_hide_authors" value="1" <?php checked( '1', get_option('onemozilla_hide_authors') ); ?> />
+    <span>
+      <?php _e('Hide post authors', 'onemozilla'); ?>
+    </span>
+    <p class="description"><?php _e('This removes the author byline and author bio from individual posts.', 'onemozilla' ); ?></p>
+  </label>
+  </div>
+  <?php
 }
 
 
@@ -416,29 +416,40 @@ add_action( 'wp_enqueue_scripts', 'onemozilla_load_scripts' );
 */
 remove_action('wp_head', 'wp_generator');
 
+
+/*********
+* Remove website field from comment form
+*/
+function onemozilla_remove_comment_website($fields) {
+  unset($fields['url']);
+  return $fields;
+}
+add_filter('comment_form_default_fields', 'onemozilla_remove_comment_website');
+
+
 /*********
 * Ensure the comment textarea is the last in the form.
 */
-function onemozilla_comment_textarea_to_the_bottom( $fields ) {
+function onemozilla_comment_textarea_to_the_bottom($fields) {
   $comment_field = $fields['comment'];
   unset( $fields['comment'] );
   $fields['comment'] = $comment_field;
   return $fields;
 }
-add_filter( 'comment_form_fields', 'onemozilla_comment_textarea_to_the_bottom' );
+add_filter('comment_form_fields', 'onemozilla_comment_textarea_to_the_bottom');
 
 /*********
 * Catch spambots with a honeypot field in the comment form.
 * It's hidden from view with CSS so most humans will leave it blank, but robots will kindly fill it in to alert us to their presence.
 * The field has an innucuous name -- 'age' in this case -- likely to be autofilled by a robot.
 */
-function fc_honeyport_field( array $fields ) {
+function fc_honeypot_field(array $fields) {
   $fields['cmt-ackbar'] =
     '<p id="cmt-ackbar"><label for="age">' . __('Spam robots, please fill in this field. Humans should leave it blank.', 'onemozilla') . '</label>' .
     '<input type="text" name="age" id="age" size="4" tabindex="-1"></p>';
   return $fields;
 }
-add_filter( 'comment_form_default_fields', 'fc_honeyport_field' );
+add_filter('comment_form_default_fields', 'fc_honeypot_field');
 
 function fc_honeypot( array $data ){
   if( !isset($_POST['comment']) && !isset($_POST['content'])) { die("No Direct Access"); }  // Make sure the form has actually been submitted
@@ -450,18 +461,20 @@ function fc_honeypot( array $data ){
     wp_die( $message, $title, $args );
     exit(0);
   } else {
-	   return $data;
-	}
+     return $data;
+  }
 }
 add_filter('preprocess_comment','fc_honeypot');
+
 
 /*********
  * Removes the default styles that are packaged with the Recent Comments widget.
  */
 function onemozilla_remove_recent_comments_style() {
-	add_filter( 'show_recent_comments_widget_style', '__return_false' );
+  add_filter( 'show_recent_comments_widget_style', '__return_false' );
 }
 add_action( 'widgets_init', 'onemozilla_remove_recent_comments_style' );
+
 
 /*********
 * Customize the password protected form
