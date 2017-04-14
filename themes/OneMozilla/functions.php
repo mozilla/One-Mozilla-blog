@@ -386,7 +386,7 @@ function onemozilla_load_scripts() {
   wp_enqueue_script('jquery');
 
   // Register and load the socialsharing script
-  wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js' );
+  wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js', array( 'jquery' ) );
   if ( (get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1) && is_singular() ) {
     wp_enqueue_script( 'socialshare' );
   }
@@ -397,7 +397,7 @@ function onemozilla_load_scripts() {
   }
 
   // Check required fields on comment form
-  wp_register_script( 'checkcomments', get_template_directory_uri() . '/js/fc-checkcomment.js' );
+  wp_register_script( 'checkcomments', get_template_directory_uri() . '/js/fc-checkcomment.js', array( 'jquery' ) );
   if ( get_option('require_name_email') && is_singular() ) {
     wp_enqueue_script('checkcomments');
     wp_localize_script('checkcomments', 'objectL10n', array(
