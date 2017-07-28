@@ -78,6 +78,65 @@ Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, cust
   font-style: normal;
 }
 
+/** ZillaSlab **/
+/* Regular */
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/zillaslab-regular.woff2") format("woff2"),
+       url("fonts/zillaslab-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/zillaslab-italic.woff2") format("woff2"),
+       url("fonts/zillaslab-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/zillaslab-semibold.woff2") format("woff2"),
+       url("fonts/zillaslab-semibold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/zillaslab-semibolditalic.woff2") format("woff2"),
+       url("fonts/zillaslab-semibolditalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: "Zilla Slab Light";
+  src: url("fonts/zillaslab-light.woff2") format("woff2"),
+       url("fonts/zillaslab-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zilla Slab Light";
+  src: url("fonts/zillaslab-lightitalic.woff2") format("woff2"),
+       url("fonts/zillaslab-lightitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Zilla Slab Light";
+  src: url("fonts/zillaslab-regular.woff2") format("woff2"),
+       url("fonts/zillaslab-regular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* @Reset defaults *********/
 header, hgroup, nav, section, article, aside, footer, main { display: block; }
 html, body, form, fieldset, legend, h1, h2, h3, h4, h5, h6, dd { margin: 0; padding: 0; }
@@ -99,8 +158,8 @@ html {
   background: #fff;
 }
 body {
-  font: 14px/1.6 "Open Sans", sans-serif;
-  color: #333;
+  font: 14px/1.6 "Zilla Slab", sans-serif;
+  color: #000;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
   -webkit-tap-highlight-color: #6bd7f3;
@@ -110,12 +169,10 @@ body {
 /* @Headings ***/
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 .25em;
-  color: #484848;
+  color: #000;
   line-height: 1.05;
-  font-family: "Open Sans Light", sans-serif;
-  font-weight: normal;
-  letter-spacing: -.05em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .75);
+  font-family: "Zilla Slab", sans-serif;
+  font-weight: bold;
 }
 
 h1 {
@@ -151,20 +208,20 @@ h6 {
 /* @Links ***/
 a:link,
 a:visited {
-  color: #2983c8;
+  color: #00a7e0;
   text-decoration: none;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #20679e;
+  color: #0081ad;
   text-decoration: underline;
 }
 
 /* @Accessible skip links ***/
 #nav-access {
   margin-left: 30px;
-  position: absolute;
+  position: absolute; 
   top: -100em;
 }
 
@@ -224,9 +281,9 @@ a:active {
 #masthead {
   background-position: right top;
   background-repeat: no-repeat;
-  margin: 0 30px 0 0;
+  margin: 0px 30px 0 0;
   min-height: 120px;
-  padding: 72px 0 48px 30px;
+  padding: 30px 0 48px 30px;
   position: relative;
 }
 #masthead.image hgroup {
@@ -235,52 +292,51 @@ a:active {
 
 #site-title {
   font-size: 4.5em;
-  letter-spacing: -3px;
-  margin: 0 0 .15em -5px;
+  padding-bottom: 5px;
+  margin: 0 0 .15em 0;
   -moz-transition: font-size .5s ease-out, letter-spacing .5s ease-out;
   -webkit-transition: font-size .5s ease-out, letter-spacing .5s ease-out;
   transition: font-size .5s ease-out, letter-spacing .5s ease-out;
 }
+
+#site-title span, #site-description span { -webkit-box-decoration-break: clone; box-decoration-break: clone; background: #000; color: #fff; padding: 0 10px; }
+
 #site-title a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 #site-title a:hover,
 #site-title a:focus,
 #site-title a:active {
+  color: #fff !important;
   text-decoration: none;
 }
 
-#masthead #tabzilla {
-  border: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+#site-description {
+  font-weight: normal;
 }
 
 #tabzilla a {
   text-indent: 120%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url('img/tabzilla-static.png');
+  background-image: url('img/mozilla-wordmark-black.svg');
   background-repeat: no-repeat;
   display: block;
-  height: 37px;
+  height: 40px;
   position: relative;
-  width: 147px;
+  width: 126px;
   z-index: 2;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   #tabzilla a {
-    background-image: url('img/tabzilla-static-high-res.png');
     -webkit-background-size: 147px 37px;
     background-size: 147px 37px;
   }
 }
 
 #tabzilla:before {
-  background-color: rgba(0, 0, 0, .1);
   content: '';
   display: block;
   height: 26px;
@@ -435,16 +491,34 @@ html[dir='rtl'] #tabzilla {
   font-size: 1.2em;
 }
 
+/* @Global @navigation *********/
+.nav-global {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  color: #000;
+  left: 0;
+  padding: .5em 0;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+}
+
+.nav-global:after { clear: both; content: ''; display: block; height: 0; visibility: hidden; }
+.content { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 auto; padding: 20px; min-width: 300px; }
+@media screen and (min-width: 760px) { .content { width: 740px; } }
+@media screen and (min-width: 1000px) { .content { width: 980px; } }
+@media screen and (min-width: 1400px) { .content { width: 1380px; } }
+.nav-global .content { padding: 0 20px; }
+
 /* @Primary @navigation *********/
 #nav-primary {
-  background-color: #fff;
-  font-family: "Open Sans Light", sans-serif;
-  margin: 0 0 48px;
-  -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  padding: 0 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   text-align: center;
+  background-color: #000;
+  margin: 0 0 48px;
+  padding: 0 20px;
 }
 #nav-primary ul {
   list-style: none;
@@ -452,7 +526,7 @@ html[dir='rtl'] #tabzilla {
 }
 #nav-primary li {
   display: inline-block;
-  padding: 12px 0;
+  padding: 10px 0;
 }
 #nav-primary .current-menu-item {
   color: #444;
@@ -461,6 +535,7 @@ html[dir='rtl'] #tabzilla {
   border-left: 1px dotted #ccc;
   display: inline-block;
   padding: 6px 15px;
+  color: #fff;
 }
 #nav-primary li:first-child a {
   border-left: 0;
@@ -469,16 +544,18 @@ html[dir='rtl'] #tabzilla {
 /* @Top @navigation *********/
 #nav-top {
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 150px;
   font-size: 13px;
 }
 #nav-top li {
+  font-size: 120%;
   float: left;
   display: inline-block;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 #nav-top a {
+  color: #000;
   display: inline-block;
   padding: 6px 12px;
 }
@@ -678,10 +755,6 @@ html[dir='rtl'] #tabzilla {
   display: inline-block;
   padding: 1px 5px;
   margin-top: -2px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #eee;
-  background: linear-gradient(to bottom, #fff 0, #eee 100%);
 }
 .edit a:hover,
 .edit a:focus {
@@ -973,7 +1046,6 @@ textarea {
   border: 1px solid #dbdbdb;
   background: transparent;
   background: rgba(0,0,0,0.05);
-  box-shadow: inset rgba(0,0,0,0.1) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
   padding: 6px 10px;
   -moz-transition: all .1s linear;
   -webkit-transition: all .1s linear;
@@ -1051,6 +1123,9 @@ input:-moz-placeholder {
 .main .fm-search {
   margin: 0 0 2em;
 }
+.fm-search {
+  position: absolute;
+}
 .fm-search p {
   margin: 0;
   position: relative;
@@ -1059,8 +1134,7 @@ input:-moz-placeholder {
   background: #fafafa;
   background: rgba(255,255,255,.8) url("img/icn-search.png") 96% 50% no-repeat;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  box-shadow: 0 0 0 3px rgba(0,0,0,.02) inset;
+  border-radius: 4px;
   font-family: "Open Sans", sans-serif;
   -moz-appearance: textfield;
   -o-appearance: textfield;
@@ -1100,21 +1174,12 @@ input:-moz-placeholder {
   background: #fff;
   border: 1px solid #ccc;
   border-color: rgba(0,0,0,0.05);
-  -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 .comment-list .alt {
   background: #f7f7f7;
-  -o-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
-  -ms-box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 1px rgba(0,0,0,0.1);
 }
 .comment-list .byuser {
   border-color: #cdd3dc;
-  -o-box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
-  -ms-box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
-  box-shadow: inset 0 2px 12px rgba(175,38,38,.01), 0 1px 1px rgba(0,0,0,0.1);
 }
 
 .comment-list.av .comment,
@@ -1245,12 +1310,12 @@ input:-moz-placeholder {
 
 /* @Footer *********/
 #site-info {
-  background: #fff;
-  border-top: 1px solid rgba(0,0,0,.1);
-  color: #bbb;
+  background: #000;
+  color: #fff;
   font-size: .857em;
   overflow: hidden;
   padding: 48px 0;
+  font-family: "Open Sans";
 }
 #foot-logo,
 #colophon,
@@ -1259,33 +1324,19 @@ input:-moz-placeholder {
   margin-right: 24px;
   width: 252px;
 }
-#site-info a:link,
-#site-info a:visited {
-  color: #67a7d0;
-}
-#site-info a:hover,
-#site-info a:focus,
-#site-info a:active {
-  color: #5c94b8;
+
+#site-info a {
+  color: #fff;
 }
 #foot-logo .logo {
-  background: url("img/logo-mozilla-lt.png") 0 0 no-repeat;
+  background: url("img/logo-mozilla-lt.svg") 0 0 no-repeat;
   border: 0;
   display: block;
   float: left;
-  height: 26px;
-  -moz-transition: opacity .1s linear;
-  -webkit-transition: opacity .1s linear;
-  transition: opacity .1s linear;
-  opacity: .8;
+  height: 32px;
   overflow: hidden;
   text-indent: -999em;
-  width: 92px;
-}
-#foot-logo .logo:hover,
-#foot-logo .logo:focus,
-#foot-logo .logo:active {
-  opacity: 1;
+  width: 100px;
 }
 #nav-meta ul {
   list-style: none;
@@ -1297,6 +1348,9 @@ input:-moz-placeholder {
 /*  @Tablet @Layout: 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+  #masthead {
+	padding-bottom: 85px;
+  }
   .wrap {
     width: 760px;
   }
@@ -1362,7 +1416,7 @@ input:-moz-placeholder {
 /*  @Mobile @Layout: 320px */
 @media only screen and (max-width: 767px) {
   #page {
-    padding-bottom: 24px;
+    padding-bottom: 50px;
   }
   .wrap {
     width: 320px;
@@ -1376,6 +1430,13 @@ input:-moz-placeholder {
     float: none;
     width: auto;
     margin: 0 0 1em;
+  }
+  #tabzilla a {
+	transform: scale(.6);
+  }
+  /* temporarily hide while alt. solution is not yet here. */
+  #nav-top {
+	visibility: collapse;
   }
 
   #masthead {
