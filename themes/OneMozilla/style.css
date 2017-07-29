@@ -512,13 +512,15 @@ html[dir='rtl'] #tabzilla {
 .nav-global .content { padding: 0 20px; }
 
 /* @Primary @navigation *********/
+#nav-divider {
+  background-color: #000;
+  margin: 0 0 48px;
+  padding: 0 20px;
+}
 #nav-primary {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  background-color: #000;
-  margin: 0 0 48px;
-  padding: 0 20px;
 }
 #nav-primary ul {
   list-style: none;
@@ -558,6 +560,11 @@ html[dir='rtl'] #tabzilla {
   color: #000;
   display: inline-block;
   padding: 6px 12px;
+}
+
+/* @Mobile @navigation *********/
+#nav-primary-toggle {
+  display: none;
 }
 
 /* @Featured posts *********/
@@ -1434,9 +1441,21 @@ input:-moz-placeholder {
   #tabzilla a {
 	transform: scale(.6);
   }
-  /* temporarily hide while alt. solution is not yet here. */
-  #nav-top {
-	visibility: collapse;
+  
+  #nav-primary-toggle {
+	display: block;
+	width: 26px;
+	height: 16px;
+	cursor: pointer;
+  	background-image: url("img/icon-menu-white.svg");
+  }
+      
+  #nav-primary, #nav-top {
+	display: none;
+  }
+  
+  #nav-primary.visible {
+    display: block;
   }
 
   #masthead {
@@ -1569,10 +1588,11 @@ input:-moz-placeholder {
   .comment-list .entry-title {
     font-size: 1em;
   }
-
-  #nav-primary {
+  #nav-divider {
     margin: 24px 0;
     padding: 4px 10px;
+  }
+  #nav-primary {
     text-align: left;
   }
   #nav-primary ul {

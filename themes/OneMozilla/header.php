@@ -69,10 +69,13 @@
 
 <body <?php body_class($theme_options['color_scheme']); ?>>
 <div id="page">
-  <?php get_template_part( 'masthead' ); ?>
-<div id="nav-divider">
-  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav', 'container_id' => 'nav-primary', 'fallback_cb' => 'false', ) ); ?>
-</div>
+<?php get_template_part( 'masthead' ); ?>
+<?php if ( has_nav_menu( 'primary' ) ) : ?>
+	<div id="nav-divider">
+	  <span id="nav-primary-toggle"></span>
+	  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav', 'container_id' => 'nav-primary', 'fallback_cb' => 'false', ) ); ?>
+	</div>
+<?php endif; ?>
 <div class="wrap">
   <nav id="nav-access">
     <ul>
