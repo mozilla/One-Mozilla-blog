@@ -6,6 +6,9 @@
       </a>
     </h2>
 
+  <?php if ( (get_option('onemozilla_hide_authors') != 1) || comments_open() || get_comments_number() ) : ?>
+    <div class="entry-info">
+
     <?php if ( 'post' == get_post_type() ) : // No posted date for Pages ?>
       <p class="entry-posted">
         <time class="published" title="<?php the_time('Y-m-d\TH:i:sP'); ?>" datetime="<?php the_time('Y-m-d\TH:i:sP'); ?>">
@@ -22,8 +25,6 @@
       </p>
     <?php endif; ?>
 
-  <?php if ( (get_option('onemozilla_hide_authors') != 1) || comments_open() || get_comments_number() ) : ?>
-    <div class="entry-info">
     <?php if ( get_option('onemozilla_hide_authors') != 1 ) : ?>
 
       <?php if (function_exists('coauthors')) : ?>
@@ -36,7 +37,7 @@
           <address class="vcard">
             <cite class="author fn">
               <a class="url" href="<?php echo esc_url( get_author_posts_url($author->ID) ) ?>" title="<?php printf( esc_attr__( 'See all posts by %1$s', 'onemozilla'), get_the_author() ); ?>">
-                <?php echo esc_html($author->display_name); ?> <?php echo get_avatar($author, 24) ?>
+                <?php echo esc_html($author->display_name); ?>
               </a>
             </cite>
           </address>
@@ -45,7 +46,7 @@
         <address class="vcard">
           <cite class="author fn">
             <a class="url" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ?>" title="<?php printf( esc_attr__( 'See all posts by %1$s', 'onemozilla'), get_the_author() ); ?>">
-              <?php esc_html(the_author()); ?> <?php echo get_avatar(get_the_author_meta('user_email'), 24) ?>
+              <?php esc_html(the_author()); ?>
             </a>
           </cite>
         </address>

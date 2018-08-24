@@ -615,27 +615,45 @@ html[dir='rtl'] #tabzilla {
   position: relative;
   clear: both;
   margin-bottom: 72px;
+  border-top: 2px solid;
+}
+
+.main .post:first-child,
+.main .page:first-child {
+  border-top: none;
 }
 
 /*** @Titles */
-.page-title {
-  margin: -.3em 0 24px;
+.page-title,
+.section-title {
+  margin-bottom: 60px;
 }
+
+.page-title span,
+.section-title span {
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  background: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 0 10px;
+}
+
 .archive .page-title,
 .search-results .page-title {
-  font-size: 1.75em;
+  font-size: 1.75rem;
   letter-spacing: -0.5px;
   margin-top: 0;
 }
 .entry-title {
-  font-size: 2em;
+  font-size: 2rem;
   letter-spacing: -1px;
-  margin: 0 0 .5em;
-  min-height: 55px;
+  margin: 0 0 .5rem;
 }
 .single-post .entry-title,
 .page .entry-title {
-  font-size: 3em;
+  font-size: 3rem;
   letter-spacing: -2px;
 }
 .show-comments.no-author .entry-title {
@@ -647,44 +665,57 @@ html[dir='rtl'] #tabzilla {
 .entry-meta {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   clear: both;
-  font-size: .857em;
-  margin: 24px 0 0;
-  padding: 12px 24px 8px;
+  margin-top: 1em;
+  padding: 1rem 0;
 }
 .entry-meta p {
-  margin: 0 0 .5em;
+  margin: 0;
 }
+
+.entry-meta .categories {
+  display: inline;
+}
+
 .entry-meta b {
   font-weight: normal;
-  margin-right: 10px;
-  text-transform: uppercase;
+  margin-right: 2px;
+}
+
+.entry-meta ul,
+.entry-meta li {
+    display: inline;
+}
+
+.entry-meta li {
+    padding: 0 2px;
 }
 
 /*** Entry @Header */
 .entry-header {
   margin: 0 0 20px;
-  padding: .5em 0 0;
+  padding: 25px 0 0;
   position: relative;
-}
-.entry-header:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
-.post .entry-header {
-  padding-left: 92px;
 }
 .page .entry-title {
   margin: 0;
-  min-height: 0;
 }
-.page .entry-header,
-.single-post .entry-header,
-.no-author .entry-header {
-  padding-bottom: 0;
+.main > article:first-child > .entry-header{
+  padding: 0;
 }
-.post.no-results .entry-header {
-  padding-left: 0;
+
+.entry-posted a:link,
+.entry-posted a:visited {
+  color: #222;
+  text-decoration: none;
 }
-.post.no-results .entry-title {
-  min-height: auto;
+
+.entry-posted a:hover,
+.entry-posted a:focus,
+.entry-posted a:active {
+  color: #003eaa;
+  text-decoration: underline;
 }
+
 .entry-header .share {
   float: right;
   text-align: right;
@@ -694,101 +725,46 @@ html[dir='rtl'] #tabzilla {
   right: 0;
 }
 .post .entry-info {
-  clear: both;
-  overflow: hidden;
-  margin-left: -92px;
+  margin: 1rem 0;
+  font-size: 14px;
+}
+
+.entry-info p,
+.entry-info address {
+  border-left: 1px solid #ccc;
+  display: inline;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.entry-info > p:first-child,
+.entry-info > address:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /*** Post @Author */
-.entry-header .vcard {
-  display: inline-block;
-  font-size: 16px;
-  margin: .75em 25px .25em 0;
-  clear: right;
-}
+
 .entry-header cite {
   font-style: normal;
-}
-.entry-header .vcard img {
-  border: 1px solid #fff;
-  float: left;
-  margin-right: 6px;
-}
-.entry-header .vcard a:hover img,
-.entry-header .vcard a:focus img,
-.entry-header .vcard a:active img {
-  border-color: inherit;
 }
 
 /*** Comment Count */
 .entry-comments {
   clear: left;
-  margin: .75em 0;
+  margin: .75rem 0;
 }
 .entry-comments a {
   display: inline-block;
-  background: url("img/icn-comment.png") 0 .35em no-repeat;
+  background: url("img/icn-comment.png") 0 .35rem no-repeat;
   padding-left: 25px;
-}
-
-
-/*** @Edit buttons */
-.edit {
-  font-size: .857em;
-}
-.entry-header .edit {
-  clear: both;
-  float: right;
-  margin: 1em 0;
-  text-align: right;
-}
-.edit a {
-  display: inline-block;
-  padding: 1px 5px;
-  margin-top: -2px;
-}
-.edit a:hover,
-.edit a:focus {
-  border-color: #999;
-}
-
-/*** @Posted date */
-.entry-posted {
-  background: url("img/bg-date-lt.png") center top no-repeat;
-  font: 10px/1 "Open Sans Light", sans-serif;
-  left: 0;
-  padding: 6px 10px 16px;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 48px;
-}
-.entry-posted a:link,
-.entry-posted a:visited,
-.entry-posted a:hover,
-.entry-posted a:focus,
-.entry-posted a:active {
-  color: #3c3c3c;
-}
-.entry-posted .posted-month {
-  display: block;
-  font-size: 1.4em;
-  text-transform: uppercase;
-}
-.entry-posted .posted-date {
-  display: block;
-  font-size: 2.6em;
-  line-height: .95;
-}
-.entry-posted .posted-year {
-  display: block;
-  font-size: 1.4em;
 }
 
 /* @Content *********/
 .entry-content ul,
 .entry-content ol {
-  margin: 0 0 1.5em 24px;
+  margin: 0 0 1.5rem 24px;
 }
 .entry-content li ul,
 .entry-content li ol {
@@ -1479,36 +1455,6 @@ input:-moz-placeholder {
     text-align: left;
   }
 
-  .entry-posted {
-    background-image: none;
-    font-size: 1em;
-    margin: 0 0 1em;
-    padding: 0;
-    position: static;
-    text-align: left;
-    width: auto;
-  }
-  .entry-posted .posted-month {
-    display: inline;
-    font-size: 1em;
-    text-transform: none;
-  }
-  .entry-posted .posted-date {
-    display: inline;
-    font-size: 1em;
-    line-height: 1.2;
-  }
-  .entry-posted .posted-year {
-    display: inline;
-    font-size: 1em;
-  }
-  .post .entry-info {
-    margin-left: 0;
-  }
-  .post .entry-header .vcard {
-    float: none;
-    margin: .5em 20px .5em 0;
-  }
   .entry-header .avatar {
     display: none;
   }
