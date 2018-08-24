@@ -184,7 +184,6 @@ h6 {
 /* @Links ***/
 a:link,
 a:visited {
-  text-decoration: none;
   color: #0060df;
 }
 a:hover,
@@ -213,7 +212,7 @@ a:active {
   display: block;
   box-shadow: 1px 1px 1px rgba(0,0,0,.1);
   outline: 0;
-  padding: .25em 24px;
+  padding: .25rem 24px;
   position: absolute;
   text-align: center;
   text-decoration: none;
@@ -226,7 +225,7 @@ a:active {
   background: rgba(255,255,255,.5);
   border: 1px solid #20679e;
   left: 0;
-  top: 101em;
+  top: 101rem;
 }
 
 #foot-logo .top:focus,
@@ -234,7 +233,7 @@ a:active {
   background: #f5f1e8;
   border: 1px solid #67a7d0;
   left: 48px;
-  top: -2.75em;
+  top: -2.75rem;
 }
 
 /*  @Default @Layout: 1000px */
