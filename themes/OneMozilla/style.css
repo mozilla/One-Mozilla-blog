@@ -195,8 +195,8 @@ a:active {
 /* @Accessible skip links ***/
 #nav-access {
   margin-left: 30px;
-  position: absolute; 
-  top: -100em;
+  position: absolute;
+  top: -103rem;
 }
 
 #foot-logo .top {
@@ -1385,7 +1385,11 @@ input:-moz-placeholder {
   #tabzilla a {
 	transform: scale(.6);
   }
-  
+
+  #nav-access {
+    top: -116rem;
+  }
+
   #nav-primary-toggle {
 	display: block;
 	width: 26px;
@@ -1426,7 +1430,7 @@ input:-moz-placeholder {
 
   #nav-access a:focus,
   #nav-access a:active {
-    top: 110em;
+    top: 110rem;
   }
 
   .post .entry-title {
