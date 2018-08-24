@@ -23,9 +23,9 @@ h1 a { position: absolute; left: -999em; }
 #loginform { border-color: #eee; box-shadow: 0 2px 3px rgba(0,0,0,.2); }
 
 /* @Links */
-.login #backtoblog a, .login #nav a { color: #00a7e0 !important; text-decoration: none; text-shadow: none; }
+.login #backtoblog a, .login #nav a { color: #0060df !important; text-decoration: none; text-shadow: none; }
 .login #backtoblog a:hover, .login #backtoblog a:focus, .login #backtoblog a:active,
-.login #nav a:hover, .login #nav a:focus, .login #nav a:active { color: #0081ad !important; text-decoration: underline; }
+.login #nav a:hover, .login #nav a:focus, .login #nav a:active { color: #003eaa !important; text-decoration: underline; }
 
 
 /*** @Buttons *********/
