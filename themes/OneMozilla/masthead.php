@@ -1,6 +1,6 @@
 <nav class="nav-global">
     <div class="content">
-		<span id="tabzilla">
+		<span class="mozilla-logo">
 		  <a href="https://www.mozilla.org/">Mozilla</a>
 		</span>
 		<?php wp_nav_menu( array( 'theme_location' => 'top', 'container' => 'nav', 'container_id' => 'nav-top', 'fallback_cb' => 'false', ) ); ?>

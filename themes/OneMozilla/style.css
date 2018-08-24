@@ -302,27 +302,28 @@ a:active {
   font-weight: normal;
 }
 
-#tabzilla a {
-  text-indent: 120%;
-  white-space: nowrap;
-  overflow: hidden;
+.mozilla-logo a {
   background-image: url('img/mozilla-wordmark-black.svg');
   background-repeat: no-repeat;
+  direction: ltr;
   display: block;
   height: 40px;
+  overflow: hidden;
   position: relative;
+  text-indent: 120%;
+  white-space: nowrap;
   width: 126px;
   z-index: 2;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
-  #tabzilla a {
-    -webkit-background-size: 147px 37px;
-    background-size: 147px 37px;
+  .mozilla-logo a {
+    -webkit-background-size: 117px 37px;
+    background-size: 117px 37px;
   }
 }
 
-#tabzilla:before {
+.mozilla-logo:before {
   content: '';
   display: block;
   height: 26px;
@@ -333,7 +334,7 @@ a:active {
   z-index: 1;
 }
 
-html[dir='rtl'] #tabzilla {
+html[dir='rtl'] .mozilla-logo {
   float: left;
 }
 
