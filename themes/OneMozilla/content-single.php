@@ -76,9 +76,9 @@
   <footer class="entry-meta">
   <?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
     <?php if (has_tag()) : ?>
-      <p class="meta"><b><?php _e('Tags','onemozilla'); ?>:</b> <?php $tags_list = the_tags('',', ',''); ?></p>
+      <p class="meta tags"><b><?php _e('Tags','onemozilla'); ?>:</b> <?php $tags_list = the_tags('','',''); ?></p>
     <?php endif; ?>
-      <p class="meta"><b><?php _e('Categories','onemozilla'); ?>:</b> <?php the_category(', ') ?></p>
+      <p class="meta categories"><b><?php _e('Categories','onemozilla'); ?>:</b> <?php the_category('') ?></p>
   <?php endif; ?>
   </footer><!-- .entry-meta -->
 </article><!-- #post -->

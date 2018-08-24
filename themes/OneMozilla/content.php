@@ -76,9 +76,9 @@
   <?php if ( has_tag() || ( 'post' == get_post_type() ) ) : // No need for a footer if there's nothing to show ?>
     <footer class="entry-meta">
     <?php if (has_tag()) : ?>
-      <p class="meta"><b><?php _e('Tags','onemozilla'); ?>:</b> <?php $tags_list = the_tags('',', ',''); ?></p>
+      <p class="meta tags"><b><?php _e('Tags','onemozilla'); ?>:</b> <?php $tags_list = the_tags('','',''); ?></p>
     <?php endif; ?>
-      <p class="meta"><b><?php _e('Categories','onemozilla'); ?>:</b> <?php the_category(', ') ?></p>
+      <p class="meta categories"><b><?php _e('Categories','onemozilla'); ?>:</b> <?php the_category('') ?></p>
     </footer>
   <?php endif; ?>
 
