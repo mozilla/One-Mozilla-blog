@@ -256,23 +256,20 @@ a:active {
 #masthead {
   background-position: right top;
   background-repeat: no-repeat;
-  margin: 0px 30px 0 0;
   background-color: #d7d9f2;
   min-height: 120px;
   padding: 30px 0 48px 30px;
   position: relative;
 }
-#masthead.image hgroup {
+#masthead.image hgroup .wrap {
+  box-sizing: border-box;
   padding-right: 340px;
 }
 
 #site-title {
-  font-size: 4.5em;
+  font-size: 4rem;
   padding-bottom: 5px;
-  margin: 0 0 .15em 0;
-  -moz-transition: font-size .5s ease-out, letter-spacing .5s ease-out;
-  -webkit-transition: font-size .5s ease-out, letter-spacing .5s ease-out;
-  transition: font-size .5s ease-out, letter-spacing .5s ease-out;
+  margin: 0 0 1.3rem 0;
 }
 
 #site-description {
@@ -1420,37 +1417,34 @@ input:-moz-placeholder {
 	cursor: pointer;
   	background-image: url("img/icon-menu-white.svg");
   }
-      
+
   #nav-primary, #nav-top {
 	display: none;
   }
-  
+
   #nav-primary.visible {
     display: block;
   }
 
   #masthead {
     background-image: none !important;
-    margin: 0 0 24px 0;
     min-height: 0;
     padding: 58px 20px 20px;
   }
   #masthead hgroup {
     float: none;
     padding-right: 0;
-    padding-bottom: 20px;
-    border-bottom: 1px solid;
   }
-  #masthead.image hgroup {
+  #masthead.image hgroup .wrap {
     padding-right: 0;
   }
   #site-title {
-    font-size: 2em;
+    font-size: 2rem;
     letter-spacing: -.5px;
     margin-left: 0;
   }
   #site-description {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     letter-spacing: normal;
   }
 
@@ -1657,12 +1651,12 @@ input:-moz-placeholder {
     width: 436px;
   }
   #site-title {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     letter-spacing: -1px;
     margin-left: 0;
   }
   #site-description {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
   #content-sub .sidebar {
     float: left;
