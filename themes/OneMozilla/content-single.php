@@ -55,6 +55,8 @@
         <?php comments_popup_link( __( 'No responses yet', 'onemozilla' ), __( '1 response', 'onemozilla' ), __( '% responses', 'onemozilla' ) ); ?>
       </p>
     <?php endif; ?>
+
+    <?php edit_post_link( __( 'Edit Post', 'onemozilla' ), '<p class="edit">', '</p>' ); ?>
   </div>
 <?php endif; ?>
 
@@ -63,7 +65,6 @@
       <div class="socialshare" data-type="small-bubbles" data-tweet-at="<?php echo get_option('onemozilla_tweet_at', 'firefox'); ?>"></div>
     </div>
   <?php endif; ?>
-    <?php edit_post_link( __( 'Edit Post', 'onemozilla' ), '<p class="edit">', '</p>' ); ?>
   </header><!-- .entry-header -->
 
   <div class="entry-content">
