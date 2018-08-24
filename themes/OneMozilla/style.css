@@ -53,61 +53,36 @@ Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, cust
   font-style: italic;
 }
 
-/* Light */
-@font-face {
-  font-family: "Open Sans Light";
-  src: url("fonts/opensans-light.woff2") format("woff2"),
-       url("fonts/opensans-light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans Light";
-  src: url("fonts/opensans-lightitalic.woff2") format("woff2"),
-       url("fonts/opensans-lightitalic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Open Sans Light";
-  src: url("fonts/opensans-regular.woff2") format("woff2"),
-       url("fonts/opensans-regular.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
 /** ZillaSlab **/
 /* Regular */
 @font-face {
   font-family: "Zilla Slab";
-  src: url("fonts/zillaslab-regular.woff2") format("woff2"),
-       url("fonts/zillaslab-regular.woff") format("woff");
+  src: url("fonts/ZillaSlab-Regular.woff2") format("woff2"),
+       url("fonts/ZillaSlab-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Zilla Slab";
-  src: url("fonts/zillaslab-italic.woff2") format("woff2"),
-       url("fonts/zillaslab-italic.woff") format("woff");
+  src: url("fonts/ZillaSlab-Italic.woff2") format("woff2"),
+       url("fonts/ZillaSlab-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Zilla Slab";
-  src: url("fonts/zillaslab-semibold.woff2") format("woff2"),
-       url("fonts/zillaslab-semibold.woff") format("woff");
+  src: url("fonts/ZillaSlab-SemiBold.woff2") format("woff2"),
+       url("fonts/ZillaSlab-SemiBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Zilla Slab";
-  src: url("fonts/zillaslab-semibolditalic.woff2") format("woff2"),
-       url("fonts/zillaslab-semibolditalic.woff") format("woff");
+  src: url("fonts/ZillaSlab-SemiBolditalic.woff2") format("woff2"),
+       url("fonts/ZillaSlab-SemiBolditalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
@@ -115,24 +90,24 @@ Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, cust
 /* Light */
 @font-face {
   font-family: "Zilla Slab Light";
-  src: url("fonts/zillaslab-light.woff2") format("woff2"),
-       url("fonts/zillaslab-light.woff") format("woff");
+  src: url("fonts/ZillaSlab-Light.woff2") format("woff2"),
+       url("fonts/ZillaSlab-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Zilla Slab Light";
-  src: url("fonts/zillaslab-lightitalic.woff2") format("woff2"),
-       url("fonts/zillaslab-lightitalic.woff") format("woff");
+  src: url("fonts/ZillaSlab-LightItalic.woff2") format("woff2"),
+       url("fonts/ZillaSlab-LightItalic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Zilla Slab Light";
-  src: url("fonts/zillaslab-regular.woff2") format("woff2"),
-       url("fonts/zillaslab-regular.woff") format("woff");
+  src: url("fonts/ZillaSlab-Regular.woff2") format("woff2"),
+       url("fonts/ZillaSlab-Regular.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -158,7 +133,8 @@ html {
   background: #fff;
 }
 body {
-  font: 14px/1.6 "Zilla Slab", sans-serif;
+  font: 16px/1.5 'Open Sans', sans-serif;
+  font: 1rem/1.5 'Open Sans', sans-serif;
   color: #222;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
@@ -1090,7 +1066,7 @@ input[type=submit], button {
   padding: 8px 24px;
   border: 0;
   text-shadow: 0 1px 0 rgba(0,0,0,0.25);
-  font: .857em/1.1 "Open Sans Light", sans-serif;
+  font: .857rem/1.1 "Zilla Slab", sans-serif;
   background-color: #33525d;
   -webkit-transition: all .25s linear;
   transition: all .25s linear;
@@ -1107,8 +1083,8 @@ form li {
 }
 label {
   display: block;
-  font: 1em/1.2 "Open Sans Light", sans-serif;
-  padding: 0 0 .5em;
+  font: 1rem/1.2 "Zilla Slab Light", sans-serif;
+  padding: 0 0 .5rem;
 }
 label .note {
   color: #666;
@@ -1259,7 +1235,7 @@ input:-moz-placeholder {
 
 /* @Comment @Form *********/
 #reply-title {
-  font: 1.5em/1 "Open Sans Light", sans-serif;
+  font: 1.5rem/1 "Zilla Slab", sans-serif;
   letter-spacing: -1px;
 }
 #comment-form p {
