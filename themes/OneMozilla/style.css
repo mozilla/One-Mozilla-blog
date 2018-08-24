@@ -1435,13 +1435,13 @@ input:-moz-placeholder {
   }
   .archive .page-title,
   .search-results .page-title {
-    font-size: 1.75em;
+    font-size: 1.75rem;
     letter-spacing: -0.5px;
   }
   .entry-title {
-    font-size: 2em;
+    font-size: 2rem;
     letter-spacing: -1px;
-    margin-bottom: .5em;
+    margin-bottom: .5rem;
   }
   .post.no-author .entry-title {
     float: none;
@@ -1498,7 +1498,7 @@ input:-moz-placeholder {
     display: none;
   }
   .comment-list .entry-title {
-    font-size: 1em;
+    font-size: 1rem;
   }
   #nav-divider {
     margin: 24px 0;
@@ -1565,7 +1565,7 @@ input:-moz-placeholder {
     width: 60px;
   }
   .featured-posts .entry-title {
-    padding-top: .5em;
+    padding-top: .5rem;
   }
   .sub .featured-posts {
     background: #fff;
