@@ -358,24 +358,25 @@ html[dir='rtl'] .mozilla-logo {
 /*** @Widgets *********/
 .widget {
   clear: both;
-  margin: 0 0 1.5em;
-  padding: 0 1px;
+  border-top: 2px solid;
+  margin: 0 0 2rem;
+  padding: .75rem 1px 0;
 }
 .widget ul,
 .widget ol,
 .widget p {
   list-style: none;
-  margin: 0 0 1em;
+  margin: 0 0 1rem;
 }
 .widget ul.children {
-  margin-top: .15em;
+  margin-top: .15rem;
 }
 .widget li {
-  margin-bottom: .15em;
+  margin-bottom: 1rem;
 }
 .widget .widget-title {
-  font-size: 1.571em;
-  margin: .382em -1px 12px;
+  font-size: 2rem;
+  margin: 0 0 .75rem 0;
 }
 .widget_calendar table {
   border-collapse: collapse;
@@ -396,33 +397,19 @@ html[dir='rtl'] .mozilla-logo {
 }
 
 .sub .widget_nav_menu:first-child {
-  margin-top: .35em;
+  margin-top: .35rem;
 }
 
-.widget_nav_menu,
 .widget_categories {
-  font: 1.285em/1.1 "Open Sans", sans-serif;
+  font-size: 1rem;
 }
-.widget_nav_menu {
-  font-family: "Open Sans Light", sans-serif;
-}
-.widget_categories {
-  font-size: 1em;
-}
-.widget_nav_menu li,
-.widget_categories li,
-.widget_recent_entries li,
+
 .widget_recent_comments li {
-  border-bottom: 1px dotted rgba(0,0,0,0.2);
-  margin: 0;
-}
-.widget_recent_entries li,
-.widget_recent_comments li {
-  padding: .25em 0;
+  padding: .25rem 0;
 }
 
 .widget_categories .children {
-  font-size: .925em;
+  font-size: .925rem;
   margin: 0;
 }
 .widget_categories .children li {
@@ -430,20 +417,11 @@ html[dir='rtl'] .mozilla-logo {
   border-top: 1px solid rgba(0,0,0,0.2);
   padding-left: 20px;
 }
-.widget_nav_menu a,
-.widget_categories a {
-  display: inline-block;
-  padding: 8px 0;
-}
-.widget_nav_menu .current-menu-item a:link,
-.widget_nav_menu .current-menu-item a:visited {
-  color: #444;
-}
 
 /*** @Tag @Cloud *********/
 .widget .tagcloud {
   line-height: 1.1;
-  margin: 0 0 1em;
+  margin: 0 0 1rem;
   text-align: center;
 }
 .widget .tagcloud a {
@@ -474,7 +452,7 @@ html[dir='rtl'] .mozilla-logo {
 }
 .author-bio .more:after {
   content: "\00A0\00BB"; /* nbsp raquo */
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 /* @Global @navigation *********/
@@ -1079,10 +1057,7 @@ input:-moz-placeholder {
 
 /*** @Search */
 .main .fm-search {
-  margin: 0 0 2em;
-}
-.fm-search {
-  position: absolute;
+  margin: 0 0 2rem;
 }
 .fm-search p {
   margin: 0;
@@ -1093,12 +1068,13 @@ input:-moz-placeholder {
   background: rgba(255,255,255,.8) url("img/icn-search.png") 96% 50% no-repeat;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   -moz-appearance: textfield;
   -o-appearance: textfield;
   appearance: textfield;
   padding: 6px 7.5% 6px 5px;
-  width: 90%;
+  width: 100%;
   -webkit-appearance: textfield;
   -moz-transition: all 0.1s linear;
   -webkit-transition: all 0.1s linear;
