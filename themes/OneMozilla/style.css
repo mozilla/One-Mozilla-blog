@@ -982,7 +982,7 @@ input[type=search],
 input[type=password],
 input[type=text],
 textarea {
-  font-size: .857em;
+  font-size: .857rem;
   border: 1px solid #dbdbdb;
   background: transparent;
   background: rgba(0,0,0,0.05);
@@ -1030,7 +1030,7 @@ button:focus {
 }
 
 form li {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 label {
   display: block;
@@ -1042,7 +1042,7 @@ label .note {
 }
 
 .pwform {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
 }
 .pwform br {
   display: none;
@@ -1103,7 +1103,7 @@ input:-moz-placeholder {
 .comment-list .comment,
 .comment-list .pingback,
 .comment-list .trackback {
-  padding: 19px;
+  padding: 19px 0;
   margin: 0 0 24px;
   background: #fff;
   border-top: 2px solid;
@@ -1111,15 +1111,14 @@ input:-moz-placeholder {
 .comment-list.av .comment,
 #comments.comments-area .comment {
   min-height: 70px;
-  padding-left: 92px;
+  padding-left: 83px;
   position: relative;
 }
 .comment-list .entry-title {
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   letter-spacing: normal;
-  margin: 0 0 1.5em;
-  min-height: 0;
+  margin: 0 0 1.5rem;
 }
 .comment-list .author {
   font-style: normal;
@@ -1135,7 +1134,7 @@ input:-moz-placeholder {
   transition: all .1s linear;
   position: absolute;
   top: 9px;
-  left: 9px;
+  left: 0;
 }
 .comment-list a:hover .avatar,
 .comment-list a:focus .avatar,
@@ -1145,21 +1144,21 @@ input:-moz-placeholder {
 .comment-list .entry-content p,
 .comment-list .entry-content pre,
 .comment-list .entry-content blockquote {
-  margin: .75em 0 0;
+  margin: .75rem 0 0;
 }
 .comment-list .mod {
   background: #fff2db;
   border: 1px solid #f0dfc0;
   color: #3c3c3c;
-  font-size: 1.07em;
-  margin-top: 1em;
-  padding: .5em 15px;
+  font-size: 1.07rem;
+  margin-top: 1rem;
+  padding: .5rem 15px;
   text-align: center;
 }
 .comment-list .comment-util {
-  font-size: 1em;
-  margin: 1em 0 0;
-  padding: .5em 0 0;
+  font-size: 1rem;
+  margin: 1rem 0 0;
+  padding: .5rem 0 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 .comment-list .comment-util a {
@@ -1167,17 +1166,17 @@ input:-moz-placeholder {
 }
 .comment-list .comment-reply-link:after {
   content: "\00A0\00BB"; /* nbsp raquo */
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 .comment-list .comment-util .edit {
-  font-size: 1em;
+  font-size: 1rem;
 }
 .comment-list ol.children {
   list-style: none;
   margin: 24px 0 0;
 }
 .comment-list ol.children .comment {
-  font-size: 1em;
+  font-size: 1rem;
   margin: 0 0 0 -72px;
   border-top: 1px solid #ccc;
 }
@@ -1188,17 +1187,17 @@ input:-moz-placeholder {
   letter-spacing: -1px;
 }
 #comment-form p {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 #comment-list #respond {
-  margin: 1em 20px;
+  margin: 1rem 20px;
   width: auto;
 }
 #comment-list .children #respond {
   margin-left: -50px;
 }
 #cancel-comment-reply-link {
-  font-size: .8em;
+  font-size: .8rem;
   float: right;
   background: #eee;
   background: linear-gradient(to bottom, #fff 0, #eee 100%);
@@ -1215,23 +1214,23 @@ input:-moz-placeholder {
 #comment-form #errors {
   background: #ffeef0;
   border: 1px solid #fac4c7;
-  margin-bottom: 1em;
-  padding: .5em 15px .25em;
+  margin-bottom: 1rem;
+  padding: .5rem 15px .25rem;
 }
 #comment-form #errors p {
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 #comment-form .err {
   background: #ffeef0;
 }
 #comment-form input:not([type=submit]),
 #comment-form textarea {
-  font-size: .857em;
+  font-size: .857rem;
   width: 96%;
 }
 #comment-form #cmt-ackbar {
   position: absolute;
-  left: -999em;
+  left: -999rem;
   height: 0;
 }
 
