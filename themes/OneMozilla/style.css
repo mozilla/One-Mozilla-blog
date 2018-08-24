@@ -159,7 +159,7 @@ html {
 }
 body {
   font: 14px/1.6 "Zilla Slab", sans-serif;
-  color: #000;
+  color: #222;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
   -webkit-tap-highlight-color: #6bd7f3;
@@ -208,14 +208,13 @@ h6 {
 /* @Links ***/
 a:link,
 a:visited {
-  color: #00a7e0;
   text-decoration: none;
+  color: #0060df;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #0081ad;
-  text-decoration: underline;
+  color: #003eaa;
 }
 
 /* @Accessible skip links ***/
@@ -282,6 +281,7 @@ a:active {
   background-position: right top;
   background-repeat: no-repeat;
   margin: 0px 30px 0 0;
+  background-color: #d7d9f2;
   min-height: 120px;
   padding: 30px 0 48px 30px;
   position: relative;
@@ -299,7 +299,20 @@ a:active {
   transition: font-size .5s ease-out, letter-spacing .5s ease-out;
 }
 
-#site-title span, #site-description span { -webkit-box-decoration-break: clone; box-decoration-break: clone; background: #000; color: #fff; padding: 0 10px; }
+#site-description {
+  margin-bottom: 0;
+  font-size: 2.375rem;
+}
+
+#site-title span,
+#site-description span {
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  background: #000;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 1.3;
+}
 
 #site-title a {
   color: #fff;
@@ -1075,7 +1088,6 @@ textarea:focus {
   border-color: #bbb;
   background-color: #fafafa;
   outline: 0 none;
-  box-shadow: inset rgba(0,0,0,0.3) 0 0 4px, rgba(255,255,255, 0.1) 0 1px 0;
 }
 
 input[type=submit], button {
@@ -1088,8 +1100,7 @@ input[type=submit], button {
   border: 0;
   text-shadow: 0 1px 0 rgba(0,0,0,0.25);
   font: .857em/1.1 "Open Sans Light", sans-serif;
-  background-color: #266194;
-  background-image: linear-gradient(#3c88cc,#276195);
+  background-color: #33525d;
   -webkit-transition: all .25s linear;
   transition: all .25s linear;
 }
@@ -1097,7 +1108,7 @@ input[type=submit]:hover,
 input[type=submit]:focus,
 button:hover,
 button:focus {
-  box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.2), inset 0 12px 24px 2px #3089d8;
+  background-color: #558194;
 }
 
 form li {
