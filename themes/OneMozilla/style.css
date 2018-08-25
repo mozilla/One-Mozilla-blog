@@ -825,6 +825,13 @@ html[dir='rtl'] .mozilla-logo {
   padding: 0;
 }
 
+@media (min-width: 480px) {
+  .post .entry-content {
+    min-height: 70px;
+  }
+}
+
+
 ::-moz-selection { background: #6bd7f3; }
 ::selection { background: #6bd7f3; }
 img::-moz-selection { background: transparent; }
