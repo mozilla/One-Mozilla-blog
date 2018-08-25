@@ -115,7 +115,7 @@ Tags: two-columns, right-sidebar, fixed-width, responsive, adaptive-layout, cust
 /* @Reset defaults *********/
 header, hgroup, nav, section, article, aside, footer, main { display: block; }
 html, body, form, fieldset, legend, h1, h2, h3, h4, h5, h6, dd { margin: 0; padding: 0; }
-p, pre, blockquote, ul, ol, dl, table, figure { margin: 0 0 1.5em; padding: 0; }
+p, pre, blockquote, ul, ol, dl, table, figure { margin: 0 0 1.5rem; padding: 0; }
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 blockquote, q { quotes: "" ""; }
 table { border-collapse: collapse; border-spacing: 0; }
@@ -144,7 +144,7 @@ body {
 
 /* @Headings ***/
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 .25em;
+  margin: 0 0 .25rem;
   color: #000;
   line-height: 1.05;
   font-family: "Zilla Slab", sans-serif;
@@ -200,7 +200,7 @@ a:active {
 }
 
 #foot-logo .top {
-  left: -999em;
+  left: -999rem;
   position: absolute;
 }
 
@@ -339,7 +339,7 @@ html[dir='rtl'] .mozilla-logo {
 
 
 #content {
-  padding: 0 20px;
+  padding: 80px 20px;
 }
 #content:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
 
@@ -351,7 +351,6 @@ html[dir='rtl'] .mozilla-logo {
 .sub {
   float: left;
   margin: 0 10px 0 90px;
-  font-size: .875em;
   width: 220px;
 }
 
@@ -462,7 +461,7 @@ html[dir='rtl'] .mozilla-logo {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   color: #000;
   left: 0;
-  padding: .5em 0;
+  padding: .5rem 0;
   top: 0;
   width: 100%;
   z-index: 90;
@@ -543,7 +542,7 @@ html[dir='rtl'] .mozilla-logo {
 }
 .featured-posts:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
 .featured-posts h2 {
-  margin: 0 0 .5em;
+  margin: 0 0 .5rem;
 }
 .featured-posts ul {
   list-style: none;
@@ -562,23 +561,23 @@ html[dir='rtl'] .mozilla-logo {
   box-shadow: 0 1px 2px rgba(0,0,0,.2);
   display: block;
   float: none;
-  margin: 0 -5px .75em;
+  margin: 0 -5px .75rem;
 }
 
 .featured-posts .entry-title,
 .sub .featured-posts .entry-title {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   letter-spacing: 0;
   margin: 0;
 }
 
 .sub .featured-posts {
   padding: 5px 20px;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 1.5rem;
 }
 .sub .featured-posts .feature {
   float: none;
-  margin: 0 10px 2em;
+  margin: 0 10px 2rem;
   width: auto;
 }
 .sub  .featured-posts .wp-post-image {
@@ -779,7 +778,7 @@ html[dir='rtl'] .mozilla-logo {
 }
 .entry-content thead th {
   background-color: rgba(200,200,200,.2);
-  font-size: .857em;
+  font-size: .857rem;
   font-weight: normal;
   text-align: left;
 }
@@ -798,7 +797,7 @@ html[dir='rtl'] .mozilla-logo {
   overflow: auto;
 }
 .entry-content code {
-  font-size: .857em;
+  font-size: .857rem;
 }
 .entry-content hr {
   clear: both;
@@ -839,21 +838,21 @@ img::selection { background: transparent; }
 
 .alignleft {
   float: left;
-  margin: 0 24px .5em 0;
+  margin: 0 24px .5rem 0;
 }
 a .alignleft {
-  margin: 0 24px .5em 0;
+  margin: 0 24px .5rem 0;
 }
 .alignright {
   float: right;
-  margin: 0 0 .5em 24px;
+  margin: 0 0 .5rem 24px;
 }
 a .alignright {
-  margin: 0 0 .5em 24px;
+  margin: 0 0 .5rem 24px;
 }
 .aligncenter {
   display: block;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 1.5rem;
 }
 
 .wp-caption {
@@ -868,7 +867,7 @@ a .alignright {
 }
 .wp-caption.aligncenter {
   clear: both;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 1.5rem;
 }
 .wp-caption img {
   border: 0;
@@ -881,22 +880,44 @@ a .alignright {
   margin: 0 auto;
 }
 .wp-caption .wp-caption-text {
-  font-size: .923em;
+  font-size: .923rem;
   font-style: italic;
   line-height: 1.2;
-  margin: .75em 5px 0;
+  margin: .75rem 5px 0;
   text-align: center;
 }
 .entry-content .wp-post-image,
 .entry-summary .wp-post-image {
   float: left;
-  margin: 0 20px 1em 0;
+  margin: 0 20px 1rem 0;
+}
+
+a.go {
+  border-bottom: 2px solid;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 2rem;
+  max-width: 400px;
+  padding: 10px 30px 10px 0;
+  position: relative;
+  text-decoration: none;
 }
 
 a.go:after {
-  content: "\00A0\00BB"; /* nbsp raquo */
-  font-size: 1.2em;
+  bottom: 0;
+  content: '\279C ';
+  font-size: 1.8rem;
+  position: absolute;
+  right: 0;
+  transition: margin .1s ease-in-out;
 }
+
+a.go:hover:after,
+a.go:focus:after {
+  margin-right: -4px;
+  text-decoration: none;
+}
+
 
 /* @Gallery *********/
 .gallery {
@@ -924,7 +945,7 @@ a.go:after {
 
 /* @Pagination *********/
 .pages {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 .pages span, .pages b, .pages a {
   background: #eee;
@@ -942,38 +963,54 @@ a.go:after {
   margin: 0;
   padding: 0;
 }
+
+
+
 .nav-paging {
-  background-color: #fff;
-  box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
-  font: 1em/1 "Open Sans Light", sans-serif;
-  margin: 24px 0;
-  padding: 12px 20px;
+  margin: 40px 0;
+  text-align: center;
 }
-.nav-paging ul {
-  list-style: none;
-  margin: 0;
+.nav-paging li {
+  display: inline;
 }
-.nav-paging ul:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
-
-.nav-paging .prev {
-  float: left;
-  text-align: left;
-  width: 45%;
+.nav-paging a,
+.nav-paging .current {
+  background: #fff;
+  border: 2px solid #000;
+  margin: 0 2px;
+  padding: 5px 15px;
+  text-decoration: none;
+  -webkit-transition: background-color 75ms ease-out;
+          transition: background-color 75ms ease-out;
 }
-.nav-paging .prev a:before {
-  content: "\00AB\00A0"; /* laquo nbsp */
-  font-size: 1.2em;
+.nav-paging a:hover,
+.nav-paging a:focus,
+.nav-paging .current:hover,
+.nav-paging .current:focus {
+  background: rgba(0, 0, 0, 0.05);
 }
-
-.nav-paging .next {
-  float: right;
-  text-align: right;
-  width: 45%;
+.nav-paging .current {
+  font-weight: bold;
+}
+.nav-paging .prev a:before,
+.nav-paging .next a:after {
+  content: '';
+  height: 0;
+  border: 6px solid transparent;
+  display: inline-block;
 }
 .nav-paging .next a:after {
-  content: "\00A0\00BB"; /* nbsp raquo */
-  font-size: 1.2em;
+  border-left-color: inherit;
+  border-right-width: 0;
+  margin-left: 10px;
 }
+.nav-paging .prev a:before {
+  border-left-width: 0;
+  border-right-color: inherit;
+  margin-right: 10px;
+}
+
+
 
 /* @Forms *********/
 input,
@@ -1245,7 +1282,7 @@ input:-moz-placeholder {
 #site-info {
   background: #000;
   color: #fff;
-  font-size: .857em;
+  font-size: .857rem;
   overflow: hidden;
   padding: 48px 0;
   font-family: "Open Sans";
@@ -1268,7 +1305,7 @@ input:-moz-placeholder {
   float: left;
   height: 32px;
   overflow: hidden;
-  text-indent: -999em;
+  text-indent: -999rem;
   width: 100px;
 }
 #nav-meta ul {
@@ -1282,7 +1319,7 @@ input:-moz-placeholder {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
   #masthead {
-	padding-bottom: 85px;
+    padding-bottom: 85px;
   }
   .wrap {
     width: 760px;
@@ -1297,12 +1334,12 @@ input:-moz-placeholder {
   }
 
   #site-title {
-    font-size: 3em;
+    font-size: 3rem;
     letter-spacing: -2px;
     margin-left: 0;
   }
   #site-description {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     letter-spacing: -.5px;
   }
 
@@ -1318,7 +1355,7 @@ input:-moz-placeholder {
   #foot-logo,
   #colophon,
   #nav-meta {
-    margin: 0 10px 1em 10px;
+    margin: 0 10px 1rem 10px;
     width: 220px;
   }
   .featured-posts ul {
@@ -1330,7 +1367,7 @@ input:-moz-placeholder {
   }
   .featured-posts .wp-post-image {
     width: 135px;
-    margin: 0 -5px .75em -5px;
+    margin: 0 -5px .75rem -5px;
   }
   .sub .featured-posts {
     padding: 5px 10px;
@@ -1339,7 +1376,7 @@ input:-moz-placeholder {
     width: auto;
   }
   .sub .featured-posts .wp-post-image {
-    margin: 0 -5px .75em -5px;
+    margin: 0 -5px .75rem -5px;
     width: 110px;
     float: none;
   }
@@ -1357,12 +1394,12 @@ input:-moz-placeholder {
   .main {
     width: auto;
     float: none;
-    margin: 0 0 2em;
+    margin: 0 0 2rem;
   }
   .sub {
     float: none;
     width: auto;
-    margin: 0 0 1em;
+    margin: 0 0 1rem;
   }
   #tabzilla a {
 	transform: scale(.6);
@@ -1452,7 +1489,7 @@ input:-moz-placeholder {
   .entry-comments {
     clear: both;
     float: none;
-    margin: .5em 0;
+    margin: .5rem 0;
     width: auto;
   }
   .show-comments.no-author .entry-comments {
@@ -1517,7 +1554,7 @@ input:-moz-placeholder {
   #nav-meta {
     clear: both;
     float: none;
-    margin: 0 20px 1em;
+    margin: 0 20px 1rem;
     -moz-transition: width .5s ease-out;
     -webkit-transition: width .5s ease-out;
     transition: width .5s ease-out;
@@ -1525,7 +1562,7 @@ input:-moz-placeholder {
   }
   #foot-logo a {
     clear: both;
-    margin: 0 0 1em;
+    margin: 0 0 1rem;
   }
   #foot-logo .top:link,
   #foot-logo .top:visited,
@@ -1546,7 +1583,7 @@ input:-moz-placeholder {
   .featured-posts .feature .wp-post-image {
     float: left;
     height: 60px;
-    margin: -.5em 20px 12px 0;
+    margin: -.5rem 20px 12px 0;
     width: 60px;
   }
   .featured-posts .entry-title {
