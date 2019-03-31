@@ -40,7 +40,7 @@
 
   <link rel="copyright" href="#colophon">
   <link rel="profile" href="http://gmpg.org/xfn/11">
-  <link rel="shortcut icon" type="image/ico" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
+  <link rel="shortcut icon" type="image/ico" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
   <?php if ( get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1 ) : ?>
   <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/socialshare.css">
   <?php endif; ?>
@@ -68,7 +68,15 @@
 </head>
 
 <body <?php body_class($theme_options['color_scheme']); ?>>
-<div id="page"><div class="wrap">
+<div id="page">
+<?php get_template_part( 'masthead' ); ?>
+<?php if ( has_nav_menu( 'primary' ) ) : ?>
+	<div id="nav-divider">
+	  <span id="nav-primary-toggle"></span>
+	  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav', 'container_id' => 'nav-primary', 'fallback_cb' => 'false', ) ); ?>
+	</div>
+<?php endif; ?>
+<div class="wrap">
   <nav id="nav-access">
     <ul>
       <li><a href="#content-main" tabindex="1"><?php _e( 'Skip to main content', 'onemozilla' ); ?></a></li>
@@ -79,8 +87,4 @@
     </ul>
   </nav>
 
-  <?php get_template_part( 'masthead' ); ?>
-
-  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav', 'container_id' => 'nav-primary', 'fallback_cb' => 'false', ) ); ?>
-
-  <main id="content">
+  <main id="content"> 

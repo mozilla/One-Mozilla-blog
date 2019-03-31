@@ -384,6 +384,12 @@ add_filter('upload_mimes', 'fc_add_mimes');
 function onemozilla_load_scripts() {
   // Load the default jQuery
   wp_enqueue_script('jquery');
+ 
+  if ( has_nav_menu( 'primary' ) ) {
+    // Register and load the nav-mobile script
+    wp_register_script( 'nav-mobile', get_template_directory_uri() . '/js/nav-mobile.js', array( 'jquery' ) );
+    wp_enqueue_script( 'nav-mobile' );
+  }
 
   // Register and load the socialsharing script
   wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js', array( 'jquery' ) );

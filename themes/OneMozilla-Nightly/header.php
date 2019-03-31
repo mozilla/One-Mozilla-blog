@@ -72,7 +72,12 @@
 </head>
 
 <body <?php body_class($theme_options['color_scheme']); ?>>
-<div id="page"><div class="wrap">
+<div id="page">
+  <?php get_template_part( 'masthead' ); ?>
+<div id="nav-divider">
+  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav', 'container_id' => 'nav-primary', 'fallback_cb' => 'false', ) ); ?>
+</div>
+<div class="wrap">
   <nav id="nav-access">
     <ul>
       <li><a href="#content-main" tabindex="1"><?php _e( 'Skip to main content', 'onemozilla' ); ?></a></li>
@@ -82,9 +87,5 @@
     <?php endif; ?>
     </ul>
   </nav>
-
-  <?php get_template_part( 'masthead' ); ?>
-
-  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav', 'container_id' => 'nav-primary', 'fallback_cb' => 'false', ) ); ?>
 
   <main id="content">

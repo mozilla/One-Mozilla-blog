@@ -62,7 +62,6 @@ h5 { font-size: 16px; font-size: 1rem; }
 h6 { font-size: 14px; font-size: .875rem; }
 
 #masthead { position: relative; padding: 1em 0; margin: 0 0 2em; border-bottom: 3px double #ccc; text-align: left; background: none !important; }
-#tabzilla { position: absolute; top: 0; right: 0; }
 #site-title { font-size: 2em; letter-spacing: -1px; margin: 0 0 .15em -5px; }
 #site-title a { text-decoration: none; color: #333; }
 #site-description { font-size: 1em; color: #666; margin: .15em 0 .25em; }
