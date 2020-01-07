@@ -57,12 +57,7 @@
     </p>
   <?php endif; ?>
 
-  <?php if ( get_option('onemozilla_share_posts') == 1 ) : ?>
-    <div class="share">
-      <div class="socialshare" data-type="small-bubbles" data-tweet-at="<?php echo get_option('onemozilla_tweet_at', 'firefox'); ?>"></div>
-    </div>
-  <?php endif; ?>
-    <?php edit_post_link( __( 'Edit Post', 'onemozilla' ), '<p class="edit">', '</p>' ); ?>
+  <?php edit_post_link( __( 'Edit Post', 'onemozilla' ), '<p class="edit">', '</p>' ); ?>
   </header><!-- .entry-header -->
 
   <div class="entry-content">

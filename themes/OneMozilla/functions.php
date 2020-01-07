@@ -73,7 +73,7 @@ function onemozilla_setup() {
    )
   );
 
-  // We've moved the share_posts and hide_authors out of theme options but we'll bring over those settings (if they exist)
+  // We've moved the hide_authors out of theme options but we'll bring over those settings (if they exist)
   $options = get_option( 'onemozilla_theme_options' );
 
   // Stash the values in variables
@@ -81,17 +81,10 @@ function onemozilla_setup() {
     $color_scheme = $options['color_scheme'];
   }
 
-  if (isset($options['share_posts'])) {
-    $share_posts = $options['share_posts'];
-  }
-
   if (isset($options['hide_author'])) {
     $hide_authors = $options['hide_author'];
   }
 
-  if ( isset($share_posts) && (get_option('onemozilla_share_posts') == null) ) {
-    update_option('onemozilla_share_posts', $share_posts);
-  }
   if ( isset($hide_authors) && (get_option('onemozilla_hide_authors') == null) ) {
     update_option('onemozilla_hide_authors', $hide_authors);
   }
@@ -132,42 +125,6 @@ add_action('after_switch_theme', 'onemozilla_activate');
 function onemozilla_admin_init(){
   register_setting(
     'reading',
-    'onemozilla_share_posts'
-  );
-  add_settings_field(
-    'share_posts',
-    __( 'Social sharing for posts', 'onemozilla' ),
-    'onemozilla_settings_field_share_posts',
-    'reading',
-    'default'
-  );
-
-  register_setting(
-    'reading',
-    'onemozilla_share_pages'
-  );
-  add_settings_field(
-    'share_pages',
-    __( 'Social sharing for pages', 'onemozilla' ),
-    'onemozilla_settings_field_share_pages',
-    'reading',
-    'default'
-  );
-
-  register_setting(
-    'reading',
-    'onemozilla_tweet_at'
-  );
-  add_settings_field(
-    'tweet_at',
-    __( 'Twitter account to share via', 'onemozilla' ),
-    'onemozilla_settings_field_tweet_at',
-    'reading',
-    'default'
-  );
-
-  register_setting(
-    'reading',
     'onemozilla_hide_authors'
   );
   add_settings_field(
@@ -180,50 +137,6 @@ function onemozilla_admin_init(){
 }
 add_action('admin_init', 'onemozilla_admin_init');
 
-/**
- * Renders the Add Sharing setting field for posts.
- */
-function onemozilla_settings_field_share_posts() { ?>
-  <div class="layout share-posts">
-  <label>
-    <input type="checkbox" id="onemozilla_share_posts" name="onemozilla_share_posts" value="1" <?php checked( '1', get_option('onemozilla_share_posts') ); ?> />
-    <span>
-      <?php _e('Add social sharing buttons to posts', 'onemozilla'); ?>
-    </span>
-    <p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
-  </label>
-  </div>
-  <?php
-}
-
-/**
- * Renders the Add Sharing setting field for pages.
- */
-function onemozilla_settings_field_share_pages() { ?>
-  <div class="layout share-pages">
-  <label>
-    <input type="checkbox" id="onemozilla_share_pages" name="onemozilla_share_pages" value="1" <?php checked( '1', get_option('onemozilla_share_pages') ); ?> />
-    <span>
-      <?php _e('Add social sharing buttons to pages', 'onemozilla'); ?>
-    </span>
-    <p class="description"><?php _e('Adds buttons for Facebook, Twitter, and Google+.', 'onemozilla' ); ?></p>
-  </label>
-  </div>
-  <?php
-}
-
-/**
- * Renders the Twitter account setting field to share via.
- */
-function onemozilla_settings_field_tweet_at() { ?>
-  <div class="layout tweet-at">
-  <label>
-    <input type="text" id="onemozilla_tweet_at" name="onemozilla_tweet_at" value="<?php echo get_option('onemozilla_tweet_at', 'firefox'); ?>" />
-    <p class="description"><?php _e('Sets Twitter account to share via.', 'onemozilla' ); ?></p>
-  </label>
-  </div>
-  <?php
-}
 
 /**
  * Renders the Show Author setting field.
@@ -260,9 +173,6 @@ function onemozilla_post_classes( $classes ) {
   }
   elseif ( !comments_open($post->ID) && !pings_open($post->ID) && ($comment_count == 0) ) {
     $classes[] = 'no-comments';
-  }
-  if ( get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1 ) {
-    $classes[] = 'show-sharing';
   }
   return $classes;
 }
@@ -384,12 +294,6 @@ add_filter('upload_mimes', 'fc_add_mimes');
 function onemozilla_load_scripts() {
   // Load the default jQuery
   wp_enqueue_script('jquery');
-
-  // Register and load the socialsharing script
-  wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js', array( 'jquery' ) );
-  if ( (get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1) && is_singular() ) {
-    wp_enqueue_script( 'socialshare' );
-  }
 
   // Load the threaded comment reply script
   if ( get_option('thread_comments') && is_singular() ) {

@@ -182,36 +182,6 @@ label .note {
   border-color: #333;
 }
 
-/* @Social @Sharing *********/
-.obsidian .socialshare > div > a,
-.obsidian .socialshare > div > a:after {
-  background-image: url("icn-share.png");
-}
-.obsidian .socialshare > div > a {
-  color: #c5ccd2;
-}
-.obsidian .socialshare > div > a:after {
-  background-color: #2e475a;
-}
-.obsidian .share-active-state,
-.obsidian .socialshare.open > div > a,
-.obsidian .socialshare > div > a:hover,
-.obsidian .socialshare > div > a:focus {
-  color: #fede3f;
-}
-.obsidian .share-active-state span,
-.obsidian .socialshare > div > a:hover span,
-.obsidian .socialshare > div > a:focus span,
-.obsidian .socialshare.open > div > a span {
-  border-color: #fede3f;
-}
-.obsidian .socialshare > div > a:focus span {
-  outline-color: #fede3f;
-}
-.obsidian .socialshare > div > a span {
-  border-bottom-color: #c5ccd2;
-}
-
 /* @Comments *********/
 #comment-list .comment,
 #comment-list .pingback,

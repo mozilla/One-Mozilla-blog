@@ -617,14 +617,6 @@ html[dir='rtl'] #tabzilla {
 .post.no-results .entry-title {
   min-height: auto;
 }
-.entry-header .share {
-  float: right;
-  text-align: right;
-}
-.entry-header .socialshare #share-options {
-  left: auto;
-  right: 0;
-}
 .post .entry-info {
   clear: both;
   overflow: hidden;
@@ -1428,7 +1420,6 @@ input:-moz-placeholder {
   .post .entry-header {
     padding-left: 0;
   }
-  .entry-header .share,
   .entry-header .edit {
     float: none;
     text-align: left;

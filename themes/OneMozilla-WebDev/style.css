@@ -218,36 +218,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #39303f;
 }
 
-/* @Social @Sharing *********/
-.webdev .socialshare > div > a,
-.webdev .socialshare > div > a:after {
-  background-image: url("img/icn-share.png");
-}
-.webdev .socialshare > div > a {
-  color: #fc9;
-}
-.webdev .socialshare > div > a:after {
-  background-color: #4a4e62;
-}
-.webdev .share-active-state,
-.webdev .socialshare.open > div > a,
-.webdev .socialshare > div > a:hover,
-.webdev .socialshare > div > a:focus {
-  color: #ffefc9;
-}
-.webdev .share-active-state span,
-.webdev .socialshare > div > a:hover span,
-.webdev .socialshare > div > a:focus span,
-.webdev .socialshare.open > div > a span {
-  border-color: #ffefc9;
-}
-.webdev .socialshare > div > a:focus span {
-  outline-color: #ffefc9;
-}
-.webdev .socialshare > div > a span {
-  border-bottom-color: #fc9;
-}
-
 /* @Sidebar *********/
 .author-links {
   list-style: none;

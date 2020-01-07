@@ -45,9 +45,6 @@
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="icon" type="image/png" sizes="196x196" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon-196.png">
   <link rel="shortcut icon" type="image/ico" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
-  <?php if ( get_option('onemozilla_share_posts') == 1 ) : ?>
-  <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/socialshare.css">
-  <?php endif; ?>
   <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url'); ?>">
   <link rel="stylesheet" type="text/css" media="print" href="<?php echo get_template_directory_uri(); ?>/css/print.css">
   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/ie7.css"><![endif]-->
