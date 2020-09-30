@@ -1,4 +1,4 @@
-One-Mozilla-blog
+One-Mozilla-blog - A WordPress Theme !!
 ================
 
 A universal WordPress theme for Mozilla blogs.
